@@ -499,7 +499,7 @@ header .dropdown-menu {
 }
 
 .custom-nav .sbmenu>a::before {
-    content: "+";
+    content: "";
     position: absolute;
     right: 4px
 }
@@ -510,7 +510,7 @@ header .dropdown-menu {
 }
 
 .custom-nav .sbmenu.hover>a::before {
-    content: "-"
+    content: ""
 }
 
 .btn-round-.trngl:after,

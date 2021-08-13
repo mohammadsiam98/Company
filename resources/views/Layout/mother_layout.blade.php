@@ -34,7 +34,7 @@
     <header class="header-pr nav-bg-b main-header navfix fixed-top menu-white">
         <div class="container-fluid m-pad">
             <div class="menu-header">
-                <div class="dsk-logo"><a class="nav-brand" href="index-2.html">
+                <div class="dsk-logo"><a class="nav-brand" href="{{route('homepage')}}">
                         <img src="{{asset('assets/images/white-logo.png')}}" alt="Logo" class="mega-white-logo" />
                         <img src="{{asset('assets/images/logo.png')}}" alt="Logo" class="mega-darks-logo" />
                     </a>
@@ -42,204 +42,23 @@
                 <div class="custom-nav" role="navigation">
                     <ul class="nav-list">
                         <li class="sbmenu">
-                            <a href="#" class="menu-links">Home</a>
-                            <div class="nx-dropdown">
-                                <div class="sub-menu-section">
-                                    <div class="container">
-                                        <div class="col-md-12">
-                                            <div class="sub-menu-center-block">
-                                                <div class="sub-menu-column">
-                                                    <div class="menuheading">Multi-Page Demo</div>
-                                                    <ul>
-                                                        <li><a href="index-2.html">Homepage</a></li>
-                                                        <li><a href="digital-agency.html">Digital Agency</a></li>
-                                                        <li><a href="digital-agency-dark.html">Digital Agency Dark</a></li>
-                                                        <li><a href="web-design-agency.html">Web Design Agency</a></li>
-                                                        <li><a href="web-design-agency-dark.html">Web Design Agency Dark</a></li>
-                                                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
-                                                        <li><a href="digital-marketing-dark.html">Digital Marketing Dark</a></li>
-                                                        <li><a href="lead-generation.html">Lead Generation Agency</a></li>
-                                                        <li><a href="lead-generation-dark.html">Lead Generation Agency Dark</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="sub-menu-column">
-                                                    <div class="menuheading">&nbsp;</div>
-                                                    <ul>
-                                                        <li><a href="freelance-portfolio.html">Freelance Portfolio</a></li>
-                                                        <li><a href="freelance-portfolio-dark.html">Freelance Portfolio Dark</a></li>
-                                                        <li><a href="app-development.html">App Development Agency</a></li>
-                                                        <li><a href="minimal-portfolio.html">Minimal Portfolio</a></li>
-                                                        <li><a href="creative-agency.html">Creative Agency</a></li>
-                                                        <li><a href="branding-agency.html">Branding Agency</a></li>
-                                                        <li><a href="modern-agency.html">Modern Agency</a></li>
-                                                        <li><a href="business-and-startup.html">Business & Startup</a></li>
-                                                        <li><a href="graphic-studio.html">Graphic Studio</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="sub-menu-column">
-                                                    <div class="menuheading">One-Page Demo</div>
-                                                    <ul>
-                                                        <li><a href="digital-agency-onepage.html">Digital Agency</a></li>
-                                                        <li><a href="digital-agency-dark-onepage.html">Digital Agency Dark</a></li>
-                                                        <li><a href="web-design-agency-onepage.html">Web Design Agency</a></li>
-                                                        <li><a href="web-design-agency-dark-onepage.html">Web Design Agency Dark</a></li>
-                                                        <li><a href="digital-marketing-onepage.html">Digital Marketing</a></li>
-                                                        <li><a href="digital-marketing-dark-onepage.html">Digital Marketing Dark</a></li>
-                                                        <li><a href="lead-generation-onepage.html">Lead Generation Agency</a></li>
-                                                        <li><a href="lead-generation-dark-onepage.html">Lead Generation Agency Dark</a></li>
-                                                        <li><a href="freelance-portfolio-onepage.html">Freelance Portfolio</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="sub-menu-column">
-                                                    <div class="menuheading">&nbsp;</div>
-                                                    <ul>
-                                                        <li><a href="freelance-portfolio-dark-onepage.html">Freelance Portfolio Dark</a></li>
-                                                        <li><a href="app-development-onepage.html">App Development Agency</a></li>
-                                                        <li><a href="minimal-portfolio-onepage.html">Minimal Portfolio</a></li>
-                                                        <li><a href="creative-agency-onepage.html">Creative Agency</a></li>
-                                                        <li><a href="branding-agency-onepage.html">Branding Agency</a></li>
-                                                        <li><a href="modern-agency-onepage.html">Modern Agency</a></li>
-                                                        <li><a href="business-and-startup-onepage.html">Business & Startup</a></li>
-                                                        <li><a href="graphic-studio-onepage.html">Graphic Studio</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="{{route('aboutUs')}}" class="menu-links">About Us</a>
                         </li>
                         <li class="sbmenu">
-                            <a href="#" class="menu-links">Pages</a>
-                            <div class="nx-dropdown">
-                                <div class="sub-menu-section">
-                                    <div class="container">
-                                        <div class="sub-menu-center-block">
-                                            <div class="sub-menu-column">
-                                                <ul>
-                                                    <li><a href="about.html">About Us</a></li>
-                                                    <li><a href="why-us.html">Why Us</a></li>
-                                                    <li><a href="team.html">Our Team</a></li>
-                                                    <li><a href="team-details.html">Team Single</a></li>
-                                                    <li><a href="case-study.html">Case Study</a></li>
-                                                    <li><a href="case-study-details.html">Case Study Single</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="sub-menu-column">
-                                                <ul>
-                                                    <li><a href="mission-vision.html">Mission & Vision</a></li>
-                                                    <li><a href="development-process.html">Development Process</a></li>
-                                                    <li><a href="client-reviews.html">Client Reviews</a> </li>
-                                                    <li><a href="clients.html">Our Clients</a></li>
-                                                    <li><a href="get-quote.html">Contact Us</a> </li>
-                                                    <li><a href="get-quote-2.html">Contact Us 2</a> </li>
-                                                </ul>
-                                            </div>
-                                            <div class="sub-menu-column">
-                                                <ul>
-                                                    <li><a href="login.html">Login Page</a> </li>
-                                                    <li><a href="service-card.html">Service Card</a> </li>
-                                                    <li><a href="service-web.html">Service Web</a></li>
-                                                    <li><a href="service-app.html">Service Mobile App</a></li>
-                                                    <li><a href="service-marketing.html">Service Digital Marketing</a></li>
-                                                    <li><a href="service-graphic.html">Service Graphic</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="sub-menu-column">
-                                                <ul>
-                                                    <li><a href="career.html">Careers</a> </li>
-                                                    <li><a href="shop-page.html">Shop Single</a> </li>
-                                                    <li><a href="shop-details.html">Shop Details</a> </li>
-                                                    <li><a href="shop-cart.html">Shop Cart</a> </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="{{route('ourApproaches')}}" class="menu-links">Our Approaches</a>
                         </li>
                         <li class="sbmenu">
-                            <a href="#" class="menu-links">Shortcodes</a>
-                            <div class="nx-dropdown">
-                                <div class="sub-menu-section">
-                                    <div class="container">
-                                        <div class="sub-menu-center-block">
-                                            <div class="sub-menu-column">
-                                                <ul>
-                                                    <li><a href="pricing.html">Pricing</a></li>
-                                                    <li><a href="typography.html">Typography</a></li>
-                                                    <li><a href="button.html">Buttons</a></li>
-                                                    <li><a href="locations.html">Office Location</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="sub-menu-column">
-                                                <ul>
-                                                    <li><a href="faq.html">FAQs</a> </li>
-                                                    <li><a href="tabs.html">Tabs</a></li>
-                                                    <li><a href="error.html">404 Page</a></li>
-                                                    <li><a href="gradients.html">Background Gradients</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="sub-menu-column">
-                                                <ul>
-                                                    <li><a href="header-v1.html">Header v1</a></li>
-                                                    <li><a href="header-v2.html">Header v2</a></li>
-                                                    <li><a href="header-v3.html">Header v3</a></li>
-                                                    <li><a href="footer-design.html">Footer</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="sub-menu-column">
-                                                <ul>
-                                                    <li><a href="hover-animation.html">Hover Animation</a></li>
-                                                    <li><a href="popup-modal.html">Popup Modal</a></li>
-                                                    <li><a href="lists.html">Lists</a></li>
-                                                    <li><a href="bootstrap-components.html">Bootstrap Components</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="{{route('blog')}}" class="menu-links">blog</a>
                         </li>
+
                         <li class="sbmenu rpdropdown">
-                            <a href="#" class="menu-links">Portfolio</a>
-                            <div class="nx-dropdown menu-dorpdown">
-                                <div class="sub-menu-section">
-                                    <div class="sub-menu-center-block">
-                                        <div class="sub-menu-column smfull">
-                                            <ul>
-                                                <li><a href="portfolio.html">Portfolio Grid 1</a> </li>
-                                                <li><a href="portfolio-2.html">Portfolio Grid 2</a> </li>
-                                                <li><a href="portfolio-block.html">Portfolio Wide Block</a> </li>
-                                                <li><a href="portfolio-details.html">Portfolio Details</a> </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="{{route('sector')}}" class="menu-links">Services</a>
                         </li>
-                        <li class="sbmenu rpdropdown">
-                            <a href="#" class="menu-links">Blog</a>
-                            <div class="nx-dropdown menu-dorpdown">
-                                <div class="sub-menu-section">
-                                    <div class="sub-menu-center-block">
-                                        <div class="sub-menu-column smfull">
-                                            <ul>
-                                                <li><a href="blog-grid-1.html">Blog Grid 1</a> </li>
-                                                <li><a href="blog-grid-2.html">Blog Grid 2</a> </li>
-                                                <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a> </li>
-                                                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a> </li>
-                                                <li><a href="blog-single.html">Blog Single</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+
                         <li>
                             <a href="#" class="menu-links right-bddr">&nbsp;</a>
                             <!--menu right border-->
-                        <li><a href="get-quote.html" class="btn-br bg-btn3 btshad-b2 lnk">Request A Quote <span class="circle"></span></a> </li>
+                        <li><a href="{{route('contact')}}" class="btn-br bg-btn3 btshad-b2 lnk">Request A Quote <span class="circle"></span></a> </li>
                     </ul>
                 </div>
                 <div class="mobile-menu2">
@@ -253,121 +72,16 @@
             <nav id="main-nav">
                 <ul class="first-nav">
                     <li>
-                        <a href="#">Home</a>
-                        <ul>
-                            <li>
-                                <a href="#">Multi-Page Demo</a>
-                                <ul>
-                                    <li><a href="index-2.html">Homepage</a></li>
-                                    <li><a href="digital-agency.html">Digital Agency</a></li>
-                                    <li><a href="digital-agency-dark.html">Digital Agency Dark</a></li>
-                                    <li><a href="web-design-agency.html">Web Design Agency</a></li>
-                                    <li><a href="web-design-agency-dark.html">Web Design Agency Dark</a></li>
-                                    <li><a href="digital-marketing.html">Digital Marketing</a></li>
-                                    <li><a href="digital-marketing-dark.html">Digital Marketing Dark</a></li>
-                                    <li><a href="lead-generation.html">Lead Generation Agency</a></li>
-                                    <li><a href="lead-generation-dark.html">Lead Generation Agency Dark</a></li>
-                                    <li><a href="freelance-portfolio.html">Freelance Portfolio</a></li>
-                                    <li><a href="freelance-portfolio-dark.html">Freelance Portfolio Dark</a></li>
-                                    <li><a href="minimal-portfolio.html">Minimal Portfolio</a></li>
-                                    <li><a href="creative-agency.html">Creative Agency</a></li>
-                                    <li><a href="branding-agency.html">Branding Agency</a></li>
-                                    <li><a href="app-development.html">App Development Agency</a></li>
-                                    <li><a href="modern-agency.html">Modern Agency</a></li>
-                                    <li><a href="business-and-startup.html">Business & Startup</a></li>
-                                    <li><a href="graphic-studio.html">Graphic Studio</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">One-Page Demo</a>
-                                <ul>
-                                    <li><a href="digital-agency-onepage.html">Digital Agency</a></li>
-                                    <li><a href="digital-agency-dark-onepage.html">Digital Agency Dark</a></li>
-                                    <li><a href="web-design-agency-onepage.html">Web Design Agency</a></li>
-                                    <li><a href="web-design-agency-dark-onepage.html">Web Design Agency Dark</a></li>
-                                    <li><a href="digital-marketing-onepage.html">Digital Marketing</a></li>
-                                    <li><a href="digital-marketing-dark-onepage.html">Digital Marketing Dark</a></li>
-                                    <li><a href="lead-generation-onepage.html">Lead Generation Agency</a></li>
-                                    <li><a href="lead-generation-dark-onepage.html">Lead Generation Agency Dark</a></li>
-                                    <li><a href="freelance-portfolio-onepage.html">Freelance Portfolio</a></li>
-                                    <li><a href="freelance-portfolio-dark-onepage.html">Freelance Portfolio Dark</a></li>
-                                    <li><a href="app-development-onepage.html">App Development Agency</a></li>
-                                    <li><a href="minimal-portfolio-onepage.html">Minimal Portfolio</a></li>
-                                    <li><a href="creative-agency-onepage.html">Creative Agency</a></li>
-                                    <li><a href="branding-agency-onepage.html">Branding Agency</a></li>
-                                    <li><a href="modern-agency-onepage.html">Modern Agency</a></li>
-                                    <li><a href="business-and-startup-onepage.html">Business & Startup</a></li>
-                                    <li><a href="graphic-studio-onepage.html">Graphic Studio</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <a href="{{route('aboutUs')}}">About Us</a>
                     </li>
                     <li>
-                        <a href="#">Pages</a>
-                        <ul>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="why-us.html">Why Us</a></li>
-                            <li><a href="team.html">Our Team</a></li>
-                            <li><a href="team-details.html">Team Single</a></li>
-                            <li><a href="case-study.html">Case Study</a></li>
-                            <li><a href="case-study-details.html">Case Study Single</a></li>
-                            <li><a href="mission-vision.html">Mission & Vision</a></li>
-                            <li><a href="development-process.html">Development Process</a></li>
-                            <li><a href="client-reviews.html">Client Reviews</a> </li>
-                            <li><a href="clients.html">Our Clients</a></li>
-                            <li><a href="get-quote.html">Contact Us</a> </li>
-                            <li><a href="get-quote-2.html">Contact Us 2</a> </li>
-                            <li><a href="login.html">Login Page</a> </li>
-                            <li><a href="service-card.html">Service Card</a> </li>
-                            <li><a href="service-web.html">Service Web</a></li>
-                            <li><a href="service-app.html">Service Mobile App</a></li>
-                            <li><a href="service-marketing.html">Service Digital Marketing</a></li>
-                            <li><a href="service-graphic.html">Service Graphic</a></li>
-                            <li><a href="career.html">Careers</a> </li>
-                            <li><a href="shop-page.html">Shop Single</a> </li>
-                            <li><a href="shop-details.html">Shop Details</a> </li>
-                            <li><a href="shop-cart.html">Shop Cart</a> </li>
-                        </ul>
+                        <a href="{{route('ourApproaches')}}">Our Approaches</a>
                     </li>
                     <li>
-                        <a href="#">Shortcodes</a>
-                        <ul>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="typography.html">Typography</a></li>
-                            <li><a href="button.html">Buttons</a></li>
-                            <li><a href="locations.html">Office Location</a></li>
-                            <li><a href="faq.html">FAQs</a> </li>
-                            <li><a href="tabs.html">Tabs</a></li>
-                            <li><a href="error.html">404 Page</a></li>
-                            <li><a href="gradients.html">Background Gradients</a></li>
-                            <li><a href="header-v1.html">Header v1</a></li>
-                            <li><a href="header-v2.html">Header v2</a></li>
-                            <li><a href="header-v3.html">Header v3</a></li>
-                            <li><a href="footer-design.html">Footer</a></li>
-                            <li><a href="hover-animation.html">Hover Animation</a></li>
-                            <li><a href="popup-modal.html">Popup Modal</a></li>
-                            <li><a href="lists.html">Lists</a></li>
-                            <li><a href="bootstrap-components.html">Bootstrap Components</a></li>
-                        </ul>
+                        <a href="{{route('blog')}}">Blog</a>
                     </li>
                     <li>
-                        <a href="#">Portfolio</a>
-                        <ul>
-                            <li><a href="portfolio.html">Portfolio Grid 1</a> </li>
-                            <li><a href="portfolio-2.html">Portfolio Grid 2</a> </li>
-                            <li><a href="portfolio-block.html">Portfolio Wide Block</a> </li>
-                            <li><a href="portfolio-details.html">Portfolio Details</a> </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                        <ul>
-                            <li><a href="blog-grid-1.html">Blog Grid 1</a> </li>
-                            <li><a href="blog-grid-2.html">Blog Grid 2</a> </li>
-                            <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a> </li>
-                            <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a> </li>
-                            <li><a href="blog-single.html">Blog Single</a></li>
-                        </ul>
+                        <a href="{{route('sector')}}">Services</a>
                     </li>
                 </ul>
                 <ul class="bottom-nav">
@@ -463,9 +177,9 @@
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-lg-3 col-sm-6  ftr-brand-pp">
-                        <a class="navbar-brand mt30 mb25" href="#"> <img src="images/logo.png" alt="Logo" width="100" /></a>
+                        <a class="navbar-brand mt30 mb25" href="#"> <img src="{{asset('assets/images/logo.png')}}" alt="Logo" width="100" /></a>
                         <p>News letter dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Enter your email</p>
-                        <a href="#" class="btn-main bg-btn3 lnk mt20">Become Partner <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+                        <a href="{{route('contact')}}" class="btn-main bg-btn3 lnk mt20">Contact Us<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <h5>Contact Us</h5>
@@ -485,14 +199,14 @@
                         </ul>
                     </div>
                     <div class="col-lg-2 col-sm-6">
-                        <h5>Company</h5>
+                        <h5>Other Links</h5>
                         <ul class="footer-address-list link-hover">
-                            <li><a href="get-quote.html">Contact</a></li>
-                            <li><a href="javascript:void(0)">Customer's FAQ</a></li>
-                            <li><a href="javascript:void(0)">Refund Policy</a></li>
-                            <li><a href="javascript:void(0)">Privacy Policy</a></li>
-                            <li><a href="javascript:void(0)">Terms and Conditions</a></li>
-                            <li><a href="javascript:void(0)">License & Copyright</a></li>
+                            <li><a href="{{route('aim')}}">Mission Vission</a></li>
+                            <li><a href="{{route('caseStudy')}}">Case Study</a></li>
+                            <li><a href="{{route('office')}}">Our Office</a></li>
+                            <li><a href="{{route('reviews')}}">Client Reviews</a></li>
+                            <li><a href="{{route('team')}}">Our Team</a></li>
+
                         </ul>
                     </div>
                     <div class="col-lg-4 col-sm-6 footer-blog-">
