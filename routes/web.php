@@ -88,7 +88,7 @@ Route::prefix('admin')->group(function(){
       Route::get('/strengths/edit/{id}', 'App\Http\Controllers\StrengthsController@edit')->name('strength.edit');
       Route::post('/strengths/update/{id}', 'App\Http\Controllers\StrengthsController@update')->name('strength.update');
       Route::delete('/strengths/destroy/{id}', 'App\Http\Controllers\StrengthsController@destroy')->name('strength.destroy');
-
+      
 
       // These are ourApproaches routes
       Route::get('/OurApproaches/create', 'App\Http\Controllers\OurApproachesController@create')->name('OurApproaches.create');
@@ -97,7 +97,15 @@ Route::prefix('admin')->group(function(){
       Route::get('/OurApproaches/edit/{id}', 'App\Http\Controllers\OurApproachesController@edit')->name('OurApproaches.edit');
       Route::post('/OurApproaches/update/{id}', 'App\Http\Controllers\OurApproachesController@update')->name('OurApproaches.update');
       Route::delete('/OurApproaches/destroy/{id}', 'App\Http\Controllers\OurApproachesController@destroy')->name('OurApproaches.destroy');
-     
 
+
+      // These are Latest Creative Works routes
+      Route::get('/creative_work/create', 'App\Http\Controllers\CreativepageController@create')->name('creative_work.create');
+      Route::put('/creative_work/create', 'App\Http\Controllers\CreativepageController@store')->name('creative_work.store');
+      Route::get('/creative_work/list', 'App\Http\Controllers\CreativepageController@list')->name('creative_work.list');
+      Route::get('/creative_work/edit/{id}', 'App\Http\Controllers\CreativepageController@edit')->name('creative_work.edit');
+      Route::post('/creative_work/update/{id}', 'App\Http\Controllers\CreativepageController@update')->name('creative_work.update');
+      Route::delete('/creative_work/destroy/{id}', 'App\Http\Controllers\CreativepageController@destroy')->name('creative_work.destroy');
+     
 });
 
