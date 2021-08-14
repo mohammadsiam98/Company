@@ -4,15 +4,32 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>About us page</title>
+    <title>CORK Admin Template - Multiple DataTables</title>
     <link rel="icon" type="image/x-icon" href="{{asset('dashboardAssets/assets/img/favicon.ico')}}" />
+    <link href="{{asset('dashboardAssets/assets/css/loader.css')}}" rel="stylesheet" type="text/css" />
+    <script src="{{asset('dashboardAssets/assets/js/loader.js')}}"></script>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
     <link href="{{asset('dashboardAssets/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('dashboardAssets/assets/css/plugins.css')}}" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/table/datatable/datatables.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/table/datatable/dt-global_style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/table/datatable/custom_dt_multiple_tables.css')}}">
+    <!-- END PAGE LEVEL STYLES -->
 </head>
-<body class="" data-spy="scroll" data-target="#navSection" data-offset="100">
+<body class="">
+    <!-- BEGIN LOADER -->
+    <div id="load_screen">
+        <div class="loader">
+            <div class="loader-content">
+                <div class="spinner-grow align-self-center"></div>
+            </div>
+        </div>
+    </div>
+    <!--  END LOADER -->
 
     <!--  BEGIN NAVBAR  -->
     <div class="header-container fixed-top">
@@ -115,7 +132,7 @@
                     </li>
 
                     <li class="menu">
-                        <a href="#app" data-active="true" class="menu-toggle">
+                        <a href="#app" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cpu">
@@ -140,7 +157,7 @@
                     </li>
 
                     <li class="menu">
-                        <a href="#uiKit" data-active="false" class="menu-toggle">
+                        <a href="#uiKit" data-active="true" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
@@ -166,6 +183,7 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="submenu" id="app">
                     <ul class="submenu-list" data-parent-element="#app">
                         <li>
@@ -204,54 +222,71 @@
 
         <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
-            <div class="container">
-                <div class="container">
+            <div class="layout-px-spacing">
 
-                    <div class="page-header">
-                        <nav class="breadcrumb-one" aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">Form</a></li>
-                                <li class="breadcrumb-item active" aria-current="page"><a href="javascript:void(0);">AboutPage</a></li>
-                            </ol>
-                        </nav>
-                    </div>
-                    <div class="row">
-                        <div id="flHorizontalForm" class="col-lg-12 layout-spacing">
-                            <div class="statbox widget box box-shadow">
-                                <div class="widget-content widget-content-area">
-                                    <form action="{{route('about.store')}}" enctype="multipart/form-data" method="POST">
-                                        @csrf
-                                        {{method_field('PUT')}}
-                                        <div class="form-group row mb-4">
-                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Agency Details</label>
-                                            <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <textarea name="agency_details" class="form-control" id="" cols="30" rows="10" placeholder="Write Agency Details"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row mb-4">
-                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Why Choose Us</label>
-                                            <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <textarea name="whyChooseUsDetails" id="" class="form-control" cols="30" rows="10" placeholder="Write Why do you choose us"></textarea>
-                                            </div>
-                                        </div>
+                <div class="page-header">
+                    <nav class="breadcrumb-one" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0);">Tables</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0);">DataTables</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><a href="javascript:void(0);">Multiple Tables</a></li>
+                        </ol>
+                    </nav>
+                </div>
 
-                                        <div class="form-group row">
-                                            <div class="col-sm-10">
-                                                <button type="submit" name="submit" class="btn btn-primary mt-3">Lets Go</button>
+                <div class="row layout-top-spacing" id="cancel-row">
+
+                    <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
+                        <div class="widget-content widget-content-area br-6">
+                            <table class="multi-table table table-hover" style="width:100%">
+                                <thead style="border-bottom: none;">
+                                    <tr>
+                                        <th>Key</th>
+                                        <th>Strength Title</th>
+                                        <th>Strength Description</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ($about as $key =>$aboutUs)
+                                    <tr>
+                                        <td>{{$key +1 }}</td>
+                                        <td>{{$aboutUs->strength_title}}</td>
+                                        <td>{{$aboutUs->strength_description}}</td>
+                                        <td>
+                                            <div class="row">
+                                                <div>
+                                                    <a href="{{route('strength.edit' , $aboutUs->id)}}" style="color: white;" class="btn btn-primary m-2"> Edit </a>
+                                                </div>
+                                                <div>
+                                                    <form action="{{route('strength.destroy', $aboutUs->id)}}" method="POST">
+                                                        @csrf
+                                                        @method('Delete')
+                                                        <input type="submit" name="submit" value="Delete" class="btn btn-danger m-2">
+                                                    </form>
+
+                                                </div>
                                             </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
+                                        </td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
+
+                            </table>
                         </div>
                     </div>
+
                 </div>
+
             </div>
+
         </div>
         <!--  END CONTENT AREA  -->
 
     </div>
     <!-- END MAIN CONTAINER -->
+
+
 
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="{{asset('dashboardAssets/assets/js/libs/jquery-3.1.1.min.js')}}"></script>
@@ -266,9 +301,41 @@
         });
 
     </script>
-    <script src="{{asset('dashboardAssets/plugins/highlight/highlight.pack.js')}}"></script>
     <script src="{{asset('dashboardAssets/assets/js/custom.js')}}"></script>
     <!-- END GLOBAL MANDATORY SCRIPTS -->
-    <script src="{{asset('dashboardAssets/assets/js/scrollspyNav.js')}}"></script>
+
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="{{asset('dashboardAssets/plugins/table/datatable/datatables.js')}}"></script>
+    <script>
+        $(document).ready(function() {
+            $('table.multi-table').DataTable({
+                "dom": "<'dt--top-section'<'row'<'col-12 col-sm-6 d-flex justify-content-sm-start justify-content-center'l><'col-12 col-sm-6 d-flex justify-content-sm-end justify-content-center mt-sm-0 mt-3'f>>>" +
+                    "<'table-responsive'tr>" +
+                    "<'dt--bottom-section d-sm-flex justify-content-sm-between text-center'<'dt--pages-count  mb-sm-0 mb-3'i><'dt--pagination'p>>"
+                , "oLanguage": {
+                    "oPaginate": {
+                        "sPrevious": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>'
+                        , "sNext": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>'
+                    }
+                    , "sInfo": "Showing page _PAGE_ of _PAGES_"
+                    , "sSearch": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>'
+                    , "sSearchPlaceholder": "Search..."
+                    , "sLengthMenu": "Results :  _MENU_"
+                , }
+                , "stripeClasses": []
+                , "lengthMenu": [7, 10, 20, 50]
+                , "pageLength": 7
+                , drawCallback: function() {
+                    $('.t-dot').tooltip({
+                        template: '<div class="tooltip status" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+                    })
+                    $('.dataTables_wrapper table').removeClass('table-striped');
+                }
+            });
+        });
+
+    </script>
+    <!-- END PAGE LEVEL SCRIPTS -->
+
 </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>About Us Page</title>
+    <title>CORK Admin Template - Multiple DataTables</title>
     <link rel="icon" type="image/x-icon" href="{{asset('dashboardAssets/assets/img/favicon.ico')}}" />
     <link href="{{asset('dashboardAssets/assets/css/loader.css')}}" rel="stylesheet" type="text/css" />
     <script src="{{asset('dashboardAssets/assets/js/loader.js')}}"></script>
@@ -16,9 +16,8 @@
 
     <!-- BEGIN PAGE LEVEL STYLES -->
     <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/table/datatable/datatables.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/table/datatable/custom_dt_miscellaneous.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/assets/css/forms/theme-checkbox-radio.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/table/datatable/dt-global_style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/table/datatable/custom_dt_multiple_tables.css')}}">
     <!-- END PAGE LEVEL STYLES -->
 </head>
 <body class="">
@@ -41,6 +40,7 @@
                     <line x1="3" y1="18" x2="21" y2="18"></line>
                 </svg></a>
             <ul class="navbar-item flex-row navbar-dropdown search-ul">
+
                 <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">
                     <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img src="{{asset('dashboardAssets/assets/img/90x90.jpg')}}" alt="admin-profile" class="img-fluid">
@@ -108,7 +108,7 @@
             <nav id="compactSidebar">
                 <ul class="navbar-nav theme-brand flex-row">
                     <li class="nav-item theme-logo">
-                        <a href="index.html">
+                        <a href="{{route('admin.dashboard')}}">
                             <img src="{{asset('dashboardAssets/assets/img/90x90.jpg')}}" class="navbar-logo" alt="logo">
                         </a>
                     </li>
@@ -132,7 +132,7 @@
                     </li>
 
                     <li class="menu">
-                        <a href="#app" data-active="false" class="menu-toggle">
+                        <a href="#app" data-active="true" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cpu">
@@ -148,7 +148,23 @@
                                         <line x1="1" y1="14" x2="4" y2="14"></line>
                                     </svg>
                                 </div>
-                                <span>Apps</span>
+                                <span>About Us</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#uiKit" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
+                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                    </svg>
+                                </div>
+                                <span>SWOT</span>
                             </div>
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
@@ -159,6 +175,7 @@
             </nav>
 
             <div id="compact_submenuSidebar" class="submenu-sidebar">
+
                 <div class="submenu" id="dashboard">
                     <ul class="submenu-list" data-parent-element="#dashboard">
                         <li>
@@ -166,6 +183,7 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="submenu" id="app">
                     <ul class="submenu-list" data-parent-element="#app">
                         <li>
@@ -181,6 +199,22 @@
                         </li>
                     </ul>
                 </div>
+                <div class="submenu" id="uiKit">
+                    <ul class="submenu-list" data-parent-element="#uiKit">
+                        <li>
+                            <a href="{{route('strength.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('strength.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg> Show All </a>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
 
         </div>
@@ -194,70 +228,58 @@
                     <nav class="breadcrumb-one" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0);">Tables</a></li>
-                            <li class="breadcrumb-item active" aria-current="page"><a href="javascript:void(0);">About Us Page Show All Details</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0);">DataTables</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><a href="javascript:void(0);">Multiple Tables</a></li>
                         </ol>
                     </nav>
                 </div>
 
-                <div class="row layout-spacing">
-                    <div class="col-lg-12">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-content widget-content-area">
-                                <table id="show-hide-col" class="table table-hover" style="width:100%">
-                                    <thead style="border-bottom: none;">
-                                        <tr>
-                                            <th>Key</th>
-                                            <th>agency_details</th>
-                                            <th>whyChooseUsDetails</th>
-                                            <th>specialityTitle</th>
-                                            <th>specialityDetails</th>
-                                            <th>Actions</th>
+                <div class="row layout-top-spacing" id="cancel-row">
 
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @foreach ($about as $key =>$aboutUs)
-                                        <tr>
-                                            <td>{{$key +1 }}</td>
-                                            <td>{{$aboutUs->agency_details}}</td>
-                                            <td>{{$aboutUs->whyChooseUsDetails}}</td>
-                                            <td>{{$aboutUs->specialityTitle}}</td>
-                                            <td>{{$aboutUs->specialityDetails}}</td>
-                                            <td>
-                                                <div class="row">
-                                                    <div>
-                                                        <a href="{{route('about.edit' , $aboutUs->id)}}" style="color: white;" class="btn btn-primary m-2"> Edit </a>
-                                                    </div>
-                                                    <div>
-                                                        <form action="{{route('about.destroy', $aboutUs->id)}}" method="POST">
-                                                            @csrf
-                                                            @method('Delete')
-                                                            <input type="submit" name="submit" value="Delete" class="btn btn-danger m-2">
-                                                        </form>
-
-                                                    </div>
+                    <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
+                        <div class="widget-content widget-content-area br-6">
+                            <table class="multi-table table table-hover" style="width:100%">
+                                <thead style="border-bottom: none;">
+                                    <tr>
+                                        <th>Key</th>
+                                        <th>Agency Details</th>
+                                        <th>Why Choose Us</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ($about as $key =>$aboutUs)
+                                    <tr>
+                                        <td>{{$key +1 }}</td>
+                                        <td>{{$aboutUs->agency_details}}</td>
+                                        <td>{{$aboutUs->whyChooseUsDetails}}</td>
+                                        <td>
+                                            <div class="row">
+                                                <div>
+                                                    <a href="{{route('strength.edit' , $aboutUs->id)}}" style="color: white;" class="btn btn-primary m-2"> Edit </a>
                                                 </div>
-                                            </td>
-                                        </tr>
-                                        @endforeach
-                                    </tbody>
+                                                <div>
+                                                    <form action="{{route('strength.destroy', $aboutUs->id)}}" method="POST">
+                                                        @csrf
+                                                        @method('Delete')
+                                                        <input type="submit" name="submit" value="Delete" class="btn btn-danger m-2">
+                                                    </form>
 
-                                </table>
-                            </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
+
+                            </table>
                         </div>
                     </div>
+
                 </div>
+
             </div>
-            <div class="footer-wrapper">
-                <div class="footer-section f-section-1">
-                    <p class="">Copyright © 2021 <a target="_blank" href="https://designreset.com">DesignReset</a>, All rights reserved.</p>
-                </div>
-                <div class="footer-section f-section-2">
-                    <p class="">Coded with <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
-                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                        </svg></p>
-                </div>
-            </div>
+
         </div>
         <!--  END CONTENT AREA  -->
 
@@ -284,8 +306,36 @@
 
     <!-- BEGIN PAGE LEVEL SCRIPTS -->
     <script src="{{asset('dashboardAssets/plugins/table/datatable/datatables.js')}}"></script>
-    <script src="{{asset('dashboardAssets/plugins/table/datatable/button-ext/dataTables.buttons.min.js')}}"></script>
-    <script src="{{asset('dashboardAssets/plugins/table/datatable/custom_miscellaneous.js')}}"></script>
+    <script>
+        $(document).ready(function() {
+            $('table.multi-table').DataTable({
+                "dom": "<'dt--top-section'<'row'<'col-12 col-sm-6 d-flex justify-content-sm-start justify-content-center'l><'col-12 col-sm-6 d-flex justify-content-sm-end justify-content-center mt-sm-0 mt-3'f>>>" +
+                    "<'table-responsive'tr>" +
+                    "<'dt--bottom-section d-sm-flex justify-content-sm-between text-center'<'dt--pages-count  mb-sm-0 mb-3'i><'dt--pagination'p>>"
+                , "oLanguage": {
+                    "oPaginate": {
+                        "sPrevious": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>'
+                        , "sNext": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>'
+                    }
+                    , "sInfo": "Showing page _PAGE_ of _PAGES_"
+                    , "sSearch": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>'
+                    , "sSearchPlaceholder": "Search..."
+                    , "sLengthMenu": "Results :  _MENU_"
+                , }
+                , "stripeClasses": []
+                , "lengthMenu": [7, 10, 20, 50]
+                , "pageLength": 7
+                , drawCallback: function() {
+                    $('.t-dot').tooltip({
+                        template: '<div class="tooltip status" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+                    })
+                    $('.dataTables_wrapper table').removeClass('table-striped');
+                }
+            });
+        });
+
+    </script>
     <!-- END PAGE LEVEL SCRIPTS -->
+
 </body>
 </html>

@@ -79,6 +79,15 @@ Route::prefix('admin')->group(function(){
       Route::get('/aboutUs/edit/{id}', 'App\Http\Controllers\AboutUsController@edit')->name('about.edit');
       Route::post('/aboutUs/update/{id}', 'App\Http\Controllers\AboutUsController@update')->name('about.update');
       Route::delete('/aboutUs/destroy/{id}', 'App\Http\Controllers\AboutUsController@destroy')->name('about.destroy');
+
+
+      // These are Strengths routes
+      Route::get('/strengths/create', 'App\Http\Controllers\StrengthsController@create')->name('strength.create');
+      Route::put('/strengths/create', 'App\Http\Controllers\StrengthsController@store')->name('strength.store');
+      Route::get('/strengths/list', 'App\Http\Controllers\StrengthsController@list')->name('strength.list');
+      Route::get('/strengths/edit/{id}', 'App\Http\Controllers\StrengthsController@edit')->name('strength.edit');
+      Route::post('/strengths/update/{id}', 'App\Http\Controllers\StrengthsController@update')->name('strength.update');
+      Route::delete('/strengths/destroy/{id}', 'App\Http\Controllers\StrengthsController@destroy')->name('strength.destroy');
      
 
 });

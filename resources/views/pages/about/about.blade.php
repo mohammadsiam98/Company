@@ -10,8 +10,8 @@
                     <div class="bread-inner">
                         <div class="bread-menu">
                             <ul>
-                                <li><a href="index-2.html">Home</a></li>
-                                <li><a href="#">About Us</a></li>
+                                <li><a href="{{route('homepage')}}" style="color: white">Home</a></li>
+                                <li><a href="{{route('aboutUs')}}" style="color: white">About Us</a></li>
                             </ul>
                         </div>
                         <div class="bread-title">
@@ -38,7 +38,7 @@
                 <div class="common-heading text-l ">
                     <span>About Us</span>
                     <h1 class="text-radius text-light text-animation bg-b">About Agency</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. is simply dummy text of the printing and typesetting industry. </p>
+                    <p>{{$aboutDetails->agency_details}}</p>
                 </div>
             </div>
         </div>
@@ -55,10 +55,7 @@
                 <div class="common-heading">
                     <span>We Are Creative Agency</span>
                     <h1 class="mb30">Why Choose <span class="text-radius text-light text-animation bg-b">Salahuddin IT</span></h1>
-                    <p>Lorem Ipsum is text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book. <span class="text-bold">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. <span class="text-bold">Lorem Ipsum </span> is simply dummy text of the printing and typesetting industry.</p>
-
-                    <p>Lorem Ipsum is <span class="text-bold">simply dummy</span> text of the printing and typesetting industry. Lorem Ipsum has been the industry's specimen book. Lorem Ipsum is simply dummy text of the <span class="text-bold">printing</span> and typesetting industry. </p>
+                    <p>{{$aboutDetails->whyChooseUsDetails}}</p>
                 </div>
             </div>
         </div>
@@ -72,54 +69,31 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
+                @foreach($strengths_1 as $about)
                 <div class="itm-media-object mt40 tilt-3d">
-                    <div class="media">
+                    <div class="media mt-40">
                         <div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"><img src="{{asset('assets/images/icons/computers.svg')}}" alt="icon" class="layer"></div>
                         <div class="media-body">
-                            <h4>Streamlined Project Management</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet ligula nec leo elementum semper. Mauris aliquet egestas metus.</p>
-                        </div>
-                    </div>
-                    <div class="media mt40">
-                        <div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"><img src="{{asset('assets/images/icons/worker.svg')}}" alt="icon" class="layer"></div>
-                        <div class="media-body">
-                            <h4>A Dedicated Team of Experts</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet ligula nec leo elementum semper. Mauris aliquet egestas metus.</p>
-                        </div>
-                    </div>
-                    <div class="media mt40">
-                        <div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"> <img src="{{asset('assets/images/icons/deal.svg')}}" alt="icon" class="layer"></div>
-                        <div class="media-body">
-                            <h4>Completion of Project in Given Time</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet ligula nec leo elementum semper. Mauris aliquet egestas metus.</p>
+                            <h4>{{$about->strength_title}}</h4>
+                            <p>{{$about->strength_description}}.</p>
                         </div>
                     </div>
                 </div>
+                @endforeach
+
             </div>
             <div class="col-lg-6">
+                @foreach($strengths_2 as $about)
                 <div class="itm-media-object mt40 tilt-3d">
-                    <div class="media">
+                    <div class="media mt-40">
                         <div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"><img src="{{asset('assets/images/icons/computers.svg')}}" alt="icon" class="layer"></div>
                         <div class="media-body">
-                            <h4>Streamlined Project Management</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet ligula nec leo elementum semper. Mauris aliquet egestas metus.</p>
-                        </div>
-                    </div>
-                    <div class="media mt40">
-                        <div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"><img src="{{asset('assets/images/icons/worker.svg')}}" alt="icon" class="layer"></div>
-                        <div class="media-body">
-                            <h4>A Dedicated Team of Experts</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet ligula nec leo elementum semper. Mauris aliquet egestas metus.</p>
-                        </div>
-                    </div>
-                    <div class="media mt40">
-                        <div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"> <img src="{{asset('assets/images/icons/deal.svg')}}" alt="icon" class="layer"></div>
-                        <div class="media-body">
-                            <h4>Completion of Project in Given Time</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet ligula nec leo elementum semper. Mauris aliquet egestas metus.</p>
+                            <h4>{{$about->strength_title}}</h4>
+                            <p>{{$about->strength_description}}.</p>
                         </div>
                     </div>
                 </div>
+                @endforeach
             </div>
         </div>
     </div>

@@ -115,7 +115,7 @@
                     </li>
 
                     <li class="menu">
-                        <a href="#app" data-active="true" class="menu-toggle">
+                        <a href="#app" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cpu">
@@ -140,7 +140,7 @@
                     </li>
 
                     <li class="menu">
-                        <a href="#uiKit" data-active="false" class="menu-toggle">
+                        <a href="#uiKit" data-active="true" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
@@ -166,6 +166,7 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="submenu" id="app">
                     <ul class="submenu-list" data-parent-element="#app">
                         <li>
@@ -219,21 +220,21 @@
                         <div id="flHorizontalForm" class="col-lg-12 layout-spacing">
                             <div class="statbox widget box box-shadow">
                                 <div class="widget-content widget-content-area">
-                                    <form action="{{route('about.store')}}" enctype="multipart/form-data" method="POST">
+                                    <form action="{{route('strength.update',$about->id)}}" enctype="multipart/form-data" method="POST">
                                         @csrf
-                                        {{method_field('PUT')}}
                                         <div class="form-group row mb-4">
-                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Agency Details</label>
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Strength Title</label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <textarea name="agency_details" class="form-control" id="" cols="30" rows="10" placeholder="Write Agency Details"></textarea>
+                                                <input type="text" class="form-control" name="strength_title" value="{{$about->strength_title}}" placeholder="Write Your Company's Strength Title">
                                             </div>
                                         </div>
                                         <div class="form-group row mb-4">
-                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Why Choose Us</label>
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Strength Description</label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <textarea name="whyChooseUsDetails" id="" class="form-control" cols="30" rows="10" placeholder="Write Why do you choose us"></textarea>
+                                                <textarea name="strength_description" id="" class="form-control" cols="30" rows="10" placeholder="Write Some Description on that strength title">{{ $about->strength_description }}</textarea>
                                             </div>
                                         </div>
+
 
                                         <div class="form-group row">
                                             <div class="col-sm-10">
@@ -247,6 +248,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
         <!--  END CONTENT AREA  -->
 
