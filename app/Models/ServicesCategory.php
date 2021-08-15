@@ -5,10 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ourClients extends Model
+class ServicesCategory extends Model
 {
     use HasFactory;
-    protected $fillable=[
-        'clients_image'
-    ];
+    protected $fillable=['categoryName'];
 }

@@ -98,7 +98,6 @@ Route::prefix('admin')->group(function(){
       Route::post('/OurApproaches/update/{id}', 'App\Http\Controllers\OurApproachesController@update')->name('OurApproaches.update');
       Route::delete('/OurApproaches/destroy/{id}', 'App\Http\Controllers\OurApproachesController@destroy')->name('OurApproaches.destroy');
 
-
       // These are Latest Creative Works routes
       Route::get('/creative_work/create', 'App\Http\Controllers\CreativepageController@create')->name('creative_work.create');
       Route::put('/creative_work/create', 'App\Http\Controllers\CreativepageController@store')->name('creative_work.store');
@@ -106,6 +105,22 @@ Route::prefix('admin')->group(function(){
       Route::get('/creative_work/edit/{id}', 'App\Http\Controllers\CreativepageController@edit')->name('creative_work.edit');
       Route::post('/creative_work/update/{id}', 'App\Http\Controllers\CreativepageController@update')->name('creative_work.update');
       Route::delete('/creative_work/destroy/{id}', 'App\Http\Controllers\CreativepageController@destroy')->name('creative_work.destroy');
+
+      // These are our Clients routes
+      Route::get('/ourClients/create', 'App\Http\Controllers\ourClientsController@create')->name('ourClients.create');
+      Route::put('/ourClients/create', 'App\Http\Controllers\ourClientsController@store')->name('ourClients.store');
+      Route::get('/ourClients/list', 'App\Http\Controllers\ourClientsController@list')->name('ourClients.list');
+      Route::get('/ourClients/edit/{id}', 'App\Http\Controllers\ourClientsController@edit')->name('ourClients.edit');
+      Route::post('/ourClients/update/{id}', 'App\Http\Controllers\ourClientsController@update')->name('ourClients.update');
+      Route::delete('/ourClients/destroy/{id}', 'App\Http\Controllers\ourClientsController@destroy')->name('ourClients.destroy');
+
+       // These are our category routes (Dynamic Category Of Our Services)
+       Route::get('/ServicesCategory/create', 'App\Http\Controllers\CategoryController@create')->name('ServicesCategory.create');
+       Route::put('/ServicesCategory/create', 'App\Http\Controllers\CategoryController@store')->name('ServicesCategory.store');
+       Route::get('/ServicesCategory/list', 'App\Http\Controllers\CategoryController@list')->name('ServicesCategory.list');
+       Route::get('/ServicesCategory/edit/{id}', 'App\Http\Controllers\CategoryController@edit')->name('ServicesCategory.edit');
+       Route::post('/ServicesCategory/update/{id}', 'App\Http\Controllers\CategoryController@update')->name('ServicesCategory.update');
+       Route::delete('/ServicesCategory/destroy/{id}', 'App\Http\Controllers\CategoryController@destroy')->name('ServicesCategory.destroy');
      
 });
 

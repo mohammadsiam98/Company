@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateOurClientsTable extends Migration
+class CreateServicesCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateOurClientsTable extends Migration
      */
     public function up()
     {
-        Schema::create('our_clients', function (Blueprint $table) {
+        Schema::create('services_categories', function (Blueprint $table) {
             $table->id();
-            $table->string('clients_image');
+            $table->string('category_name');
             $table->timestamps();
         });
     }
@@ -27,6 +27,6 @@ class CreateOurClientsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('our_clients');
+        Schema::dropIfExists('services_categories');
     }
 }

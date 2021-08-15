@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
     <link href="{{asset('dashboardAssets/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('dashboardAssets/assets/css/plugins.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('dashboardAssets/plugins/file-upload/file-upload-with-preview.min.css')}}" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
 </head>
 <body class="" data-spy="scroll" data-target="#navSection" data-offset="100">
@@ -115,7 +116,7 @@
                     </li>
 
                     <li class="menu">
-                        <a href="#app" data-active="true" class="menu-toggle">
+                        <a href="#app" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cpu">
@@ -188,7 +189,7 @@
                     </li>
 
                     <li class="menu">
-                        <a href="#clients" data-active="false" class="menu-toggle">
+                        <a href="#clients" data-active="true" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
@@ -215,6 +216,7 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="submenu" id="app">
                     <ul class="submenu-list" data-parent-element="#app">
                         <li>
@@ -246,6 +248,55 @@
 
                     </ul>
                 </div>
+                <div class="submenu" id="approaches">
+                    <ul class="submenu-list" data-parent-element="#approaches">
+                        <li>
+                            <a href="{{route('OurApproaches.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('OurApproaches.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg> Show All </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="submenu" id="creativeWork">
+                    <ul class="submenu-list" data-parent-element="#creativeWork">
+                        <li>
+                            <a href="{{route('creative_work.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('creative_work.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="submenu" id="clients">
+                    <ul class="submenu-list" data-parent-element="#clients">
+                        <li>
+                            <a href="{{route('ourClients.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('ourClients.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+
+
             </div>
 
         </div>
@@ -260,7 +311,7 @@
                         <nav class="breadcrumb-one" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="javascript:void(0);">Form</a></li>
-                                <li class="breadcrumb-item active" aria-current="page"><a href="javascript:void(0);">AboutPage</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"><a href="javascript:void(0);">Creative Work</a></li>
                             </ol>
                         </nav>
                     </div>
@@ -268,23 +319,39 @@
                         <div id="flHorizontalForm" class="col-lg-12 layout-spacing">
                             <div class="statbox widget box box-shadow">
                                 <div class="widget-content widget-content-area">
-                                    <form action="{{route('about.update',$about->id)}}" enctype="multipart/form-data" method="POST">
+                                    <form action="{{route('ourClients.update',$ourClients->id)}}" enctype="multipart/form-data" method="POST">
                                         @csrf
-                                        <div class="form-group row mb-4">
-                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Agency Details</label>
-                                            <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <textarea name="agency_details" class="form-control" id="" cols="30" rows="10" placeholder="Write Agency Details">{{ $about->agency_details }}</textarea>
+                                        <div id="fuSingleFile" class="col-lg-12 layout-spacing">
+                                            <div class="statbox widget box box-shadow">
+                                                <div class="widget-header">
+                                                    <div class="row">
+                                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                                            <h4 style="color:red;"><b>Update File</b></h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="widget-content widget-content-area">
+                                                    <div class="custom-file-container" data-upload-id="myFirstImage">
+                                                        <label>Upload (Single File) <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
+                                                        <label class="custom-file-container__custom-file">
+                                                            <input type="file" name="clients_image" value="10485760" />
+                                                            <span class="custom-file-container__custom-file__custom-file-control"></span>
+                                                        </label>
+                                                        <div class="custom-file-container__image-preview"></div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+
                                         <div class="form-group row mb-4">
-                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Why Choose Us</label>
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Image Preview</label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <textarea name="whyChooseUsDetails" id="" class="form-control" cols="30" rows="10" placeholder="Write Why do you choose us">{{ $about->whyChooseUsDetails }}</textarea>
+                                                <img src="{{url($ourClients->clients_image)}}" style="height: 100px;width:auto" alt="">
                                             </div>
                                         </div>
 
 
-                                        <div class="form-group row">
+                                        <div class=" form-group row">
                                             <div class="col-sm-10">
                                                 <button type="submit" name="submit" class="btn btn-primary mt-3">Lets Go</button>
                                             </div>
@@ -318,6 +385,12 @@
     </script>
     <script src="{{asset('dashboardAssets/plugins/highlight/highlight.pack.js')}}"></script>
     <script src="{{asset('dashboardAssets/assets/js/custom.js')}}"></script>
+    <script src="{{asset('dashboardAssets/plugins/file-upload/file-upload-with-preview.min.js')}}"></script>
+
+    <script>
+        var firstUpload = new FileUploadWithPreview('myFirstImage')
+
+    </script>
     <!-- END GLOBAL MANDATORY SCRIPTS -->
     <script src="{{asset('dashboardAssets/assets/js/scrollspyNav.js')}}"></script>
 </body>

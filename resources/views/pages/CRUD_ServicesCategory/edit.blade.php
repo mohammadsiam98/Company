@@ -115,7 +115,7 @@
                     </li>
 
                     <li class="menu">
-                        <a href="#app" data-active="true" class="menu-toggle">
+                        <a href="#app" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cpu">
@@ -156,7 +156,7 @@
                     </li>
 
                     <li class="menu">
-                        <a href="#OurApproaches" data-active="false" class="menu-toggle">
+                        <a href="#approaches" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
@@ -203,11 +203,26 @@
                         </svg>
                     </li>
 
+                    <li class="menu">
+                        <a href="#ServicesCategory" data-active="true" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
+                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                    </svg>
+                                </div>
+                                <span>Category</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+
                 </ul>
             </nav>
 
             <div id="compact_submenuSidebar" class="submenu-sidebar">
-
                 <div class="submenu" id="dashboard">
                     <ul class="submenu-list" data-parent-element="#dashboard">
                         <li>
@@ -246,6 +261,72 @@
 
                     </ul>
                 </div>
+
+
+                <div class="submenu" id="approaches">
+                    <ul class="submenu-list" data-parent-element="#approaches">
+                        <li>
+                            <a href="{{route('OurApproaches.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('OurApproaches.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg> Show All </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="submenu" id="creativeWork">
+                    <ul class="submenu-list" data-parent-element="#creativeWork">
+                        <li>
+                            <a href="{{route('creative_work.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('creative_work.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="submenu" id="clients">
+                    <ul class="submenu-list" data-parent-element="#clients">
+                        <li>
+                            <a href="{{route('ourClients.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('ourClients.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="submenu" id="ServicesCategory">
+                    <ul class="submenu-list" data-parent-element="#ServicesCategory">
+                        <li>
+                            <a href="{{route('ServicesCategory.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('ServicesCategory.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg> Show All </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
         </div>
@@ -268,22 +349,14 @@
                         <div id="flHorizontalForm" class="col-lg-12 layout-spacing">
                             <div class="statbox widget box box-shadow">
                                 <div class="widget-content widget-content-area">
-                                    <form action="{{route('about.update',$about->id)}}" enctype="multipart/form-data" method="POST">
+                                    <form action="{{route('ServicesCategory.update',$ServicesCategory->id)}}" enctype="multipart/form-data" method="POST">
                                         @csrf
                                         <div class="form-group row mb-4">
-                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Agency Details</label>
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Category</label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <textarea name="agency_details" class="form-control" id="" cols="30" rows="10" placeholder="Write Agency Details">{{ $about->agency_details }}</textarea>
+                                                <input type="text" name="category_name" class="form-control" value="{{$ServicesCategory->category_name}}" placeholder="Write Category Name">
                                             </div>
                                         </div>
-                                        <div class="form-group row mb-4">
-                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Why Choose Us</label>
-                                            <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <textarea name="whyChooseUsDetails" id="" class="form-control" cols="30" rows="10" placeholder="Write Why do you choose us">{{ $about->whyChooseUsDetails }}</textarea>
-                                            </div>
-                                        </div>
-
-
                                         <div class="form-group row">
                                             <div class="col-sm-10">
                                                 <button type="submit" name="submit" class="btn btn-primary mt-3">Lets Go</button>
