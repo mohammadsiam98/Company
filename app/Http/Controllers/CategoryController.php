@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\ServicesCategory;
 class CategoryController extends Controller
 {
-    
+
     public function list()
     {
         //

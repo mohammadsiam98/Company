@@ -11,4 +11,5 @@ class SectorsController extends Controller
     {
         return view('pages.marketingSectors.serviceMarketing');
     }
+    
 }

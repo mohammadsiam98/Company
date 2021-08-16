@@ -121,6 +121,15 @@ Route::prefix('admin')->group(function(){
        Route::get('/ServicesCategory/edit/{id}', 'App\Http\Controllers\CategoryController@edit')->name('ServicesCategory.edit');
        Route::post('/ServicesCategory/update/{id}', 'App\Http\Controllers\CategoryController@update')->name('ServicesCategory.update');
        Route::delete('/ServicesCategory/destroy/{id}', 'App\Http\Controllers\CategoryController@destroy')->name('ServicesCategory.destroy');
+
+
+       // These are Services Overview routes (Dynamic Services)
+       Route::get('/ServiceOverviewDetails/create', 'App\Http\Controllers\ServiceOverViewController@create')->name('ServiceOverviewDetails.create');
+       Route::put('/ServiceOverviewDetails/create', 'App\Http\Controllers\ServiceOverViewController@store')->name('ServiceOverviewDetails.store');
+       Route::get('/ServiceOverviewDetails/list', 'App\Http\Controllers\ServiceOverViewController@list')->name('ServiceOverviewDetails.list');
+       Route::get('/ServiceOverviewDetails/edit/{id}', 'App\Http\Controllers\ServiceOverViewController@edit')->name('ServiceOverviewDetails.edit');
+       Route::post('/ServiceOverviewDetails/update/{id}', 'App\Http\Controllers\ServiceOverViewController@update')->name('ServiceOverviewDetails.update');
+       Route::delete('/ServiceOverviewDetails/destroy/{id}', 'App\Http\Controllers\ServiceOverViewController@destroy')->name('ServiceOverviewDetails.destroy');
      
 });
 

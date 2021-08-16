@@ -4,34 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Admin Dashboard</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <link href="{{asset('dashboardAssets/assets/css/loader.css')}}" rel="stylesheet" type="text/css" />
-    <script src="{{asset('dashboardAssets/assets/js/loader.js')}}"></script>
-
+    <title>About us page</title>
+    <link rel="icon" type="image/x-icon" href="{{asset('dashboardAssets/assets/img/favicon.ico')}}" />
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
     <link href="{{asset('dashboardAssets/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('dashboardAssets/assets/css/plugins.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('dashboardAssets/plugins/file-upload/file-upload-with-preview.min.css')}}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/bootstrap-select/bootstrap-select.min.css')}}">
     <!-- END GLOBAL MANDATORY STYLES -->
-
-    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
-    <link href="{{asset('dashboardAssets/plugins/apex/apexcharts.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{asset('dashboardAssets/assets/css/dashboard/dash_1.css')}}" rel="stylesheet" type="text/css" class="dashboard-analytics" />
-    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
-
 </head>
-<body class="dashboard-analytics">
-
-    <!-- BEGIN LOADER -->
-    <div id="load_screen">
-        <div class="loader">
-            <div class="loader-content">
-                <div class="spinner-grow align-self-center"></div>
-            </div>
-        </div>
-    </div>
-    <!--  END LOADER -->
+<body class="" data-spy="scroll" data-target="#navSection" data-offset="100">
 
     <!--  BEGIN NAVBAR  -->
     <div class="header-container fixed-top">
@@ -42,7 +25,6 @@
                     <line x1="3" y1="18" x2="21" y2="18"></line>
                 </svg></a>
             <ul class="navbar-item flex-row navbar-dropdown search-ul">
-
 
                 <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">
                     <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -67,6 +49,22 @@
                             </a>
                         </div>
                         <div class="dropdown-item">
+                            <a href="apps_mailbox.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-inbox">
+                                    <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
+                                    <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
+                                </svg> <span> Inbox</span>
+                            </a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="auth_lockscreen.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg> <span>Lock Screen</span>
+                            </a>
+                        </div>
+                        <div class="dropdown-item">
                             <a href="auth_login.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out">
                                     <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
@@ -86,6 +84,7 @@
     <div class="main-container" id="container">
 
         <div class="overlay"></div>
+        <div class="cs-overlay"></div>
         <div class="search-overlay"></div>
 
         <!--  BEGIN SIDEBAR  -->
@@ -101,7 +100,7 @@
                 </ul>
                 <ul class="menu-categories">
                     <li class="menu">
-                        <a href="#dashboard" data-active="true" class="menu-toggle">
+                        <a href="#dashboard" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
@@ -159,7 +158,7 @@
                     </li>
 
                     <li class="menu">
-                        <a href="#OurApproaches" data-active="false" class="menu-toggle">
+                        <a href="#approaches" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
@@ -206,6 +205,7 @@
                         </svg>
                     </li>
 
+
                     <li class="menu">
                         <a href="#ServicesCategory" data-active="false" class="menu-toggle">
                             <div class="base-menu">
@@ -222,9 +222,8 @@
                         </svg>
                     </li>
 
-
                     <li class="menu">
-                        <a href="#ServiceOverview" data-active="false" class="menu-toggle">
+                        <a href="#ServiceOverview" data-active="true" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
@@ -238,7 +237,6 @@
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
-
 
                 </ul>
             </nav>
@@ -268,6 +266,8 @@
                         </li>
                     </ul>
                 </div>
+
+
                 <div class="submenu" id="uiKit">
                     <ul class="submenu-list" data-parent-element="#uiKit">
                         <li>
@@ -285,8 +285,8 @@
                     </ul>
                 </div>
 
-                <div class="submenu" id="OurApproaches">
-                    <ul class="submenu-list" data-parent-element="#OurApproaches">
+                <div class="submenu" id="approaches">
+                    <ul class="submenu-list" data-parent-element="#approaches">
                         <li>
                             <a href="{{route('OurApproaches.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
                                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
@@ -298,6 +298,7 @@
                                     <polyline points="22,6 12,13 2,6"></polyline>
                                 </svg> Show All </a>
                         </li>
+
                     </ul>
                 </div>
 
@@ -314,6 +315,7 @@
                                     <polyline points="22,6 12,13 2,6"></polyline>
                                 </svg> Show All </a>
                         </li>
+
                     </ul>
                 </div>
 
@@ -330,7 +332,6 @@
                                     <polyline points="22,6 12,13 2,6"></polyline>
                                 </svg> Show All </a>
                         </li>
-
                     </ul>
                 </div>
 
@@ -365,8 +366,6 @@
                         </li>
                     </ul>
                 </div>
-
-
             </div>
 
         </div>
@@ -374,131 +373,92 @@
 
         <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
-            <div class="layout-px-spacing">
-
-                <div class="page-header">
-                    <nav class="breadcrumb-one" aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0);">Dashboard</a></li>
-                            <li class="breadcrumb-item active" aria-current="page"><a href="javascript:void(0);">Analytics</a></li>
-                        </ol>
-                    </nav>
-                </div>
-
-                <div class="row layout-top-spacing">
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="widget widget-account-invoice-two">
-                            <div class="widget-content">
-                                <div class="account-box">
-                                    <div class="info">
-                                        <div class="inv-title">
-                                            <h5 class="">Total Balance</h5>
+            <div class="container">
+                <div class="container">
+                    <div class="page-header">
+                        <nav class="breadcrumb-one" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">Form</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"><a href="javascript:void(0);">AboutPage</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="row">
+                        <div id="flHorizontalForm" class="col-lg-12 layout-spacing">
+                            <div class="statbox widget box box-shadow">
+                                <div class="widget-content widget-content-area">
+                                    <form action="{{route('ServiceOverviewDetails.store')}}" enctype="multipart/form-data" method="POST">
+                                        @csrf
+                                        {{method_field('PUT')}}
+                                        <div class="form-group row mb-4">
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Page Heading</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <input type="text" class="form-control" name="page_heading" placeholder="Write Your Service Page Heading">
+                                            </div>
                                         </div>
-                                        <div class="inv-balance-info">
-
-                                            <p class="inv-balance">$ 41,741.42</p>
-
-                                            <span class="inv-stats balance-credited">+ 2453</span>
-
+                                        <div class="form-group row mb-4">
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Service Title</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <input type="text" class="form-control" name="service_overview_title" placeholder="Write Your Service Overview Title">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="acc-action">
-                                        <div class="">
-                                            <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                </svg></a>
-                                            <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card">
-                                                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
-                                                    <line x1="1" y1="10" x2="23" y2="10"></line>
-                                                </svg></a>
+
+                                        <div class="form-group row mb-4">
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Service Overview</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <textarea name="service_overview_details" class="form-control" id="" cols="30" rows="10" placeholder="Write Your Service Overview Details"></textarea>
+                                            </div>
                                         </div>
-                                        <a href="javascript:void(0);">Upgrade</a>
-                                    </div>
+
+                                        <div class="form-group row mb-4">
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-12 col-form-label">Category</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <div class="statbox widget box box-shadow">
+                                                    <div class="widget-content widget-content-area">
+                                                        <select class="selectpicker" name="category_id" data-live-search="true" data-width="100%">
+                                                            <option class="disabled">--Select Option--</option>
+                                                            @foreach ($categorylist as $category)
+                                                            <option value="{{ $category->id }}">{{ $category->category_name }}</option>
+                                                            @endforeach
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div id="fuSingleFile" class="col-lg-12 layout-spacing">
+                                            <div class="statbox widget box box-shadow">
+                                                <div class="widget-header">
+                                                    <div class="row">
+                                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                                            <h4>Image Upload</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="widget-content widget-content-area">
+                                                    <div class="custom-file-container" data-upload-id="myFirstImage">
+                                                        <label>Upload (Single File) <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
+                                                        <label class="custom-file-container__custom-file">
+                                                            <input type="file" name="image" value="10485760" />
+                                                            <span class="custom-file-container__custom-file__custom-file-control"></span>
+                                                        </label>
+                                                        <div class="custom-file-container__image-preview"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <div class="col-sm-10">
+                                                <button type="submit" name="submit" class="btn btn-primary mt-3">Lets Go</button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="widget widget-account-invoice-two">
-                            <div class="widget-content">
-                                <div class="account-box">
-                                    <div class="info">
-                                        <div class="inv-title">
-                                            <h5 class="">Total Balance</h5>
-                                        </div>
-                                        <div class="inv-balance-info">
-
-                                            <p class="inv-balance">$ 41,741.42</p>
-
-                                            <span class="inv-stats balance-credited">+ 2453</span>
-
-                                        </div>
-                                    </div>
-                                    <div class="acc-action">
-                                        <div class="">
-                                            <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                </svg></a>
-                                            <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card">
-                                                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
-                                                    <line x1="1" y1="10" x2="23" y2="10"></line>
-                                                </svg></a>
-                                        </div>
-                                        <a href="javascript:void(0);">Upgrade</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="widget widget-account-invoice-two">
-                            <div class="widget-content">
-                                <div class="account-box">
-                                    <div class="info">
-                                        <div class="inv-title">
-                                            <h5 class="">Total Balance</h5>
-                                        </div>
-                                        <div class="inv-balance-info">
-
-                                            <p class="inv-balance">$ 41,741.42</p>
-
-                                            <span class="inv-stats balance-credited">+ 2453</span>
-
-                                        </div>
-                                    </div>
-                                    <div class="acc-action">
-                                        <div class="">
-                                            <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                </svg></a>
-                                            <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card">
-                                                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
-                                                    <line x1="1" y1="10" x2="23" y2="10"></line>
-                                                </svg></a>
-                                        </div>
-                                        <a href="javascript:void(0);">Upgrade</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-wrapper">
-                <div class="footer-section f-section-1">
-                    <p class="">Copyright © 2021 <a target="_blank" href="https://designreset.com">DesignReset</a>, All rights reserved.</p>
-                </div>
-                <div class="footer-section f-section-2">
-                    <p class="">Coded with <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
-                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                        </svg></p>
                 </div>
             </div>
         </div>
@@ -513,19 +473,25 @@
     <script src="{{asset('dashboardAssets/bootstrap/js/bootstrap.min.js')}}"></script>
     <script src="{{asset('dashboardAssets/plugins/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
     <script src="{{asset('dashboardAssets/assets/js/app.js')}}"></script>
+    <script src="{{asset('dashboardAssets/plugins/blockui/jquery.blockUI.min.js')}}"></script>
     <script>
         $(document).ready(function() {
             App.init();
         });
 
     </script>
+    <script src="{{asset('dashboardAssets/plugins/highlight/highlight.pack.js')}}"></script>
     <script src="{{asset('dashboardAssets/assets/js/custom.js')}}"></script>
+
+    <script src="{{asset('dashboardAssets/plugins/file-upload/file-upload-with-preview.min.js')}}"></script>
+
+    <script>
+        var firstUpload = new FileUploadWithPreview('myFirstImage')
+
+    </script>
+
     <!-- END GLOBAL MANDATORY SCRIPTS -->
-
-    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
-    <script src="{{asset('dashboardAssets/plugins/apex/apexcharts.min.js')}}"></script>
-    <script src="{{asset('dashboardAssets/assets/js/dashboard/dash_1.js')}}"></script>
-    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
-
+    <script src="{{asset('dashboardAssets/assets/js/scrollspyNav.js')}}"></script>
+    <script src="{{asset('dashboardAssets/plugins/bootstrap-select/bootstrap-select.min.js')}}"></script>
 </body>
 </html>
