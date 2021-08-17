@@ -144,6 +144,15 @@ Route::prefix('admin')->group(function(){
        Route::get('/SectorTechnologiesWeWillUse/edit/{id}', 'App\Http\Controllers\SectorTechnologiesController@edit')->name('SectorTechnologiesWeWillUse.edit');
        Route::post('/SectorTechnologiesWeWillUse/update/{id}', 'App\Http\Controllers\SectorTechnologiesController@update')->name('SectorTechnologiesWeWillUse.update');
        Route::delete('/SectorTechnologiesWeWillUse/destroy/{id}', 'App\Http\Controllers\SectorTechnologiesController@destroy')->name('SectorTechnologiesWeWillUse.destroy');
+
+
+       // These are Sector Creative Works routes (Dynamic Services)
+       Route::get('/SectorCreativeWorks/create', 'App\Http\Controllers\SectorCreativeWorksController@create')->name('SectorCreativeWorks.create');
+       Route::put('/SectorCreativeWorks/create', 'App\Http\Controllers\SectorCreativeWorksController@store')->name('SectorCreativeWorks.store');
+       Route::get('/SectorCreativeWorks/list', 'App\Http\Controllers\SectorCreativeWorksController@list')->name('SectorCreativeWorks.list');
+       Route::get('/SectorCreativeWorks/edit/{id}', 'App\Http\Controllers\SectorCreativeWorksController@edit')->name('SectorCreativeWorks.edit');
+       Route::post('/SectorCreativeWorks/update/{id}', 'App\Http\Controllers\SectorCreativeWorksController@update')->name('SectorCreativeWorks.update');
+       Route::delete('/SectorCreativeWorks/destroy/{id}', 'App\Http\Controllers\SectorCreativeWorksController@destroy')->name('SectorCreativeWorks.destroy');
      
 });
 

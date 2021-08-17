@@ -294,87 +294,65 @@
 <!--End Pricing-->
 
 
-<!--Stat Projects-->
-<section class="featured-project pad-tb">
+<!--Start Portfolio-->
+<section class="portfolio-section pad-tb">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <div class="common-heading ptag">
-                    <span>Our Projects</span>
-                    <h2>Some of Our Works</h2>
-                    <p class="mb0">We think big and have hands in all leading technology platforms to provide you wide array of services.</p>
+        <div class="row justify-content-center ">
+            <div class="col-lg-8">
+                <div class="common-heading">
+                    <span>Our Work</span>
+                    <h2 class="mb0">Our Latest Creative Work</h2>
                 </div>
             </div>
         </div>
-        <div class="row upset ovr-bg2 bd-hor">
-            <div class="col-lg-4 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".2s">
-                <div class="s-block up-hor bd-hor-base">
-                    <div class="nn-card-set">
-                        <div class="s-card-icon"><img src="{{asset('assets/images/icons/branding.svg')}}" alt="service" class="img-fluid" /></div>
-                        <h4>Social Media Marketing</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a href="javascript:void(0)">Learn More <i class="fas fa-chevron-right fa-icon"></i></a>
+        <div class="row">
+            <div class="col-lg-6 col-sm-8 mt60 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="isotope_item hover-scale">
+                    <div class="item-image" data-tilt data-tilt-max="2" data-tilt-speed="1000">
+                        <a href="#"><img src="{{asset('assets/images/portfolio/image-d.jpg')}}" alt="image" class="img-fluid" /> </a>
+                    </div>
+                    <div class="item-info">
+                        <h4><a href="#">Ecommerce Development</a></h4>
+                        <p>Web Application</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".4s">
-                <div class="s-block up-hor bd-hor-base">
-                    <div class="nn-card-set">
-                        <div class="s-card-icon"><img src="{{asset('assets/images/icons/development.svg')}}" alt="service" class="img-fluid" /></div>
-                        <h4>Branding & Identity</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a href="javascript:void(0)">Learn More <i class="fas fa-chevron-right fa-icon"></i></a>
+            <div class="col-lg-6 col-sm-4 mt60 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="isotope_item hover-scale">
+                    <div class="item-image" data-tilt data-tilt-max="2" data-tilt-speed="1000">
+                        <a href="#"><img src="{{asset('assets/images/portfolio/image-d.jpg')}}" alt="image" class="img-fluid" /> </a>
+                    </div>
+                    <div class="item-info">
+                        <h4><a href="#">Creative App</a></h4>
+                        <p>iOs, Android</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".6s">
-                <div class="s-block up-hor bd-hor-base">
-                    <div class="nn-card-set">
-                        <div class="s-card-icon"><img src="{{asset('assets/images/icons/app.svg')}}" alt="service" class="img-fluid" /></div>
-                        <h4>Performance Marketing</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a href="javascript:void(0)">Learn More <i class="fas fa-chevron-right fa-icon"></i></a>
+            <div class="col-lg-6 col-sm-4 mt60 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="isotope_item hover-scale">
+                    <div class="item-image" data-tilt data-tilt-max="2" data-tilt-speed="1000">
+                        <a href="#"><img src="{{asset('assets/images/portfolio/image-d.jpg')}}" alt="image" class="img-fluid" /> </a>
+                    </div>
+                    <div class="item-info">
+                        <h4><a href="#">Brochure Design</a></h4>
+                        <p>Graphic, Print</p>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".6s">
-                <div class="s-block up-hor bd-hor-base">
-                    <div class="nn-card-set">
-                        <div class="s-card-icon"><img src="{{asset('assets/images/icons/app.svg')}}" alt="service" class="img-fluid" /></div>
-                        <h4>Performance Marketing</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a href="javascript:void(0)">Learn More <i class="fas fa-chevron-right fa-icon"></i></a>
+            <div class="col-lg-6 col-sm-8 mt60 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="isotope_item hover-scale">
+                    <div class="item-image" data-tilt data-tilt-max="2" data-tilt-speed="1000">
+                        <a href="#"><img src="{{asset('assets/images/portfolio/image-d.jpg')}}" alt="image" class="img-fluid" /> </a>
                     </div>
-                </div>
-            </div>
-
-
-            <div class="col-lg-4 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".6s">
-                <div class="s-block up-hor bd-hor-base">
-                    <div class="nn-card-set">
-                        <div class="s-card-icon"><img src="{{asset('assets/images/icons/app.svg')}}" alt="service" class="img-fluid" /></div>
-                        <h4>Performance Marketing</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a href="javascript:void(0)">Learn More <i class="fas fa-chevron-right fa-icon"></i></a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-lg-4 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".6s">
-                <div class="s-block up-hor bd-hor-base">
-                    <div class="nn-card-set">
-                        <div class="s-card-icon"><img src="{{asset('assets/images/icons/app.svg')}}" alt="service" class="img-fluid" /></div>
-                        <h4>Performance Marketing</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a href="javascript:void(0)">Learn More <i class="fas fa-chevron-right fa-icon"></i></a>
+                    <div class="item-info">
+                        <h4><a href="#">Icon Pack</a></h4>
+                        <p>iOs, Android</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!--End Projects-->
+<!--End Portfolio-->
 
 @endsection
