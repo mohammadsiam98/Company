@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 use App\Models\ServicesCategory;
-use App\Models\ServiceOverviewDetails;
 use App\Models\SectorServices;
 class SectorServicesController extends Controller
 {
@@ -44,17 +43,17 @@ class SectorServicesController extends Controller
     public function edit($id)
     {
         //
-        $SectorServices = SectorServices::find($id);
-        $categorylist = ServicesCategory::all();
+        $SectorServices = SectorServices::find($id); //Fetch Single Service to edit
+        $categorylist = ServicesCategory::all(); //Fetch All Category as a Foreign Key
         return view('pages.CRUD_SectorServices.edit',compact('SectorServices','categorylist'));
     }
 
     public function update(Request $request, $id)
     {
         //
-        $ServiceOverviewDetails = ServiceOverviewDetails::find($id);
-        $SectorServices->service_name = $request->page_heading;
-        $SectorServices->service_details = $request->service_overview_title;
+        $SectorServices = SectorServices::find($id);
+        $SectorServices->service_name = $request->service_name;
+        $SectorServices->service_details = $request->service_details;
         $SectorServices->category_id=$request->category_id;
 
         if($request->file('image')){

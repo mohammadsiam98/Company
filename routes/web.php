@@ -127,7 +127,7 @@ Route::prefix('admin')->group(function(){
        Route::get('/ServiceOverviewDetails/edit/{id}', 'App\Http\Controllers\ServiceOverViewController@edit')->name('ServiceOverviewDetails.edit');
        Route::post('/ServiceOverviewDetails/update/{id}', 'App\Http\Controllers\ServiceOverViewController@update')->name('ServiceOverviewDetails.update');
        Route::delete('/ServiceOverviewDetails/destroy/{id}', 'App\Http\Controllers\ServiceOverViewController@destroy')->name('ServiceOverviewDetails.destroy');
-
+       
        // These are Sector Service routes (Dynamic Services)
        Route::get('/SectorService/create', 'App\Http\Controllers\SectorServicesController@create')->name('SectorServices.create');
        Route::put('/SectorService/create', 'App\Http\Controllers\SectorServicesController@store')->name('SectorServices.store');
@@ -135,6 +135,15 @@ Route::prefix('admin')->group(function(){
        Route::get('/SectorService/edit/{id}', 'App\Http\Controllers\SectorServicesController@edit')->name('SectorServices.edit');
        Route::post('/SectorService/update/{id}', 'App\Http\Controllers\SectorServicesController@update')->name('SectorServices.update');
        Route::delete('/SectorService/destroy/{id}', 'App\Http\Controllers\SectorServicesController@destroy')->name('SectorServices.destroy');
+
+
+       // These are Sector Service Technologies What We Will Use for that routes (Dynamic Services)
+       Route::get('/SectorTechnologiesWeWillUse/create', 'App\Http\Controllers\SectorTechnologiesController@create')->name('SectorTechnologiesWeWillUse.create');
+       Route::put('/SectorTechnologiesWeWillUse/create', 'App\Http\Controllers\SectorTechnologiesController@store')->name('SectorTechnologiesWeWillUse.store');
+       Route::get('/SectorTechnologiesWeWillUse/list', 'App\Http\Controllers\SectorTechnologiesController@list')->name('SectorTechnologiesWeWillUse.list');
+       Route::get('/SectorTechnologiesWeWillUse/edit/{id}', 'App\Http\Controllers\SectorTechnologiesController@edit')->name('SectorTechnologiesWeWillUse.edit');
+       Route::post('/SectorTechnologiesWeWillUse/update/{id}', 'App\Http\Controllers\SectorTechnologiesController@update')->name('SectorTechnologiesWeWillUse.update');
+       Route::delete('/SectorTechnologiesWeWillUse/destroy/{id}', 'App\Http\Controllers\SectorTechnologiesController@destroy')->name('SectorTechnologiesWeWillUse.destroy');
      
 });
 
