@@ -80,7 +80,6 @@ Route::prefix('admin')->group(function(){
       Route::post('/aboutUs/update/{id}', 'App\Http\Controllers\AboutUsController@update')->name('about.update');
       Route::delete('/aboutUs/destroy/{id}', 'App\Http\Controllers\AboutUsController@destroy')->name('about.destroy');
 
-
       // These are Strengths routes
       Route::get('/strengths/create', 'App\Http\Controllers\StrengthsController@create')->name('strength.create');
       Route::put('/strengths/create', 'App\Http\Controllers\StrengthsController@store')->name('strength.store');
@@ -88,7 +87,6 @@ Route::prefix('admin')->group(function(){
       Route::get('/strengths/edit/{id}', 'App\Http\Controllers\StrengthsController@edit')->name('strength.edit');
       Route::post('/strengths/update/{id}', 'App\Http\Controllers\StrengthsController@update')->name('strength.update');
       Route::delete('/strengths/destroy/{id}', 'App\Http\Controllers\StrengthsController@destroy')->name('strength.destroy');
-      
 
       // These are ourApproaches routes
       Route::get('/OurApproaches/create', 'App\Http\Controllers\OurApproachesController@create')->name('OurApproaches.create');
@@ -122,7 +120,6 @@ Route::prefix('admin')->group(function(){
        Route::post('/ServicesCategory/update/{id}', 'App\Http\Controllers\CategoryController@update')->name('ServicesCategory.update');
        Route::delete('/ServicesCategory/destroy/{id}', 'App\Http\Controllers\CategoryController@destroy')->name('ServicesCategory.destroy');
 
-
        // These are Services Overview routes (Dynamic Services)
        Route::get('/ServiceOverviewDetails/create', 'App\Http\Controllers\ServiceOverViewController@create')->name('ServiceOverviewDetails.create');
        Route::put('/ServiceOverviewDetails/create', 'App\Http\Controllers\ServiceOverViewController@store')->name('ServiceOverviewDetails.store');
@@ -130,6 +127,14 @@ Route::prefix('admin')->group(function(){
        Route::get('/ServiceOverviewDetails/edit/{id}', 'App\Http\Controllers\ServiceOverViewController@edit')->name('ServiceOverviewDetails.edit');
        Route::post('/ServiceOverviewDetails/update/{id}', 'App\Http\Controllers\ServiceOverViewController@update')->name('ServiceOverviewDetails.update');
        Route::delete('/ServiceOverviewDetails/destroy/{id}', 'App\Http\Controllers\ServiceOverViewController@destroy')->name('ServiceOverviewDetails.destroy');
+
+       // These are Sector Service routes (Dynamic Services)
+       Route::get('/SectorService/create', 'App\Http\Controllers\SectorServicesController@create')->name('SectorServices.create');
+       Route::put('/SectorService/create', 'App\Http\Controllers\SectorServicesController@store')->name('SectorServices.store');
+       Route::get('/SectorService/list', 'App\Http\Controllers\SectorServicesController@list')->name('SectorServices.list');
+       Route::get('/SectorService/edit/{id}', 'App\Http\Controllers\SectorServicesController@edit')->name('SectorServices.edit');
+       Route::post('/SectorService/update/{id}', 'App\Http\Controllers\SectorServicesController@update')->name('SectorServices.update');
+       Route::delete('/SectorService/destroy/{id}', 'App\Http\Controllers\SectorServicesController@destroy')->name('SectorServices.destroy');
      
 });
 
