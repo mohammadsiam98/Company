@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>About us page</title>
+    <title>Sector Technologies</title>
     <link rel="icon" type="image/x-icon" href="{{asset('dashboardAssets/assets/img/favicon.ico')}}" />
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
@@ -468,19 +468,6 @@
                                         </div>
 
                                         <div class="form-group row mb-4">
-                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Technology Name</label>
-                                            <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <input type="text" class="form-control" name="technology_name" value="{{$SectorTechnologiesWeWillUse->technology_name}}" placeholder="Write Your Technology Name">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row mb-4">
-                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Technology Details</label>
-                                            <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <input type="text" class="form-control" name="technology_short_details" value="{{$SectorTechnologiesWeWillUse->technology_short_details}}" placeholder="Write Your Technology Short Details">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row mb-4">
                                             <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-12 col-form-label">Category</label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
                                                 <div class="statbox widget box box-shadow">
@@ -496,35 +483,6 @@
                                             </div>
                                         </div>
 
-
-                                        <div id="fuSingleFile" class="col-lg-12 layout-spacing">
-                                            <div class="statbox widget box box-shadow">
-                                                <div class="widget-header">
-                                                    <div class="row">
-                                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                                            <h4 style="color:red;"><b>Update Image</b></h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="widget-content widget-content-area">
-                                                    <div class="custom-file-container" data-upload-id="myFirstImage">
-                                                        <label>Upload (Single File) <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
-                                                        <label class="custom-file-container__custom-file">
-                                                            <input type="file" name="image" value="10485760" />
-                                                            <span class="custom-file-container__custom-file__custom-file-control"></span>
-                                                        </label>
-                                                        <div class="custom-file-container__image-preview"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row mb-4">
-                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Image Preview</label>
-                                            <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <img src="{{url($SectorTechnologiesWeWillUse->image)}}" style="height: 100px;width:auto" alt="">
-                                            </div>
-                                        </div>
 
 
                                         <div class=" form-group row">

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>CORK Admin Template - Multiple DataTables</title>
+    <title>Sector Technologies</title>
     <link rel="icon" type="image/x-icon" href="{{asset('dashboardAssets/assets/img/favicon.ico')}}" />
     <link href="{{asset('dashboardAssets/assets/css/loader.css')}}" rel="stylesheet" type="text/css" />
     <script src="{{asset('dashboardAssets/assets/js/loader.js')}}"></script>
@@ -475,9 +475,6 @@
                                         <th>Category</th>
                                         <th>Technology Main Title</th>
                                         <th>Technology Main Title Short Details</th>
-                                        <th>Technology Name</th>
-                                        <th>Technology Short Details</th>
-                                        <th>Image</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -488,9 +485,6 @@
                                         <td>{{$SectorTechnology->get_category->category_name}}</td>
                                         <td>{{$SectorTechnology->technology_main_title}}</td>
                                         <td>{{$SectorTechnology->technology_main_title_short_details}}</td>
-                                        <td>{{$SectorTechnology->technology_name}}</td>
-                                        <td>{{$SectorTechnology->technology_short_details}}</td>
-                                        <td> <img style="height: 70px; width:auto;" src="{{url($SectorTechnology->image)}}" alt="image"></td>
                                         <td>
                                             <div class="row">
                                                 <div>

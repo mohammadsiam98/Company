@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Niwax - Web Design &amp; Digital Marketing Agency HTML Template</title>
+    <title>Digital Marketing Company</title>
     <meta name="description" content="Creative Agency, Marketing Agency Template">
     <meta name="keywords" content="Creative Agency, Marketing Agency">
     <meta name="author" content="rajesh-doot">
@@ -22,14 +22,14 @@
     <link href="{{asset('assets/css/responsive.css')}}" rel="stylesheet">
 </head>
 <body>
-    <!--Start Preloader -->
+    {{-- <!--Start Preloader -->
     <div class="onloadpage" id="page_loader">
         <div class="pre-content">
             <div class="logo-pre"><img src="{{asset('assets/images/logo.png')}}" alt="Logo" class="img-fluid" /></div>
-            <div class="pre-text- text-radius text-light text-animation bg-b">Niwax - Creative Agency & Portfolio HTML Template Are 2 Seconds Away. Have Patience</div>
-        </div>
+    <div class="pre-text- text-radius text-light text-animation bg-b">Niwax - Creative Agency & Portfolio HTML Template Are 2 Seconds Away. Have Patience</div>
     </div>
-    <!--End Preloader -->
+    </div>
+    <!--End Preloader --> --}}
     <!--Start Header -->
     <header class="header-pr nav-bg-b main-header navfix fixed-top menu-white">
         <div class="container-fluid m-pad">

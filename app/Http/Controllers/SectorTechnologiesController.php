@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 use App\Models\ServicesCategory;
 use App\Models\SectorTechnologiesWeWillUse;
-use App\Models\SectorServices;
 
 class SectorTechnologiesController extends Controller
 {
@@ -33,13 +31,7 @@ class SectorTechnologiesController extends Controller
         $SectorTechnologiesWeWillUse = new SectorTechnologiesWeWillUse;
         $SectorTechnologiesWeWillUse->technology_main_title = $request->technology_main_title;
         $SectorTechnologiesWeWillUse->technology_main_title_short_details = $request->technology_main_title_short_details;
-        $SectorTechnologiesWeWillUse->technology_name = $request->technology_name;
-        $SectorTechnologiesWeWillUse->technology_short_details = $request->technology_short_details;
         $SectorTechnologiesWeWillUse->category_id=$request->category_id;
-
-        $image  = $request->file('image');
-        Storage::putFile('public/img/',$image);
-        $SectorTechnologiesWeWillUse->image ="storage/img/".$image->hashName();
         $SectorTechnologiesWeWillUse->save();
         return redirect()->route('SectorTechnologiesWeWillUse.list')->with('success','Created Successfully');
     }
@@ -58,15 +50,8 @@ class SectorTechnologiesController extends Controller
         $SectorTechnologiesWeWillUse =SectorTechnologiesWeWillUse::find($id);
         $SectorTechnologiesWeWillUse->technology_main_title = $request->technology_main_title;
         $SectorTechnologiesWeWillUse->technology_main_title_short_details = $request->technology_main_title_short_details;
-        $SectorTechnologiesWeWillUse->technology_name = $request->technology_name;
-        $SectorTechnologiesWeWillUse->technology_short_details = $request->technology_short_details;
         $SectorTechnologiesWeWillUse->category_id=$request->category_id;
 
-        if($request->file('image')){
-            $image  = $request->file('image');
-            Storage::putFile('public/img/',$image);
-            $SectorTechnologiesWeWillUse->image ="storage/img/".$image->hashName();
-        }
         $SectorTechnologiesWeWillUse->save();
         return redirect()->route('SectorTechnologiesWeWillUse.list')->with('success','Created Successfully');
     }
