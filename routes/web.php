@@ -136,14 +136,23 @@ Route::prefix('admin')->group(function(){
        Route::post('/SectorService/update/{id}', 'App\Http\Controllers\SectorServicesController@update')->name('SectorServices.update');
        Route::delete('/SectorService/destroy/{id}', 'App\Http\Controllers\SectorServicesController@destroy')->name('SectorServices.destroy');
 
-
-       // These are Sector Service Technologies What We Will Use for that routes (Dynamic Services)
+       
+       // These are Sector Service Technologies What We Will Use routes (Dynamic Services)
        Route::get('/SectorTechnologiesWeWillUse/create', 'App\Http\Controllers\SectorTechnologiesController@create')->name('SectorTechnologiesWeWillUse.create');
        Route::put('/SectorTechnologiesWeWillUse/create', 'App\Http\Controllers\SectorTechnologiesController@store')->name('SectorTechnologiesWeWillUse.store');
        Route::get('/SectorTechnologiesWeWillUse/list', 'App\Http\Controllers\SectorTechnologiesController@list')->name('SectorTechnologiesWeWillUse.list');
        Route::get('/SectorTechnologiesWeWillUse/edit/{id}', 'App\Http\Controllers\SectorTechnologiesController@edit')->name('SectorTechnologiesWeWillUse.edit');
        Route::post('/SectorTechnologiesWeWillUse/update/{id}', 'App\Http\Controllers\SectorTechnologiesController@update')->name('SectorTechnologiesWeWillUse.update');
        Route::delete('/SectorTechnologiesWeWillUse/destroy/{id}', 'App\Http\Controllers\SectorTechnologiesController@destroy')->name('SectorTechnologiesWeWillUse.destroy');
+
+
+        // These are Sector Stack Technologies What We Will Use routes (Dynamic Services)
+        Route::get('/StackDetails/create', 'App\Http\Controllers\SectorStackTechnologiesController@create')->name('sector_technologies_details.create');
+        Route::put('/StackDetails/create', 'App\Http\Controllers\SectorStackTechnologiesController@store')->name('sector_technologies_details.store');
+        Route::get('/StackDetails/list', 'App\Http\Controllers\SectorStackTechnologiesController@list')->name('sector_technologies_details.list');
+        Route::get('/StackDetails/edit/{id}', 'App\Http\Controllers\SectorStackTechnologiesController@edit')->name('sector_technologies_details.edit');
+        Route::post('/StackDetails/update/{id}', 'App\Http\Controllers\SectorStackTechnologiesController@update')->name('sector_technologies_details.update');
+        Route::delete('/StackDetails/destroy/{id}', 'App\Http\Controllers\SectorStackTechnologiesController@destroy')->name('sector_technologies_details.destroy');
 
 
        // These are Sector Creative Works routes (Dynamic Services)

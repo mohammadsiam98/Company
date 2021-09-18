@@ -67,7 +67,7 @@ class SectorCreativeWorksController extends Controller
     public function destroy($id)
     {
         //
-        $SectorCreativeWorks = SectorTechnologiesWeWillUse::find($id);
+        $SectorCreativeWorks = SectorCreativeWorks::find($id);
         $SectorCreativeWorks->delete();
         return redirect()->route('SectorCreativeWorks.list')->with('success',"Deleted Successfully");
     }

@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>About us page</title>
-    <link rel="icon" type="image/x-icon" href="{{asset('dashboardAssets/assets/img/favicon.ico')}}" />
+    <title>CORK Admin Template - Forms Layouts</title>
+    <link rel="icon" type="image/x-icon" href="{{asset('dashboard_assets/assets/img/favicon.ico')}}" />
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
     <link href="{{asset('dashboardAssets/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('dashboardAssets/assets/css/plugins.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('dashboardAssets/plugins/file-upload/file-upload-with-preview.min.css')}}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/bootstrap-select/bootstrap-select.min.css')}}">
     <!-- END GLOBAL MANDATORY STYLES -->
 </head>
 <body class="" data-spy="scroll" data-target="#navSection" data-offset="100">
@@ -23,15 +25,14 @@
                     <line x1="3" y1="18" x2="21" y2="18"></line>
                 </svg></a>
             <ul class="navbar-item flex-row navbar-dropdown search-ul">
-
                 <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">
                     <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="{{asset('dashboardAssets/assets/img/90x90.jpg')}}" alt="admin-profile" class="img-fluid">
+                        <img src="{{asset('dashboard_assets/assets/img/90x90.jpg')}}" alt="admin-profile" class="img-fluid">
                     </a>
                     <div class="dropdown-menu position-absolute" aria-labelledby="userProfileDropdown">
                         <div class="user-profile-section">
                             <div class="media mx-auto">
-                                <img src="{{asset('dashboardAssets/assets/img/90x90.jpg')}}" class="img-fluid mr-2" alt="avatar">
+                                <img src="{{asset('dashboard_assets/assets/img/90x90.jpg')}}" class="img-fluid mr-2" alt="avatar">
                                 <div class="media-body">
                                     <h5>Alan Green</h5>
                                     <p>Project Leader</p>
@@ -92,7 +93,7 @@
                 <ul class="navbar-nav theme-brand flex-row">
                     <li class="nav-item theme-logo">
                         <a href="{{route('admin.dashboard')}}">
-                            <img src="{{asset('dashboardAssets/assets/img/90x90.jpg')}}" class="navbar-logo" alt="logo">
+                            <img src="{{asset('dashboard_assets/assets/img/90x90.jpg')}}" class="navbar-logo" alt="logo">
                         </a>
                     </li>
                 </ul>
@@ -131,7 +132,7 @@
                                         <line x1="1" y1="14" x2="4" y2="14"></line>
                                     </svg>
                                 </div>
-                                <span>About Us</span>
+                                <span>Services</span>
                             </div>
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
@@ -140,14 +141,14 @@
                     </li>
 
                     <li class="menu">
-                        <a href="#uiKit" data-active="false" class="menu-toggle">
+                        <a href="#experience" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
                                         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                                     </svg>
                                 </div>
-                                <span>SWOT</span>
+                                <span>Experience</span>
                             </div>
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
@@ -156,14 +157,14 @@
                     </li>
 
                     <li class="menu">
-                        <a href="#approaches" data-active="false" class="menu-toggle">
+                        <a href="#userDetails" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
                                         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                                     </svg>
                                 </div>
-                                <span>Approaches</span>
+                                <span>User Details</span>
                             </div>
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
@@ -172,14 +173,14 @@
                     </li>
 
                     <li class="menu">
-                        <a href="#creativeWork" data-active="false" class="menu-toggle">
+                        <a href="#Achievementes" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
                                         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                                     </svg>
                                 </div>
-                                <span>Creative</span>
+                                <span>Achievementes</span>
                             </div>
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
@@ -188,39 +189,58 @@
                     </li>
 
                     <li class="menu">
-                        <a href="#clients" data-active="false" class="menu-toggle">
+                        <a href="#BasicPlan" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
                                         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                                     </svg>
                                 </div>
-                                <span>Clients</span>
+                                <span>Basic Plan</span>
                             </div>
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
+
                     <li class="menu">
-                        <a href="#ServicesCategory" data-active="true" class="menu-toggle">
+                        <a href="#basicServicesName" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
                                         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                                     </svg>
                                 </div>
-                                <span>Category</span>
+                                <span>Basic Services</span>
                             </div>
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
+
+                    <li class="menu">
+                        <a href="#sector_technologies_details" data-active="true" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
+                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                    </svg>
+                                </div>
+                                <span>Stack Details</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+
                 </ul>
             </nav>
 
             <div id="compact_submenuSidebar" class="submenu-sidebar">
+
 
                 <div class="submenu" id="dashboard">
                     <ul class="submenu-list" data-parent-element="#dashboard">
@@ -326,6 +346,23 @@
                     </ul>
                 </div>
 
+                <div class="submenu" id="sector_technologies_details">
+                    <ul class="submenu-list" data-parent-element="#sector_technologies_details">
+                        <li>
+                            <a href="{{route('sector_technologies_details.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('sector_technologies_details.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+
+
 
             </div>
 
@@ -336,33 +373,114 @@
         <div id="content" class="main-content">
             <div class="container">
                 <div class="container">
-
                     <div class="page-header">
-                        <nav class="breadcrumb-one" aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">Form</a></li>
-                                <li class="breadcrumb-item active" aria-current="page"><a href="javascript:void(0);">AboutPage</a></li>
-                            </ol>
-                        </nav>
+                        <div class="widget-header">
+                            <div class="row">
+                                <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                    <h4>Basic Plan Package</h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+
+                    <div class="row">
+                        <div id="modalOptionalSizes" class="col-lg-12 layout-spacing">
+                            <div class="statbox widget box box-shadow">
+                                <div class="widget-content widget-content-area">
+                                    <div class="text-center">
+                                        <!-- Lage modal -->
+                                        <button type="button" class="btn btn-primary mb-2 mr-2" data-toggle="modal" data-target=".bd-example-modal-lg">Instructions</button>
+                                    </div>
+
+
+                                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="myLargeModalLabel">Read The Guidelines</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                                                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p class="modal-text">Mauris mi tellus, pharetra vel mattis sed, tempus ultrices eros. Phasellus egestas sit amet velit sed luctus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse potenti. Vivamus ultrices sed urna ac pulvinar. Ut sit amet ullamcorper mi.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn" data-dismiss="modal"><i class="flaticon-cancel-12"></i> Discard</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div id="flHorizontalForm" class="col-lg-12 layout-spacing">
                             <div class="statbox widget box box-shadow">
                                 <div class="widget-content widget-content-area">
-                                    <form action="{{route('ServicesCategory.store')}}" enctype="multipart/form-data" method="POST">
+                                    <form action="{{route('sector_technologies_details.update',$stackDetails->id)}}" method="POST" enctype="multipart/form-data">
                                         @csrf
-                                        {{method_field('PUT')}}
                                         <div class="form-group row mb-4">
-                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Category</label>
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-12 col-form-label">Category</label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <input type="text" name="category_name" class="form-control" placeholder="Write Category Name">
+                                                <div class="statbox widget box box-shadow">
+                                                    <div class="widget-content widget-content-area">
+                                                        <select class="selectpicker" name="stack_id" data-live-search="true" data-width="100%">
+                                                            <option class="disabled">--Select Option--</option>
+                                                            @foreach ($stackList as $stack)
+                                                            <option <?php if($stack->id == $stackDetails->stack_id){?> selected <?php }  ?> value="{{ $stack->id }}">{{ $stack->technology_main_title }}</option>
+                                                            <option value="{{ $stack->id }}">{{ $stack->technology_main_title }}</option>
+                                                            @endforeach
+                                                        </select>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="form-group row">
-                                            <div class="col-sm-10">
-                                                <button type="submit" name="submit" class="btn btn-primary mt-3">Lets Go</button>
+
+                                        <div class="form-group mb-3">
+                                            <h4>Stack Name</h4>
+                                            <input type="text" class="form-control" name="technology_name" value="{{$stackDetails->technology_name}}" id="technology_name" aria-describedby="technology_name" placeholder="Stack Name">
+                                            <small id="technology_name" class="form-text text-muted">Write Your stack name in this field.</small>
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <h4>Stack Short Details</h4>
+                                            <input type="text" class="form-control" name="technology_short_details" value="{{$stackDetails->technology_short_details}}" id="technology_short_details" aria-describedby="technology_short_details" placeholder="Stack Details">
+                                            <small id="technology_short_details" class="form-text text-muted">Write Your stack short in this field.</small>
+                                        </div>
+
+                                        <div id="fuSingleFile" class="col-lg-12 layout-spacing">
+                                            <div class="statbox widget box box-shadow">
+                                                <div class="widget-header">
+                                                    <div class="row">
+                                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                                            <h4>Image Upload</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="widget-content widget-content-area">
+                                                    <div class="custom-file-container" data-upload-id="myFirstImage">
+                                                        <label>Upload (Single File) <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
+                                                        <label class="custom-file-container__custom-file">
+                                                            <input type="file" name="image" value="10485760" />
+                                                            <span class="custom-file-container__custom-file__custom-file-control"></span>
+                                                        </label>
+                                                        <div class="custom-file-container__image-preview"></div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="form-group mb-3">
+                                            <h4>The Image You have already Uploaded</h4>
+                                            <img style="height: 70px; width:auto;" src="{{url($stackDetails->image)}}" alt="image">
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary mt-3 btn-lg">Submit</button>
                                     </form>
                                 </div>
                             </div>
@@ -375,14 +493,13 @@
 
     </div>
     <!-- END MAIN CONTAINER -->
-
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="{{asset('dashboardAssets/assets/js/libs/jquery-3.1.1.min.js')}}"></script>
     <script src="{{asset('dashboardAssets/bootstrap/js/popper.min.js')}}"></script>
     <script src="{{asset('dashboardAssets/bootstrap/js/bootstrap.min.js')}}"></script>
     <script src="{{asset('dashboardAssets/plugins/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
     <script src="{{asset('dashboardAssets/assets/js/app.js')}}"></script>
-
+    <script src="{{asset('dashboardAssets/plugins/blockui/jquery.blockUI.min.js')}}"></script>
     <script>
         $(document).ready(function() {
             App.init();
@@ -391,7 +508,16 @@
     </script>
     <script src="{{asset('dashboardAssets/plugins/highlight/highlight.pack.js')}}"></script>
     <script src="{{asset('dashboardAssets/assets/js/custom.js')}}"></script>
+
+    <script src="{{asset('dashboardAssets/plugins/file-upload/file-upload-with-preview.min.js')}}"></script>
+
+    <script>
+        var firstUpload = new FileUploadWithPreview('myFirstImage')
+
+    </script>
+
     <!-- END GLOBAL MANDATORY SCRIPTS -->
     <script src="{{asset('dashboardAssets/assets/js/scrollspyNav.js')}}"></script>
+    <script src="{{asset('dashboardAssets/plugins/bootstrap-select/bootstrap-select.min.js')}}"></script>
 </body>
 </html>
