@@ -162,6 +162,46 @@ Route::prefix('admin')->group(function(){
        Route::get('/SectorCreativeWorks/edit/{id}', 'App\Http\Controllers\SectorCreativeWorksController@edit')->name('SectorCreativeWorks.edit');
        Route::post('/SectorCreativeWorks/update/{id}', 'App\Http\Controllers\SectorCreativeWorksController@update')->name('SectorCreativeWorks.update');
        Route::delete('/SectorCreativeWorks/destroy/{id}', 'App\Http\Controllers\SectorCreativeWorksController@destroy')->name('SectorCreativeWorks.destroy');
+
+
+
+
+        // These are Sector Pricing Plan Routes (Basic Plan)
+        Route::get('/SectorPricingPlanBasic/create', 'App\Http\Controllers\PricingBasicController@create')->name('BasicPlan.create');
+        Route::put('/SectorPricingPlanBasic/create', 'App\Http\Controllers\PricingBasicController@store')->name('BasicPlan.store');
+        Route::get('/SectorPricingPlanBasic/list', 'App\Http\Controllers\PricingBasicController@list')->name('BasicPlan.list');
+        Route::get('/SectorPricingPlanBasic/edit/{id}', 'App\Http\Controllers\PricingBasicController@edit')->name('BasicPlan.edit');
+        Route::post('/SectorPricingPlanBasic/update/{id}', 'App\Http\Controllers\PricingBasicController@update')->name('BasicPlan.update');
+        Route::delete('/SectorPricingPlanBasic/destroy/{id}', 'App\Http\Controllers\PricingBasicController@destroy')->name('BasicPlan.destroy');
+
+        // These are Sector Pricing Plan Routes (Basic Plan Details)
+        Route::get('/SectorPricingPlanBasicDetails/create', 'App\Http\Controllers\PricingBasicDetailsController@create')->name('basicDetails.create');
+        Route::put('/SectorPricingPlanBasicDetails/create', 'App\Http\Controllers\PricingBasicDetailsController@store')->name('basicDetails.store');
+        Route::get('/SectorPricingPlanBasicDetails/list', 'App\Http\Controllers\PricingBasicDetailsController@list')->name('basicDetails.list');
+        Route::get('/SectorPricingPlanBasicDetails/edit/{id}', 'App\Http\Controllers\PricingBasicDetailsController@edit')->name('basicDetails.edit');
+        Route::post('/SectorPricingPlanBasicDetails/update/{id}', 'App\Http\Controllers\PricingBasicDetailsController@update')->name('basicDetails.update');
+        Route::delete('/SectorPricingPlanBasicDetails/destroy/{id}', 'App\Http\Controllers\PricingBasicDetailsController@destroy')->name('basicDetails.destroy');
+
+        // These are Sector Pricing Plan Routes (Standard Plan)
+        Route::get('/SectorPricingPlanStandard/create', 'App\Http\Controllers\PricingStandardController@create')->name('standard.create');
+        Route::put('/SectorPricingPlanStandard/create', 'App\Http\Controllers\PricingStandardController@store')->name('standard.store');
+        Route::get('/SectorPricingPlanStandard/list', 'App\Http\Controllers\PricingStandardController@list')->name('standard.list');
+        Route::get('/SectorPricingPlanStandard/edit/{id}', 'App\Http\Controllers\PricingStandardController@edit')->name('standard.edit');
+        Route::post('/SectorPricingPlanStandard/update/{id}', 'App\Http\Controllers\PricingStandardController@update')->name('standard.update');
+        Route::delete('/SectorPricingPlanStandard/destroy/{id}', 'App\Http\Controllers\PricingStandardController@destroy')->name('standard.destroy');
+
+        // These are Sector Pricing Plan Routes (Standard Plan Details)
+        Route::get('/SectorPricingPlanStandardDetails/create', 'App\Http\Controllers\PricingStandardDetailsController@create')->name('standardDetails.create');
+        Route::put('/SectorPricingPlanStandardDetails/create', 'App\Http\Controllers\PricingStandardDetailsController@store')->name('standardDetails.store');
+        Route::get('/SectorPricingPlanStandardDetails/list', 'App\Http\Controllers\PricingStandardDetailsController@list')->name('standardDetails.list');
+        Route::get('/SectorPricingPlanStandardDetails/edit/{id}', 'App\Http\Controllers\PricingStandardDetailsController@edit')->name('standardDetails.edit');
+        Route::post('/SectorPricingPlanStandardDetails/update/{id}', 'App\Http\Controllers\PricingStandardDetailsController@update')->name('standardDetails.update');
+        Route::delete('/SectorPricingPlanStandardDetails/destroy/{id}', 'App\Http\Controllers\PricingStandardDetailsController@destroy')->name('standardDetails.destroy');
+
+
+
+
+
      
 });
 

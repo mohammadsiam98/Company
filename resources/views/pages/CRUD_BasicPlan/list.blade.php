@@ -4,25 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Admin Dashboard</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <title>CORK Admin Template - Custom Styled DataTables</title>
+    <link rel="icon" type="image/x-icon" href="{{asset('dashboard_assets/assets/img/favicon.ico')}}" />
     <link href="{{asset('dashboardAssets/assets/css/loader.css')}}" rel="stylesheet" type="text/css" />
     <script src="{{asset('dashboardAssets/assets/js/loader.js')}}"></script>
-
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
     <link href="{{asset('dashboardAssets/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('dashboardAssets/assets/css/plugins.css')}}" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
 
-    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
-    <link href="{{asset('dashboardAssets/plugins/apex/apexcharts.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{asset('dashboardAssets/assets/css/dashboard/dash_1.css')}}" rel="stylesheet" type="text/css" class="dashboard-analytics" />
-    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
-
+    <!-- BEGIN PAGE LEVEL CUSTOM STYLES -->
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/table/datatable/datatables.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/assets/css/forms/theme-checkbox-radio.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/table/datatable/dt-global_style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/table/datatable/custom_dt_custom.css')}}">
+    <!-- END PAGE LEVEL CUSTOM STYLES -->
 </head>
-<body class="dashboard-analytics">
-
+<body class="">
     <!-- BEGIN LOADER -->
     <div id="load_screen">
         <div class="loader">
@@ -33,6 +32,7 @@
     </div>
     <!--  END LOADER -->
 
+
     <!--  BEGIN NAVBAR  -->
     <div class="header-container fixed-top">
         <header class="header navbar navbar-expand-sm">
@@ -42,16 +42,14 @@
                     <line x1="3" y1="18" x2="21" y2="18"></line>
                 </svg></a>
             <ul class="navbar-item flex-row navbar-dropdown search-ul">
-
-
                 <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">
                     <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="{{asset('dashboardAssets/assets/img/90x90.jpg')}}" alt="admin-profile" class="img-fluid">
+                        <img src="{{asset('dashboard_assets/assets/img/90x90.jpg')}}" alt="admin-profile" class="img-fluid">
                     </a>
                     <div class="dropdown-menu position-absolute" aria-labelledby="userProfileDropdown">
                         <div class="user-profile-section">
                             <div class="media mx-auto">
-                                <img src="{{asset('dashboardAssets/assets/img/90x90.jpg')}}" class="img-fluid mr-2" alt="avatar">
+                                <img src="{{asset('dashboard_assets/assets/img/90x90.jpg')}}" class="img-fluid mr-2" alt="avatar">
                                 <div class="media-body">
                                     <h5>Alan Green</h5>
                                     <p>Project Leader</p>
@@ -64,6 +62,22 @@
                                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                     <circle cx="12" cy="7" r="4"></circle>
                                 </svg> <span> Profile</span>
+                            </a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="apps_mailbox.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-inbox">
+                                    <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
+                                    <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
+                                </svg> <span> Inbox</span>
+                            </a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="auth_lockscreen.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg> <span>Lock Screen</span>
                             </a>
                         </div>
                         <div class="dropdown-item">
@@ -86,11 +100,11 @@
     <div class="main-container" id="container">
 
         <div class="overlay"></div>
+        <div class="cs-overlay"></div>
         <div class="search-overlay"></div>
 
         <!--  BEGIN SIDEBAR  -->
         <div class="sidebar-wrapper sidebar-theme">
-
             <nav id="compactSidebar">
                 <ul class="navbar-nav theme-brand flex-row">
                     <li class="nav-item theme-logo">
@@ -101,7 +115,7 @@
                 </ul>
                 <ul class="menu-categories">
                     <li class="menu">
-                        <a href="#dashboard" data-active="true" class="menu-toggle">
+                        <a href="#dashboard" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
@@ -304,7 +318,7 @@
                     </li>
 
                     <li class="menu">
-                        <a href="#basic" data-active="false" class="menu-toggle">
+                        <a href="#basic" data-active="true" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
@@ -624,9 +638,8 @@
                     </ul>
                 </div>
 
-
-
             </div>
+
 
         </div>
         <!--  END SIDEBAR  -->
@@ -638,118 +651,57 @@
                 <div class="page-header">
                     <nav class="breadcrumb-one" aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0);">Dashboard</a></li>
-                            <li class="breadcrumb-item active" aria-current="page"><a href="javascript:void(0);">Analytics</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0);">Tables</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0);">DataTables</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><a href="javascript:void(0);">Custom</a></li>
                         </ol>
                     </nav>
                 </div>
 
-                <div class="row layout-top-spacing">
 
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="widget widget-account-invoice-two">
-                            <div class="widget-content">
-                                <div class="account-box">
-                                    <div class="info">
-                                        <div class="inv-title">
-                                            <h5 class="">Total Balance</h5>
-                                        </div>
-                                        <div class="inv-balance-info">
+                <div class="row layout-spacing">
+                    <div class="col-lg-12">
+                        <div class="statbox widget box box-shadow">
+                            <div class="widget-content widget-content-area">
+                                <table id="style-3" class="table style-3  table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th class="checkbox-column text-center"> Record Id </th>
+                                            <th class="text-center">Package Name</th>
+                                            <th class="text-center">Small Description</th>
+                                            <th class="text-center">Service Price</th>
+                                            <th class="text-center dt-no-sorting">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach ($SectorPricingbasic as $key=>$basicPlan)
+                                        <tr>
+                                            <td class="checkbox-column text-center"> {{$key+1}} </td>
+                                            <td class="text-center">{{$basicPlan->planName}}</td>
+                                            <td class="text-center">{{$basicPlan->small_description}}</td>
+                                            <td class="text-center">{{$basicPlan->basic_plan_price}}</td>
+                                            <td class="text-center">
+                                                <ul class="table-controls">
+                                                    <li><a href="{{route('BasicPlan.edit' , $basicPlan->id)}}" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1">
+                                                                <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+                                                            </svg></a></li>
+                                                    <li><a href="{{ route('BasicPlan.destroy', $basicPlan->id) }}" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1">
+                                                                <polyline points="3 6 5 6 21 6"></polyline>
+                                                                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                            </svg></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        @endforeach
 
-                                            <p class="inv-balance">$ 41,741.42</p>
-
-                                            <span class="inv-stats balance-credited">+ 2453</span>
-
-                                        </div>
-                                    </div>
-                                    <div class="acc-action">
-                                        <div class="">
-                                            <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                </svg></a>
-                                            <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card">
-                                                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
-                                                    <line x1="1" y1="10" x2="23" y2="10"></line>
-                                                </svg></a>
-                                        </div>
-                                        <a href="javascript:void(0);">Upgrade</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="widget widget-account-invoice-two">
-                            <div class="widget-content">
-                                <div class="account-box">
-                                    <div class="info">
-                                        <div class="inv-title">
-                                            <h5 class="">Total Balance</h5>
-                                        </div>
-                                        <div class="inv-balance-info">
-
-                                            <p class="inv-balance">$ 41,741.42</p>
-
-                                            <span class="inv-stats balance-credited">+ 2453</span>
-
-                                        </div>
-                                    </div>
-                                    <div class="acc-action">
-                                        <div class="">
-                                            <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                </svg></a>
-                                            <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card">
-                                                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
-                                                    <line x1="1" y1="10" x2="23" y2="10"></line>
-                                                </svg></a>
-                                        </div>
-                                        <a href="javascript:void(0);">Upgrade</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="widget widget-account-invoice-two">
-                            <div class="widget-content">
-                                <div class="account-box">
-                                    <div class="info">
-                                        <div class="inv-title">
-                                            <h5 class="">Total Balance</h5>
-                                        </div>
-                                        <div class="inv-balance-info">
-
-                                            <p class="inv-balance">$ 41,741.42</p>
-
-                                            <span class="inv-stats balance-credited">+ 2453</span>
-
-                                        </div>
-                                    </div>
-                                    <div class="acc-action">
-                                        <div class="">
-                                            <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                </svg></a>
-                                            <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card">
-                                                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
-                                                    <line x1="1" y1="10" x2="23" y2="10"></line>
-                                                </svg></a>
-                                        </div>
-                                        <a href="javascript:void(0);">Upgrade</a>
-                                    </div>
-                                </div>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
             <div class="footer-wrapper">
                 <div class="footer-section f-section-1">
                     <p class="">Copyright © 2021 <a target="_blank" href="https://designreset.com">DesignReset</a>, All rights reserved.</p>
@@ -766,12 +718,15 @@
     </div>
     <!-- END MAIN CONTAINER -->
 
+
+
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="{{asset('dashboardAssets/assets/js/libs/jquery-3.1.1.min.js')}}"></script>
     <script src="{{asset('dashboardAssets/bootstrap/js/popper.min.js')}}"></script>
     <script src="{{asset('dashboardAssets/bootstrap/js/bootstrap.min.js')}}"></script>
     <script src="{{asset('dashboardAssets/plugins/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
     <script src="{{asset('dashboardAssets/assets/js/app.js')}}"></script>
+
     <script>
         $(document).ready(function() {
             App.init();
@@ -781,10 +736,31 @@
     <script src="{{asset('dashboardAssets/assets/js/custom.js')}}"></script>
     <!-- END GLOBAL MANDATORY SCRIPTS -->
 
-    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
-    <script src="{{asset('dashboardAssets/plugins/apex/apexcharts.min.js')}}"></script>
-    <script src="{{asset('dashboardAssets/assets/js/dashboard/dash_1.js')}}"></script>
-    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="{{asset('dashboardAssets/plugins/table/datatable/datatables.js')}}"></script>
+    <script>
+        c3 = $('#style-3').DataTable({
+            "dom": "<'dt--top-section'<'row'<'col-12 col-sm-6 d-flex justify-content-sm-start justify-content-center'l><'col-12 col-sm-6 d-flex justify-content-sm-end justify-content-center mt-sm-0 mt-3'f>>>" +
+                "<'table-responsive'tr>" +
+                "<'dt--bottom-section d-sm-flex justify-content-sm-between text-center'<'dt--pages-count  mb-sm-0 mb-3'i><'dt--pagination'p>>"
+            , "oLanguage": {
+                "oPaginate": {
+                    "sPrevious": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>'
+                    , "sNext": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>'
+                }
+                , "sInfo": "Showing page _PAGE_ of _PAGES_"
+                , "sSearch": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>'
+                , "sSearchPlaceholder": "Search..."
+                , "sLengthMenu": "Results :  _MENU_"
+            , }
+            , "stripeClasses": []
+            , "lengthMenu": [5, 10, 20, 50]
+            , "pageLength": 5
+        });
 
+        multiCheck(c3);
+
+    </script>
+    <!-- END PAGE LEVEL SCRIPTS -->
 </body>
 </html>
