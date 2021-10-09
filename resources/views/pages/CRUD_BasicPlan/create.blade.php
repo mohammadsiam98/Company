@@ -586,7 +586,7 @@
                         <div id="flHorizontalForm" class="col-lg-12 layout-spacing">
                             <div class="statbox widget box box-shadow">
                                 <div class="widget-content widget-content-area">
-                                    <form action="{{route('BasicPlan.store')}}" method="POST">
+                                    <form action="{{route('PricingPlan.store')}}" method="POST">
                                         @csrf
                                         {{method_field('PUT')}}
 

@@ -3,18 +3,11 @@
 namespace App\Http\Controllers;
 use DB;
 use Illuminate\Http\Request;
+use App\Models\ServicesCategory;
 use App\Models\OurApproaches;
 class OurApproachesController extends Controller
 {
     //
-    public function ourApproaches()
-    {
-        $OurApproaches1 = OurApproaches::where('id', '1')->first();
-        $OurApproaches2 = OurApproaches::where('id', '2')->first();
-        $OurApproaches3 = OurApproaches::where('id', '3')->first();
-        $OurApproaches4 = OurApproaches::where('id', '4')->first();
-        return view('pages.approaches.ourApproaches',compact('OurApproaches1','OurApproaches2','OurApproaches3','OurApproaches4'));
-    }
     public function list()
     {
         $OurApproaches = OurApproaches::all();
@@ -23,7 +16,8 @@ class OurApproachesController extends Controller
 
     public function create()
     {
-        return view('pages.CRUD_OurApproaches.create');
+        $categorylist = ServicesCategory::all();
+        return view('pages.CRUD_OurApproaches.create',compact('categorylist'));
     }
 
     public function store(Request $request)
@@ -31,6 +25,9 @@ class OurApproachesController extends Controller
         $OurApproaches = new OurApproaches;
         $OurApproaches->Approach_title = $request->Approach_title;
         $OurApproaches->Approach_details = $request->Approach_details;
+        $OurApproaches->category_title = $request->category_title;
+        $OurApproaches->category_description = $request->category_description;
+        $OurApproaches->category_id=$request->category_id;
         $OurApproaches->save();
         return redirect()->route('OurApproaches.list')->with('success',' New Data created Successfully');
     }
@@ -38,7 +35,8 @@ class OurApproachesController extends Controller
     public function edit($id)
     {
         $OurApproaches = OurApproaches::find($id);
-        return view('pages.CRUD_OurApproaches.edit',compact('OurApproaches'));
+        $categorylist = ServicesCategory::all(); 
+        return view('pages.CRUD_OurApproaches.edit',compact('OurApproaches','categorylist'));
     }
 
     public function update(Request $request, $id)
@@ -47,6 +45,9 @@ class OurApproachesController extends Controller
         $OurApproaches = OurApproaches::find($id);
         $OurApproaches->Approach_title = $request->Approach_title;
         $OurApproaches->Approach_details = $request->Approach_details;
+        $OurApproaches->category_title = $request->category_title;
+        $OurApproaches->category_description = $request->category_description;
+        $OurApproaches->category_id=$request->category_id;
         $OurApproaches->save();
         return redirect()->route('OurApproaches.list')->with('success','Updated Successfully');
     }

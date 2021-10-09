@@ -84,6 +84,7 @@
         <!--  BEGIN SIDEBAR  -->
         <div class="sidebar-wrapper sidebar-theme">
 
+            {{--------------------------------- Navbar -----------------------------------}}
             <nav id="compactSidebar">
                 <ul class="navbar-nav theme-brand flex-row">
                     <li class="nav-item theme-logo">
@@ -339,7 +340,10 @@
 
                 </ul>
             </nav>
+            {{--------------------------------- Navbar -----------------------------------}}
 
+
+            {{--------------------------------- Navbar Route -----------------------------------}}
             <div id="compact_submenuSidebar" class="submenu-sidebar">
 
                 {{--------------------------------- Dashboard Homepage --------------------------------------}}
@@ -541,6 +545,7 @@
                 {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
 
             </div>
+            {{--------------------------------- Navbar Route -----------------------------------}}
 
         </div>
         <!--  END SIDEBAR  -->

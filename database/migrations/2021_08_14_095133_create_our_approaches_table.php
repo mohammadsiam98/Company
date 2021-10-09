@@ -17,6 +17,9 @@ class CreateOurApproachesTable extends Migration
             $table->id();
             $table->string('Approach_title');
             $table->text('Approach_details');
+            $table->foreignId('category_id');
+            $table->string('category_title');
+            $table->string('category_description');
             $table->timestamps();
         });
     }

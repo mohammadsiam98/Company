@@ -8,6 +8,7 @@ use App\Models\ServicesCategory;
 class Pricing extends Model
 {
     use HasFactory;
+
     protected $fillable=['category_id','planName','small_description','basic_plan_price','services_name'];
 
     public function get_category_name($id)
@@ -15,4 +16,6 @@ class Pricing extends Model
         $categoryName = ServicesCategory::where('id', $id)->first();
         return $categoryName->category_name;
     }
+
+
 }
