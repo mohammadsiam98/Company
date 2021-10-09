@@ -10,25 +10,25 @@ class StrengthsController extends Controller
     public function list()
     {
         //
-        $about = AboutUsStrengthWeakness::all();
-        return view ('pages.CRUD_AboutOne.list',compact('about'));
+        $strength = AboutUsStrengthWeakness::all();
+        return view ('pages.CRUD_strength.list',compact('strength'));
 
     }
 
     public function create()
     {
         //
-        return view('pages.CRUD_AboutOne.create');
+        return view('pages.CRUD_strength.create');
     }
 
     
     public function store(Request $request)
     {
         //
-        $about = new AboutUsStrengthWeakness;
-        $about->strength_title = $request->strength_title;
-        $about->strength_description = $request->strength_description;
-        $about->save();
+        $strength = new AboutUsStrengthWeakness;
+        $strength->strength_title = $request->strength_title;
+        $strength->strength_description = $request->strength_description;
+        $strength->save();
         return redirect()->route('strength.list')->with('success',' New Data created Successfully');
     }
 
@@ -36,18 +36,18 @@ class StrengthsController extends Controller
     public function edit($id)
     {
         //
-        $about = AboutUsStrengthWeakness::find($id);
-        return view('pages.CRUD_AboutOne.edit',compact('about'));
+        $strength = AboutUsStrengthWeakness::find($id);
+        return view('pages.CRUD_strength.edit',compact('strength'));
     }
 
    
     public function update(Request $request, $id)
     {
         //
-        $about = AboutUsStrengthWeakness::find($id);
-        $about->strength_title = $request->strength_title;
-        $about->strength_description = $request->strength_description;
-        $about->save();
+        $strength = AboutUsStrengthWeakness::find($id);
+        $strength->strength_title = $request->strength_title;
+        $strength->strength_description = $request->strength_description;
+        $strength->save();
         return redirect()->route('strength.list')->with('success','Updated Successfully');
     }
 
@@ -55,8 +55,8 @@ class StrengthsController extends Controller
     public function destroy($id)
     {
         //
-        $about = AboutUsStrengthWeakness::find($id);
-        $about->delete();
+        $strength = AboutUsStrengthWeakness::find($id);
+        $strength->delete();
         return redirect()->route('strength.list')->with('success',"Deleted Successfully");
     }
 }
