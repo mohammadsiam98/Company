@@ -9,7 +9,7 @@ class CreatePricingBasicsTable extends Migration
     
     public function up()
     {
-        Schema::create('pricing_basics', function (Blueprint $table) {
+        Schema::create('pricing', function (Blueprint $table) {
             $table->id();
             $table->foreignId('category_id');
             $table->string('planName');
@@ -21,6 +21,6 @@ class CreatePricingBasicsTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('pricing_basics');
+        Schema::dropIfExists('pricing');
     }
 }

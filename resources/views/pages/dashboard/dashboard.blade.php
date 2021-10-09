@@ -100,14 +100,13 @@
                     </li>
                 </ul>
                 <ul class="menu-categories">
+
+                    {{--------------------------------------- Dashboard ----------------------------------------}}
                     <li class="menu">
-                        <a href="#dashboard" data-active="true" class="menu-toggle">
+                        <a href="#dashboard" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
-                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                                    </svg>
+                                    <img src="{{asset('dashboardAssets/assets/img/dashboard.png')}}" alt="">
                                 </div>
                                 <span>Dashboard</span>
                             </div>
@@ -116,23 +115,16 @@
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
+                    {{--------------------------------------- Dashboard ----------------------------------------}}
 
+
+
+                    {{------------------------------------ About Us ---------------------------------------}}
                     <li class="menu">
-                        <a href="#app" data-active="false" class="menu-toggle">
+                        <a href="#aboutus" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cpu">
-                                        <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
-                                        <rect x="9" y="9" width="6" height="6"></rect>
-                                        <line x1="9" y1="1" x2="9" y2="4"></line>
-                                        <line x1="15" y1="1" x2="15" y2="4"></line>
-                                        <line x1="9" y1="20" x2="9" y2="23"></line>
-                                        <line x1="15" y1="20" x2="15" y2="23"></line>
-                                        <line x1="20" y1="9" x2="23" y2="9"></line>
-                                        <line x1="20" y1="14" x2="23" y2="14"></line>
-                                        <line x1="1" y1="9" x2="4" y2="9"></line>
-                                        <line x1="1" y1="14" x2="4" y2="14"></line>
-                                    </svg>
+                                    <img src="{{asset('dashboardAssets/assets/img/aboutus.png')}}" alt="">
                                 </div>
                                 <span>About Us</span>
                             </div>
@@ -141,14 +133,19 @@
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
+                    {{------------------------------------ About Us ---------------------------------------}}
 
+
+
+
+
+
+                    {{--------------------------------------------- SWOT --------------------------------------}}
                     <li class="menu">
                         <a href="#uiKit" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
-                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                    </svg>
+                                    <img src="{{asset('dashboardAssets/assets/img/swot.png')}}" alt="">
                                 </div>
                                 <span>SWOT</span>
                             </div>
@@ -157,14 +154,18 @@
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
+                    {{--------------------------------------------- SWOT --------------------------------------}}
 
+
+
+
+
+                    {{------------------------------------ Approaches ---------------------------------}}
                     <li class="menu">
                         <a href="#OurApproaches" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
-                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                    </svg>
+                                    <img src="{{asset('dashboardAssets/assets/img/approach.png')}}" alt="">
                                 </div>
                                 <span>Approaches</span>
                             </div>
@@ -173,14 +174,20 @@
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
+                    {{------------------------------------ Approaches ---------------------------------}}
 
+
+
+
+
+
+
+                    {{---------------------------------- Creative Works ---------------------------------}}
                     <li class="menu">
                         <a href="#creativeWork" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
-                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                    </svg>
+                                    <img src="{{asset('dashboardAssets/assets/img/idea.png')}}" alt="">
                                 </div>
                                 <span>Creative</span>
                             </div>
@@ -189,14 +196,19 @@
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
+                    {{---------------------------------- Creative Works ---------------------------------}}
 
+
+
+
+
+
+                    {{----------------------------------- Clients --------------------------------------}}
                     <li class="menu">
                         <a href="#clients" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
-                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                    </svg>
+                                    <img src="{{asset('dashboardAssets/assets/img/clients.png')}}" alt="">
                                 </div>
                                 <span>Clients</span>
                             </div>
@@ -205,14 +217,18 @@
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
+                    {{----------------------------------- Clients --------------------------------------}}
 
+
+
+
+
+                    {{----------------------------------- Category --------------------------------------}}
                     <li class="menu">
                         <a href="#ServicesCategory" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
-                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                    </svg>
+                                    <img src="{{asset('dashboardAssets/assets/img/category.png')}}" alt="">
                                 </div>
                                 <span>Category</span>
                             </div>
@@ -221,63 +237,60 @@
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
+                    {{----------------------------------- Category --------------------------------------}}
 
 
+
+
+
+
+                    {{----------------------------------- Sector Services Overview(Dynamic) --------------------------------------}}
                     <li class="menu">
-                        <a href="#ServiceOverview" data-active="false" class="menu-toggle">
+                        <a href="#ServiceOverview" data-active="true" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
-                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                    </svg>
+                                    <img src="{{asset('dashboardAssets/assets/img/overview.png')}}" alt="">
                                 </div>
-                                <span>ServiceOverview</span>
+                                <span>Overview</span>
                             </div>
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
+                    {{----------------------------------- Sector Services Overview(Dynamic) --------------------------------------}}
 
+
+
+
+
+                    {{----------------------------------- Sector Services(Dynamic) --------------------------------------}}
                     <li class="menu">
                         <a href="#SectorServices" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
-                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                    </svg>
+                                    <img src="{{asset('dashboardAssets/assets/img/services.png')}}" alt="">
                                 </div>
-                                <span>Sector Services</span>
+                                <span> Services </span>
                             </div>
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
+                    {{----------------------------------- Sector Services(Dynamic) --------------------------------------}}
 
-                    <li class="menu">
-                        <a href="#SectorTechnologiesWeWillUse" data-active="false" class="menu-toggle">
-                            <div class="base-menu">
-                                <div class="base-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
-                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                    </svg>
-                                </div>
-                                <span>Sector Technologies</span>
-                            </div>
-                        </a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
-                            <polyline points="15 18 9 12 15 6"></polyline>
-                        </svg>
-                    </li>
 
+
+
+
+
+                    {{----------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
                     <li class="menu">
                         <a href="#sector_technologies_details" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
-                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                    </svg>
+                                    <img src="{{asset('dashboardAssets/assets/img/technology.png')}}" alt="">
                                 </div>
                                 <span>Stack Details</span>
                             </div>
@@ -286,94 +299,58 @@
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
+                    {{--------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
 
+
+
+
+
+
+
+                    {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
                     <li class="menu">
                         <a href="#SectorCreativeWorks" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
-                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                    </svg>
+                                    <img src="{{asset('dashboardAssets/assets/img/creative.png')}}" alt="">
                                 </div>
-                                <span>Sector Creative Works</span>
+                                <span>Creative Works</span>
                             </div>
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
+                    {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
 
+
+
+
+
+
+                    {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
                     <li class="menu">
-                        <a href="#basic" data-active="false" class="menu-toggle">
+                        <a href="#pricing" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
-                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                    </svg>
+                                    <img src="{{asset('dashboardAssets/assets/img/dollar.png')}}" alt="">
                                 </div>
-                                <span>Basic Plan</span>
+                                <span>Pricing</span>
                             </div>
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
-
-                    <li class="menu">
-                        <a href="#basicDetails" data-active="false" class="menu-toggle">
-                            <div class="base-menu">
-                                <div class="base-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
-                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                    </svg>
-                                </div>
-                                <span>Basic Details</span>
-                            </div>
-                        </a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
-                            <polyline points="15 18 9 12 15 6"></polyline>
-                        </svg>
-                    </li>
-
-                    <li class="menu">
-                        <a href="#standard" data-active="false" class="menu-toggle">
-                            <div class="base-menu">
-                                <div class="base-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
-                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                    </svg>
-                                </div>
-                                <span>Standard Plan</span>
-                            </div>
-                        </a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
-                            <polyline points="15 18 9 12 15 6"></polyline>
-                        </svg>
-                    </li>
-
-                    <li class="menu">
-                        <a href="#standardDetails" data-active="false" class="menu-toggle">
-                            <div class="base-menu">
-                                <div class="base-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
-                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                    </svg>
-                                </div>
-                                <span>Standard Details</span>
-                            </div>
-                        </a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
-                            <polyline points="15 18 9 12 15 6"></polyline>
-                        </svg>
-                    </li>
-
-
+                    {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
 
                 </ul>
             </nav>
 
+
             <div id="compact_submenuSidebar" class="submenu-sidebar">
 
+                {{--------------------------------- Dashboard Homepage --------------------------------------}}
                 <div class="submenu" id="dashboard">
                     <ul class="submenu-list" data-parent-element="#dashboard">
                         <li>
@@ -381,253 +358,197 @@
                         </li>
                     </ul>
                 </div>
+                {{--------------------------------- Dashboard Homepage --------------------------------------}}
 
-                <div class="submenu" id="app">
-                    <ul class="submenu-list" data-parent-element="#app">
+
+
+
+
+
+                {{--------------------------------- AboutUs Route --------------------------------------}}
+                <div class="submenu" id="aboutus">
+                    <ul class="submenu-list" data-parent-element="#aboutus">
                         <li>
-                            <a href="{{route('about.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                </svg> Create </a>
+                            <a href="{{route('about.create')}}"> <img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
                         </li>
                         <li>
-                            <a href="{{route('about.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg> Show All </a>
+                            <a href="{{route('about.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
                         </li>
                     </ul>
                 </div>
+                {{--------------------------------- AboutUs Route --------------------------------------}}
+
+
+
+
+                {{--------------------------------- Swot Route --------------------------------------}}
                 <div class="submenu" id="uiKit">
                     <ul class="submenu-list" data-parent-element="#uiKit">
                         <li>
-                            <a href="{{route('strength.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                </svg> Create </a>
+                            <a href="{{route('strength.create')}}">
+                                <img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
                         </li>
                         <li>
-                            <a href="{{route('strength.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg> Show All </a>
+                            <a href="{{route('strength.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
                         </li>
-
                     </ul>
                 </div>
+                {{--------------------------------- Swot Route --------------------------------------}}
 
+
+
+
+
+                {{--------------------------------- Our Approaches --------------------------------------}}
                 <div class="submenu" id="OurApproaches">
                     <ul class="submenu-list" data-parent-element="#OurApproaches">
                         <li>
-                            <a href="{{route('OurApproaches.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                </svg> Create </a>
+                            <a href="{{route('OurApproaches.create')}}"> <img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
                         </li>
                         <li>
-                            <a href="{{route('OurApproaches.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg> Show All </a>
+                            <a href="{{route('OurApproaches.list')}}"> <img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
                         </li>
                     </ul>
                 </div>
+                {{--------------------------------- Our Approaches --------------------------------------}}
 
+
+
+
+
+
+                {{--------------------------------- Creative Works --------------------------------------}}
                 <div class="submenu" id="creativeWork">
                     <ul class="submenu-list" data-parent-element="#creativeWork">
                         <li>
-                            <a href="{{route('creative_work.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                </svg> Create </a>
+                            <a href="{{route('creative_work.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
                         </li>
                         <li>
-                            <a href="{{route('creative_work.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg> Show All </a>
+                            <a href="{{route('creative_work.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
                         </li>
                     </ul>
                 </div>
 
+
+
+
+                {{--------------------------------- our Clients --------------------------------------}}
                 <div class="submenu" id="clients">
                     <ul class="submenu-list" data-parent-element="#clients">
                         <li>
-                            <a href="{{route('ourClients.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                </svg> Create </a>
+                            <a href="{{route('ourClients.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
                         </li>
                         <li>
-                            <a href="{{route('ourClients.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg> Show All </a>
+                            <a href="{{route('ourClients.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
                         </li>
-
                     </ul>
                 </div>
+                {{--------------------------------- our Clients --------------------------------------}}
 
+
+
+
+
+
+                {{--------------------------------- Category --------------------------------------}}
                 <div class="submenu" id="ServicesCategory">
                     <ul class="submenu-list" data-parent-element="#ServicesCategory">
                         <li>
-                            <a href="{{route('ServicesCategory.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                </svg> Create </a>
+                            <a href="{{route('ServicesCategory.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
                         </li>
                         <li>
-                            <a href="{{route('ServicesCategory.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg> Show All </a>
+                            <a href="{{route('ServicesCategory.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
                         </li>
                     </ul>
                 </div>
+                {{--------------------------------- Category --------------------------------------}}
 
+
+
+
+                {{--------------------------------- Sector Service Overview(Dynamic) --------------------------------------}}
                 <div class="submenu" id="ServiceOverview">
                     <ul class="submenu-list" data-parent-element="#ServiceOverview">
                         <li>
-                            <a href="{{route('ServiceOverviewDetails.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                </svg> Create </a>
+                            <a href="{{route('ServiceOverviewDetails.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
                         </li>
                         <li>
-                            <a href="{{route('ServiceOverviewDetails.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg> Show All </a>
+                            <a href="{{route('ServiceOverviewDetails.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
                         </li>
                     </ul>
                 </div>
+                {{--------------------------------- Sector Service Overview(Dynamic) --------------------------------------}}
 
+
+
+
+
+
+                {{--------------------------------- Sector Services(Dynamic) --------------------------------------}}
                 <div class="submenu" id="SectorServices">
                     <ul class="submenu-list" data-parent-element="#SectorServices">
                         <li>
-                            <a href="{{route('SectorServices.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                </svg> Create </a>
+                            <a href="{{route('SectorServices.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
                         </li>
                         <li>
-                            <a href="{{route('SectorServices.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg> Show All </a>
+                            <a href="{{route('SectorServices.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
                         </li>
                     </ul>
                 </div>
+                {{--------------------------------- Sector Services(Dynamic) --------------------------------------}}
 
-                <div class="submenu" id="SectorTechnologiesWeWillUse">
-                    <ul class="submenu-list" data-parent-element="#SectorTechnologiesWeWillUse">
-                        <li>
-                            <a href="{{route('SectorTechnologiesWeWillUse.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                </svg> Create </a>
-                        </li>
-                        <li>
-                            <a href="{{route('SectorTechnologiesWeWillUse.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg> Show All </a>
-                        </li>
-                    </ul>
-                </div>
 
+
+
+                {{--------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
                 <div class="submenu" id="sector_technologies_details">
                     <ul class="submenu-list" data-parent-element="#sector_technologies_details">
                         <li>
-                            <a href="{{route('sector_technologies_details.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                </svg> Create </a>
+                            <a href="{{route('sector_technologies_details.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
                         </li>
                         <li>
-                            <a href="{{route('sector_technologies_details.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg> Show All </a>
+                            <a href="{{route('sector_technologies_details.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
                         </li>
                     </ul>
                 </div>
+                {{--------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
 
+
+
+
+
+                {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
                 <div class="submenu" id="SectorCreativeWorks">
                     <ul class="submenu-list" data-parent-element="#SectorCreativeWorks">
                         <li>
-                            <a href="{{route('SectorCreativeWorks.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                </svg> Create </a>
+                            <a href="{{route('SectorCreativeWorks.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
                         </li>
                         <li>
-                            <a href="{{route('SectorCreativeWorks.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg> Show All </a>
+                            <a href="{{route('SectorCreativeWorks.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
                         </li>
                     </ul>
                 </div>
+                {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
 
-                <div class="submenu" id="basic">
-                    <ul class="submenu-list" data-parent-element="#basic">
+
+
+
+
+
+                {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
+                <div class="submenu" id="pricing">
+                    <ul class="submenu-list" data-parent-element="#pricing">
                         <li>
-                            <a href="{{route('BasicPlan.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                </svg> Create </a>
+                            <a href="{{route('PricingPlan.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
                         </li>
                         <li>
-                            <a href="{{route('BasicPlan.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg> Show All </a>
+                            <a href="{{route('PricingPlan.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
                         </li>
                     </ul>
                 </div>
-
-                <div class="submenu" id="basicDetails">
-                    <ul class="submenu-list" data-parent-element="#basicDetails">
-                        <li>
-                            <a href="{{route('basicDetails.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                </svg> Create </a>
-                        </li>
-                        <li>
-                            <a href="{{route('basicDetails.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg> Show All </a>
-                        </li>
-                    </ul>
-                </div>
-
-
-                <div class="submenu" id="standard">
-                    <ul class="submenu-list" data-parent-element="#standard">
-                        <li>
-                            <a href="{{route('standard.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                </svg> Create </a>
-                        </li>
-                        <li>
-                            <a href="{{route('standard.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg> Show All </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="submenu" id="standardDetails">
-                    <ul class="submenu-list" data-parent-element="#standardDetails">
-                        <li>
-                            <a href="{{route('standardDetails.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                </svg> Create </a>
-                        </li>
-                        <li>
-                            <a href="{{route('standardDetails.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg> Show All </a>
-                        </li>
-                    </ul>
-                </div>
-
-
+                {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
 
             </div>
-
         </div>
         <!--  END SIDEBAR  -->
 
@@ -635,156 +556,132 @@
         <div id="content" class="main-content">
             <div class="layout-px-spacing">
 
+                {{------------------------------ Page Header -------------------------------}}
                 <div class="page-header">
                     <nav class="breadcrumb-one" aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0);">Dashboard</a></li>
-                            <li class="breadcrumb-item active" aria-current="page"><a href="javascript:void(0);">Analytics</a></li>
+                            <li class="breadcrumb-item"><a href="">Dashboard</a></li>
                         </ol>
                     </nav>
                 </div>
+                {{------------------------------ Page Header -------------------------------}}
 
+
+                {{------------------------------ Statistics of Users -------------------------------}}
                 <div class="row layout-top-spacing">
 
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
+                    {{-- Today Visitors --}}
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
                         <div class="widget widget-account-invoice-two">
                             <div class="widget-content">
                                 <div class="account-box">
                                     <div class="info">
                                         <div class="inv-title">
-                                            <h5 class="">Total Balance</h5>
+                                            <h5 class="">Today Visitors</h5>
                                         </div>
                                         <div class="inv-balance-info">
-
-                                            <p class="inv-balance">$ 41,741.42</p>
-
-                                            <span class="inv-stats balance-credited">+ 2453</span>
-
+                                            <h2 style="color: white;">213213</h2>
                                         </div>
                                     </div>
-                                    <div class="acc-action">
-                                        <div class="">
-                                            <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                </svg></a>
-                                            <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card">
-                                                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
-                                                    <line x1="1" y1="10" x2="23" y2="10"></line>
-                                                </svg></a>
-                                        </div>
-                                        <a href="javascript:void(0);">Upgrade</a>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {{-- Today Visitors --}}
 
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
+                    {{-- Weekly Visitors --}}
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
                         <div class="widget widget-account-invoice-two">
                             <div class="widget-content">
                                 <div class="account-box">
                                     <div class="info">
                                         <div class="inv-title">
-                                            <h5 class="">Total Balance</h5>
+                                            <h5 class="">Weekly Visitors</h5>
                                         </div>
                                         <div class="inv-balance-info">
-
-                                            <p class="inv-balance">$ 41,741.42</p>
-
-                                            <span class="inv-stats balance-credited">+ 2453</span>
-
+                                            <h2 style="color: white;">213213</h2>
                                         </div>
                                     </div>
-                                    <div class="acc-action">
-                                        <div class="">
-                                            <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                </svg></a>
-                                            <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card">
-                                                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
-                                                    <line x1="1" y1="10" x2="23" y2="10"></line>
-                                                </svg></a>
-                                        </div>
-                                        <a href="javascript:void(0);">Upgrade</a>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
+                    </div>
+                    {{-- Weekly Visitors --}}
+
+
+                    {{-- Monthly Visitors --}}
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
                         <div class="widget widget-account-invoice-two">
                             <div class="widget-content">
                                 <div class="account-box">
                                     <div class="info">
                                         <div class="inv-title">
-                                            <h5 class="">Total Balance</h5>
+                                            <h5 class="">Monthly Visitors</h5>
                                         </div>
                                         <div class="inv-balance-info">
-
-                                            <p class="inv-balance">$ 41,741.42</p>
-
-                                            <span class="inv-stats balance-credited">+ 2453</span>
-
+                                            <h2 style="color: white;">213213</h2>
                                         </div>
                                     </div>
-                                    <div class="acc-action">
-                                        <div class="">
-                                            <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                </svg></a>
-                                            <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card">
-                                                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
-                                                    <line x1="1" y1="10" x2="23" y2="10"></line>
-                                                </svg></a>
-                                        </div>
-                                        <a href="javascript:void(0);">Upgrade</a>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {{-- Monthly Visitors --}}
+
+
+                    {{-- yearly Visitors --}}
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
+                        <div class="widget widget-account-invoice-two">
+                            <div class="widget-content">
+                                <div class="account-box">
+                                    <div class="info">
+                                        <div class="inv-title">
+                                            <h5 class="">Yearly Visitors</h5>
+                                        </div>
+                                        <div class="inv-balance-info">
+                                            <h2 style="color: white;">213213</h2>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    {{-- yearly Visitors --}}
+
                 </div>
+                {{------------------------------ Statistics of Users -------------------------------}}
+
             </div>
+            <!--  END CONTENT AREA  -->
 
-            <div class="footer-wrapper">
-                <div class="footer-section f-section-1">
-                    <p class="">Copyright © 2021 <a target="_blank" href="https://designreset.com">DesignReset</a>, All rights reserved.</p>
-                </div>
-                <div class="footer-section f-section-2">
-                    <p class="">Coded with <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
-                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                        </svg></p>
-                </div>
-            </div>
         </div>
-        <!--  END CONTENT AREA  -->
+        <!-- END MAIN CONTAINER -->
 
-    </div>
-    <!-- END MAIN CONTAINER -->
+        <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+        <script src="{{asset('dashboardAssets/assets/js/libs/jquery-3.1.1.min.js')}}"></script>
+        <script src="{{asset('dashboardAssets/bootstrap/js/popper.min.js')}}"></script>
+        <script src="{{asset('dashboardAssets/bootstrap/js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('dashboardAssets/plugins/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
+        <script src="{{asset('dashboardAssets/assets/js/app.js')}}"></script>
+        <script>
+            $(document).ready(function() {
+                App.init();
+            });
 
-    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-    <script src="{{asset('dashboardAssets/assets/js/libs/jquery-3.1.1.min.js')}}"></script>
-    <script src="{{asset('dashboardAssets/bootstrap/js/popper.min.js')}}"></script>
-    <script src="{{asset('dashboardAssets/bootstrap/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('dashboardAssets/plugins/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
-    <script src="{{asset('dashboardAssets/assets/js/app.js')}}"></script>
-    <script>
-        $(document).ready(function() {
-            App.init();
-        });
+        </script>
+        <script src="{{asset('dashboardAssets/assets/js/custom.js')}}"></script>
+        <!-- END GLOBAL MANDATORY SCRIPTS -->
 
-    </script>
-    <script src="{{asset('dashboardAssets/assets/js/custom.js')}}"></script>
-    <!-- END GLOBAL MANDATORY SCRIPTS -->
-
-    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
-    <script src="{{asset('dashboardAssets/plugins/apex/apexcharts.min.js')}}"></script>
-    <script src="{{asset('dashboardAssets/assets/js/dashboard/dash_1.js')}}"></script>
-    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+        <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+        <script src="{{asset('dashboardAssets/plugins/apex/apexcharts.min.js')}}"></script>
+        <script src="{{asset('dashboardAssets/assets/js/dashboard/dash_1.js')}}"></script>
+        <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
 
 </body>
 </html>
