@@ -568,6 +568,9 @@
             </div>
             {{--------------------------------- Navbar Route End -----------------------------------}}
 
+
+
+
         </div>
         <!--  END SIDEBAR  -->
 
@@ -639,7 +642,6 @@
 
     </div>
     <!-- END MAIN CONTAINER -->
-
 
 
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
