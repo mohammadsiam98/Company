@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Admin Dashboard</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <title>Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="{{asset('dashboardAssets/assets/img/favicon.ico')}}" />
     <link href="{{asset('dashboardAssets/assets/css/loader.css')}}" rel="stylesheet" type="text/css" />
     <script src="{{asset('dashboardAssets/assets/js/loader.js')}}"></script>
 
@@ -53,21 +53,14 @@
                             <div class="media mx-auto">
                                 <img src="{{asset('dashboardAssets/assets/img/90x90.jpg')}}" class="img-fluid mr-2" alt="avatar">
                                 <div class="media-body">
-                                    <h5>Alan Green</h5>
-                                    <p>Project Leader</p>
+                                    <h5>Siam</h5>
+
                                 </div>
                             </div>
                         </div>
+
                         <div class="dropdown-item">
-                            <a href="user_profile.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
-                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="12" cy="7" r="4"></circle>
-                                </svg> <span> Profile</span>
-                            </a>
-                        </div>
-                        <div class="dropdown-item">
-                            <a href="auth_login.html">
+                            <a href="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out">
                                     <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
                                     <polyline points="16 17 21 12 16 7"></polyline>
@@ -103,7 +96,7 @@
 
                     {{--------------------------------------- Dashboard ----------------------------------------}}
                     <li class="menu">
-                        <a href="#dashboard" data-active="false" class="menu-toggle">
+                        <a href="#dashboard" data-active="true" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <img src="{{asset('dashboardAssets/assets/img/dashboard.png')}}" alt="">
@@ -246,7 +239,7 @@
 
                     {{----------------------------------- Sector Services Overview(Dynamic) --------------------------------------}}
                     <li class="menu">
-                        <a href="#ServiceOverview" data-active="true" class="menu-toggle">
+                        <a href="#ServiceOverview" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <img src="{{asset('dashboardAssets/assets/img/overview.png')}}" alt="">
@@ -346,7 +339,6 @@
 
                 </ul>
             </nav>
-
 
             <div id="compact_submenuSidebar" class="submenu-sidebar">
 
@@ -549,6 +541,7 @@
                 {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
 
             </div>
+
         </div>
         <!--  END SIDEBAR  -->
 
