@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>About us page</title>
+    <title>Dashboard | About us</title>
     <link rel="icon" type="image/x-icon" href="{{asset('dashboardAssets/assets/img/favicon.ico')}}" />
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
@@ -33,8 +33,7 @@
                             <div class="media mx-auto">
                                 <img src="{{asset('dashboardAssets/assets/img/90x90.jpg')}}" class="img-fluid mr-2" alt="avatar">
                                 <div class="media-body">
-                                    <h5>Alan Green</h5>
-                                    <p>Project Leader</p>
+                                    <h5>Siam</h5>
                                 </div>
                             </div>
                         </div>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>CORK Admin Template - Multiple DataTables</title>
+    <title>Dashboard | About us</title>
     <link rel="icon" type="image/x-icon" href="{{asset('dashboardAssets/assets/img/favicon.ico')}}" />
     <link href="{{asset('dashboardAssets/assets/css/loader.css')}}" rel="stylesheet" type="text/css" />
     <script src="{{asset('dashboardAssets/assets/js/loader.js')}}"></script>
@@ -50,35 +50,12 @@
                             <div class="media mx-auto">
                                 <img src="{{asset('dashboardAssets/assets/img/90x90.jpg')}}" class="img-fluid mr-2" alt="avatar">
                                 <div class="media-body">
-                                    <h5>Alan Green</h5>
-                                    <p>Project Leader</p>
+                                    <h5>siam</h5>
+
                                 </div>
                             </div>
                         </div>
-                        <div class="dropdown-item">
-                            <a href="user_profile.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
-                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="12" cy="7" r="4"></circle>
-                                </svg> <span> Profile</span>
-                            </a>
-                        </div>
-                        <div class="dropdown-item">
-                            <a href="apps_mailbox.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-inbox">
-                                    <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
-                                    <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
-                                </svg> <span> Inbox</span>
-                            </a>
-                        </div>
-                        <div class="dropdown-item">
-                            <a href="auth_lockscreen.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
-                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                                </svg> <span>Lock Screen</span>
-                            </a>
-                        </div>
+
                         <div class="dropdown-item">
                             <a href="auth_login.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out">
@@ -566,8 +543,6 @@
 
             </div>
             {{-- Navbar Route --}}
-
-
 
         </div>
         <!--  END SIDEBAR  -->

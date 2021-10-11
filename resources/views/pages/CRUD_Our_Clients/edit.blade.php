@@ -89,6 +89,7 @@
         <!--  BEGIN SIDEBAR  -->
         <div class="sidebar-wrapper sidebar-theme">
 
+            {{-- Navbar --}}
             <nav id="compactSidebar">
                 <ul class="navbar-nav theme-brand flex-row">
                     <li class="nav-item theme-logo">
@@ -98,14 +99,13 @@
                     </li>
                 </ul>
                 <ul class="menu-categories">
+
+                    {{--------------------------------------- Dashboard ----------------------------------------}}
                     <li class="menu">
                         <a href="#dashboard" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
-                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                                    </svg>
+                                    <img src="{{asset('dashboardAssets/assets/img/dashboard.png')}}" alt="">
                                 </div>
                                 <span>Dashboard</span>
                             </div>
@@ -114,23 +114,16 @@
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
+                    {{--------------------------------------- Dashboard ----------------------------------------}}
 
+
+
+                    {{------------------------------------ About Us ---------------------------------------}}
                     <li class="menu">
-                        <a href="#app" data-active="false" class="menu-toggle">
+                        <a href="#aboutus" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cpu">
-                                        <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
-                                        <rect x="9" y="9" width="6" height="6"></rect>
-                                        <line x1="9" y1="1" x2="9" y2="4"></line>
-                                        <line x1="15" y1="1" x2="15" y2="4"></line>
-                                        <line x1="9" y1="20" x2="9" y2="23"></line>
-                                        <line x1="15" y1="20" x2="15" y2="23"></line>
-                                        <line x1="20" y1="9" x2="23" y2="9"></line>
-                                        <line x1="20" y1="14" x2="23" y2="14"></line>
-                                        <line x1="1" y1="9" x2="4" y2="9"></line>
-                                        <line x1="1" y1="14" x2="4" y2="14"></line>
-                                    </svg>
+                                    <img src="{{asset('dashboardAssets/assets/img/aboutus.png')}}" alt="">
                                 </div>
                                 <span>About Us</span>
                             </div>
@@ -139,14 +132,19 @@
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
+                    {{------------------------------------ About Us ---------------------------------------}}
 
+
+
+
+
+
+                    {{--------------------------------------------- SWOT --------------------------------------}}
                     <li class="menu">
                         <a href="#uiKit" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
-                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                    </svg>
+                                    <img src="{{asset('dashboardAssets/assets/img/swot.png')}}" alt="">
                                 </div>
                                 <span>SWOT</span>
                             </div>
@@ -155,14 +153,18 @@
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
+                    {{--------------------------------------------- SWOT --------------------------------------}}
 
+
+
+
+
+                    {{------------------------------------ Approaches ---------------------------------}}
                     <li class="menu">
                         <a href="#OurApproaches" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
-                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                    </svg>
+                                    <img src="{{asset('dashboardAssets/assets/img/approach.png')}}" alt="">
                                 </div>
                                 <span>Approaches</span>
                             </div>
@@ -171,14 +173,18 @@
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
+                    {{------------------------------------ Approaches ---------------------------------}}
 
+
+
+
+
+                    {{---------------------------------- Creative Works ---------------------------------}}
                     <li class="menu">
                         <a href="#creativeWork" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
-                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                    </svg>
+                                    <img src="{{asset('dashboardAssets/assets/img/idea.png')}}" alt="">
                                 </div>
                                 <span>Creative</span>
                             </div>
@@ -187,14 +193,18 @@
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
+                    {{---------------------------------- Creative Works ---------------------------------}}
 
+
+
+
+
+                    {{----------------------------------- Clients --------------------------------------}}
                     <li class="menu">
                         <a href="#clients" data-active="true" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
-                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                    </svg>
+                                    <img src="{{asset('dashboardAssets/assets/img/clients.png')}}" alt="">
                                 </div>
                                 <span>Clients</span>
                             </div>
@@ -203,12 +213,136 @@
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
+                    {{----------------------------------- Clients --------------------------------------}}
+
+
+
+
+                    {{----------------------------------- Category --------------------------------------}}
+                    <li class="menu">
+                        <a href="#ServicesCategory" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/category.png')}}" alt="">
+                                </div>
+                                <span>Category</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{----------------------------------- Category --------------------------------------}}
+
+
+
+
+                    {{----------------------------------- Sector Services Overview(Dynamic) --------------------------------------}}
+                    <li class="menu">
+                        <a href="#ServiceOverview" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/overview.png')}}" alt="">
+                                </div>
+                                <span>Overview</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{----------------------------------- Sector Services Overview(Dynamic) --------------------------------------}}
+
+
+
+
+
+                    {{----------------------------------- Sector Services(Dynamic) --------------------------------------}}
+                    <li class="menu">
+                        <a href="#SectorServices" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/services.png')}}" alt="">
+                                </div>
+                                <span> Services </span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{----------------------------------- Sector Services(Dynamic) --------------------------------------}}
+
+
+
+
+
+                    {{----------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
+                    <li class="menu">
+                        <a href="#sector_technologies_details" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/technology.png')}}" alt="">
+                                </div>
+                                <span>Stack Details</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
+
+
+
+
+
+                    {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
+                    <li class="menu">
+                        <a href="#SectorCreativeWorks" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/creative.png')}}" alt="">
+                                </div>
+                                <span>Creative Works</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
+
+
+
+
+
+                    {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
+                    <li class="menu">
+                        <a href="#pricing" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/dollar.png')}}" alt="">
+                                </div>
+                                <span>Pricing</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
 
                 </ul>
             </nav>
+            {{-- Navbar --}}
 
+            {{-- Navbar Route --}}
             <div id="compact_submenuSidebar" class="submenu-sidebar">
 
+
+
+                {{--------------------------------- Dashboard Homepage --------------------------------------}}
                 <div class="submenu" id="dashboard">
                     <ul class="submenu-list" data-parent-element="#dashboard">
                         <li>
@@ -216,88 +350,196 @@
                         </li>
                     </ul>
                 </div>
+                {{--------------------------------- Dashboard Homepage --------------------------------------}}
 
-                <div class="submenu" id="app">
-                    <ul class="submenu-list" data-parent-element="#app">
+
+
+
+                {{--------------------------------- AboutUs Route --------------------------------------}}
+                <div class="submenu" id="aboutus">
+                    <ul class="submenu-list" data-parent-element="#aboutus">
                         <li>
-                            <a href="{{route('about.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                </svg> Create </a>
+                            <a href="{{route('about.create')}}"> <img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
                         </li>
                         <li>
-                            <a href="{{route('about.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg> Show All </a>
+                            <a href="{{route('about.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
                         </li>
                     </ul>
                 </div>
+                {{--------------------------------- AboutUs Route --------------------------------------}}
+
+
+
+
+                {{--------------------------------- Swot Route --------------------------------------}}
                 <div class="submenu" id="uiKit">
                     <ul class="submenu-list" data-parent-element="#uiKit">
                         <li>
-                            <a href="{{route('strength.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                </svg> Create </a>
+                            <a href="{{route('strength.create')}}">
+                                <img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
                         </li>
                         <li>
-                            <a href="{{route('strength.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg> Show All </a>
+                            <a href="{{route('strength.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
                         </li>
-
                     </ul>
                 </div>
-                <div class="submenu" id="approaches">
-                    <ul class="submenu-list" data-parent-element="#approaches">
-                        <li>
-                            <a href="{{route('OurApproaches.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                </svg> Create </a>
-                        </li>
-                        <li>
-                            <a href="{{route('OurApproaches.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg> Show All </a>
-                        </li>
+                {{--------------------------------- Swot Route --------------------------------------}}
 
+
+
+
+
+                {{--------------------------------- Our Approaches --------------------------------------}}
+                <div class="submenu" id="OurApproaches">
+                    <ul class="submenu-list" data-parent-element="#OurApproaches">
+                        <li>
+                            <a href="{{route('OurApproaches.create')}}"> <img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('OurApproaches.list')}}"> <img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
                     </ul>
                 </div>
+                {{--------------------------------- Our Approaches --------------------------------------}}
+
+
+
+
+
+
+                {{--------------------------------- Creative Works --------------------------------------}}
                 <div class="submenu" id="creativeWork">
                     <ul class="submenu-list" data-parent-element="#creativeWork">
                         <li>
-                            <a href="{{route('creative_work.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                </svg> Create </a>
+                            <a href="{{route('creative_work.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
                         </li>
                         <li>
-                            <a href="{{route('creative_work.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg> Show All </a>
+                            <a href="{{route('creative_work.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
                         </li>
                     </ul>
                 </div>
 
+
+
+
+                {{--------------------------------- our Clients --------------------------------------}}
                 <div class="submenu" id="clients">
                     <ul class="submenu-list" data-parent-element="#clients">
                         <li>
-                            <a href="{{route('ourClients.create')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                </svg> Create </a>
+                            <a href="{{route('ourClients.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
                         </li>
                         <li>
-                            <a href="{{route('ourClients.list')}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg> Show All </a>
+                            <a href="{{route('ourClients.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
                         </li>
                     </ul>
                 </div>
+                {{--------------------------------- our Clients --------------------------------------}}
 
+
+
+
+
+
+                {{--------------------------------- Category --------------------------------------}}
+                <div class="submenu" id="ServicesCategory">
+                    <ul class="submenu-list" data-parent-element="#ServicesCategory">
+                        <li>
+                            <a href="{{route('ServicesCategory.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('ServicesCategory.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Category --------------------------------------}}
+
+
+
+
+                {{--------------------------------- Sector Service Overview(Dynamic) --------------------------------------}}
+                <div class="submenu" id="ServiceOverview">
+                    <ul class="submenu-list" data-parent-element="#ServiceOverview">
+                        <li>
+                            <a href="{{route('ServiceOverviewDetails.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('ServiceOverviewDetails.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Sector Service Overview(Dynamic) --------------------------------------}}
+
+
+
+
+
+
+                {{--------------------------------- Sector Services(Dynamic) --------------------------------------}}
+                <div class="submenu" id="SectorServices">
+                    <ul class="submenu-list" data-parent-element="#SectorServices">
+                        <li>
+                            <a href="{{route('SectorServices.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('SectorServices.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Sector Services(Dynamic) --------------------------------------}}
+
+
+
+
+                {{--------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
+                <div class="submenu" id="sector_technologies_details">
+                    <ul class="submenu-list" data-parent-element="#sector_technologies_details">
+                        <li>
+                            <a href="{{route('sector_technologies_details.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('sector_technologies_details.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
+
+
+
+
+
+                {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
+                <div class="submenu" id="SectorCreativeWorks">
+                    <ul class="submenu-list" data-parent-element="#SectorCreativeWorks">
+                        <li>
+                            <a href="{{route('SectorCreativeWorks.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('SectorCreativeWorks.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
+
+
+
+
+
+
+                {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
+                <div class="submenu" id="pricing">
+                    <ul class="submenu-list" data-parent-element="#pricing">
+                        <li>
+                            <a href="{{route('PricingPlan.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('PricingPlan.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
 
             </div>
+            {{-- Navbar Route --}}
 
         </div>
         <!--  END SIDEBAR  -->
@@ -310,17 +552,21 @@
                     <div class="page-header">
                         <nav class="breadcrumb-one" aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">Form</a></li>
-                                <li class="breadcrumb-item active" aria-current="page"><a href="javascript:void(0);">Creative Work</a></li>
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">Our Clients</a></li>
                             </ol>
                         </nav>
                     </div>
+
+
+                    {{-- Main form Start --}}
                     <div class="row">
                         <div id="flHorizontalForm" class="col-lg-12 layout-spacing">
                             <div class="statbox widget box box-shadow">
                                 <div class="widget-content widget-content-area">
                                     <form action="{{route('ourClients.update',$ourClients->id)}}" enctype="multipart/form-data" method="POST">
                                         @csrf
+
+                                        {{----------------- Image Upload ----------------}}
                                         <div id="fuSingleFile" class="col-lg-12 layout-spacing">
                                             <div class="statbox widget box box-shadow">
                                                 <div class="widget-header">
@@ -342,25 +588,40 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        {{------------------------ Image Upload ----------------------}}
 
+
+
+                                        {{---------------- Image preview --------------}}
                                         <div class="form-group row mb-4">
                                             <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Image Preview</label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
                                                 <img src="{{url($ourClients->clients_image)}}" style="height: 100px;width:auto" alt="">
                                             </div>
                                         </div>
+                                        {{---------------- Image preview --------------}}
 
 
+
+
+                                        {{---------------- Submit button --------------}}
                                         <div class=" form-group row">
                                             <div class="col-sm-10">
                                                 <button type="submit" name="submit" class="btn btn-primary mt-3">Lets Go</button>
                                             </div>
                                         </div>
+                                        {{---------------- Submit button --------------}}
+
+
+
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {{-- Main form End --}}
+
+
                 </div>
             </div>
 

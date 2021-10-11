@@ -8,6 +8,10 @@ use App\Models\OurApproaches;
 class OurApproachesController extends Controller
 {
     //
+    public function ourApproaches()
+    {
+        return view ('pages.approaches.ourApproaches');
+    }
     public function list()
     {
         $OurApproaches = OurApproaches::all();
