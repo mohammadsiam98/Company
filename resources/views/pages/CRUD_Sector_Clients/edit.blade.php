@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Dashboard | Category </title>
+    <title>About us page</title>
     <link rel="icon" type="image/x-icon" href="{{asset('dashboardAssets/assets/img/favicon.ico')}}" />
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
     <link href="{{asset('dashboardAssets/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('dashboardAssets/assets/css/plugins.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('dashboardAssets/plugins/file-upload/file-upload-with-preview.min.css')}}" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
 </head>
 <body class="" data-spy="scroll" data-target="#navSection" data-offset="100">
@@ -33,8 +34,7 @@
                             <div class="media mx-auto">
                                 <img src="{{asset('dashboardAssets/assets/img/90x90.jpg')}}" class="img-fluid mr-2" alt="avatar">
                                 <div class="media-body">
-                                    <h5>Alan Green</h5>
-
+                                    <h5>Siam</h5>
                                 </div>
                             </div>
                         </div>
@@ -197,7 +197,7 @@
 
                     {{----------------------------------- Category --------------------------------------}}
                     <li class="menu">
-                        <a href="#ServicesCategory" data-active="true" class="menu-toggle">
+                        <a href="#ServicesCategory" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <img src="{{asset('dashboardAssets/assets/img/category.png')}}" alt="">
@@ -261,7 +261,7 @@
                                 <div class="base-icons">
                                     <img src="{{asset('dashboardAssets/assets/img/technology.png')}}" alt="">
                                 </div>
-                                <span>Stack Details</span>
+                                <span>Stack</span>
                             </div>
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
@@ -281,7 +281,7 @@
                                 <div class="base-icons">
                                     <img src="{{asset('dashboardAssets/assets/img/creative.png')}}" alt="">
                                 </div>
-                                <span>Creative Works</span>
+                                <span>Creative</span>
                             </div>
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
@@ -309,6 +309,22 @@
                         </svg>
                     </li>
                     {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
+
+
+                    {{--------------------------------- Sector Our Clients (Dynamic) --------------------------------------}}
+                    <div class="submenu" id="SectorOurclients">
+                        <ul class="submenu-list" data-parent-element="#SectorOurclients">
+                            <li>
+                                <a href="{{route('sectorClients.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                            </li>
+                            <li>
+                                <a href="{{route('sectorClients.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                            </li>
+                        </ul>
+                    </div>
+                    {{--------------------------------- Sector Our Clients (Dynamic) --------------------------------------}}
+
+
 
                 </ul>
             </nav>
@@ -481,6 +497,19 @@
 
 
 
+                {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
+                <div class="submenu" id="pricing">
+                    <ul class="submenu-list" data-parent-element="#pricing">
+                        <li>
+                            <a href="{{route('PricingPlan.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('PricingPlan.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
+
 
                 {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
                 <div class="submenu" id="SectorCreativeWorks">
@@ -498,26 +527,13 @@
 
 
 
-
-
-                {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
-                <div class="submenu" id="pricing">
-                    <ul class="submenu-list" data-parent-element="#pricing">
-                        <li>
-                            <a href="{{route('PricingPlan.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
-                        </li>
-                        <li>
-                            <a href="{{route('PricingPlan.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
-                        </li>
-                    </ul>
-                </div>
-                {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
-
             </div>
             {{-- Navbar Route --}}
 
+
         </div>
         <!--  END SIDEBAR  -->
+
 
         <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
@@ -527,39 +543,112 @@
                     <div class="page-header">
                         <nav class="breadcrumb-one" aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">Total Category</a></li>
-
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">Sector Wise Clients</a></li>
                             </ol>
                         </nav>
                     </div>
 
-                    {{-- Main Form Start --}}
+
+                    {{-- Main form Start --}}
                     <div class="row">
                         <div id="flHorizontalForm" class="col-lg-12 layout-spacing">
                             <div class="statbox widget box box-shadow">
                                 <div class="widget-content widget-content-area">
-                                    <form action="{{route('ServicesCategory.store')}}" enctype="multipart/form-data" method="POST">
+                                    <form action="{{route('sectorClients.update',$SectorWiseClients->id)}}" enctype="multipart/form-data" method="POST">
                                         @csrf
-                                        {{method_field('PUT')}}
 
-                                        {{-- Category input --}}
+
+
+                                        {{------------------- Category List Show ------------------------}}
                                         <div class="form-group row mb-4">
-                                            <label for="category_name" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Category</label>
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-12 col-form-label">Category</label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <input type="text" name="category_name" class="form-control" placeholder="Write Category Name">
+                                                <div class="statbox widget box box-shadow">
+                                                    <div class="widget-content widget-content-area">
+                                                        <select class="selectpicker" name="category_id" data-live-search="true" data-width="100%">
+                                                            <option class="disabled">--Select Option--</option>
+                                                            @foreach ($categorylist as $category)
+                                                            <option <?php if($category->id == $SectorCreativeWorks->category_id){?> selected <?php }  ?> value="{{ $category->id }}">{{ $category->category_name }}</option>
+                                                            @endforeach
+                                                        </select>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        {{-- Category input --}}
+                                        {{------------------- Category List Show ------------------}}
 
 
 
-                                        {{-- Submit Button --}}
-                                        <div class="form-group row">
+                                        {{------------------- Client's Header -------------------}}
+                                        <div class="form-group row mb-4">
+                                            <label for="clients_header" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Header</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <input type="text" value="{{$SectorWiseClients->clients_header}}" class="form-control" name="clients_header" placeholder="Write Your Client's Header">
+                                            </div>
+                                        </div>
+                                        {{------------------- Client's Header -------------------}}
+
+
+
+
+                                        {{------------------- Client's Header Description -------------------}}
+                                        <div class="form-group row mb-4">
+                                            <label for="clients_header_descriptions" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Description</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <input type="text" value="{{$SectorWiseClients->clients_header_descriptions}}" class="form-control" name="clients_header_description" placeholder="Write Your Client's Header Description">
+                                            </div>
+                                        </div>
+                                        {{------------------- Client's Header Description -------------------}}
+
+
+
+
+                                        {{----------------- Image Upload ----------------}}
+                                        <div id="fuSingleFile" class="col-lg-12 layout-spacing">
+                                            <div class="statbox widget box box-shadow">
+                                                <div class="widget-header">
+                                                    <div class="row">
+                                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                                            <h4 style="color:red;"><b>Update File</b></h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="widget-content widget-content-area">
+                                                    <div class="custom-file-container" data-upload-id="myFirstImage">
+                                                        <label>Upload (Single File) <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
+                                                        <label class="custom-file-container__custom-file">
+                                                            <input type="file" name="clients_image" value="10485760" />
+                                                            <span class="custom-file-container__custom-file__custom-file-control"></span>
+                                                        </label>
+                                                        <div class="custom-file-container__image-preview"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{------------------------ Image Upload ----------------------}}
+
+
+
+                                        {{---------------- Image preview --------------}}
+                                        <div class="form-group row mb-4">
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Image Preview</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <img src="{{url($SectorWiseClients->clients_image)}}" style="height: 100px;width:auto" alt="">
+                                            </div>
+                                        </div>
+                                        {{---------------- Image preview --------------}}
+
+
+
+
+                                        {{---------------- Submit button --------------}}
+                                        <div class=" form-group row">
                                             <div class="col-sm-10">
-                                                <button type="submit" name="submit" class="btn btn-primary mt-3">Lets Go</button>
+                                                <button type="submit" name="submit" class="btn btn-primary mt-3">Submit</button>
                                             </div>
                                         </div>
-                                        {{-- Submit Button --}}
+                                        {{---------------- Submit button --------------}}
+
 
 
                                     </form>
@@ -567,10 +656,12 @@
                             </div>
                         </div>
                     </div>
-                    {{-- Main Form End --}}
+                    {{-- Main form End --}}
+
 
                 </div>
             </div>
+
         </div>
         <!--  END CONTENT AREA  -->
 
@@ -592,6 +683,12 @@
     </script>
     <script src="{{asset('dashboardAssets/plugins/highlight/highlight.pack.js')}}"></script>
     <script src="{{asset('dashboardAssets/assets/js/custom.js')}}"></script>
+    <script src="{{asset('dashboardAssets/plugins/file-upload/file-upload-with-preview.min.js')}}"></script>
+
+    <script>
+        var firstUpload = new FileUploadWithPreview('myFirstImage')
+
+    </script>
     <!-- END GLOBAL MANDATORY SCRIPTS -->
     <script src="{{asset('dashboardAssets/assets/js/scrollspyNav.js')}}"></script>
 </body>

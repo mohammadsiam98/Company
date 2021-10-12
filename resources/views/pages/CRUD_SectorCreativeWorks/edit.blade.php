@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>About us page</title>
+    <title>Dashboard | Sector Creative Works</title>
     <link rel="icon" type="image/x-icon" href="{{asset('dashboardAssets/assets/img/favicon.ico')}}" />
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
@@ -441,8 +441,7 @@
                     <div class="page-header">
                         <nav class="breadcrumb-one" aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">Form</a></li>
-                                <li class="breadcrumb-item active" aria-current="page"><a href="javascript:void(0);">Creative Work</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"><a href="javascript:void(0);">Sector Creative Works</a></li>
                             </ol>
                         </nav>
                     </div>

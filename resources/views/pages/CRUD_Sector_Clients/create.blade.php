@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Dashboard | Category </title>
+    <title>Dashboard | Our Clients </title>
     <link rel="icon" type="image/x-icon" href="{{asset('dashboardAssets/assets/img/favicon.ico')}}" />
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
     <link href="{{asset('dashboardAssets/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('dashboardAssets/assets/css/plugins.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('dashboardAssets/plugins/file-upload/file-upload-with-preview.min.css')}}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/bootstrap-select/bootstrap-select.min.css')}}">
     <!-- END GLOBAL MANDATORY STYLES -->
 </head>
 <body class="" data-spy="scroll" data-target="#navSection" data-offset="100">
@@ -33,7 +35,7 @@
                             <div class="media mx-auto">
                                 <img src="{{asset('dashboardAssets/assets/img/90x90.jpg')}}" class="img-fluid mr-2" alt="avatar">
                                 <div class="media-body">
-                                    <h5>Alan Green</h5>
+                                    <h5>Siam</h5>
 
                                 </div>
                             </div>
@@ -197,7 +199,7 @@
 
                     {{----------------------------------- Category --------------------------------------}}
                     <li class="menu">
-                        <a href="#ServicesCategory" data-active="true" class="menu-toggle">
+                        <a href="#ServicesCategory" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <img src="{{asset('dashboardAssets/assets/img/category.png')}}" alt="">
@@ -261,7 +263,7 @@
                                 <div class="base-icons">
                                     <img src="{{asset('dashboardAssets/assets/img/technology.png')}}" alt="">
                                 </div>
-                                <span>Stack Details</span>
+                                <span>Stack</span>
                             </div>
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
@@ -281,7 +283,7 @@
                                 <div class="base-icons">
                                     <img src="{{asset('dashboardAssets/assets/img/creative.png')}}" alt="">
                                 </div>
-                                <span>Creative Works</span>
+                                <span>Creative</span>
                             </div>
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
@@ -309,6 +311,24 @@
                         </svg>
                     </li>
                     {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
+
+
+                    {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
+                    <li class="menu">
+                        <a href="#SectorOurclients" data-active="true" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/clients.png')}}" alt="">
+                                </div>
+                                <span>Sector Clients</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
+
 
                 </ul>
             </nav>
@@ -481,25 +501,6 @@
 
 
 
-
-                {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
-                <div class="submenu" id="SectorCreativeWorks">
-                    <ul class="submenu-list" data-parent-element="#SectorCreativeWorks">
-                        <li>
-                            <a href="{{route('SectorCreativeWorks.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
-                        </li>
-                        <li>
-                            <a href="{{route('SectorCreativeWorks.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
-                        </li>
-                    </ul>
-                </div>
-                {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
-
-
-
-
-
-
                 {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
                 <div class="submenu" id="pricing">
                     <ul class="submenu-list" data-parent-element="#pricing">
@@ -513,11 +514,31 @@
                 </div>
                 {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
 
+
+
+
+                {{--------------------------------- Sector Our Clients (Dynamic) --------------------------------------}}
+                <div class="submenu" id="SectorOurclients">
+                    <ul class="submenu-list" data-parent-element="#SectorOurclients">
+                        <li>
+                            <a href="{{route('sectorClients.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('sectorClients.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Sector Our Clients (Dynamic) --------------------------------------}}
+
+
+
+
             </div>
             {{-- Navbar Route --}}
 
         </div>
         <!--  END SIDEBAR  -->
+
 
         <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
@@ -527,29 +548,129 @@
                     <div class="page-header">
                         <nav class="breadcrumb-one" aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">Total Category</a></li>
-
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">Sector Wise Clients</a></li>
                             </ol>
                         </nav>
                     </div>
 
-                    {{-- Main Form Start --}}
+
+                    {{-- Instruction Modal --}}
+                    <div class="row">
+                        <div id="modalOptionalSizes" class="col-lg-12 layout-spacing">
+                            <div class="statbox widget box box-shadow">
+                                <div class="widget-content widget-content-area">
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary mb-2 mr-2" data-toggle="modal" data-target=".bd-example-modal-lg">Instructions</button>
+                                    </div>
+
+                                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="myLargeModalLabel">Read The Guidelines</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                                                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p class="modal-text">In this Section we will upload all our client's company images but <b style="color:red;">Sector Wise</b>. The result will show in the main homepage. Below You can see in which section does it affect in our website.</p>
+                                                    <img src="{{asset('dashboardAssets/assets/img/OurClients.PNG')}}" style=" display:block; margin-left:auto; margin-right:auto; width:300px" alt="">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn" data-dismiss="modal"><i class="flaticon-cancel-12"></i> Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{-- Instruction Modal --}}
+
+                    {{-- main form start --}}
                     <div class="row">
                         <div id="flHorizontalForm" class="col-lg-12 layout-spacing">
                             <div class="statbox widget box box-shadow">
                                 <div class="widget-content widget-content-area">
-                                    <form action="{{route('ServicesCategory.store')}}" enctype="multipart/form-data" method="POST">
+                                    <form action="{{route('sectorClients.store')}}" enctype="multipart/form-data" method="POST">
                                         @csrf
                                         {{method_field('PUT')}}
 
-                                        {{-- Category input --}}
+
+                                        {{------------------- Client's Header -------------------}}
                                         <div class="form-group row mb-4">
-                                            <label for="category_name" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Category</label>
+                                            <label for="clients_header" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Header</label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <input type="text" name="category_name" class="form-control" placeholder="Write Category Name">
+                                                <input type="text" class="form-control" name="clients_header" placeholder="Write Your Client's Header">
                                             </div>
                                         </div>
-                                        {{-- Category input --}}
+                                        {{------------------- Client's Header -------------------}}
+
+
+
+
+                                        {{------------------- Client's Header Description -------------------}}
+                                        <div class="form-group row mb-4">
+                                            <label for="clients_header_descriptions" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Description</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <input type="text" class="form-control" name="clients_header_description" placeholder="Write Your Client's Header Description">
+                                            </div>
+                                        </div>
+                                        {{------------------- Client's Header Description -------------------}}
+
+
+
+
+
+                                        {{------------------- Category List Show -------------------}}
+                                        <div class="form-group row mb-4">
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-12 col-form-label">Category</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <div class="statbox widget box box-shadow">
+                                                    <div class="widget-content widget-content-area">
+                                                        <select class="selectpicker" name="category_id" data-live-search="true" data-width="100%">
+                                                            <option class="disabled">--Select Option--</option>
+                                                            @foreach ($categorylist as $category)
+                                                            <option value="{{ $category->id }}">{{ $category->category_name }}</option>
+                                                            @endforeach
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{------------------- Category List Show -------------------}}
+
+
+
+                                        {{-- Image Upload --}}
+                                        <div id="fuSingleFile" class="col-lg-12 layout-spacing">
+                                            <div class="statbox widget box box-shadow">
+                                                <div class="widget-header">
+                                                    <div class="row">
+                                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                                            <h4>Upload Client Image</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="widget-content widget-content-area">
+                                                    <div class="custom-file-container" data-upload-id="myFirstImage">
+                                                        <label>Upload (Single File) <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
+                                                        <label class="custom-file-container__custom-file">
+                                                            <input type="file" name="image" value="10485760" />
+                                                            <span class="custom-file-container__custom-file__custom-file-control"></span>
+                                                        </label>
+                                                        <div class="custom-file-container__image-preview"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{-- Image Upload --}}
+
+
 
 
 
@@ -567,7 +688,8 @@
                             </div>
                         </div>
                     </div>
-                    {{-- Main Form End --}}
+                    {{-- main form start --}}
+
 
                 </div>
             </div>
@@ -583,7 +705,7 @@
     <script src="{{asset('dashboardAssets/bootstrap/js/bootstrap.min.js')}}"></script>
     <script src="{{asset('dashboardAssets/plugins/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
     <script src="{{asset('dashboardAssets/assets/js/app.js')}}"></script>
-
+    <script src="{{asset('dashboardAssets/plugins/blockui/jquery.blockUI.min.js')}}"></script>
     <script>
         $(document).ready(function() {
             App.init();
@@ -592,7 +714,16 @@
     </script>
     <script src="{{asset('dashboardAssets/plugins/highlight/highlight.pack.js')}}"></script>
     <script src="{{asset('dashboardAssets/assets/js/custom.js')}}"></script>
+
+    <script src="{{asset('dashboardAssets/plugins/file-upload/file-upload-with-preview.min.js')}}"></script>
+
+    <script>
+        var firstUpload = new FileUploadWithPreview('myFirstImage');
+
+    </script>
+
     <!-- END GLOBAL MANDATORY SCRIPTS -->
     <script src="{{asset('dashboardAssets/assets/js/scrollspyNav.js')}}"></script>
+    <script src="{{asset('dashboardAssets/plugins/bootstrap-select/bootstrap-select.min.js')}}"></script>
 </body>
 </html>

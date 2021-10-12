@@ -4,15 +4,32 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Dashboard | Category </title>
+    <title>CORK Admin Template - Multiple DataTables</title>
     <link rel="icon" type="image/x-icon" href="{{asset('dashboardAssets/assets/img/favicon.ico')}}" />
+    <link href="{{asset('dashboardAssets/assets/css/loader.css')}}" rel="stylesheet" type="text/css" />
+    <script src="{{asset('dashboardAssets/assets/js/loader.js')}}"></script>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
     <link href="{{asset('dashboardAssets/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('dashboardAssets/assets/css/plugins.css')}}" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/table/datatable/datatables.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/table/datatable/dt-global_style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/table/datatable/custom_dt_multiple_tables.css')}}">
+    <!-- END PAGE LEVEL STYLES -->
 </head>
-<body class="" data-spy="scroll" data-target="#navSection" data-offset="100">
+<body class="">
+    <!-- BEGIN LOADER -->
+    <div id="load_screen">
+        <div class="loader">
+            <div class="loader-content">
+                <div class="spinner-grow align-self-center"></div>
+            </div>
+        </div>
+    </div>
+    <!--  END LOADER -->
 
     <!--  BEGIN NAVBAR  -->
     <div class="header-container fixed-top">
@@ -33,8 +50,7 @@
                             <div class="media mx-auto">
                                 <img src="{{asset('dashboardAssets/assets/img/90x90.jpg')}}" class="img-fluid mr-2" alt="avatar">
                                 <div class="media-body">
-                                    <h5>Alan Green</h5>
-
+                                    <h5>Siam</h5>
                                 </div>
                             </div>
                         </div>
@@ -197,7 +213,7 @@
 
                     {{----------------------------------- Category --------------------------------------}}
                     <li class="menu">
-                        <a href="#ServicesCategory" data-active="true" class="menu-toggle">
+                        <a href="#ServicesCategory" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <img src="{{asset('dashboardAssets/assets/img/category.png')}}" alt="">
@@ -261,7 +277,7 @@
                                 <div class="base-icons">
                                     <img src="{{asset('dashboardAssets/assets/img/technology.png')}}" alt="">
                                 </div>
-                                <span>Stack Details</span>
+                                <span>Stack</span>
                             </div>
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
@@ -281,7 +297,7 @@
                                 <div class="base-icons">
                                     <img src="{{asset('dashboardAssets/assets/img/creative.png')}}" alt="">
                                 </div>
-                                <span>Creative Works</span>
+                                <span>Creative</span>
                             </div>
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
@@ -309,6 +325,24 @@
                         </svg>
                     </li>
                     {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
+
+
+                    {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
+                    <li class="menu">
+                        <a href="#SectorCreativeWorks" data-active="true" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/clients.png')}}" alt="">
+                                </div>
+                                <span>Sector Clients</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
+
 
                 </ul>
             </nav>
@@ -481,25 +515,6 @@
 
 
 
-
-                {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
-                <div class="submenu" id="SectorCreativeWorks">
-                    <ul class="submenu-list" data-parent-element="#SectorCreativeWorks">
-                        <li>
-                            <a href="{{route('SectorCreativeWorks.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
-                        </li>
-                        <li>
-                            <a href="{{route('SectorCreativeWorks.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
-                        </li>
-                    </ul>
-                </div>
-                {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
-
-
-
-
-
-
                 {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
                 <div class="submenu" id="pricing">
                     <ul class="submenu-list" data-parent-element="#pricing">
@@ -513,69 +528,98 @@
                 </div>
                 {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
 
+
+                {{--------------------------------- Sector Our Clients (Dynamic) --------------------------------------}}
+                <div class="submenu" id="SectorOurclients">
+                    <ul class="submenu-list" data-parent-element="#SectorOurclients">
+                        <li>
+                            <a href="{{route('sectorClients.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('sectorClients.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Sector Our Clients (Dynamic) --------------------------------------}}
+
+
+
             </div>
             {{-- Navbar Route --}}
+
 
         </div>
         <!--  END SIDEBAR  -->
 
         <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
-            <div class="container">
-                <div class="container">
+            <div class="layout-px-spacing">
 
-                    <div class="page-header">
-                        <nav class="breadcrumb-one" aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">Total Category</a></li>
+                <div class="page-header">
+                    <nav class="breadcrumb-one" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0);">Sector Wise Clients</a></li>
 
-                            </ol>
-                        </nav>
-                    </div>
+                        </ol>
+                    </nav>
+                </div>
 
-                    {{-- Main Form Start --}}
-                    <div class="row">
-                        <div id="flHorizontalForm" class="col-lg-12 layout-spacing">
-                            <div class="statbox widget box box-shadow">
-                                <div class="widget-content widget-content-area">
-                                    <form action="{{route('ServicesCategory.store')}}" enctype="multipart/form-data" method="POST">
-                                        @csrf
-                                        {{method_field('PUT')}}
+                {{-- Main table start --}}
+                <div class="row layout-top-spacing" id="cancel-row">
+                    <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
+                        <div class="widget-content widget-content-area br-6">
+                            <table class="multi-table table table-hover" style="width:100%">
+                                <thead style="border-bottom: none;">
+                                    <tr>
+                                        <th>Key</th>
+                                        <th style="text-align: center">category</th>
+                                        <th style="text-align: center">Client's Header</th>
+                                        <th style="text-align: center">Client's Image</th>
+                                        <th style="text-align: center">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ($SectorWiseClients as $key =>$Clients)
+                                    <tr>
+                                        <td style="text-align: center">{{$key +1 }}</td>
+                                        <td class="text-center">{{$Clients->get_category_name($Clients->category_id)}}</td>
+                                        <td class="text-center">{{$Clients->clients_header}}</td>
+                                        <td style="text-align: center"> <img style="height: 70px; width:auto;" src="{{url($Clients->image)}}" alt="image"></td>
+                                        <td>
+                                            <div class="row">
+                                                <div>
+                                                    <a href="{{route('sectorClients.edit' , $Clients->id)}}" style="color: white;" class="btn btn-primary m-2"> Edit </a>
+                                                </div>
+                                                <div>
+                                                    <form action="{{route('sectorClients.destroy', $Clients->id)}}" method="POST">
+                                                        @csrf
+                                                        @method('Delete')
+                                                        <input type="submit" name="submit" value="Delete" class="btn btn-danger m-2">
+                                                    </form>
 
-                                        {{-- Category input --}}
-                                        <div class="form-group row mb-4">
-                                            <label for="category_name" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Category</label>
-                                            <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <input type="text" name="category_name" class="form-control" placeholder="Write Category Name">
+                                                </div>
                                             </div>
-                                        </div>
-                                        {{-- Category input --}}
+                                        </td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
 
-
-
-                                        {{-- Submit Button --}}
-                                        <div class="form-group row">
-                                            <div class="col-sm-10">
-                                                <button type="submit" name="submit" class="btn btn-primary mt-3">Lets Go</button>
-                                            </div>
-                                        </div>
-                                        {{-- Submit Button --}}
-
-
-                                    </form>
-                                </div>
-                            </div>
+                            </table>
                         </div>
                     </div>
-                    {{-- Main Form End --}}
 
                 </div>
+                {{-- Main table end --}}
+
             </div>
+
         </div>
         <!--  END CONTENT AREA  -->
 
     </div>
     <!-- END MAIN CONTAINER -->
+
+
 
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="{{asset('dashboardAssets/assets/js/libs/jquery-3.1.1.min.js')}}"></script>
@@ -590,9 +634,41 @@
         });
 
     </script>
-    <script src="{{asset('dashboardAssets/plugins/highlight/highlight.pack.js')}}"></script>
     <script src="{{asset('dashboardAssets/assets/js/custom.js')}}"></script>
     <!-- END GLOBAL MANDATORY SCRIPTS -->
-    <script src="{{asset('dashboardAssets/assets/js/scrollspyNav.js')}}"></script>
+
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="{{asset('dashboardAssets/plugins/table/datatable/datatables.js')}}"></script>
+    <script>
+        $(document).ready(function() {
+            $('table.multi-table').DataTable({
+                "dom": "<'dt--top-section'<'row'<'col-12 col-sm-6 d-flex justify-content-sm-start justify-content-center'l><'col-12 col-sm-6 d-flex justify-content-sm-end justify-content-center mt-sm-0 mt-3'f>>>" +
+                    "<'table-responsive'tr>" +
+                    "<'dt--bottom-section d-sm-flex justify-content-sm-between text-center'<'dt--pages-count  mb-sm-0 mb-3'i><'dt--pagination'p>>"
+                , "oLanguage": {
+                    "oPaginate": {
+                        "sPrevious": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>'
+                        , "sNext": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>'
+                    }
+                    , "sInfo": "Showing page _PAGE_ of _PAGES_"
+                    , "sSearch": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>'
+                    , "sSearchPlaceholder": "Search..."
+                    , "sLengthMenu": "Results :  _MENU_"
+                , }
+                , "stripeClasses": []
+                , "lengthMenu": [7, 10, 20, 50]
+                , "pageLength": 7
+                , drawCallback: function() {
+                    $('.t-dot').tooltip({
+                        template: '<div class="tooltip status" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+                    })
+                    $('.dataTables_wrapper table').removeClass('table-striped');
+                }
+            });
+        });
+
+    </script>
+    <!-- END PAGE LEVEL SCRIPTS -->
+
 </body>
 </html>

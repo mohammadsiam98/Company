@@ -321,6 +321,25 @@
                     </li>
                     {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
 
+
+
+                    {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
+                    <li class="menu">
+                        <a href="#SectorOurclients" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/clients.png')}}" alt="">
+                                </div>
+                                <span>Sector Clients</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
+
+
                 </ul>
             </nav>
             {{--------------------------------- Navbar -----------------------------------}}
@@ -527,139 +546,155 @@
                 </div>
                 {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
 
+
+
+                {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
+                <div class="submenu" id="SectorOurclients">
+                    <ul class="submenu-list" data-parent-element="#SectorOurclients">
+                        <li>
+                            <a href="{{route('sectorClients.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('sectorClients.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Sector Our Clients(Dynamic) ----------------------------
+
+                    
             </div>
             {{--------------------------------- Navbar Route -----------------------------------}}
 
-        </div>
-        <!--  END SIDEBAR  -->
+            </div>
+            <!--  END SIDEBAR  -->
 
-        <!--  BEGIN CONTENT AREA  -->
-        <div id="content" class="main-content">
-            <div class="container">
+            <!--  BEGIN CONTENT AREA  -->
+            <div id="content" class="main-content">
                 <div class="container">
+                    <div class="container">
 
-                    <div class="page-header">
-                        <nav class="breadcrumb-one" aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">Creative Work</a></li>
-                            </ol>
-                        </nav>
-                    </div>
+                        <div class="page-header">
+                            <nav class="breadcrumb-one" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="javascript:void(0);">Creative Work</a></li>
+                                </ol>
+                            </nav>
+                        </div>
 
-                    {{-- Main Form Start --}}
-                    <div class="row">
-                        <div id="flHorizontalForm" class="col-lg-12 layout-spacing">
-                            <div class="statbox widget box box-shadow">
-                                <div class="widget-content widget-content-area">
-                                    <form action="{{route('OurApproaches.update',$CreativeWork->id)}}" enctype="multipart/form-data" method="POST">
-                                        @csrf
+                        {{-- Main Form Start --}}
+                        <div class="row">
+                            <div id="flHorizontalForm" class="col-lg-12 layout-spacing">
+                                <div class="statbox widget box box-shadow">
+                                    <div class="widget-content widget-content-area">
+                                        <form action="{{route('OurApproaches.update',$CreativeWork->id)}}" enctype="multipart/form-data" method="POST">
+                                            @csrf
 
-                                        {{----------------- Creative work Name --------------}}
-                                        <div class="form-group row mb-4">
-                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Creative Work</label>
-                                            <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <input type="text" class="form-control" name="creative_work_name" value="{{$CreativeWork->creative_work_name}}" placeholder="Write Your Creative Work Name">
+                                            {{----------------- Creative work Name --------------}}
+                                            <div class="form-group row mb-4">
+                                                <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Creative Work</label>
+                                                <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                    <input type="text" class="form-control" name="creative_work_name" value="{{$CreativeWork->creative_work_name}}" placeholder="Write Your Creative Work Name">
+                                                </div>
                                             </div>
-                                        </div>
-                                        {{----------------- Creative work Name --------------}}
+                                            {{----------------- Creative work Name --------------}}
 
 
 
 
-                                        {{----------------- Creative work Sector Name --------------}}
-                                        <div class="form-group row mb-4">
-                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Category</label>
-                                            <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <input type="text" class="form-control" name="creative_work_sector_name" value="{{$CreativeWork->creative_work_sector_name}}" placeholder="Write Sector Name">
+                                            {{----------------- Creative work Sector Name --------------}}
+                                            <div class="form-group row mb-4">
+                                                <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Category</label>
+                                                <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                    <input type="text" class="form-control" name="creative_work_sector_name" value="{{$CreativeWork->creative_work_sector_name}}" placeholder="Write Sector Name">
+                                                </div>
                                             </div>
-                                        </div>
-                                        {{----------------- Creative work Sector Name --------------}}
+                                            {{----------------- Creative work Sector Name --------------}}
 
 
 
 
-                                        {{----------------- Upload Image --------------}}
-                                        <div id="fuSingleFile" class="col-lg-12 layout-spacing">
-                                            <div class="statbox widget box box-shadow">
-                                                <div class="widget-header">
-                                                    <div class="row">
-                                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                                            <h4 style="color:red;"><b>Update File</b></h4>
+                                            {{----------------- Upload Image --------------}}
+                                            <div id="fuSingleFile" class="col-lg-12 layout-spacing">
+                                                <div class="statbox widget box box-shadow">
+                                                    <div class="widget-header">
+                                                        <div class="row">
+                                                            <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                                                <h4 style="color:red;"><b>Update File</b></h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="widget-content widget-content-area">
+                                                        <div class="custom-file-container" data-upload-id="myFirstImage">
+                                                            <label>Upload (Single File) <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
+                                                            <label class="custom-file-container__custom-file">
+                                                                <input type="file" name="creative_work_image" value="10485760" />
+                                                                <span class="custom-file-container__custom-file__custom-file-control"></span>
+                                                            </label>
+                                                            <div class="custom-file-container__image-preview"></div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="widget-content widget-content-area">
-                                                    <div class="custom-file-container" data-upload-id="myFirstImage">
-                                                        <label>Upload (Single File) <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
-                                                        <label class="custom-file-container__custom-file">
-                                                            <input type="file" name="creative_work_image" value="10485760" />
-                                                            <span class="custom-file-container__custom-file__custom-file-control"></span>
-                                                        </label>
-                                                        <div class="custom-file-container__image-preview"></div>
-                                                    </div>
+                                            </div>
+                                            {{----------------- Upload Image --------------}}
+
+
+
+                                            {{----------------- Image Preview --------------}}
+                                            <div class="form-group row mb-4">
+                                                <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Image Preview</label>
+                                                <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                    <img src="{{url($CreativeWork->creative_work_image)}}" style="height: 100px;width:auto" alt="">
                                                 </div>
                                             </div>
-                                        </div>
-                                        {{----------------- Upload Image --------------}}
+                                            {{----------------- Image Preview --------------}}
 
 
 
-                                        {{----------------- Image Preview --------------}}
-                                        <div class="form-group row mb-4">
-                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Image Preview</label>
-                                            <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <img src="{{url($CreativeWork->creative_work_image)}}" style="height: 100px;width:auto" alt="">
+                                            {{----------------- Submit Button --------------}}
+                                            <div class=" form-group row">
+                                                <div class="col-sm-10">
+                                                    <button type="submit" name="submit" class="btn btn-lg btn-primary mt-3">Lets Go</button>
+                                                </div>
                                             </div>
-                                        </div>
-                                        {{----------------- Image Preview --------------}}
+                                            {{----------------- Submit Button --------------}}
 
-
-
-                                        {{----------------- Submit Button --------------}}
-                                        <div class=" form-group row">
-                                            <div class="col-sm-10">
-                                                <button type="submit" name="submit" class="btn btn-lg btn-primary mt-3">Lets Go</button>
-                                            </div>
-                                        </div>
-                                        {{----------------- Submit Button --------------}}
-
-                                    </form>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        {{-- Main Form End --}}
                     </div>
-                    {{-- Main Form End --}}
                 </div>
+
             </div>
+            <!--  END CONTENT AREA  -->
 
         </div>
-        <!--  END CONTENT AREA  -->
+        <!-- END MAIN CONTAINER -->
 
-    </div>
-    <!-- END MAIN CONTAINER -->
+        <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+        <script src="{{asset('dashboardAssets/assets/js/libs/jquery-3.1.1.min.js')}}"></script>
+        <script src="{{asset('dashboardAssets/bootstrap/js/popper.min.js')}}"></script>
+        <script src="{{asset('dashboardAssets/bootstrap/js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('dashboardAssets/plugins/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
+        <script src="{{asset('dashboardAssets/assets/js/app.js')}}"></script>
 
-    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-    <script src="{{asset('dashboardAssets/assets/js/libs/jquery-3.1.1.min.js')}}"></script>
-    <script src="{{asset('dashboardAssets/bootstrap/js/popper.min.js')}}"></script>
-    <script src="{{asset('dashboardAssets/bootstrap/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('dashboardAssets/plugins/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
-    <script src="{{asset('dashboardAssets/assets/js/app.js')}}"></script>
+        <script>
+            $(document).ready(function() {
+                App.init();
+            });
 
-    <script>
-        $(document).ready(function() {
-            App.init();
-        });
+        </script>
+        <script src="{{asset('dashboardAssets/plugins/highlight/highlight.pack.js')}}"></script>
+        <script src="{{asset('dashboardAssets/assets/js/custom.js')}}"></script>
+        <script src="{{asset('dashboardAssets/plugins/file-upload/file-upload-with-preview.min.js')}}"></script>
 
-    </script>
-    <script src="{{asset('dashboardAssets/plugins/highlight/highlight.pack.js')}}"></script>
-    <script src="{{asset('dashboardAssets/assets/js/custom.js')}}"></script>
-    <script src="{{asset('dashboardAssets/plugins/file-upload/file-upload-with-preview.min.js')}}"></script>
+        <script>
+            var firstUpload = new FileUploadWithPreview('myFirstImage')
 
-    <script>
-        var firstUpload = new FileUploadWithPreview('myFirstImage')
-
-    </script>
-    <!-- END GLOBAL MANDATORY SCRIPTS -->
-    <script src="{{asset('dashboardAssets/assets/js/scrollspyNav.js')}}"></script>
+        </script>
+        <!-- END GLOBAL MANDATORY SCRIPTS -->
+        <script src="{{asset('dashboardAssets/assets/js/scrollspyNav.js')}}"></script>
 </body>
 </html>

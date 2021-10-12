@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>CORK Admin Template - Multiple DataTables</title>
+    <title>Dashboard | Sector Creative Works</title>
     <link rel="icon" type="image/x-icon" href="{{asset('dashboardAssets/assets/img/favicon.ico')}}" />
     <link href="{{asset('dashboardAssets/assets/css/loader.css')}}" rel="stylesheet" type="text/css" />
     <script src="{{asset('dashboardAssets/assets/js/loader.js')}}"></script>
@@ -457,9 +457,7 @@
                 <div class="page-header">
                     <nav class="breadcrumb-one" aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0);">Tables</a></li>
-                            <li class="breadcrumb-item"><a href="javascript:void(0);">DataTables</a></li>
-                            <li class="breadcrumb-item active" aria-current="page"><a href="javascript:void(0);">Multiple Tables</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><a href="javascript:void(0);">Sector Creative Works Table</a></li>
                         </ol>
                     </nav>
                 </div>

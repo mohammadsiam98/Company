@@ -584,6 +584,24 @@
                                 <div class="widget-content widget-content-area">
                                     <form action="{{route('BasicPlan.update',$SectorPricingbasic->id)}}" method="POST">
                                         @csrf
+
+
+                                        <div class="form-group row mb-4">
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-12 col-form-label">Category</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <div class="statbox widget box box-shadow">
+                                                    <div class="widget-content widget-content-area">
+                                                        <select class="selectpicker" name="category_id" data-live-search="true" data-width="100%">
+                                                            <option class="disabled">--Select Option--</option>
+                                                            @foreach ($categorylist as $category)
+                                                            <option <?php if($category->id == $SectorCreativeWorks->category_id){?> selected <?php }  ?> value="{{ $category->id }}">{{ $category->category_name }}</option>
+                                                            @endforeach
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                         <div class="form-group mb-3">
                                             <h4>Plan Name</h4>
                                             <input type="text" class="form-control" name="planName" value="{{$SectorPricingbasic->planName}}" id="planName" aria-describedby="planName" placeholder="Plan Name">

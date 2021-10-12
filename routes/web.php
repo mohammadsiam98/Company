@@ -164,18 +164,27 @@ Route::prefix('admin')->group(function(){
        Route::delete('/SectorCreativeWorks/destroy/{id}', 'App\Http\Controllers\SectorCreativeWorksController@destroy')->name('SectorCreativeWorks.destroy');
 
 
+       
 
-
-        // These are Sector Pricing Plan Routes (Basic Plan)
-        Route::get('/PricingPlan/create', 'App\Http\Controllers\PricingController@create')->name('PricingPlan.create');
-        Route::put('/PricingPlan/create', 'App\Http\Controllers\PricingController@store')->name('PricingPlan.store');
-        Route::get('/PricingPlan/list', 'App\Http\Controllers\PricingController@list')->name('PricingPlan.list');
-        Route::get('/PricingPlan/edit/{id}', 'App\Http\Controllers\PricingController@edit')->name('PricingPlan.edit');
-        Route::post('/PricingPlan/update/{id}', 'App\Http\Controllers\PricingController@update')->name('PricingPlan.update');
-        Route::get('/PricingPlan/destroy/{id}', 'App\Http\Controllers\PricingController@destroy')->name('PricingPlan.destroy');
+        // These are Sector Wise Clients Routes (Dynamic)
+        Route::get('/Sector-wise-Clients/create', 'App\Http\Controllers\SectorOurClientsController@create')->name('sectorClients.create');
+        Route::put('/Sector-wise-Clients/create', 'App\Http\Controllers\SectorOurClientsController@store')->name('sectorClients.store');
+        Route::get('/Sector-wise-Clients/list', 'App\Http\Controllers\SectorOurClientsController@list')->name('sectorClients.list');
+        Route::get('/Sector-wise-Clients/edit/{id}', 'App\Http\Controllers\SectorOurClientsController@edit')->name('sectorClients.edit');
+        Route::post('/Sector-wise-Clients/update/{id}', 'App\Http\Controllers\SectorOurClientsController@update')->name('sectorClients.update');
+        Route::get('/Sector-wise-Clients/destroy/{id}', 'App\Http\Controllers\SectorOurClientsController@destroy')->name('sectorClients.destroy');
 
        
 
+
+         // These are Sector Pricing Plan Routes (Basic Plan)
+         Route::get('/PricingPlan/create', 'App\Http\Controllers\PricingController@create')->name('PricingPlan.create');
+         Route::put('/PricingPlan/create', 'App\Http\Controllers\PricingController@store')->name('PricingPlan.store');
+         Route::get('/PricingPlan/list', 'App\Http\Controllers\PricingController@list')->name('PricingPlan.list');
+         Route::get('/PricingPlan/edit/{id}', 'App\Http\Controllers\PricingController@edit')->name('PricingPlan.edit');
+         Route::post('/PricingPlan/update/{id}', 'App\Http\Controllers\PricingController@update')->name('PricingPlan.update');
+         Route::get('/PricingPlan/destroy/{id}', 'App\Http\Controllers\PricingController@destroy')->name('PricingPlan.destroy');
+ 
 
 
 
