@@ -65,10 +65,11 @@
         <div class="search-overlay"></div>
 
 
+
         <!--  BEGIN SIDEBAR  -->
         <div class="sidebar-wrapper sidebar-theme">
 
-            {{-- Navbar --}}
+            {{--------------------------------- Navbar -----------------------------------}}
             <nav id="compactSidebar">
                 <ul class="navbar-nav theme-brand flex-row">
                     <li class="nav-item theme-logo">
@@ -158,6 +159,8 @@
 
 
 
+
+
                     {{---------------------------------- Creative Works ---------------------------------}}
                     <li class="menu">
                         <a href="#creativeWork" data-active="false" class="menu-toggle">
@@ -173,6 +176,7 @@
                         </svg>
                     </li>
                     {{---------------------------------- Creative Works ---------------------------------}}
+
 
 
 
@@ -197,6 +201,7 @@
 
 
 
+
                     {{----------------------------------- Category --------------------------------------}}
                     <li class="menu">
                         <a href="#ServicesCategory" data-active="false" class="menu-toggle">
@@ -212,6 +217,8 @@
                         </svg>
                     </li>
                     {{----------------------------------- Category --------------------------------------}}
+
+
 
 
 
@@ -256,6 +263,24 @@
 
 
 
+                    {{----------------------------------- Sector Stack Name(Dynamic) --------------------------------------}}
+                    <li class="menu">
+                        <a href="#SectorTechnologiesWeWillUse" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/technology.png')}}" alt="">
+                                </div>
+                                <span>Stack Name</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Sector Stack Name(Dynamic) --------------------------------------}}
+
+
+
                     {{----------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
                     <li class="menu">
                         <a href="#sector_technologies_details" data-active="false" class="menu-toggle">
@@ -263,7 +288,7 @@
                                 <div class="base-icons">
                                     <img src="{{asset('dashboardAssets/assets/img/technology.png')}}" alt="">
                                 </div>
-                                <span>Stack</span>
+                                <span>Stack Details</span>
                             </div>
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
@@ -276,6 +301,8 @@
 
 
 
+
+
                     {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
                     <li class="menu">
                         <a href="#SectorCreativeWorks" data-active="false" class="menu-toggle">
@@ -283,7 +310,7 @@
                                 <div class="base-icons">
                                     <img src="{{asset('dashboardAssets/assets/img/creative.png')}}" alt="">
                                 </div>
-                                <span>Creative</span>
+                                <span>Creative Works</span>
                             </div>
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
@@ -291,6 +318,7 @@
                         </svg>
                     </li>
                     {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
+
 
 
 
@@ -313,6 +341,9 @@
                     {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
 
 
+
+
+
                     {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
                     <li class="menu">
                         <a href="#SectorOurclients" data-active="true" class="menu-toggle">
@@ -329,12 +360,12 @@
                     </li>
                     {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
 
-
                 </ul>
             </nav>
-            {{-- Navbar --}}
+            {{--------------------------------- Navbar -----------------------------------}}
 
-            {{-- Navbar Route --}}
+
+            {{--------------------------------- Navbar Route -----------------------------------}}
             <div id="compact_submenuSidebar" class="submenu-sidebar">
 
                 {{--------------------------------- Dashboard Homepage --------------------------------------}}
@@ -346,6 +377,8 @@
                     </ul>
                 </div>
                 {{--------------------------------- Dashboard Homepage --------------------------------------}}
+
+
 
 
 
@@ -485,6 +518,21 @@
 
 
 
+                {{--------------------------------- Sector Stack Name(Dynamic) --------------------------------------}}
+                <div class="submenu" id="SectorTechnologiesWeWillUse">
+                    <ul class="submenu-list" data-parent-element="#SectorTechnologiesWeWillUse">
+                        <li>
+                            <a href="{{route('SectorTechnologiesWeWillUse.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('SectorTechnologiesWeWillUse.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Sector Stack Name(Dynamic) --------------------------------------}}
+
+
+
                 {{--------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
                 <div class="submenu" id="sector_technologies_details">
                     <ul class="submenu-list" data-parent-element="#sector_technologies_details">
@@ -497,6 +545,23 @@
                     </ul>
                 </div>
                 {{--------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
+
+
+
+
+
+                {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
+                <div class="submenu" id="SectorCreativeWorks">
+                    <ul class="submenu-list" data-parent-element="#SectorCreativeWorks">
+                        <li>
+                            <a href="{{route('SectorCreativeWorks.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('SectorCreativeWorks.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
 
 
 
@@ -517,6 +582,7 @@
 
 
 
+
                 {{--------------------------------- Sector Our Clients (Dynamic) --------------------------------------}}
                 <div class="submenu" id="SectorOurclients">
                     <ul class="submenu-list" data-parent-element="#SectorOurclients">
@@ -533,8 +599,10 @@
 
 
 
+
+
             </div>
-            {{-- Navbar Route --}}
+            {{--------------------------------- Navbar Route -----------------------------------}}
 
         </div>
         <!--  END SIDEBAR  -->

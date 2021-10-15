@@ -88,7 +88,7 @@
         <!--  BEGIN SIDEBAR  -->
         <div class="sidebar-wrapper sidebar-theme">
 
-            {{----------------------------- Navbar ----------------------------}}
+            {{--------------------------------- Navbar -----------------------------------}}
             <nav id="compactSidebar">
                 <ul class="navbar-nav theme-brand flex-row">
                     <li class="nav-item theme-logo">
@@ -140,7 +140,7 @@
 
                     {{--------------------------------------------- SWOT --------------------------------------}}
                     <li class="menu">
-                        <a href="#swot" data-active="true" class="menu-toggle">
+                        <a href="#strength" data-active="true" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <img src="{{asset('dashboardAssets/assets/img/swot.png')}}" alt="">
@@ -282,6 +282,23 @@
 
 
 
+                    {{----------------------------------- Sector Stack Name(Dynamic) --------------------------------------}}
+                    <li class="menu">
+                        <a href="#SectorTechnologiesWeWillUse" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/technology.png')}}" alt="">
+                                </div>
+                                <span>Stack Name</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Sector Stack Name(Dynamic) --------------------------------------}}
+
+
 
                     {{----------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
                     <li class="menu">
@@ -342,12 +359,32 @@
                     </li>
                     {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
 
+
+
+
+
+                    {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
+                    <li class="menu">
+                        <a href="#SectorOurclients" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/clients.png')}}" alt="">
+                                </div>
+                                <span>Sector Clients</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
+
                 </ul>
             </nav>
-            {{----------------------------- Navbar ----------------------------}}
+            {{--------------------------------- Navbar -----------------------------------}}
 
 
-            {{----------------------------- Navbar Route ----------------------------}}
+            {{--------------------------------- Navbar Route -----------------------------------}}
             <div id="compact_submenuSidebar" class="submenu-sidebar">
 
                 {{--------------------------------- Dashboard Homepage --------------------------------------}}
@@ -382,8 +419,8 @@
 
 
                 {{--------------------------------- Swot Route --------------------------------------}}
-                <div class="submenu" id="swot">
-                    <ul class="submenu-list" data-parent-element="#swot">
+                <div class="submenu" id="strength">
+                    <ul class="submenu-list" data-parent-element="#strength">
                         <li>
                             <a href="{{route('strength.create')}}">
                                 <img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
@@ -500,6 +537,21 @@
 
 
 
+                {{--------------------------------- Sector Stack Name(Dynamic) --------------------------------------}}
+                <div class="submenu" id="SectorTechnologiesWeWillUse">
+                    <ul class="submenu-list" data-parent-element="#SectorTechnologiesWeWillUse">
+                        <li>
+                            <a href="{{route('SectorTechnologiesWeWillUse.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('SectorTechnologiesWeWillUse.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Sector Stack Name(Dynamic) --------------------------------------}}
+
+
+
                 {{--------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
                 <div class="submenu" id="sector_technologies_details">
                     <ul class="submenu-list" data-parent-element="#sector_technologies_details">
@@ -533,8 +585,6 @@
 
 
 
-
-
                 {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
                 <div class="submenu" id="pricing">
                     <ul class="submenu-list" data-parent-element="#pricing">
@@ -548,11 +598,34 @@
                 </div>
                 {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
 
+
+
+
+
+                {{--------------------------------- Sector Our Clients (Dynamic) --------------------------------------}}
+                <div class="submenu" id="SectorOurclients">
+                    <ul class="submenu-list" data-parent-element="#SectorOurclients">
+                        <li>
+                            <a href="{{route('sectorClients.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('sectorClients.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Sector Our Clients (Dynamic) --------------------------------------}}
+
+
+
+
+
+
             </div>
-            {{----------------------------- Navbar Route ----------------------------}}
+            {{--------------------------------- Navbar Route -----------------------------------}}
 
         </div>
         <!--  END SIDEBAR  -->
+
 
 
         <!--  BEGIN CONTENT AREA  -->

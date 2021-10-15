@@ -63,7 +63,6 @@
         <div class="cs-overlay"></div>
         <div class="search-overlay"></div>
 
-
         <!--  BEGIN SIDEBAR  -->
         <div class="sidebar-wrapper sidebar-theme">
 
@@ -261,6 +260,23 @@
 
 
 
+                    {{----------------------------------- Sector Stack Name(Dynamic) --------------------------------------}}
+                    <li class="menu">
+                        <a href="#SectorTechnologiesWeWillUse" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/technology.png')}}" alt="">
+                                </div>
+                                <span>Stack Name</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Sector Stack Name(Dynamic) --------------------------------------}}
+
+
 
                     {{----------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
                     <li class="menu">
@@ -323,6 +339,8 @@
 
 
 
+
+
                     {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
                     <li class="menu">
                         <a href="#SectorOurclients" data-active="false" class="menu-toggle">
@@ -338,7 +356,6 @@
                         </svg>
                     </li>
                     {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
-
 
                 </ul>
             </nav>
@@ -498,6 +515,21 @@
 
 
 
+                {{--------------------------------- Sector Stack Name(Dynamic) --------------------------------------}}
+                <div class="submenu" id="SectorTechnologiesWeWillUse">
+                    <ul class="submenu-list" data-parent-element="#SectorTechnologiesWeWillUse">
+                        <li>
+                            <a href="{{route('SectorTechnologiesWeWillUse.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('SectorTechnologiesWeWillUse.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Sector Stack Name(Dynamic) --------------------------------------}}
+
+
+
                 {{--------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
                 <div class="submenu" id="sector_technologies_details">
                     <ul class="submenu-list" data-parent-element="#sector_technologies_details">
@@ -531,8 +563,6 @@
 
 
 
-
-
                 {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
                 <div class="submenu" id="pricing">
                     <ul class="submenu-list" data-parent-element="#pricing">
@@ -548,7 +578,9 @@
 
 
 
-                {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
+
+
+                {{--------------------------------- Sector Our Clients (Dynamic) --------------------------------------}}
                 <div class="submenu" id="SectorOurclients">
                     <ul class="submenu-list" data-parent-element="#SectorOurclients">
                         <li>
@@ -559,142 +591,146 @@
                         </li>
                     </ul>
                 </div>
-                {{--------------------------------- Sector Our Clients(Dynamic) ----------------------------
+                {{--------------------------------- Sector Our Clients (Dynamic) --------------------------------------}}
 
-                    
+
+
+
+
+
             </div>
             {{--------------------------------- Navbar Route -----------------------------------}}
 
-            </div>
-            <!--  END SIDEBAR  -->
+        </div>
+        <!--  END SIDEBAR  -->
 
-            <!--  BEGIN CONTENT AREA  -->
-            <div id="content" class="main-content">
+        <!--  BEGIN CONTENT AREA  -->
+        <div id="content" class="main-content">
+            <div class="container">
                 <div class="container">
-                    <div class="container">
 
-                        <div class="page-header">
-                            <nav class="breadcrumb-one" aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="javascript:void(0);">Creative Work</a></li>
-                                </ol>
-                            </nav>
-                        </div>
+                    <div class="page-header">
+                        <nav class="breadcrumb-one" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">Creative Work</a></li>
+                            </ol>
+                        </nav>
+                    </div>
 
-                        {{-- Main Form Start --}}
-                        <div class="row">
-                            <div id="flHorizontalForm" class="col-lg-12 layout-spacing">
-                                <div class="statbox widget box box-shadow">
-                                    <div class="widget-content widget-content-area">
-                                        <form action="{{route('OurApproaches.update',$CreativeWork->id)}}" enctype="multipart/form-data" method="POST">
-                                            @csrf
+                    {{-- Main Form Start --}}
+                    <div class="row">
+                        <div id="flHorizontalForm" class="col-lg-12 layout-spacing">
+                            <div class="statbox widget box box-shadow">
+                                <div class="widget-content widget-content-area">
+                                    <form action="{{route('OurApproaches.update',$CreativeWork->id)}}" enctype="multipart/form-data" method="POST">
+                                        @csrf
 
-                                            {{----------------- Creative work Name --------------}}
-                                            <div class="form-group row mb-4">
-                                                <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Creative Work</label>
-                                                <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                    <input type="text" class="form-control" name="creative_work_name" value="{{$CreativeWork->creative_work_name}}" placeholder="Write Your Creative Work Name">
-                                                </div>
+                                        {{----------------- Creative work Name --------------}}
+                                        <div class="form-group row mb-4">
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Creative Work</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <input type="text" class="form-control" name="creative_work_name" value="{{$CreativeWork->creative_work_name}}" placeholder="Write Your Creative Work Name">
                                             </div>
-                                            {{----------------- Creative work Name --------------}}
+                                        </div>
+                                        {{----------------- Creative work Name --------------}}
 
 
 
 
-                                            {{----------------- Creative work Sector Name --------------}}
-                                            <div class="form-group row mb-4">
-                                                <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Category</label>
-                                                <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                    <input type="text" class="form-control" name="creative_work_sector_name" value="{{$CreativeWork->creative_work_sector_name}}" placeholder="Write Sector Name">
-                                                </div>
+                                        {{----------------- Creative work Sector Name --------------}}
+                                        <div class="form-group row mb-4">
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Category</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <input type="text" class="form-control" name="creative_work_sector_name" value="{{$CreativeWork->creative_work_sector_name}}" placeholder="Write Sector Name">
                                             </div>
-                                            {{----------------- Creative work Sector Name --------------}}
+                                        </div>
+                                        {{----------------- Creative work Sector Name --------------}}
 
 
 
 
-                                            {{----------------- Upload Image --------------}}
-                                            <div id="fuSingleFile" class="col-lg-12 layout-spacing">
-                                                <div class="statbox widget box box-shadow">
-                                                    <div class="widget-header">
-                                                        <div class="row">
-                                                            <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                                                <h4 style="color:red;"><b>Update File</b></h4>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="widget-content widget-content-area">
-                                                        <div class="custom-file-container" data-upload-id="myFirstImage">
-                                                            <label>Upload (Single File) <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
-                                                            <label class="custom-file-container__custom-file">
-                                                                <input type="file" name="creative_work_image" value="10485760" />
-                                                                <span class="custom-file-container__custom-file__custom-file-control"></span>
-                                                            </label>
-                                                            <div class="custom-file-container__image-preview"></div>
+                                        {{----------------- Upload Image --------------}}
+                                        <div id="fuSingleFile" class="col-lg-12 layout-spacing">
+                                            <div class="statbox widget box box-shadow">
+                                                <div class="widget-header">
+                                                    <div class="row">
+                                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                                            <h4 style="color:red;"><b>Update File</b></h4>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            {{----------------- Upload Image --------------}}
-
-
-
-                                            {{----------------- Image Preview --------------}}
-                                            <div class="form-group row mb-4">
-                                                <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Image Preview</label>
-                                                <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                    <img src="{{url($CreativeWork->creative_work_image)}}" style="height: 100px;width:auto" alt="">
+                                                <div class="widget-content widget-content-area">
+                                                    <div class="custom-file-container" data-upload-id="myFirstImage">
+                                                        <label>Upload (Single File) <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
+                                                        <label class="custom-file-container__custom-file">
+                                                            <input type="file" name="creative_work_image" value="10485760" />
+                                                            <span class="custom-file-container__custom-file__custom-file-control"></span>
+                                                        </label>
+                                                        <div class="custom-file-container__image-preview"></div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            {{----------------- Image Preview --------------}}
+                                        </div>
+                                        {{----------------- Upload Image --------------}}
 
 
 
-                                            {{----------------- Submit Button --------------}}
-                                            <div class=" form-group row">
-                                                <div class="col-sm-10">
-                                                    <button type="submit" name="submit" class="btn btn-lg btn-primary mt-3">Lets Go</button>
-                                                </div>
+                                        {{----------------- Image Preview --------------}}
+                                        <div class="form-group row mb-4">
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Image Preview</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <img src="{{url($CreativeWork->creative_work_image)}}" style="height: 100px;width:auto" alt="">
                                             </div>
-                                            {{----------------- Submit Button --------------}}
+                                        </div>
+                                        {{----------------- Image Preview --------------}}
 
-                                        </form>
-                                    </div>
+
+
+                                        {{----------------- Submit Button --------------}}
+                                        <div class=" form-group row">
+                                            <div class="col-sm-10">
+                                                <button type="submit" name="submit" class="btn btn-lg btn-primary mt-3">Lets Go</button>
+                                            </div>
+                                        </div>
+                                        {{----------------- Submit Button --------------}}
+
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                        {{-- Main Form End --}}
                     </div>
+                    {{-- Main Form End --}}
                 </div>
-
             </div>
-            <!--  END CONTENT AREA  -->
 
         </div>
-        <!-- END MAIN CONTAINER -->
+        <!--  END CONTENT AREA  -->
 
-        <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-        <script src="{{asset('dashboardAssets/assets/js/libs/jquery-3.1.1.min.js')}}"></script>
-        <script src="{{asset('dashboardAssets/bootstrap/js/popper.min.js')}}"></script>
-        <script src="{{asset('dashboardAssets/bootstrap/js/bootstrap.min.js')}}"></script>
-        <script src="{{asset('dashboardAssets/plugins/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
-        <script src="{{asset('dashboardAssets/assets/js/app.js')}}"></script>
+    </div>
+    <!-- END MAIN CONTAINER -->
 
-        <script>
-            $(document).ready(function() {
-                App.init();
-            });
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="{{asset('dashboardAssets/assets/js/libs/jquery-3.1.1.min.js')}}"></script>
+    <script src="{{asset('dashboardAssets/bootstrap/js/popper.min.js')}}"></script>
+    <script src="{{asset('dashboardAssets/bootstrap/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('dashboardAssets/plugins/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
+    <script src="{{asset('dashboardAssets/assets/js/app.js')}}"></script>
 
-        </script>
-        <script src="{{asset('dashboardAssets/plugins/highlight/highlight.pack.js')}}"></script>
-        <script src="{{asset('dashboardAssets/assets/js/custom.js')}}"></script>
-        <script src="{{asset('dashboardAssets/plugins/file-upload/file-upload-with-preview.min.js')}}"></script>
+    <script>
+        $(document).ready(function() {
+            App.init();
+        });
 
-        <script>
-            var firstUpload = new FileUploadWithPreview('myFirstImage')
+    </script>
+    <script src="{{asset('dashboardAssets/plugins/highlight/highlight.pack.js')}}"></script>
+    <script src="{{asset('dashboardAssets/assets/js/custom.js')}}"></script>
+    <script src="{{asset('dashboardAssets/plugins/file-upload/file-upload-with-preview.min.js')}}"></script>
 
-        </script>
-        <!-- END GLOBAL MANDATORY SCRIPTS -->
-        <script src="{{asset('dashboardAssets/assets/js/scrollspyNav.js')}}"></script>
+    <script>
+        var firstUpload = new FileUploadWithPreview('myFirstImage')
+
+    </script>
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
+    <script src="{{asset('dashboardAssets/assets/js/scrollspyNav.js')}}"></script>
 </body>
 </html>
