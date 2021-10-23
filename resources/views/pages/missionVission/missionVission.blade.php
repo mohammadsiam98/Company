@@ -11,7 +11,7 @@
                     <div class="bread-inner">
                         <div class="bread-menu">
                             <ul>
-                                <li><a href="index-2.html">Home</a></li>
+                                <li><a href="">Home</a></li>
                                 <li><a href="#">Mission and Vision</a></li>
                             </ul>
                         </div>
@@ -31,7 +31,7 @@
         <div class="row">
             <div class="col-lg-4">
                 <div class="image-block upset bg-shape">
-                    <img src="images/mission.svg" alt="image" class="img-fluid" />
+                    <img src="{{asset('assets/images/goals.svg')}}" alt="image" class="img-fluid" />
                 </div>
             </div>
             <div class="col-lg-8 block-1">
@@ -58,7 +58,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="image-block upset bg-shape m-mt30 mb0">
-                    <img src="images/vission.svg" alt="image" class="img-fluid" />
+                    <img src="{{asset('assets/images/vission.svg')}}" alt="image" class="img-fluid" />
                 </div>
             </div>
         </div>

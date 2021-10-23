@@ -157,7 +157,7 @@
 
                     {{--------------------------------------------- SWOT --------------------------------------}}
                     <li class="menu">
-                        <a href="#strength" data-active="true" class="menu-toggle">
+                        <a href="#uiKit" data-active="true" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <img src="{{asset('dashboardAssets/assets/img/swot.png')}}" alt="">
@@ -170,6 +170,8 @@
                         </svg>
                     </li>
                     {{--------------------------------------------- SWOT --------------------------------------}}
+
+
 
 
 
@@ -188,6 +190,8 @@
                         </svg>
                     </li>
                     {{------------------------------------ Approaches ---------------------------------}}
+
+
 
 
 
@@ -213,6 +217,7 @@
 
 
 
+
                     {{----------------------------------- Clients --------------------------------------}}
                     <li class="menu">
                         <a href="#clients" data-active="false" class="menu-toggle">
@@ -228,6 +233,7 @@
                         </svg>
                     </li>
                     {{----------------------------------- Clients --------------------------------------}}
+
 
 
 
@@ -251,6 +257,8 @@
 
 
 
+
+
                     {{----------------------------------- Sector Services Overview(Dynamic) --------------------------------------}}
                     <li class="menu">
                         <a href="#ServiceOverview" data-active="false" class="menu-toggle">
@@ -270,6 +278,7 @@
 
 
 
+
                     {{----------------------------------- Sector Services(Dynamic) --------------------------------------}}
                     <li class="menu">
                         <a href="#SectorServices" data-active="false" class="menu-toggle">
@@ -285,6 +294,7 @@
                         </svg>
                     </li>
                     {{----------------------------------- Sector Services(Dynamic) --------------------------------------}}
+
 
 
 
@@ -326,6 +336,9 @@
 
 
 
+
+
+
                     {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
                     <li class="menu">
                         <a href="#SectorCreativeWorks" data-active="false" class="menu-toggle">
@@ -341,6 +354,9 @@
                         </svg>
                     </li>
                     {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
+
+
+
 
 
 
@@ -362,6 +378,8 @@
 
 
 
+
+
                     {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
                     <li class="menu">
                         <a href="#SectorOurclients" data-active="false" class="menu-toggle">
@@ -378,10 +396,27 @@
                     </li>
                     {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
 
+
+
+                    {{--------------------------------- Case Study Details --------------------------------------}}
+                    <li class="menu">
+                        <a href="#CaseStudy" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/clients.png')}}" alt="">
+                                </div>
+                                <span>Case Study</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Case Study Details --------------------------------------}}
+
                 </ul>
             </nav>
             {{--------------------------------- Navbar -----------------------------------}}
-
 
             {{--------------------------------- Navbar Route -----------------------------------}}
             <div id="compact_submenuSidebar" class="submenu-sidebar">
@@ -418,8 +453,8 @@
 
 
                 {{--------------------------------- Swot Route --------------------------------------}}
-                <div class="submenu" id="strength">
-                    <ul class="submenu-list" data-parent-element="#strength">
+                <div class="submenu" id="uiKit">
+                    <ul class="submenu-list" data-parent-element="#uiKit">
                         <li>
                             <a href="{{route('strength.create')}}">
                                 <img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
@@ -599,8 +634,6 @@
 
 
 
-
-
                 {{--------------------------------- Sector Our Clients (Dynamic) --------------------------------------}}
                 <div class="submenu" id="SectorOurclients">
                     <ul class="submenu-list" data-parent-element="#SectorOurclients">
@@ -613,6 +646,21 @@
                     </ul>
                 </div>
                 {{--------------------------------- Sector Our Clients (Dynamic) --------------------------------------}}
+
+
+
+                {{--------------------------------- Case Study Details --------------------------------------}}
+                <div class="submenu" id="CaseStudy">
+                    <ul class="submenu-list" data-parent-element="#CaseStudy">
+                        <li>
+                            <a href="{{route('CaseStudy.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('CaseStudy.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Case Study Details --------------------------------------}}
 
 
 

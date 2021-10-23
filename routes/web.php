@@ -53,11 +53,6 @@ Route::get('/aim', 'App\Http\Controllers\MissionVissionController@aim')->name('a
 //aim Route
 
 
-//office Route
-Route::get('/office', 'App\Http\Controllers\OfficeController@office')->name('office');
-//office Route
-
-
 //Client Review Route
 Route::get('/reviews', 'App\Http\Controllers\ClientReviewsController@reviews')->name('reviews');
 //Client Review Route
@@ -188,6 +183,16 @@ Route::prefix('admin')->group(function(){
 
 
 
+
+         
+        //case Study Route
+        Route::get('/CaseStudy/create', 'App\Http\Controllers\CaseStudyController@create')->name('CaseStudy.create');
+        Route::put('/CaseStudy/create', 'App\Http\Controllers\CaseStudyController@store')->name('CaseStudy.store');
+        Route::get('/CaseStudy/list', 'App\Http\Controllers\CaseStudyController@list')->name('CaseStudy.list');
+        Route::get('/CaseStudy/edit/{id}', 'App\Http\Controllers\CaseStudyController@edit')->name('CaseStudy.edit');
+        Route::post('/CaseStudy/update/{id}', 'App\Http\Controllers\CaseStudyController@update')->name('CaseStudy.update');
+        Route::get('/CaseStudy/destroy/{id}', 'App\Http\Controllers\CaseStudyController@destroy')->name('CaseStudy.destroy');
+        //case Study Route
      
 });
 

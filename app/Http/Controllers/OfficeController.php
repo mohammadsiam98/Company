@@ -9,6 +9,6 @@ class OfficeController extends Controller
     //
     public function office()
     {
-        return view('pages.officeLocation.office');
+        return view('pages.officeLocation.location');
     }
 }

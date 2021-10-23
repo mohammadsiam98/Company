@@ -278,6 +278,23 @@
 
 
 
+                    {{----------------------------------- Sector Stack Name(Dynamic) --------------------------------------}}
+                    <li class="menu">
+                        <a href="#SectorTechnologiesWeWillUse" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/technology.png')}}" alt="">
+                                </div>
+                                <span>Stack Name</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Sector Stack Name(Dynamic) --------------------------------------}}
+
+
 
                     {{----------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
                     <li class="menu">
@@ -359,7 +376,21 @@
                     {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
 
 
-
+                    {{--------------------------------- Case Study Details --------------------------------------}}
+                    <li class="menu">
+                        <a href="#CaseStudy" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/clients.png')}}" alt="">
+                                </div>
+                                <span>Case Study</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Case Study Details --------------------------------------}}
 
                 </ul>
             </nav>
@@ -519,6 +550,21 @@
 
 
 
+                {{--------------------------------- Sector Stack Name(Dynamic) --------------------------------------}}
+                <div class="submenu" id="SectorTechnologiesWeWillUse">
+                    <ul class="submenu-list" data-parent-element="#SectorTechnologiesWeWillUse">
+                        <li>
+                            <a href="{{route('SectorTechnologiesWeWillUse.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('SectorTechnologiesWeWillUse.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Sector Stack Name(Dynamic) --------------------------------------}}
+
+
+
                 {{--------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
                 <div class="submenu" id="sector_technologies_details">
                     <ul class="submenu-list" data-parent-element="#sector_technologies_details">
@@ -567,8 +613,6 @@
 
 
 
-
-
                 {{--------------------------------- Sector Our Clients (Dynamic) --------------------------------------}}
                 <div class="submenu" id="SectorOurclients">
                     <ul class="submenu-list" data-parent-element="#SectorOurclients">
@@ -584,6 +628,21 @@
 
 
 
+                {{--------------------------------- Case Study Details --------------------------------------}}
+                <div class="submenu" id="CaseStudy">
+                    <ul class="submenu-list" data-parent-element="#CaseStudy">
+                        <li>
+                            <a href="{{route('CaseStudy.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('CaseStudy.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Case Study Details --------------------------------------}}
+
+
+
 
 
 
@@ -592,6 +651,7 @@
 
         </div>
         <!--  END SIDEBAR  -->
+
 
         <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">

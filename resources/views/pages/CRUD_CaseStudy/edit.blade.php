@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>About us page</title>
+    <title>Dashboard | Case Study Details</title>
     <link rel="icon" type="image/x-icon" href="{{asset('dashboardAssets/assets/img/favicon.ico')}}" />
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
     <link href="{{asset('dashboardAssets/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('dashboardAssets/assets/css/plugins.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('dashboardAssets/plugins/file-upload/file-upload-with-preview.min.css')}}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/bootstrap-select/bootstrap-select.min.css')}}">
     <!-- END GLOBAL MANDATORY STYLES -->
 </head>
 <body class="" data-spy="scroll" data-target="#navSection" data-offset="100">
@@ -34,35 +35,12 @@
                             <div class="media mx-auto">
                                 <img src="{{asset('dashboardAssets/assets/img/90x90.jpg')}}" class="img-fluid mr-2" alt="avatar">
                                 <div class="media-body">
-                                    <h5>Alan Green</h5>
-                                    <p>Project Leader</p>
+                                    <h5>Siam</h5>
+
                                 </div>
                             </div>
                         </div>
-                        <div class="dropdown-item">
-                            <a href="user_profile.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
-                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="12" cy="7" r="4"></circle>
-                                </svg> <span> Profile</span>
-                            </a>
-                        </div>
-                        <div class="dropdown-item">
-                            <a href="apps_mailbox.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-inbox">
-                                    <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
-                                    <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
-                                </svg> <span> Inbox</span>
-                            </a>
-                        </div>
-                        <div class="dropdown-item">
-                            <a href="auth_lockscreen.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
-                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                                </svg> <span>Lock Screen</span>
-                            </a>
-                        </div>
+
                         <div class="dropdown-item">
                             <a href="auth_login.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out">
@@ -85,6 +63,7 @@
         <div class="overlay"></div>
         <div class="cs-overlay"></div>
         <div class="search-overlay"></div>
+
 
         <!--  BEGIN SIDEBAR  -->
         <div class="sidebar-wrapper sidebar-theme">
@@ -204,7 +183,7 @@
 
                     {{----------------------------------- Clients --------------------------------------}}
                     <li class="menu">
-                        <a href="#clients" data-active="true" class="menu-toggle">
+                        <a href="#clients" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <img src="{{asset('dashboardAssets/assets/img/clients.png')}}" alt="">
@@ -381,10 +360,9 @@
                     {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
 
 
-
-                    {{--------------------------------- Case Study Details --------------------------------------}}
+                    {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
                     <li class="menu">
-                        <a href="#CaseStudy" data-active="false" class="menu-toggle">
+                        <a href="#CaseStudy" data-active="true" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <img src="{{asset('dashboardAssets/assets/img/clients.png')}}" alt="">
@@ -396,7 +374,7 @@
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
-                    {{--------------------------------- Case Study Details --------------------------------------}}
+                    {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
 
                 </ul>
             </nav>
@@ -666,27 +644,148 @@
                     <div class="page-header">
                         <nav class="breadcrumb-one" aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">Our Clients</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"><a href="javascript:void(0);">Sector Creative Works</a></li>
                             </ol>
                         </nav>
                     </div>
-
-
-                    {{-- Main form Start --}}
+                    {{------------------------ Main Form Start -----------------------------}}
                     <div class="row">
                         <div id="flHorizontalForm" class="col-lg-12 layout-spacing">
                             <div class="statbox widget box box-shadow">
                                 <div class="widget-content widget-content-area">
-                                    <form action="{{route('ourClients.update',$ourClients->id)}}" enctype="multipart/form-data" method="POST">
+                                    <form action="{{route('CaseStudy.update',$CaseStudyDetails->id)}}" enctype="multipart/form-data" method="POST">
                                         @csrf
 
-                                        {{----------------- Image Upload ----------------}}
+                                        {{------------------ Category List Show ---------------------}}
+                                        <div class="form-group row mb-4">
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-12 col-form-label">Category</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <div class="statbox widget box box-shadow">
+                                                    <div class="widget-content widget-content-area">
+                                                        <select class="selectpicker" name="category_id" data-live-search="true" data-width="100%">
+                                                            <option class="disabled">--Select Option--</option>
+                                                            @foreach ($categorylist as $category)
+                                                            <option <?php if($category->id == $CaseStudyDetails->category_id){?> selected <?php }  ?> value="{{ $category->id }}">{{ $category->category_name }}</option>
+                                                            @endforeach
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{------------------ Category List Show ---------------------}}
+
+
+
+                                        {{------------------ Thumbnail Case Study Title ---------------------}}
+                                        <div class="form-group row mb-4">
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Thumbnail Title</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <input type="text" class="form-control" name="thumbnail_case_study_title" value="{{$CaseStudyDetails->thumbnail_case_study_title}}">
+                                            </div>
+                                        </div>
+                                        {{------------------ Thumbnail Case Study Title ---------------------}}
+
+
+
+                                        {{------------------ About the project title ---------------------}}
+                                        <div class="form-group row mb-4">
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Project Title</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <input type="text" class="form-control" name="About_the_project_title" value="{{$CaseStudyDetails->About_the_project_title}} ">
+                                            </div>
+                                        </div>
+                                        {{------------------ About the project title ---------------------}}
+
+
+                                        {{------------------ About the project details ---------------------}}
+                                        <div class="form-group row mb-4">
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Project Details</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <textarea name="About_the_project_details" id="my-editor" cols="30" rows="10" placeholder="Write Your Project Details">{!!$CaseStudyDetails->About_the_project_details!!}</textarea>
+                                            </div>
+                                        </div>
+                                        {{------------------ About the project details ---------------------}}
+
+
+                                        {{------------------ application features ---------------------}}
+                                        <div class="form-group row mb-4">
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Application Features</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <textarea name="app_features" id="my-editor1" cols="30" rows="10" placeholder="Write Your Project Application Features">{!!$CaseStudyDetails->app_features!!}</textarea>
+                                            </div>
+                                        </div>
+                                        {{------------------ application features ---------------------}}
+
+
+                                        {{------------------ Project Challenges ---------------------}}
+                                        <div class="form-group row mb-4">
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Project Challenges</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <textarea name="challenges" id="my-editor2" cols="30" rows="10" placeholder="Write Your Project Application Challenges">{!!$CaseStudyDetails->challenges!!}</textarea>
+                                            </div>
+                                        </div>
+                                        {{------------------ Project Challenges ---------------------}}
+
+
+                                        {{------------------ Project Solution Title ---------------------}}
+                                        <div class="form-group row mb-4">
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Solution Title</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <input type="text" class="form-control" name="solution_title" value="{{$CaseStudyDetails->solution_title}}" placeholder="This Title will go to your Application Solutions">
+                                            </div>
+                                        </div>
+                                        {{------------------ Project Solution Title ---------------------}}
+
+
+                                        {{------------------ Project Solution Details ---------------------}}
+                                        <div class="form-group row mb-4">
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Solution Details</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <textarea name="solution_details" id="my-editor3" cols="30" rows="10" placeholder="Write Your Project Application Solution Details">{!!$CaseStudyDetails->solution_details!!}</textarea>
+                                            </div>
+                                        </div>
+                                        {{------------------ Project Solution Details ---------------------}}
+
+
+                                        {{------------------ Client Name of this project ---------------------}}
+                                        <div class="form-group row mb-4">
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Client Name</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <input type="text" class="form-control" name="client_name" value="{{$CaseStudyDetails->client_name}}" placeholder="Write your client name of this project">
+                                            </div>
+                                        </div>
+                                        {{------------------ Client Name of this project ---------------------}}
+
+
+
+                                        {{------------------ Client Designation of this project ---------------------}}
+                                        <div class="form-group row mb-4">
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Client Designation</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <input type="text" class="form-control" name="client_designation" value="{{$CaseStudyDetails->client_designation}}" placeholder="Write the designation of your client in this project">
+                                            </div>
+                                        </div>
+                                        {{------------------ Client Designation of this project ---------------------}}
+
+
+                                        {{------------------ Client Testimonial of this project ---------------------}}
+                                        <div class="form-group row mb-4">
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Client Testimonials</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <textarea class="form-control" id="" cols="30" rows="10" name="client_testimonials" placeholder="Write the testimonial details of your client">{!!$CaseStudyDetails->client_testimonials!!}</textarea>
+                                            </div>
+                                        </div>
+                                        {{------------------ Client Testimonial of this project ---------------------}}
+
+
+
+                                        {{------------------------- Image Upload --------------------------}}
                                         <div id="fuSingleFile" class="col-lg-12 layout-spacing">
                                             <div class="statbox widget box box-shadow">
                                                 <div class="widget-header">
                                                     <div class="row">
                                                         <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                                            <h4 style="color:red;"><b>Update File</b></h4>
+                                                            <h4>Thumbnail Image Edit</h4>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -694,7 +793,7 @@
                                                     <div class="custom-file-container" data-upload-id="myFirstImage">
                                                         <label>Upload (Single File) <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
                                                         <label class="custom-file-container__custom-file">
-                                                            <input type="file" name="clients_image" value="10485760" />
+                                                            <input type="file" name="thumbnail_case_study_image" value="10485760" />
                                                             <span class="custom-file-container__custom-file__custom-file-control"></span>
                                                         </label>
                                                         <div class="custom-file-container__image-preview"></div>
@@ -702,40 +801,67 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        {{------------------------ Image Upload ----------------------}}
+                                        {{------------------------- Image Upload --------------------------}}
 
 
 
-                                        {{---------------- Image preview --------------}}
-                                        <div class="form-group row mb-4">
-                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Image Preview</label>
-                                            <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <img src="{{url($ourClients->clients_image)}}" style="height: 100px;width:auto" alt="">
+                                        {{------------------------- Image Upload --------------------------}}
+                                        <div id="fuSingleFile" class="col-lg-12 layout-spacing">
+                                            <div class="statbox widget box box-shadow">
+                                                <div class="widget-header">
+                                                    <div class="row">
+                                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                                            <h4>About the Project Image Edit</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="widget-content widget-content-area">
+                                                    <div class="custom-file-container" data-upload-id="mySecondImage">
+                                                        <label>Upload (Single File) <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
+                                                        <label class="custom-file-container__custom-file">
+                                                            <input type="file" name="About_the_project_image" value="10485760" />
+                                                            <span class="custom-file-container__custom-file__custom-file-control"></span>
+                                                        </label>
+                                                        <div class="custom-file-container__image-preview"></div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        {{---------------- Image preview --------------}}
+                                        {{------------------------- Image Upload --------------------------}}
 
 
 
+                                        {{------------------ Thumbnail Image Preview ---------------------}}
+                                        <div class="form-group row mb-4">
+                                            <h3>Thumbail Image Preview</h3>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <img src="{{url($CaseStudyDetails->thumbnail_case_study_image)}}" style="height: 100px;width:auto" alt="">
+                                            </div>
+                                        </div>
+                                        {{------------------ Thumbnail Image Preview ---------------------}}
 
-                                        {{---------------- Submit button --------------}}
-                                        <div class=" form-group row">
+
+
+                                        {{------------------ About the Project Image Preview ---------------------}}
+                                        <div class="form-group row mb-4">
+                                            <h3>About the Project Image Preview</h3>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <img src="{{url($CaseStudyDetails->About_the_project_image)}}" style="height: 100px;width:auto" alt="">
+                                            </div>
+                                        </div>
+                                        {{------------------ About the Project Image Preview ---------------------}}
+
+                                        <div class="form-group row">
                                             <div class="col-sm-10">
                                                 <button type="submit" name="submit" class="btn btn-primary mt-3">Lets Go</button>
                                             </div>
                                         </div>
-                                        {{---------------- Submit button --------------}}
-
-
-
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    {{-- Main form End --}}
-
-
+                    {{------------------------ Main Form End -----------------------------}}
                 </div>
             </div>
 
@@ -745,13 +871,30 @@
     </div>
     <!-- END MAIN CONTAINER -->
 
+
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="{{asset('dashboardAssets/assets/js/libs/jquery-3.1.1.min.js')}}"></script>
     <script src="{{asset('dashboardAssets/bootstrap/js/popper.min.js')}}"></script>
     <script src="{{asset('dashboardAssets/bootstrap/js/bootstrap.min.js')}}"></script>
     <script src="{{asset('dashboardAssets/plugins/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
     <script src="{{asset('dashboardAssets/assets/js/app.js')}}"></script>
+    <script src="{{asset('dashboardAssets/plugins/blockui/jquery.blockUI.min.js')}}"></script>
+    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+    <script src="//cdn.ckeditor.com/4.6.2/full-all/ckeditor.js"></script>
+    <script>
+        var options = {
+            filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images'
+            , filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token='
+            , filebrowserBrowseUrl: '/laravel-filemanager?type=Files'
+            , filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token='
+        };
 
+        CKEDITOR.replace('my-editor', options);
+        CKEDITOR.replace('my-editor1', options);
+        CKEDITOR.replace('my-editor2', options);
+        CKEDITOR.replace('my-editor3', options);
+
+    </script>
     <script>
         $(document).ready(function() {
             App.init();
@@ -760,13 +903,17 @@
     </script>
     <script src="{{asset('dashboardAssets/plugins/highlight/highlight.pack.js')}}"></script>
     <script src="{{asset('dashboardAssets/assets/js/custom.js')}}"></script>
+
     <script src="{{asset('dashboardAssets/plugins/file-upload/file-upload-with-preview.min.js')}}"></script>
 
     <script>
         var firstUpload = new FileUploadWithPreview('myFirstImage')
+        var secondUpload = new FileUploadWithPreview('mySecondImage')
 
     </script>
+
     <!-- END GLOBAL MANDATORY SCRIPTS -->
     <script src="{{asset('dashboardAssets/assets/js/scrollspyNav.js')}}"></script>
+    <script src="{{asset('dashboardAssets/plugins/bootstrap-select/bootstrap-select.min.js')}}"></script>
 </body>
 </html>

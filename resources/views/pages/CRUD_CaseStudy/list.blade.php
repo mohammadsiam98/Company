@@ -4,16 +4,32 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>About us page</title>
+    <title>Dashboard | Case Study Details</title>
     <link rel="icon" type="image/x-icon" href="{{asset('dashboardAssets/assets/img/favicon.ico')}}" />
+    <link href="{{asset('dashboardAssets/assets/css/loader.css')}}" rel="stylesheet" type="text/css" />
+    <script src="{{asset('dashboardAssets/assets/js/loader.js')}}"></script>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
     <link href="{{asset('dashboardAssets/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('dashboardAssets/assets/css/plugins.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset('dashboardAssets/plugins/file-upload/file-upload-with-preview.min.css')}}" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/table/datatable/datatables.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/table/datatable/dt-global_style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/table/datatable/custom_dt_multiple_tables.css')}}">
+    <!-- END PAGE LEVEL STYLES -->
 </head>
-<body class="" data-spy="scroll" data-target="#navSection" data-offset="100">
+<body class="">
+    <!-- BEGIN LOADER -->
+    <div id="load_screen">
+        <div class="loader">
+            <div class="loader-content">
+                <div class="spinner-grow align-self-center"></div>
+            </div>
+        </div>
+    </div>
+    <!--  END LOADER -->
 
     <!--  BEGIN NAVBAR  -->
     <div class="header-container fixed-top">
@@ -34,35 +50,12 @@
                             <div class="media mx-auto">
                                 <img src="{{asset('dashboardAssets/assets/img/90x90.jpg')}}" class="img-fluid mr-2" alt="avatar">
                                 <div class="media-body">
-                                    <h5>Alan Green</h5>
-                                    <p>Project Leader</p>
+                                    <h5>Siam</h5>
+
                                 </div>
                             </div>
                         </div>
-                        <div class="dropdown-item">
-                            <a href="user_profile.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
-                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="12" cy="7" r="4"></circle>
-                                </svg> <span> Profile</span>
-                            </a>
-                        </div>
-                        <div class="dropdown-item">
-                            <a href="apps_mailbox.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-inbox">
-                                    <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
-                                    <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
-                                </svg> <span> Inbox</span>
-                            </a>
-                        </div>
-                        <div class="dropdown-item">
-                            <a href="auth_lockscreen.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
-                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                                </svg> <span>Lock Screen</span>
-                            </a>
-                        </div>
+
                         <div class="dropdown-item">
                             <a href="auth_login.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out">
@@ -85,6 +78,7 @@
         <div class="overlay"></div>
         <div class="cs-overlay"></div>
         <div class="search-overlay"></div>
+
 
         <!--  BEGIN SIDEBAR  -->
         <div class="sidebar-wrapper sidebar-theme">
@@ -204,7 +198,7 @@
 
                     {{----------------------------------- Clients --------------------------------------}}
                     <li class="menu">
-                        <a href="#clients" data-active="true" class="menu-toggle">
+                        <a href="#clients" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <img src="{{asset('dashboardAssets/assets/img/clients.png')}}" alt="">
@@ -381,10 +375,9 @@
                     {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
 
 
-
-                    {{--------------------------------- Case Study Details --------------------------------------}}
+                    {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
                     <li class="menu">
-                        <a href="#CaseStudy" data-active="false" class="menu-toggle">
+                        <a href="#CaseStudy" data-active="true" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <img src="{{asset('dashboardAssets/assets/img/clients.png')}}" alt="">
@@ -396,7 +389,7 @@
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
-                    {{--------------------------------- Case Study Details --------------------------------------}}
+                    {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
 
                 </ul>
             </nav>
@@ -658,85 +651,64 @@
         </div>
         <!--  END SIDEBAR  -->
 
+
         <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
-            <div class="container">
-                <div class="container">
+            <div class="layout-px-spacing">
 
-                    <div class="page-header">
-                        <nav class="breadcrumb-one" aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">Our Clients</a></li>
-                            </ol>
-                        </nav>
-                    </div>
+                <div class="page-header">
+                    <nav class="breadcrumb-one" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page"><a href="javascript:void(0);">Case Study Details Table</a></li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="row layout-top-spacing" id="cancel-row">
+                    <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
+                        <div class="widget-content widget-content-area br-6">
+                            <table class="multi-table table table-hover" style="width:100%">
+                                <thead style="border-bottom: none;">
+                                    <tr>
+                                        <th>Key</th>
+                                        <th style="text-align: center;">Category Name</th>
+                                        <th style="text-align: center;">Case Study Title</th>
+                                        <th style="text-align: center;">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ($CaseStudyDetails as $key =>$CaseStudy)
+                                    <tr>
+                                        <td style="text-align: center;">{{$key +1 }}</td>
+                                        <td class="text-center">{{$CaseStudy->get_category_name($CaseStudy->category_id)}}</td>
+                                        <td style="text-align: center;">{{$CaseStudy->thumbnail_case_study_title}}</td>
 
 
-                    {{-- Main form Start --}}
-                    <div class="row">
-                        <div id="flHorizontalForm" class="col-lg-12 layout-spacing">
-                            <div class="statbox widget box box-shadow">
-                                <div class="widget-content widget-content-area">
-                                    <form action="{{route('ourClients.update',$ourClients->id)}}" enctype="multipart/form-data" method="POST">
-                                        @csrf
-
-                                        {{----------------- Image Upload ----------------}}
-                                        <div id="fuSingleFile" class="col-lg-12 layout-spacing">
-                                            <div class="statbox widget box box-shadow">
-                                                <div class="widget-header">
-                                                    <div class="row">
-                                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                                            <h4 style="color:red;"><b>Update File</b></h4>
-                                                        </div>
-                                                    </div>
+                                        <td>
+                                            <div class="row">
+                                                <div>
+                                                    <a href="{{route('CaseStudy.edit' , $CaseStudy->id)}}" style="color: white;" class="btn btn-primary m-2"> Edit </a>
                                                 </div>
-                                                <div class="widget-content widget-content-area">
-                                                    <div class="custom-file-container" data-upload-id="myFirstImage">
-                                                        <label>Upload (Single File) <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
-                                                        <label class="custom-file-container__custom-file">
-                                                            <input type="file" name="clients_image" value="10485760" />
-                                                            <span class="custom-file-container__custom-file__custom-file-control"></span>
-                                                        </label>
-                                                        <div class="custom-file-container__image-preview"></div>
-                                                    </div>
+                                                <div>
+                                                    <form action="{{route('CaseStudy.destroy', $CaseStudy->id)}}" method="POST">
+                                                        @csrf
+                                                        @method('Delete')
+                                                        <input type="submit" name="submit" value="Delete" class="btn btn-danger m-2">
+                                                    </form>
+
                                                 </div>
                                             </div>
-                                        </div>
-                                        {{------------------------ Image Upload ----------------------}}
+                                        </td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
 
-
-
-                                        {{---------------- Image preview --------------}}
-                                        <div class="form-group row mb-4">
-                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Image Preview</label>
-                                            <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <img src="{{url($ourClients->clients_image)}}" style="height: 100px;width:auto" alt="">
-                                            </div>
-                                        </div>
-                                        {{---------------- Image preview --------------}}
-
-
-
-
-                                        {{---------------- Submit button --------------}}
-                                        <div class=" form-group row">
-                                            <div class="col-sm-10">
-                                                <button type="submit" name="submit" class="btn btn-primary mt-3">Lets Go</button>
-                                            </div>
-                                        </div>
-                                        {{---------------- Submit button --------------}}
-
-
-
-                                    </form>
-                                </div>
-                            </div>
+                            </table>
                         </div>
                     </div>
-                    {{-- Main form End --}}
-
 
                 </div>
+
             </div>
 
         </div>
@@ -744,6 +716,8 @@
 
     </div>
     <!-- END MAIN CONTAINER -->
+
+
 
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="{{asset('dashboardAssets/assets/js/libs/jquery-3.1.1.min.js')}}"></script>
@@ -758,15 +732,41 @@
         });
 
     </script>
-    <script src="{{asset('dashboardAssets/plugins/highlight/highlight.pack.js')}}"></script>
     <script src="{{asset('dashboardAssets/assets/js/custom.js')}}"></script>
-    <script src="{{asset('dashboardAssets/plugins/file-upload/file-upload-with-preview.min.js')}}"></script>
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
 
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="{{asset('dashboardAssets/plugins/table/datatable/datatables.js')}}"></script>
     <script>
-        var firstUpload = new FileUploadWithPreview('myFirstImage')
+        $(document).ready(function() {
+            $('table.multi-table').DataTable({
+                "dom": "<'dt--top-section'<'row'<'col-12 col-sm-6 d-flex justify-content-sm-start justify-content-center'l><'col-12 col-sm-6 d-flex justify-content-sm-end justify-content-center mt-sm-0 mt-3'f>>>" +
+                    "<'table-responsive'tr>" +
+                    "<'dt--bottom-section d-sm-flex justify-content-sm-between text-center'<'dt--pages-count  mb-sm-0 mb-3'i><'dt--pagination'p>>"
+                , "oLanguage": {
+                    "oPaginate": {
+                        "sPrevious": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>'
+                        , "sNext": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>'
+                    }
+                    , "sInfo": "Showing page _PAGE_ of _PAGES_"
+                    , "sSearch": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>'
+                    , "sSearchPlaceholder": "Search..."
+                    , "sLengthMenu": "Results :  _MENU_"
+                , }
+                , "stripeClasses": []
+                , "lengthMenu": [7, 10, 20, 50]
+                , "pageLength": 7
+                , drawCallback: function() {
+                    $('.t-dot').tooltip({
+                        template: '<div class="tooltip status" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+                    })
+                    $('.dataTables_wrapper table').removeClass('table-striped');
+                }
+            });
+        });
 
     </script>
-    <!-- END GLOBAL MANDATORY SCRIPTS -->
-    <script src="{{asset('dashboardAssets/assets/js/scrollspyNav.js')}}"></script>
+    <!-- END PAGE LEVEL SCRIPTS -->
+
 </body>
 </html>

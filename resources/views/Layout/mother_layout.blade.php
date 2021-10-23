@@ -58,7 +58,7 @@
                         <li>
                             <a href="#" class="menu-links right-bddr">&nbsp;</a>
                             <!--menu right border-->
-                        <li><a href="{{route('contact')}}" class="btn-br bg-btn3 btshad-b2 lnk">Request A Quote <span class="circle"></span></a> </li>
+                        <li><a href="{{route('contact')}}" class="btn-br bg-btn3 btshad-b2 lnk">Contact s<span class="circle"></span></a> </li>
                     </ul>
                 </div>
                 <div class="mobile-menu2">
@@ -203,7 +203,7 @@
                         <ul class="footer-address-list link-hover">
                             <li><a href="{{route('aim')}}">Mission Vission</a></li>
                             <li><a href="{{route('caseStudy')}}">Case Study</a></li>
-                            <li><a href="{{route('office')}}">Our Office</a></li>
+
                             <li><a href="{{route('reviews')}}">Client Reviews</a></li>
                             <li><a href="{{route('team')}}">Our Team</a></li>
 
