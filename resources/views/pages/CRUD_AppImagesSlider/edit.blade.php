@@ -4,34 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Dashboard</title>
-    <link rel="icon" type="image/x-icon" href="{{asset('dashboardAssets/assets/img/favicon.ico')}}" />
-    <link href="{{asset('dashboardAssets/assets/css/loader.css')}}" rel="stylesheet" type="text/css" />
-    <script src="{{asset('dashboardAssets/assets/js/loader.js')}}"></script>
-
+    <title>Dashboard | Case Study Project Stacks</title>
+    <link rel="icon" type="image/x-icon" href="{{asset('dashboard_assets/assets/img/favicon.ico')}}" />
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
     <link href="{{asset('dashboardAssets/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('dashboardAssets/assets/css/plugins.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('dashboardAssets/plugins/file-upload/file-upload-with-preview.min.css')}}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/bootstrap-select/bootstrap-select.min.css')}}">
     <!-- END GLOBAL MANDATORY STYLES -->
-
-    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
-    <link href="{{asset('dashboardAssets/plugins/apex/apexcharts.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{asset('dashboardAssets/assets/css/dashboard/dash_1.css')}}" rel="stylesheet" type="text/css" class="dashboard-analytics" />
-    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
-
 </head>
-<body class="dashboard-analytics">
-
-    <!-- BEGIN LOADER -->
-    <div id="load_screen">
-        <div class="loader">
-            <div class="loader-content">
-                <div class="spinner-grow align-self-center"></div>
-            </div>
-        </div>
-    </div>
-    <!--  END LOADER -->
+<body class="" data-spy="scroll" data-target="#navSection" data-offset="100">
 
     <!--  BEGIN NAVBAR  -->
     <div class="header-container fixed-top">
@@ -42,25 +25,23 @@
                     <line x1="3" y1="18" x2="21" y2="18"></line>
                 </svg></a>
             <ul class="navbar-item flex-row navbar-dropdown search-ul">
-
-
                 <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">
                     <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="{{asset('dashboardAssets/assets/img/90x90.jpg')}}" alt="admin-profile" class="img-fluid">
+                        <img src="{{asset('dashboard_assets/assets/img/90x90.jpg')}}" alt="admin-profile" class="img-fluid">
                     </a>
                     <div class="dropdown-menu position-absolute" aria-labelledby="userProfileDropdown">
                         <div class="user-profile-section">
                             <div class="media mx-auto">
-                                <img src="{{asset('dashboardAssets/assets/img/90x90.jpg')}}" class="img-fluid mr-2" alt="avatar">
+                                <img src="{{asset('dashboard_assets/assets/img/90x90.jpg')}}" class="img-fluid mr-2" alt="avatar">
                                 <div class="media-body">
-                                    <h5>Siam</h5>
+                                    <h5>Mohammad Al Amin Siam</h5>
 
                                 </div>
                             </div>
                         </div>
 
                         <div class="dropdown-item">
-                            <a href="">
+                            <a href="auth_login.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out">
                                     <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
                                     <polyline points="16 17 21 12 16 7"></polyline>
@@ -79,6 +60,7 @@
     <div class="main-container" id="container">
 
         <div class="overlay"></div>
+        <div class="cs-overlay"></div>
         <div class="search-overlay"></div>
 
         <!--  BEGIN SIDEBAR  -->
@@ -381,7 +363,7 @@
                         <a href="#CaseStudy" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <img src="{{asset('dashboardAssets/assets/img/case-study.png')}}" alt="">
+                                    <img src="{{asset('dashboardAssets/assets/img/clients.png')}}" alt="">
                                 </div>
                                 <span>Case Study</span>
                             </div>
@@ -393,14 +375,12 @@
                     {{--------------------------------- Case Study Details --------------------------------------}}
 
 
-
-
                     {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
                     <li class="menu">
                         <a href="#caseStudyAboutProjectStackImages" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <img src="{{asset('dashboardAssets/assets/img/programing.png')}}" alt="">
+                                    <img src="{{asset('dashboardAssets/assets/img/clients.png')}}" alt="">
                                 </div>
                                 <span>Project Stacks</span>
                             </div>
@@ -415,12 +395,12 @@
 
                     {{--------------------------------- Case Study Single Project Image Slider --------------------------------------}}
                     <li class="menu">
-                        <a href="#caseStudyslider" data-active="false" class="menu-toggle">
+                        <a href="#caseStudyslider" data-active="true" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <img src="{{asset('dashboardAssets/assets/img/sliders.png')}}" alt="">
+                                    <img src="{{asset('dashboardAssets/assets/img/clients.png')}}" alt="">
                                 </div>
-                                <span>CaseStudy Sliders</span>
+                                <span>CaseSudy Sliders</span>
                             </div>
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
@@ -723,134 +703,134 @@
 
         <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
-            <div class="layout-px-spacing">
-
-                {{------------------------------ Page Header -------------------------------}}
-                <div class="page-header">
-                    <nav class="breadcrumb-one" aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="">Dashboard</a></li>
-                        </ol>
-                    </nav>
-                </div>
-                {{------------------------------ Page Header -------------------------------}}
-
-
-                {{------------------------------ Statistics of Users -------------------------------}}
-                <div class="row layout-top-spacing">
-
-                    {{-- Today Visitors --}}
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="widget widget-account-invoice-two">
-                            <div class="widget-content">
-                                <div class="account-box">
-                                    <div class="info">
-                                        <div class="inv-title">
-                                            <h5 class="">Today Visitors</h5>
-                                        </div>
-                                        <div class="inv-balance-info">
-                                            <h2 style="color: white;">213213</h2>
-                                        </div>
-                                    </div>
-
+            <div class="container">
+                <div class="container">
+                    <div class="page-header">
+                        <div class="widget-header">
+                            <div class="row">
+                                <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                    <h4>Case Study Single Project Images Slider</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    {{-- Today Visitors --}}
 
-                    {{-- Weekly Visitors --}}
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="widget widget-account-invoice-two">
-                            <div class="widget-content">
-                                <div class="account-box">
-                                    <div class="info">
-                                        <div class="inv-title">
-                                            <h5 class="">Weekly Visitors</h5>
-                                        </div>
-                                        <div class="inv-balance-info">
-                                            <h2 style="color: white;">213213</h2>
-                                        </div>
-                                    </div>
 
+                    {{------------------------- Main Form Start --------------------------}}
+                    <div class="row">
+                        <div id="flHorizontalForm" class="col-lg-12 layout-spacing">
+                            <div class="statbox widget box box-shadow">
+                                <div class="widget-content widget-content-area">
+                                    <form action="{{route('caseStudyslider.update',$sliders->id)}}" method="POST" enctype="multipart/form-data">
+                                        @csrf
+
+
+                                        {{------------------------- Category Which is Already Selected --------------------------}}
+                                        <div class="form-group row mb-4">
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-12 col-form-label">Category</label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                                <div class="statbox widget box box-shadow">
+                                                    <div class="widget-content widget-content-area">
+                                                        <select class="selectpicker" name="caseStudy_id" data-live-search="true" data-width="100%">
+                                                            <option class="disabled">--Select Option--</option>
+                                                            @foreach ($CaseStudyFetch as $stack)
+                                                            <option <?php if($stack->id == $sliders->caseStudy_id){?> selected <?php }  ?> value="{{ $stack->id }}">{{ $stack->thumbnail_case_study_title }}</option>
+                                                            @endforeach
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{------------------------- Category Which is Already Selected --------------------------}}
+
+
+
+
+                                        {{------------------------- Image Upload --------------------------}}
+                                        <div id="fuSingleFile" class="col-lg-12 layout-spacing">
+                                            <div class="statbox widget box box-shadow">
+                                                <div class="widget-header">
+                                                    <div class="row">
+                                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                                            <h4>Image Upload</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="widget-content widget-content-area">
+                                                    <div class="custom-file-container" data-upload-id="myFirstImage">
+                                                        <label>Upload (Single File) <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
+                                                        <label class="custom-file-container__custom-file">
+                                                            <input type="file" name="image" value="10485760" />
+                                                            <span class="custom-file-container__custom-file__custom-file-control"></span>
+                                                        </label>
+                                                        <div class="custom-file-container__image-preview"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{------------------------- Image Upload --------------------------}}
+
+
+                                        {{------------------------- Image Preview --------------------------}}
+                                        <div class="form-group mb-3">
+                                            <h4>The Image You have already Uploaded</h4>
+                                            <img style="height: 70px; width:auto;" src="{{url($sliders->image)}}" alt="image">
+                                        </div>
+                                        {{------------------------- Image Preview --------------------------}}
+
+
+
+                                        {{------------------------- Edit Buttton --------------------------}}
+                                        <button type="submit" class="btn btn-primary mt-3 btn-lg">Edit</button>
+                                        {{------------------------- Edit Buttton --------------------------}}
+
+
+
+                                    </form>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                    {{-- Weekly Visitors --}}
+                    {{------------------------- Main Form End --------------------------}}
 
-
-                    {{-- Monthly Visitors --}}
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="widget widget-account-invoice-two">
-                            <div class="widget-content">
-                                <div class="account-box">
-                                    <div class="info">
-                                        <div class="inv-title">
-                                            <h5 class="">Monthly Visitors</h5>
-                                        </div>
-                                        <div class="inv-balance-info">
-                                            <h2 style="color: white;">213213</h2>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {{-- Monthly Visitors --}}
-
-
-                    {{-- yearly Visitors --}}
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="widget widget-account-invoice-two">
-                            <div class="widget-content">
-                                <div class="account-box">
-                                    <div class="info">
-                                        <div class="inv-title">
-                                            <h5 class="">Yearly Visitors</h5>
-                                        </div>
-                                        <div class="inv-balance-info">
-                                            <h2 style="color: white;">213213</h2>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    {{-- yearly Visitors --}}
 
                 </div>
-                {{------------------------------ Statistics of Users -------------------------------}}
-
             </div>
-            <!--  END CONTENT AREA  -->
-
         </div>
-        <!-- END MAIN CONTAINER -->
+        <!--  END CONTENT AREA  -->
 
-        <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-        <script src="{{asset('dashboardAssets/assets/js/libs/jquery-3.1.1.min.js')}}"></script>
-        <script src="{{asset('dashboardAssets/bootstrap/js/popper.min.js')}}"></script>
-        <script src="{{asset('dashboardAssets/bootstrap/js/bootstrap.min.js')}}"></script>
-        <script src="{{asset('dashboardAssets/plugins/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
-        <script src="{{asset('dashboardAssets/assets/js/app.js')}}"></script>
-        <script>
-            $(document).ready(function() {
-                App.init();
-            });
+    </div>
+    <!-- END MAIN CONTAINER -->
 
-        </script>
-        <script src="{{asset('dashboardAssets/assets/js/custom.js')}}"></script>
-        <!-- END GLOBAL MANDATORY SCRIPTS -->
 
-        <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
-        <script src="{{asset('dashboardAssets/plugins/apex/apexcharts.min.js')}}"></script>
-        <script src="{{asset('dashboardAssets/assets/js/dashboard/dash_1.js')}}"></script>
-        <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
 
+
+
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="{{asset('dashboardAssets/assets/js/libs/jquery-3.1.1.min.js')}}"></script>
+    <script src="{{asset('dashboardAssets/bootstrap/js/popper.min.js')}}"></script>
+    <script src="{{asset('dashboardAssets/bootstrap/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('dashboardAssets/plugins/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
+    <script src="{{asset('dashboardAssets/assets/js/app.js')}}"></script>
+    <script src="{{asset('dashboardAssets/plugins/blockui/jquery.blockUI.min.js')}}"></script>
+    <script>
+        $(document).ready(function() {
+            App.init();
+        });
+
+    </script>
+    <script src="{{asset('dashboardAssets/plugins/highlight/highlight.pack.js')}}"></script>
+    <script src="{{asset('dashboardAssets/assets/js/custom.js')}}"></script>
+
+    <script src="{{asset('dashboardAssets/plugins/file-upload/file-upload-with-preview.min.js')}}"></script>
+
+    <script>
+        var firstUpload = new FileUploadWithPreview('myFirstImage')
+
+    </script>
+
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
+    <script src="{{asset('dashboardAssets/assets/js/scrollspyNav.js')}}"></script>
+    <script src="{{asset('dashboardAssets/plugins/bootstrap-select/bootstrap-select.min.js')}}"></script>
 </body>
 </html>

@@ -42,6 +42,10 @@ Route::get('/case-study', 'App\Http\Controllers\CaseStudyController@caseStudy')-
 Route::get('/contact', 'App\Http\Controllers\ContactUsController@contact')->name('contact');
 //contact Route
 
+//project-proposal Route
+Route::get('/project_proposal', 'App\Http\Controllers\ProjectProposalController@projectProposal')->name('project-proposal');
+//project-proposal Route
+
 
 //sector Route
 Route::get('/sector', 'App\Http\Controllers\SectorsController@sector')->name('sector');
@@ -183,18 +187,40 @@ Route::prefix('admin')->group(function(){
         Route::get('/CaseStudy/list', 'App\Http\Controllers\CaseStudyController@list')->name('CaseStudy.list');
         Route::get('/CaseStudy/edit/{id}', 'App\Http\Controllers\CaseStudyController@edit')->name('CaseStudy.edit');
         Route::post('/CaseStudy/update/{id}', 'App\Http\Controllers\CaseStudyController@update')->name('CaseStudy.update');
-        Route::get('/CaseStudy/destroy/{id}', 'App\Http\Controllers\CaseStudyController@destroy')->name('CaseStudy.destroy');
+        Route::DELETE('/CaseStudy/destroy/{id}', 'App\Http\Controllers\CaseStudyController@destroy')->name('CaseStudy.destroy');
         //case Study Route
 
-
+        
         //Case Study About Project Stack Images
         Route::get('/About_project_images/create', 'App\Http\Controllers\CaseStudyAboutTheProjectStackImagesController@create')->name('caseStudyAboutProjectStackImages.create');
         Route::put('/About_project_images/create', 'App\Http\Controllers\CaseStudyAboutTheProjectStackImagesController@store')->name('caseStudyAboutProjectStackImages.store');
         Route::get('/About_project_images/list', 'App\Http\Controllers\CaseStudyAboutTheProjectStackImagesController@list')->name('caseStudyAboutProjectStackImages.list');
         Route::get('/About_project_images/edit/{id}', 'App\Http\Controllers\CaseStudyAboutTheProjectStackImagesController@edit')->name('caseStudyAboutProjectStackImages.edit');
         Route::post('/About_project_images/update/{id}', 'App\Http\Controllers\CaseStudyAboutTheProjectStackImagesController@update')->name('caseStudyAboutProjectStackImages.update');
-        Route::get('/About_project_images/destroy/{id}', 'App\Http\Controllers\CaseStudyAboutTheProjectStackImagesController@destroy')->name('caseStudyAboutProjectStackImages.destroy');
+        Route::DELETE('/About_project_images/destroy/{id}', 'App\Http\Controllers\CaseStudyAboutTheProjectStackImagesController@destroy')->name('caseStudyAboutProjectStackImages.destroy');
         //Case Study About Project Stack Images
+
+
+         //Case Study Single project Image Slider
+         Route::get('/caseStudyslider/create', 'App\Http\Controllers\CaseStudyImageSliderController@create')->name('caseStudyslider.create');
+         Route::put('/caseStudyslider/create', 'App\Http\Controllers\CaseStudyImageSliderController@store')->name('caseStudyslider.store');
+         Route::get('/caseStudyslider/list', 'App\Http\Controllers\CaseStudyImageSliderController@list')->name('caseStudyslider.list');
+         Route::get('/caseStudyslider/edit/{id}', 'App\Http\Controllers\CaseStudyImageSliderController@edit')->name('caseStudyslider.edit');
+         Route::post('/caseStudyslider/update/{id}', 'App\Http\Controllers\CaseStudyImageSliderController@update')->name('caseStudyslider.update');
+         Route::DELETE('/caseStudyslider/destroy/{id}', 'App\Http\Controllers\CaseStudyImageSliderController@destroy')->name('caseStudyslider.destroy');
+        //Case Study Single project Image Slider
+        
+        //contact Route
+        Route::get('/contact', 'App\Http\Controllers\ContactUsController@store')->name('contact.store');
+        //contact Route
+
+         //contact Route
+         Route::get('/projectProposal', 'App\Http\Controllers\ProjectProposalController@store')->name('ProjectProposalDetails.store');
+         //contact Route
+
+
+        
+
        
      
 });

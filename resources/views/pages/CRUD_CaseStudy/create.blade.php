@@ -365,7 +365,7 @@
                         <a href="#CaseStudy" data-active="true" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <img src="{{asset('dashboardAssets/assets/img/clients.png')}}" alt="">
+                                    <img src="{{asset('dashboardAssets/assets/img/case-study.png')}}" alt="">
                                 </div>
                                 <span>Case Study</span>
                             </div>

@@ -1,7 +1,8 @@
 @extends('Layout.mother_layout')
 @section('content')
-
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;700&display=swap" rel="stylesheet">
 <!--Breadcrumb Area-->
 <section class="breadcrumb-area banner-6">
     <div class="text-block">
@@ -35,7 +36,7 @@
                 <div class="contact-details">
                     <div class="contact-card wow fadeIn" data-wow-delay=".2s">
                         <div class="info-card v-center">
-                            <span><i class="fas fa-phone-alt"></i> Phone:</span>
+                            <img src="{{asset('assets/images/mobile_number.png')}}" alt="">
                             <div class="info-body">
                                 <p>Assistance hours: Monday – Friday, 9 am to 5 pm</p>
                                 <a href="tel:+10000000000">(+91) 0000 000 000</a>
@@ -44,22 +45,14 @@
                     </div>
                     <div class="email-card mt30 wow fadeIn" data-wow-delay=".5s">
                         <div class="info-card v-center">
-                            <span><i class="fas fa-envelope"></i> Email:</span>
+                            <img src="{{asset('assets/images/gmail.png')}}" alt="">
                             <div class="info-body">
                                 <p>Our support team will get back to in 24-h during standard business hours.</p>
                                 <a href="https://separateweb.com/cdn-cgi/l/email-protection#d6bfb8b0b996b4a3a5bfb8b3a5a5b8b7bbb3f8b5b9bb"><span class="__cf_email__" data-cfemail="90f9fef6ffd0f2e5e3f9fef5e3e3fef1fdf5bef3fffd">[email&#160;protected]</span></a>
                             </div>
                         </div>
                     </div>
-                    <div class="skype-card mt30 wow fadeIn" data-wow-delay=".9s">
-                        <div class="info-card v-center">
-                            <span><i class="fab fa-skype"></i> Skype:</span>
-                            <div class="info-body">
-                                <p>We Are Online: Monday – Friday, 9 am to 5 pm</p>
-                                <a href="skype:niwax.company?call">niwax.company</a>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
 
@@ -70,40 +63,28 @@
                     <p class="mb60 mt10">We will catch you as early as we receive the message</p>
                 </div>
                 <div class="form-block">
-                    <form id="contactForm" data-toggle="validator" class="shake">
+                    <form action="{{route('contact.store')}}" id="contactForm" data-toggle="validator" class="shake">
                         <div class="row">
                             <div class="form-group col-sm-6">
-                                <input type="text" id="name" placeholder="Enter name" required data-error="Please fill Out">
+                                <input type="text" id="name" name="name" placeholder="Enter name" required data-error="Please fill Out" style="font-family: 'Hind Siliguri', sans-serif; font-size:28px; font-weight:bold;">
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group col-sm-6">
-                                <input type="email" id="email" placeholder="Enter email" required>
+                                <input type="email" id="email" name="email" placeholder="Enter email" style="font-family: 'Hind Siliguri', sans-serif; font-size:28px; font-weight:bold;" required>
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="form-group col-sm-6">
-                                <input type="text" id="mobile" placeholder="Enter mobile" required data-error="Please fill Out">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group col-sm-6">
-                                <select name="Dtype" id="Dtype" required>
-                                    <option value="">Select Requirement</option>
-                                    <option value="web">web</option>
-                                    <option value="graphic">graphic</option>
-                                    <option value="video">video</option>
-                                </select>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
+
                         <div class="form-group">
-                            <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
+                            <input type="text" id="mobile" name="number" placeholder="Enter mobile" style="font-family: 'Hind Siliguri', sans-serif; font-size:28px; font-weight:bold;" required data-error="Please fill Out">
                             <div class="help-block with-errors"></div>
                         </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="customCheck" name="example1" checked="checked">
-                            <label class="custom-control-label" for="customCheck">I agree to the <a href="javascript:void(0)">Terms &amp; Conditions</a> of Business Name.</label>
+
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Enter your message" style="font-family: 'Hind Siliguri', sans-serif; font-size:28px; font-weight:bold;" required></textarea>
+                            <div class="help-block with-errors"></div>
                         </div>
+
                         <button type="submit" id="form-submit" class="btn lnk btn-main bg-btn">Submit</button>
                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                         <div class="clearfix"></div>
