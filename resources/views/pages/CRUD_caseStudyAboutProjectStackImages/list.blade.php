@@ -4,19 +4,32 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>CORK Admin Template - Forms Layouts</title>
+    <title> Dashboard | Case Study Project Stacks</title>
     <link rel="icon" type="image/x-icon" href="{{asset('dashboardAssets/assets/img/favicon.ico')}}" />
+    <link href="{{asset('dashboardAssets/assets/css/loader.css')}}" rel="stylesheet" type="text/css" />
+    <script src="{{asset('dashboardAssets/assets/js/loader.js')}}"></script>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
     <link href="{{asset('dashboardAssets/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('dashboardAssets/assets/css/plugins.css')}}" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/bootstrap-select/bootstrap-select.min.css')}}">
     <!-- END GLOBAL MANDATORY STYLES -->
-    {{-- <link href="{{asset('dashboard_assets/assets/css/scrollspyNav.css')}}" rel="stylesheet" type="text/css" /> --}}
 
-    <link href="{{asset('dashboardAssets/assets/css/components/custom-modal.css')}}" rel="stylesheet" type="text/css" />
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/table/datatable/datatables.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/table/datatable/dt-global_style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboardAssets/plugins/table/datatable/custom_dt_multiple_tables.css')}}">
+    <!-- END PAGE LEVEL STYLES -->
 </head>
-<body class="" data-spy="scroll" data-target="#navSection" data-offset="100">
+<body class="">
+    <!-- BEGIN LOADER -->
+    <div id="load_screen">
+        <div class="loader">
+            <div class="loader-content">
+                <div class="spinner-grow align-self-center"></div>
+            </div>
+        </div>
+    </div>
+    <!--  END LOADER -->
 
     <!--  BEGIN NAVBAR  -->
     <div class="header-container fixed-top">
@@ -27,44 +40,21 @@
                     <line x1="3" y1="18" x2="21" y2="18"></line>
                 </svg></a>
             <ul class="navbar-item flex-row navbar-dropdown search-ul">
+
                 <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">
                     <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="{{asset('dashboard_assets/assets/img/90x90.jpg')}}" alt="admin-profile" class="img-fluid">
+                        <img src="{{asset('dashboardAssets/assets/img/90x90.jpg')}}" alt="admin-profile" class="img-fluid">
                     </a>
                     <div class="dropdown-menu position-absolute" aria-labelledby="userProfileDropdown">
                         <div class="user-profile-section">
                             <div class="media mx-auto">
-                                <img src="{{asset('dashboard_assets/assets/img/90x90.jpg')}}" class="img-fluid mr-2" alt="avatar">
+                                <img src="{{asset('dashboardAssets/assets/img/90x90.jpg')}}" class="img-fluid mr-2" alt="avatar">
                                 <div class="media-body">
-                                    <h5>Alan Green</h5>
-                                    <p>Project Leader</p>
+                                    <h5>Siam</h5>
                                 </div>
                             </div>
                         </div>
-                        <div class="dropdown-item">
-                            <a href="user_profile.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
-                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="12" cy="7" r="4"></circle>
-                                </svg> <span> Profile</span>
-                            </a>
-                        </div>
-                        <div class="dropdown-item">
-                            <a href="apps_mailbox.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-inbox">
-                                    <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
-                                    <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
-                                </svg> <span> Inbox</span>
-                            </a>
-                        </div>
-                        <div class="dropdown-item">
-                            <a href="auth_lockscreen.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
-                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                                </svg> <span>Lock Screen</span>
-                            </a>
-                        </div>
+
                         <div class="dropdown-item">
                             <a href="auth_login.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out">
@@ -88,9 +78,10 @@
         <div class="cs-overlay"></div>
         <div class="search-overlay"></div>
 
+
+
         <!--  BEGIN SIDEBAR  -->
         <div class="sidebar-wrapper sidebar-theme">
-
 
             {{--------------------------------- Navbar -----------------------------------}}
             <nav id="compactSidebar">
@@ -349,7 +340,7 @@
 
                     {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
                     <li class="menu">
-                        <a href="#pricing" data-active="true" class="menu-toggle">
+                        <a href="#pricing" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <img src="{{asset('dashboardAssets/assets/img/dollar.png')}}" alt="">
@@ -384,7 +375,7 @@
                     {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
 
 
-                    {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
+                    {{--------------------------------- Case Study Details --------------------------------------}}
                     <li class="menu">
                         <a href="#CaseStudy" data-active="false" class="menu-toggle">
                             <div class="base-menu">
@@ -398,7 +389,26 @@
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
-                    {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
+                    {{--------------------------------- Case Study Details --------------------------------------}}
+
+
+                    {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
+                    <li class="menu">
+                        <a href="#caseStudyAboutProjectStackImages" data-active="true" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/clients.png')}}" alt="">
+                                </div>
+                                <span>Project Stacks</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
+
+
 
                 </ul>
             </nav>
@@ -652,6 +662,22 @@
 
 
 
+                {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
+                <div class="submenu" id="caseStudyAboutProjectStackImages">
+                    <ul class="submenu-list" data-parent-element="#caseStudyAboutProjectStackImages">
+                        <li>
+                            <a href="{{route('caseStudyAboutProjectStackImages.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('caseStudyAboutProjectStackImages.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
+
+
+
+
 
 
             </div>
@@ -660,131 +686,77 @@
         </div>
         <!--  END SIDEBAR  -->
 
-
         <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
-            <div class="container">
-                <div class="container">
-                    <div class="page-header">
-                        <div class="widget-header">
-                            <div class="row">
-                                <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                    <h4>Edit Basic Plan</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="layout-px-spacing">
 
-
-                    <div class="row">
-                        <div id="modalOptionalSizes" class="col-lg-12 layout-spacing">
-                            <div class="statbox widget box box-shadow">
-                                <div class="widget-content widget-content-area">
-                                    <div class="text-center">
-                                        <!-- Lage modal -->
-                                        <button type="button" class="btn btn-primary mb-2 mr-2" data-toggle="modal" data-target=".bd-example-modal-lg">Instructions</button>
-                                    </div>
-                                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-lg" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="myLargeModalLabel">Read The Guidelines</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
-                                                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                                                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                                                        </svg>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <p class="modal-text">Mauris mi tellus, pharetra vel mattis sed, tempus ultrices eros. Phasellus egestas sit amet velit sed luctus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse potenti. Vivamus ultrices sed urna ac pulvinar. Ut sit amet ullamcorper mi.</p>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button class="btn" data-dismiss="modal"><i class="flaticon-cancel-12"></i> Discard</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div id="flHorizontalForm" class="col-lg-12 layout-spacing">
-                            <div class="statbox widget box box-shadow">
-                                <div class="widget-content widget-content-area">
-                                    <form action="{{route('PricingPlan.update',$SectorPricingbasic->id)}}" method="POST">
-                                        @csrf
-
-
-                                        <div class="form-group row mb-4">
-                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-12 col-form-label">Category</label>
-                                            <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <div class="statbox widget box box-shadow">
-                                                    <div class="widget-content widget-content-area">
-                                                        <select class="selectpicker" name="category_id" data-live-search="true" data-width="100%">
-                                                            <option class="disabled">--Select Option--</option>
-                                                            @foreach ($categorylist as $category)
-                                                            <option <?php if($category->id == $SectorPricingbasic->category_id){?> selected <?php }  ?> value="{{ $category->id }}">{{ $category->category_name }}</option>
-                                                            @endforeach
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group mb-3">
-                                            <h4>Plan Name</h4>
-                                            <input type="text" class="form-control" name="planName" value="{{$SectorPricingbasic->planName}}" id="planName" aria-describedby="planName" placeholder="Plan Name">
-                                            <small id="planName" class="form-text text-muted">Write Your package name in the Input Field.</small>
-                                        </div>
-                                        <div class="form-group mb-3">
-                                            <h4>Small Description</h4>
-                                            <input type="text" class="form-control" value="{{$SectorPricingbasic->small_description}}" name="small_description" id="small_description" aria-describedby="small_description" placeholder="Small Description">
-                                            <small id="service_name" class="form-text text-muted">Write Your Small Description about basic plan package in the Input Field.</small>
-                                        </div>
-
-                                        <div class="form-group mb-3">
-                                            <h4>Service Price</h4>
-                                            <input type="text" class="form-control" value="{{$SectorPricingbasic->basic_plan_price}}" name="basic_plan_price" id="basic_plan_price" aria-describedby="basic_plan_price" placeholder="Basic Plan Price">
-                                            <small id="service_name" class="form-text text-muted">Write Your basic plan price in the Input Field.</small>
-                                        </div>
-
-                                        <div class="form-group mb-3">
-                                            <h4>Services Names</h4>
-                                            <textarea id="my-editor" name="services_name" class="form-control">{!!$SectorPricingbasic->services_name!!}</textarea>
-                                        </div>
-
-                                        <button type="submit" class="btn btn-primary mt-3 btn-lg">Submit</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="page-header">
+                    <nav class="breadcrumb-one" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0);">Case Study Single Project Stack Images</a></li>
+                        </ol>
+                    </nav>
                 </div>
+
+
+                {{------------------------- Main Table --------------------------}}
+                <div class="row layout-top-spacing" id="cancel-row">
+                    <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
+                        <div class="widget-content widget-content-area br-6">
+                            <table class="multi-table table table-hover" style="width:100%">
+                                <thead style="border-bottom: none;">
+                                    <tr>
+                                        <th>Key</th>
+                                        <th>Case Study Name</th>
+
+                                        <th>Image</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ($stackImagesCaseStudySingleProject as $key =>$stack)
+                                    <tr>
+                                        <td>{{$key +1 }}</td>
+                                        <td>{{$stack->get_technology_name->thumbnail_case_study_title}}</td>
+
+                                        <td> <img style="height: 70px; width:auto;" src="{{url($stack->image)}}" alt="image"></td>
+                                        <td>
+                                            <div class="row">
+                                                <div>
+                                                    <a href="{{route('caseStudyAboutProjectStackImages.edit' , $stack->id)}}" style="color: white;" class="btn btn-primary m-2"> Edit </a>
+                                                </div>
+                                                <div>
+                                                    <form action="{{route('caseStudyAboutProjectStackImages.destroy', $stack->id)}}" method="POST">
+                                                        @csrf
+                                                        @method('Delete')
+                                                        <input type="submit" name="submit" value="Delete" class="btn btn-danger m-2">
+                                                    </form>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+                {{------------------------- Main Table --------------------------}}
+
             </div>
+
         </div>
         <!--  END CONTENT AREA  -->
 
     </div>
     <!-- END MAIN CONTAINER -->
 
+
+
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-    <script src="//cdn.ckeditor.com/4.6.2/full-all/ckeditor.js"></script>
-    <script>
-        var options = {
-            filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images'
-            , filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token='
-            , filebrowserBrowseUrl: '/laravel-filemanager?type=Files'
-            , filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token='
-        };
-
-        CKEDITOR.replace('my-editor', options);
-
-    </script>
-
-
     <script src="{{asset('dashboardAssets/assets/js/libs/jquery-3.1.1.min.js')}}"></script>
     <script src="{{asset('dashboardAssets/bootstrap/js/popper.min.js')}}"></script>
     <script src="{{asset('dashboardAssets/bootstrap/js/bootstrap.min.js')}}"></script>
@@ -797,11 +769,41 @@
         });
 
     </script>
-    <script src="{{asset('dashboardAssets/plugins/highlight/highlight.pack.js')}}"></script>
     <script src="{{asset('dashboardAssets/assets/js/custom.js')}}"></script>
     <!-- END GLOBAL MANDATORY SCRIPTS -->
-    <script src="{{asset('dashboardAssets/assets/js/scrollspyNav.js')}}"></script>
-    <script src="{{asset('dashboardAssets/plugins/bootstrap-select/bootstrap-select.min.js')}}"></script>
+
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="{{asset('dashboardAssets/plugins/table/datatable/datatables.js')}}"></script>
+    <script>
+        $(document).ready(function() {
+            $('table.multi-table').DataTable({
+                "dom": "<'dt--top-section'<'row'<'col-12 col-sm-6 d-flex justify-content-sm-start justify-content-center'l><'col-12 col-sm-6 d-flex justify-content-sm-end justify-content-center mt-sm-0 mt-3'f>>>" +
+                    "<'table-responsive'tr>" +
+                    "<'dt--bottom-section d-sm-flex justify-content-sm-between text-center'<'dt--pages-count  mb-sm-0 mb-3'i><'dt--pagination'p>>"
+                , "oLanguage": {
+                    "oPaginate": {
+                        "sPrevious": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>'
+                        , "sNext": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>'
+                    }
+                    , "sInfo": "Showing page _PAGE_ of _PAGES_"
+                    , "sSearch": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>'
+                    , "sSearchPlaceholder": "Search..."
+                    , "sLengthMenu": "Results :  _MENU_"
+                , }
+                , "stripeClasses": []
+                , "lengthMenu": [7, 10, 20, 50]
+                , "pageLength": 7
+                , drawCallback: function() {
+                    $('.t-dot').tooltip({
+                        template: '<div class="tooltip status" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+                    })
+                    $('.dataTables_wrapper table').removeClass('table-striped');
+                }
+            });
+        });
+
+    </script>
+    <!-- END PAGE LEVEL SCRIPTS -->
 
 </body>
 </html>

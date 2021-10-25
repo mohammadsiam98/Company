@@ -379,6 +379,7 @@
             </nav>
             {{--------------------------------- Navbar -----------------------------------}}
 
+
             {{--------------------------------- Navbar Route -----------------------------------}}
             <div id="compact_submenuSidebar" class="submenu-sidebar">
 
@@ -633,9 +634,6 @@
 
         </div>
         <!--  END SIDEBAR  -->
-
-
-
 
 
         <!--  BEGIN CONTENT AREA  -->

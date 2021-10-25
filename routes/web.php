@@ -159,8 +159,6 @@ Route::prefix('admin')->group(function(){
        Route::delete('/SectorCreativeWorks/destroy/{id}', 'App\Http\Controllers\SectorCreativeWorksController@destroy')->name('SectorCreativeWorks.destroy');
 
 
-       
-
         // These are Sector Wise Clients Routes (Dynamic)
         Route::get('/Sector-wise-Clients/create', 'App\Http\Controllers\SectorOurClientsController@create')->name('sectorClients.create');
         Route::put('/Sector-wise-Clients/create', 'App\Http\Controllers\SectorOurClientsController@store')->name('sectorClients.store');
@@ -168,8 +166,6 @@ Route::prefix('admin')->group(function(){
         Route::get('/Sector-wise-Clients/edit/{id}', 'App\Http\Controllers\SectorOurClientsController@edit')->name('sectorClients.edit');
         Route::post('/Sector-wise-Clients/update/{id}', 'App\Http\Controllers\SectorOurClientsController@update')->name('sectorClients.update');
         Route::get('/Sector-wise-Clients/destroy/{id}', 'App\Http\Controllers\SectorOurClientsController@destroy')->name('sectorClients.destroy');
-
-       
 
 
          // These are Sector Pricing Plan Routes (Basic Plan)
@@ -181,10 +177,6 @@ Route::prefix('admin')->group(function(){
          Route::get('/PricingPlan/destroy/{id}', 'App\Http\Controllers\PricingController@destroy')->name('PricingPlan.destroy');
  
 
-
-
-
-         
         //case Study Route
         Route::get('/CaseStudy/create', 'App\Http\Controllers\CaseStudyController@create')->name('CaseStudy.create');
         Route::put('/CaseStudy/create', 'App\Http\Controllers\CaseStudyController@store')->name('CaseStudy.store');
@@ -193,6 +185,17 @@ Route::prefix('admin')->group(function(){
         Route::post('/CaseStudy/update/{id}', 'App\Http\Controllers\CaseStudyController@update')->name('CaseStudy.update');
         Route::get('/CaseStudy/destroy/{id}', 'App\Http\Controllers\CaseStudyController@destroy')->name('CaseStudy.destroy');
         //case Study Route
+
+
+        //Case Study About Project Stack Images
+        Route::get('/About_project_images/create', 'App\Http\Controllers\CaseStudyAboutTheProjectStackImagesController@create')->name('caseStudyAboutProjectStackImages.create');
+        Route::put('/About_project_images/create', 'App\Http\Controllers\CaseStudyAboutTheProjectStackImagesController@store')->name('caseStudyAboutProjectStackImages.store');
+        Route::get('/About_project_images/list', 'App\Http\Controllers\CaseStudyAboutTheProjectStackImagesController@list')->name('caseStudyAboutProjectStackImages.list');
+        Route::get('/About_project_images/edit/{id}', 'App\Http\Controllers\CaseStudyAboutTheProjectStackImagesController@edit')->name('caseStudyAboutProjectStackImages.edit');
+        Route::post('/About_project_images/update/{id}', 'App\Http\Controllers\CaseStudyAboutTheProjectStackImagesController@update')->name('caseStudyAboutProjectStackImages.update');
+        Route::get('/About_project_images/destroy/{id}', 'App\Http\Controllers\CaseStudyAboutTheProjectStackImagesController@destroy')->name('caseStudyAboutProjectStackImages.destroy');
+        //Case Study About Project Stack Images
+       
      
 });
 
