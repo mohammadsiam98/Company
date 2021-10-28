@@ -11,7 +11,7 @@
                     <div class="bread-inner">
                         <div class="bread-menu">
                             <ul>
-                                <li><a href="index-2.html">Home</a></li>
+                                <li><a href="">Home</a></li>
                                 <li><a href="#">Development Process</a></li>
                             </ul>
                         </div>
@@ -33,8 +33,8 @@
             <div class="col-lg-8">
                 <div class="common-heading ptag">
                     <span>Process</span>
-                    <h2>Our Web Design Process Approaches</h2>
-                    <p>Our design process follows a proven approach. We begin with a deep understanding of your needs and create a planning template.</p>
+                    <h2>Our Approaches</h2>
+                    <p>cxxsdcxzczxcxzcxzcxzczxcxzcxzcxzczxc.</p>
                 </div>
             </div>
         </div>
@@ -47,8 +47,8 @@
             <div class="col-lg-7 v-center order2 wow fadeInUp" data-wow-delay=".2s">
                 <div class="ps-block">
                     <span>1</span>
-                    <h3 class="text-radius text-light text-animation bg-b">jhdhfdsfhdfidfhdsifhdsfidhsf</h3>
-                    <p>jhdhfdsfhdfidfhdsifhdsfidhsf.</p>
+                    <h3 class="text-radius text-light text-animation bg-b"></h3>
+                    <p></p>
                 </div>
             </div>
         </div>
@@ -56,8 +56,8 @@
             <div class="col-lg-7 v-center order2 wow fadeInUp" data-wow-delay=".2s">
                 <div class="ps-block">
                     <span>2</span>
-                    <h3 class="text-radius text-light text-animation bg-b">jhdhfdsfhdfidfhdsifhdsfidhsf</h3>
-                    <p>jhdhfdsfhdfidfhdsifhdsfidhsf.</p>
+                    <h3 class="text-radius text-light text-animation bg-b"></h3>
+                    <p></p>
                 </div>
             </div>
             <div class="col-lg-4 v-center order1">
@@ -75,8 +75,8 @@
             <div class="col-lg-7 v-center order2 wow fadeInUp" data-wow-delay=".2s">
                 <div class="ps-block">
                     <span>3</span>
-                    <h3 class="text-radius text-light text-animation bg-b">jhdhfdsfhdfidfhdsifhdsfidhsf</h3>
-                    <p>jhdhfdsfhdfidfhdsifhdsfidhsf.</p>
+                    <h3 class="text-radius text-light text-animation bg-b"></h3>
+                    <p>.</p>
                 </div>
             </div>
         </div>
@@ -84,8 +84,8 @@
             <div class="col-lg-7 v-center order2 wow fadeIn" data-wow-delay=".2s">
                 <div class="ps-block">
                     <span>4</span>
-                    <h3 class="text-radius text-light text-animation bg-b">jhdhfdsfhdfidfhdsifhdsfidhsf</h3>
-                    <p>jhdhfdsfhdfidfhdsifhdsfidhsf.</p>
+                    <h3 class="text-radius text-light text-animation bg-b"></h3>
+                    <p>.</p>
                 </div>
             </div>
             <div class="col-lg-4 v-center order1">

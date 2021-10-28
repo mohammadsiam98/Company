@@ -8,7 +8,7 @@ use App\Models\ServicesCategory;
 class OurApproaches extends Model
 {
     use HasFactory;
-    protected $fillable = ['category_id','Approach_title','Approach_details',];
+    protected $fillable = ['approach_title','approach_details'];
 
     public function get_category_name($id)
     {

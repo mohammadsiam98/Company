@@ -41,19 +41,43 @@
                 </div>
                 <div class="custom-nav" role="navigation">
                     <ul class="nav-list">
+
                         <li class="sbmenu">
                             <a href="{{route('aboutUs')}}" class="menu-links">About Us</a>
                         </li>
                         <li class="sbmenu">
-                            <a href="{{route('ourApproaches')}}" class="menu-links">Our Approaches</a>
+                            <a href="{{route('ourApproaches',1)}}" class="menu-links">Our Approaches</a>
                         </li>
-                        <li class="sbmenu">
-                            <a href="{{route('blog')}}" class="menu-links">blog</a>
+                        <li class="sbmenu rpdropdown">
+                            <a href="#" class="menu-links">Sectors</a>
+                            <div class="nx-dropdown menu-dorpdown">
+                                <div class="sub-menu-section">
+                                    <div class="sub-menu-center-block">
+                                        <div class="sub-menu-column smfull">
+                                            <ul>
+                                                <li><a href="{{route('sectors',1)}}">Web Development</a></li>
+                                                <li><a href="{{route('sectors',13)}}">Web Design</a></li>
+                                                <li><a href="{{route('sectors',3)}}">Graphics Design</a> </li>
+                                                <li><a href="{{route('sectors',4)}}">App Development</a> </li>
+                                                <li><a href="{{route('sectors',5)}}">Video Editing</a> </li>
+                                                <li><a href="{{route('sectors',6)}}">Search Engine Optimization</a> </li>
+                                                <li><a href="{{route('sectors',7)}}">Social Media Marketing</a> </li>
+                                                <li><a href="{{route('sectors',8)}}">Content Writing</a> </li>
+                                                <li><a href="{{route('sectors',9)}}">Software Development</a> </li>
+                                                <li><a href="{{route('sectors',10)}}">Animation</a> </li>
+                                                <li><a href="{{route('sectors',11)}}">Photography</a> </li>
+                                                <li><a href="{{route('sectors',12)}}">Cinematography</a> </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
 
-                        <li class="sbmenu rpdropdown">
-                            <a href="{{route('sector')}}" class="menu-links">Services</a>
-                        </li>
+                        {{-- <li class="sbmenu rpdropdown">
+                            <a href="{{route('notunNam')}}" class="menu-links">Services</a>
+                        </li> --}}
                         <li>
                             <a href="#" class="menu-links right-bddr">&nbsp;</a>
                             <!--menu right border-->
@@ -79,39 +103,11 @@
                         <a href="{{route('aboutUs')}}" style="font-size: 18px;">About Us</a>
                     </li>
                     <li>
-                        <a href="{{route('ourApproaches')}}" style="font-size: 18px;">Our Approaches</a>
+                        <a href="{{route('ourApproaches',1)}}" style="font-size: 18px;">Our Approaches</a>
                     </li>
 
-                    <li>
-                        <a href="{{route('sector')}}" style="font-size: 18px;">Services</a>
-                    </li>
-                    <li>
-                        <a href="{{route('sector')}}" style="font-size: 18px;">Web Development</a>
-                    </li>
-                    <li>
-                        <a href="{{route('sector')}}" style="font-size: 18px;">Web Design</a>
-                    </li>
-                    <li>
-                        <a href="{{route('sector')}}" style="font-size: 18px;">Mobile App Development</a>
-                    </li>
-                    <li>
-                        <a href="{{route('sector')}}" style="font-size: 18px;">Graphics Design</a>
-                    </li>
-                    <li>
-                        <a href="{{route('sector')}}" style="font-size: 18px;">Video Editing</a>
-                    </li>
-                    <li>
-                        <a href="{{route('sector')}}" style="font-size: 18px;">Content Writing</a>
-                    </li>
-                    <li>
-                        <a href="{{route('sector')}}" style="font-size: 18px;">Animation</a>
-                    </li>
-                    <li>
-                        <a href="{{route('sector')}}" style="font-size: 18px;">Photography</a>
-                    </li>
-                    <li>
-                        <a href="{{route('sector')}}" style="font-size: 18px;">Cinematography</a>
-                    </li>
+
+
                 </ul>
                 <ul class="bottom-nav">
                     <li class="prb">

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateOurApproachesTable extends Migration
+class CreateApproachDetailsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class CreateOurApproachesTable extends Migration
      */
     public function up()
     {
-        Schema::create('our_approaches', function (Blueprint $table) {
+        Schema::create('approach_details', function (Blueprint $table) {
             $table->id();
-            $table->string('Approach_title');
-            $table->text('Approach_details');
+            $table->foreignId('approach_category_id');
+            $table->string('approach_title');
+            $table->text('approach_details');
             $table->timestamps();
         });
     }
@@ -28,6 +29,6 @@ class CreateOurApproachesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('our_approaches');
+        Schema::dropIfExists('approach_details');
     }
 }
