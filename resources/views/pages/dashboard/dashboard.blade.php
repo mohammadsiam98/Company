@@ -132,8 +132,6 @@
 
 
 
-
-
                     {{--------------------------------------------- SWOT --------------------------------------}}
                     <li class="menu">
                         <a href="#uiKit" data-active="false" class="menu-toggle">
@@ -150,25 +148,6 @@
                     </li>
                     {{--------------------------------------------- SWOT --------------------------------------}}
 
-
-
-
-
-                    {{------------------------------------ Approaches ---------------------------------}}
-                    <li class="menu">
-                        <a href="#OurApproaches" data-active="false" class="menu-toggle">
-                            <div class="base-menu">
-                                <div class="base-icons">
-                                    <img src="{{asset('dashboardAssets/assets/img/approach.png')}}" alt="">
-                                </div>
-                                <span>Approaches</span>
-                            </div>
-                        </a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
-                            <polyline points="15 18 9 12 15 6"></polyline>
-                        </svg>
-                    </li>
-                    {{------------------------------------ Approaches ---------------------------------}}
 
 
 
@@ -478,23 +457,6 @@
                     </ul>
                 </div>
                 {{--------------------------------- Swot Route --------------------------------------}}
-
-
-
-
-
-                {{--------------------------------- Our Approaches --------------------------------------}}
-                <div class="submenu" id="OurApproaches">
-                    <ul class="submenu-list" data-parent-element="#OurApproaches">
-                        <li>
-                            <a href="{{route('OurApproaches.create')}}"> <img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
-                        </li>
-                        <li>
-                            <a href="{{route('OurApproaches.list')}}"> <img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
-                        </li>
-                    </ul>
-                </div>
-                {{--------------------------------- Our Approaches --------------------------------------}}
 
 
 

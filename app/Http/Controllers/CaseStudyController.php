@@ -11,6 +11,7 @@ class CaseStudyController extends Controller
     //
     public function caseStudy()
     {
+        
         return view('pages.caseStudy.caseStudy');
     }
 

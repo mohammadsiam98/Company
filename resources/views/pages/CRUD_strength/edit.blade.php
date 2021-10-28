@@ -34,34 +34,11 @@
                                 <img src="{{asset('dashboardAssets/assets/img/90x90.jpg')}}" class="img-fluid mr-2" alt="avatar">
                                 <div class="media-body">
                                     <h5>Alan Green</h5>
-                                    <p>Project Leader</p>
+
                                 </div>
                             </div>
                         </div>
-                        <div class="dropdown-item">
-                            <a href="user_profile.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
-                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="12" cy="7" r="4"></circle>
-                                </svg> <span> Profile</span>
-                            </a>
-                        </div>
-                        <div class="dropdown-item">
-                            <a href="apps_mailbox.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-inbox">
-                                    <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
-                                    <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
-                                </svg> <span> Inbox</span>
-                            </a>
-                        </div>
-                        <div class="dropdown-item">
-                            <a href="auth_lockscreen.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
-                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                                </svg> <span>Lock Screen</span>
-                            </a>
-                        </div>
+
                         <div class="dropdown-item">
                             <a href="auth_login.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out">
@@ -136,8 +113,6 @@
 
 
 
-
-
                     {{--------------------------------------------- SWOT --------------------------------------}}
                     <li class="menu">
                         <a href="#uiKit" data-active="true" class="menu-toggle">
@@ -153,29 +128,6 @@
                         </svg>
                     </li>
                     {{--------------------------------------------- SWOT --------------------------------------}}
-
-
-
-
-
-                    {{------------------------------------ Approaches ---------------------------------}}
-                    <li class="menu">
-                        <a href="#OurApproaches" data-active="false" class="menu-toggle">
-                            <div class="base-menu">
-                                <div class="base-icons">
-                                    <img src="{{asset('dashboardAssets/assets/img/approach.png')}}" alt="">
-                                </div>
-                                <span>Approaches</span>
-                            </div>
-                        </a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
-                            <polyline points="15 18 9 12 15 6"></polyline>
-                        </svg>
-                    </li>
-                    {{------------------------------------ Approaches ---------------------------------}}
-
-
-
 
 
 
@@ -198,9 +150,6 @@
 
 
 
-
-
-
                     {{----------------------------------- Clients --------------------------------------}}
                     <li class="menu">
                         <a href="#clients" data-active="false" class="menu-toggle">
@@ -218,9 +167,6 @@
                     {{----------------------------------- Clients --------------------------------------}}
 
 
-
-
-
                     {{----------------------------------- Category --------------------------------------}}
                     <li class="menu">
                         <a href="#ServicesCategory" data-active="false" class="menu-toggle">
@@ -236,10 +182,6 @@
                         </svg>
                     </li>
                     {{----------------------------------- Category --------------------------------------}}
-
-
-
-
 
 
                     {{----------------------------------- Sector Services Overview(Dynamic) --------------------------------------}}
@@ -260,8 +202,6 @@
 
 
 
-
-
                     {{----------------------------------- Sector Services(Dynamic) --------------------------------------}}
                     <li class="menu">
                         <a href="#SectorServices" data-active="false" class="menu-toggle">
@@ -277,8 +217,6 @@
                         </svg>
                     </li>
                     {{----------------------------------- Sector Services(Dynamic) --------------------------------------}}
-
-
 
 
 
@@ -302,7 +240,7 @@
 
                     {{----------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
                     <li class="menu">
-                        <a href="#sector_technologies_details" data-active="false" class="menu-toggle">
+                        <a href="#sector_technologies_details" data-active="true" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
                                     <img src="{{asset('dashboardAssets/assets/img/technology.png')}}" alt="">
@@ -315,10 +253,6 @@
                         </svg>
                     </li>
                     {{--------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
-
-
-
-
 
 
 
@@ -340,9 +274,6 @@
 
 
 
-
-
-
                     {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
                     <li class="menu">
                         <a href="#pricing" data-active="false" class="menu-toggle">
@@ -358,8 +289,6 @@
                         </svg>
                     </li>
                     {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
-
-
 
 
 
@@ -380,13 +309,12 @@
                     {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
 
 
-
                     {{--------------------------------- Case Study Details --------------------------------------}}
                     <li class="menu">
                         <a href="#CaseStudy" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <img src="{{asset('dashboardAssets/assets/img/clients.png')}}" alt="">
+                                    <img src="{{asset('dashboardAssets/assets/img/case-study.png')}}" alt="">
                                 </div>
                                 <span>Case Study</span>
                             </div>
@@ -396,6 +324,41 @@
                         </svg>
                     </li>
                     {{--------------------------------- Case Study Details --------------------------------------}}
+
+
+                    {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
+                    <li class="menu">
+                        <a href="#caseStudyAboutProjectStackImages" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/programing.png')}}" alt="">
+                                </div>
+                                <span>Project Stacks</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
+
+
+                    {{--------------------------------- Case Study Single Project Image Slider --------------------------------------}}
+                    <li class="menu">
+                        <a href="#caseStudyslider" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/sliders.png')}}" alt="">
+                                </div>
+                                <span>CaseStudy Sliders</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Case Study Single Project Image Slider --------------------------------------}}
+
 
                 </ul>
             </nav>
@@ -416,10 +379,6 @@
                 {{--------------------------------- Dashboard Homepage --------------------------------------}}
 
 
-
-
-
-
                 {{--------------------------------- AboutUs Route --------------------------------------}}
                 <div class="submenu" id="aboutus">
                     <ul class="submenu-list" data-parent-element="#aboutus">
@@ -432,8 +391,6 @@
                     </ul>
                 </div>
                 {{--------------------------------- AboutUs Route --------------------------------------}}
-
-
 
 
                 {{--------------------------------- Swot Route --------------------------------------}}
@@ -451,27 +408,6 @@
                 {{--------------------------------- Swot Route --------------------------------------}}
 
 
-
-
-
-                {{--------------------------------- Our Approaches --------------------------------------}}
-                <div class="submenu" id="OurApproaches">
-                    <ul class="submenu-list" data-parent-element="#OurApproaches">
-                        <li>
-                            <a href="{{route('OurApproaches.create')}}"> <img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
-                        </li>
-                        <li>
-                            <a href="{{route('OurApproaches.list')}}"> <img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
-                        </li>
-                    </ul>
-                </div>
-                {{--------------------------------- Our Approaches --------------------------------------}}
-
-
-
-
-
-
                 {{--------------------------------- Creative Works --------------------------------------}}
                 <div class="submenu" id="creativeWork">
                     <ul class="submenu-list" data-parent-element="#creativeWork">
@@ -483,8 +419,7 @@
                         </li>
                     </ul>
                 </div>
-
-
+                {{--------------------------------- Creative Works --------------------------------------}}
 
 
                 {{--------------------------------- our Clients --------------------------------------}}
@@ -501,10 +436,6 @@
                 {{--------------------------------- our Clients --------------------------------------}}
 
 
-
-
-
-
                 {{--------------------------------- Category --------------------------------------}}
                 <div class="submenu" id="ServicesCategory">
                     <ul class="submenu-list" data-parent-element="#ServicesCategory">
@@ -517,8 +448,6 @@
                     </ul>
                 </div>
                 {{--------------------------------- Category --------------------------------------}}
-
-
 
 
                 {{--------------------------------- Sector Service Overview(Dynamic) --------------------------------------}}
@@ -535,10 +464,6 @@
                 {{--------------------------------- Sector Service Overview(Dynamic) --------------------------------------}}
 
 
-
-
-
-
                 {{--------------------------------- Sector Services(Dynamic) --------------------------------------}}
                 <div class="submenu" id="SectorServices">
                     <ul class="submenu-list" data-parent-element="#SectorServices">
@@ -551,8 +476,6 @@
                     </ul>
                 </div>
                 {{--------------------------------- Sector Services(Dynamic) --------------------------------------}}
-
-
 
 
                 {{--------------------------------- Sector Stack Name(Dynamic) --------------------------------------}}
@@ -569,7 +492,6 @@
                 {{--------------------------------- Sector Stack Name(Dynamic) --------------------------------------}}
 
 
-
                 {{--------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
                 <div class="submenu" id="sector_technologies_details">
                     <ul class="submenu-list" data-parent-element="#sector_technologies_details">
@@ -584,9 +506,6 @@
                 {{--------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
 
 
-
-
-
                 {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
                 <div class="submenu" id="SectorCreativeWorks">
                     <ul class="submenu-list" data-parent-element="#SectorCreativeWorks">
@@ -599,8 +518,6 @@
                     </ul>
                 </div>
                 {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
-
-
 
 
                 {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
@@ -632,7 +549,6 @@
                 {{--------------------------------- Sector Our Clients (Dynamic) --------------------------------------}}
 
 
-
                 {{--------------------------------- Case Study Details --------------------------------------}}
                 <div class="submenu" id="CaseStudy">
                     <ul class="submenu-list" data-parent-element="#CaseStudy">
@@ -647,8 +563,32 @@
                 {{--------------------------------- Case Study Details --------------------------------------}}
 
 
+                {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
+                <div class="submenu" id="caseStudyAboutProjectStackImages">
+                    <ul class="submenu-list" data-parent-element="#caseStudyAboutProjectStackImages">
+                        <li>
+                            <a href="{{route('caseStudyAboutProjectStackImages.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('caseStudyAboutProjectStackImages.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
 
 
+                {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
+                <div class="submenu" id="caseStudyslider">
+                    <ul class="submenu-list" data-parent-element="#caseStudyslider">
+                        <li>
+                            <a href="{{route('caseStudyslider.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('caseStudyslider.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
 
 
             </div>

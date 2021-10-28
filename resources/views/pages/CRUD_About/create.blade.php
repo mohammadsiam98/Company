@@ -63,8 +63,6 @@
         <div class="cs-overlay"></div>
         <div class="search-overlay"></div>
 
-
-
         <!--  BEGIN SIDEBAR  -->
         <div class="sidebar-wrapper sidebar-theme">
 
@@ -116,8 +114,6 @@
 
 
 
-
-
                     {{--------------------------------------------- SWOT --------------------------------------}}
                     <li class="menu">
                         <a href="#uiKit" data-active="false" class="menu-toggle">
@@ -133,29 +129,6 @@
                         </svg>
                     </li>
                     {{--------------------------------------------- SWOT --------------------------------------}}
-
-
-
-
-
-                    {{------------------------------------ Approaches ---------------------------------}}
-                    <li class="menu">
-                        <a href="#OurApproaches" data-active="false" class="menu-toggle">
-                            <div class="base-menu">
-                                <div class="base-icons">
-                                    <img src="{{asset('dashboardAssets/assets/img/approach.png')}}" alt="">
-                                </div>
-                                <span>Approaches</span>
-                            </div>
-                        </a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
-                            <polyline points="15 18 9 12 15 6"></polyline>
-                        </svg>
-                    </li>
-                    {{------------------------------------ Approaches ---------------------------------}}
-
-
-
 
 
 
@@ -360,12 +333,12 @@
                     {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
 
 
-                    {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
+                    {{--------------------------------- Case Study Details --------------------------------------}}
                     <li class="menu">
                         <a href="#CaseStudy" data-active="false" class="menu-toggle">
                             <div class="base-menu">
                                 <div class="base-icons">
-                                    <img src="{{asset('dashboardAssets/assets/img/clients.png')}}" alt="">
+                                    <img src="{{asset('dashboardAssets/assets/img/case-study.png')}}" alt="">
                                 </div>
                                 <span>Case Study</span>
                             </div>
@@ -374,7 +347,45 @@
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
-                    {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
+                    {{--------------------------------- Case Study Details --------------------------------------}}
+
+
+
+
+                    {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
+                    <li class="menu">
+                        <a href="#caseStudyAboutProjectStackImages" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/programing.png')}}" alt="">
+                                </div>
+                                <span>Project Stacks</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
+
+
+
+                    {{--------------------------------- Case Study Single Project Image Slider --------------------------------------}}
+                    <li class="menu">
+                        <a href="#caseStudyslider" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/sliders.png')}}" alt="">
+                                </div>
+                                <span>CaseStudy Sliders</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Case Study Single Project Image Slider --------------------------------------}}
+
 
                 </ul>
             </nav>
@@ -428,26 +439,6 @@
                     </ul>
                 </div>
                 {{--------------------------------- Swot Route --------------------------------------}}
-
-
-
-
-
-                {{--------------------------------- Our Approaches --------------------------------------}}
-                <div class="submenu" id="OurApproaches">
-                    <ul class="submenu-list" data-parent-element="#OurApproaches">
-                        <li>
-                            <a href="{{route('OurApproaches.create')}}"> <img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
-                        </li>
-                        <li>
-                            <a href="{{route('OurApproaches.list')}}"> <img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
-                        </li>
-                    </ul>
-                </div>
-                {{--------------------------------- Our Approaches --------------------------------------}}
-
-
-
 
 
 
@@ -628,6 +619,36 @@
 
 
 
+                {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
+                <div class="submenu" id="caseStudyAboutProjectStackImages">
+                    <ul class="submenu-list" data-parent-element="#caseStudyAboutProjectStackImages">
+                        <li>
+                            <a href="{{route('caseStudyAboutProjectStackImages.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('caseStudyAboutProjectStackImages.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
+
+
+
+                {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
+                <div class="submenu" id="caseStudyslider">
+                    <ul class="submenu-list" data-parent-element="#caseStudyslider">
+                        <li>
+                            <a href="{{route('caseStudyslider.create')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Create </a>
+                        </li>
+                        <li>
+                            <a href="{{route('caseStudyslider.list')}}"><img src="{{asset('dashboardAssets/assets/img/list.png')}}" alt=""> Show All </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
+
+
+
 
 
             </div>
@@ -635,6 +656,8 @@
 
         </div>
         <!--  END SIDEBAR  -->
+
+
         <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
             <div class="container">
