@@ -37,6 +37,8 @@ Route::get('/blog', 'App\Http\Controllers\BlogPagesController@blog')->name('blog
 Route::get('/case-study', 'App\Http\Controllers\CaseStudyController@caseStudy')->name('caseStudy');
 //case Study Route
 
+Route::get('/case-study/singlePost/{id}', 'App\Http\Controllers\CaseStudyController@allCaseStudy')->name('allCaseStudy');
+
 
 //contact Route
 Route::get('/contact', 'App\Http\Controllers\ContactUsController@contact')->name('contact');

@@ -6,14 +6,25 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Models\CaseStudy;
 use App\Models\ServicesCategory;
+use DB;
 class CaseStudyController extends Controller
 {
     //
     public function caseStudy()
     {
-        
-        return view('pages.caseStudy.caseStudy');
+        $caseStudyDetails = DB::table('case_studies')->get();  
+        return view('pages.caseStudy.caseStudy',compact('caseStudyDetails'));
     }
+
+    public function allCaseStudy($id)
+    {
+        $singleCaseStudy = CaseStudy::find($id);
+        // dd($singleCaseStudy);
+        return view('pages.caseStudy.caseStudySingle',compact('singleCaseStudy'));
+    }
+
+   
+
 
     public function create()
     {

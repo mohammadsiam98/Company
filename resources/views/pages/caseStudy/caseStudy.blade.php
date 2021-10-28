@@ -29,60 +29,18 @@
 <section class="case-study pad-tb pt40">
     <div class="container">
         <div class="row justify-content-center">
+            @foreach($caseStudyDetails as $case_study)
             <div class="col-lg-4 col-sm-6">
                 <div class="full-image-card hover-scale">
-                    <div class="image-div"><a href="#"><img src="{{asset('assets/images/case-study/img-1.jpg')}}" alt="case-study" class="img-fluid" /></a></div>
+                    <div class="image-div"><a href="{{route('allCaseStudy',[$case_study->id])}}"><img src="{{url($case_study->thumbnail_case_study_image)}}" alt="case-study" class="img-fluid" /></a></div>
                     <div class="info-text-block">
-                        <h4><a href="#">Food Delivery Application</a></h4>
-                        <p>Ios | Android | Bootstrap | Jquery</p>
+                        <h4><a href="#">{{$case_study->thumbnail_case_study_title}}</a></h4>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="full-image-card hover-scale">
-                    <div class="image-div"><a href="#"><img src="{{asset('assets/images/case-study/img-2.jpg')}}" alt="case-study" class="img-fluid" /></a></div>
-                    <div class="info-text-block">
-                        <h4><a href="#">Real Estate Project</a></h4>
-                        <p>Ios | Android | Bootstrap | Jquery</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="full-image-card hover-scale">
-                    <div class="image-div"><a href="#"><img src="{{asset('assets/images/case-study/img-3.jpg')}}" alt="case-study" class="img-fluid" /></a></div>
-                    <div class="info-text-block">
-                        <h4><a href="#">Interior Decoration</a></h4>
-                        <p>Ios | Android | Bootstrap | Jquery</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="full-image-card hover-scale">
-                    <div class="image-div"><a href="#"><img src="{{asset('assets/images/case-study/img-4.jpg')}}" alt="case-study" class="img-fluid" /></a></div>
-                    <div class="info-text-block">
-                        <h4><a href="#">Gym Membership Portal</a></h4>
-                        <p>Ios | Android | Bootstrap | Jquery</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="full-image-card hover-scale">
-                    <div class="image-div"><a href="#"><img src="{{asset('assets/images/case-study/img-5.jpg')}}" alt="case-study" class="img-fluid" /></a></div>
-                    <div class="info-text-block">
-                        <h4><a href="#">Stock Market</a></h4>
-                        <p>Ios | Android | Bootstrap | Jquery</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="full-image-card hover-scale">
-                    <div class="image-div"><a href="#"><img src="{{asset('assets/images/case-study/img-6.jpg')}}" alt="case-study" class="img-fluid" /></a></div>
-                    <div class="info-text-block">
-                        <h4><a href="#">Business Consulting</a></h4>
-                        <p>Ios | Android | Bootstrap | Jquery</p>
-                    </div>
-                </div>
-            </div>
+            @endforeach
+
+
         </div>
     </div>
 </section>

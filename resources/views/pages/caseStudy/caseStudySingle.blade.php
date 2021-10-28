@@ -33,15 +33,15 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="image-block upset">
-                    <img src="{{asset('assets/images/case-study/app-intro.png')}}" alt="case study" class="img-fluid no-shadow" />
+                    <img src="{{url($singleCaseStudy->About_the_project_image)}}" alt="case study" class="img-fluid no-shadow" />
                 </div>
             </div>
             <div class="col-lg-6 block-1 v-center">
                 <div class="common-heading inner-heading text-l pl25">
                     <span>About The Project</span>
-                    <h2>On-Demand Food Delivery Application</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. is simply dummy text of the printing and typesetting industry. </p>
+                    <h2>{{$singleCaseStudy->About_the_project_title}}</h2>
+                    <p>{!!$singleCaseStudy->About_the_project_details!!}</p>
+
                 </div>
                 <div class="project-platform mt60 pl25">
                     <div class="project-platform-used -shadow"><a href="#"><img src="{{asset('assets/images/icons/android.svg')}}" alt="android"></a></div>
@@ -66,30 +66,14 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-12">
                 <h4 class="mt20 mb10">App Features</h4>
                 <ul class="list-style-">
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                    <li>Nullam porta nulla in sapien molestie, ut finibus nisi euismod.</li>
-                    <li>Curabitur euismod elit sed venenatis porttitor.</li>
-                    <li>Morbi convallis dolor ut tincidunt porttitor.</li>
-                    <li>Phasellus eleifend massa non enim elementum, a venenatis erat sollicitudin.</li>
-                    <li>Aenean sit amet elit euismod, aliquam quam eu, semper tellus.</li>
-                    <li>Maecenas sed ligula tristique, vestibulum tellus nec, dictum nisl.</li>
+                    <li>{!!$singleCaseStudy->app_features!!}</li>
+
                 </ul>
             </div>
-            <div class="col-lg-6">
-                <h4 class="mt20 mb10">Admin Features</h4>
-                <ul class="list-style-">
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                    <li>Nullam porta nulla in sapien molestie, ut finibus nisi euismod.</li>
-                    <li>Curabitur euismod elit sed venenatis porttitor.</li>
-                    <li>Morbi convallis dolor ut tincidunt porttitor.</li>
-                    <li>Phasellus eleifend massa non enim elementum, a venenatis erat sollicitudin.</li>
-                    <li>Aenean sit amet elit euismod, aliquam quam eu, semper tellus.</li>
-                    <li>Maecenas sed ligula tristique, vestibulum tellus nec, dictum nisl.</li>
-                </ul>
-            </div>
+
         </div>
     </div>
 </section>
@@ -98,20 +82,14 @@
 <section class="case-study pad-tb">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-sm-6">
+            <div class="col-lg-6 col-sm-12">
                 <h2 class="mt20 mb20">Challenges</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 <ul class="list-style- mt30">
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                    <li>Nullam porta nulla in sapien molestie, ut finibus nisi euismod.</li>
-                    <li>Curabitur euismod elit sed venenatis porttitor.</li>
-                    <li>Morbi convallis dolor ut tincidunt porttitor.</li>
-                    <li>Phasellus eleifend massa non enim elementum, a venenatis erat sollicitudin.</li>
-                    <li>Aenean sit amet elit euismod, aliquam quam eu, semper tellus.</li>
-                    <li>Maecenas sed ligula tristique, vestibulum tellus nec, dictum nisl.</li>
+                    <li>{!!$singleCaseStudy->challenges!!}</li>
                 </ul>
             </div>
-            <div class="col-lg-6 col-sm-6">
+            <div class="col-lg-6 col-sm-12">
                 <div class="project-view m-mt30">
                     <img src="{{asset('assets/images/case-study/app-view.png')}}" alt="case study" class="img-fluid" />
                 </div>
@@ -129,8 +107,8 @@
                 <div class="common-heading inner-heading text-l pr25">
                     <span>Solutions</span>
                     <h2>How We Work</h2>
-                    <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. is simply dummy text of the printing and typesetting industry. </p>
+                    <h4>{{$singleCaseStudy->solution_title}}</h4>
+                    <p>{!!$singleCaseStudy->solution_details!!}</p>
                 </div>
                 <div class="card-nx row">
                     <div class="col-lg-3 col-md-3 col-sm-6 col-6 mt30">
@@ -237,71 +215,21 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 mt30">
+            <div class="col-md-12 mt30">
                 <div class="reviews-card pr-shadow">
                     <div class="row v-center">
                         <div class="col"> <span class="revbx-lr"><i class="fas fa-quote-left"></i></span> </div>
-                        <div class="col"> <span class="revbx-rl"><img src="{{asset('assets/images/client/envato.png')}}" alt="review service logo"></span> </div>
+                        <div class="col"> <span class="revbx-rl"><img src="{{asset('assets/images/comments.png')}}" alt="review service logo"></span> </div>
                     </div>
                     <div class="review-text">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p>{{$singleCaseStudy->client_testimonials}}</p>
                     </div>
-                    <div class="-client-details-">
+                    <div class="-client-details-" style="display: flex; flex-direction:column;">
                         <div class="reviewer-text">
-                            <h4>Sue Vaneer</h4>
-                            <p>Business Owner, <small>Jaipur</small></p>
-                            <div class="star-rate">
-                                <ul>
-                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-                                    <li> <a href="javascript:void(0)"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mt30">
-                <div class="reviews-card pr-shadow">
-                    <div class="row v-center">
-                        <div class="col"> <span class="revbx-lr"><i class="fas fa-quote-left"></i></span> </div>
-                        <div class="col"> <span class="revbx-rl"><img src="{{asset('assets/images/client/envato.png')}}" alt="review service logo"></span> </div>
-                    </div>
-                    <div class="review-text">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                    <div class="-client-details-">
-                        <div class="reviewer-text">
-                            <h4>Don Stairs</h4>
-                            <p>Business Owner, <small>Jaipur</small></p>
-                            <div class="star-rate">
-                                <ul>
-                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-                                    <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-                                    <li> <a href="javascript:void(0)"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mt30">
-                <div class="reviews-card pr-shadow">
-                    <div class="row v-center">
-                        <div class="col"> <span class="revbx-lr"><i class="fas fa-quote-left"></i></span> </div>
-                        <div class="col"> <span class="revbx-rl"><img src="{{asset('assets/images/client/envato.png')}}" alt="review service logo"></span> </div>
-                    </div>
-                    <div class="review-text">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                    <div class="-client-details-">
-                        <div class="reviewer-text">
-                            <h4>Russ L. Rogers</h4>
-                            <p>Business Owner, <small>Jaipur</small></p>
+                            <img src="{{asset('assets/images/user.png')}}" style="float: left; width:auto;" alt="review service logo">
+                            <h5 style="position:relative; left:10px;">{{$singleCaseStudy->client_name}}</h5>
+
+                            <p class="company_clients_position" style="display: inline-flex; margin-left:11px">{{$singleCaseStudy->client_designation}}</small></p>
                             <div class="star-rate">
                                 <ul>
                                     <li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
