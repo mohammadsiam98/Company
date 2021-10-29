@@ -88,7 +88,7 @@
                         <button type="submit" id="form-submit" class="btn lnk btn-main bg-btn">Submit</button>
                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                         <div class="clearfix"></div>
-                        <p class="trm"><i class="fas fa-lock"></i>We hate spam, and we respect your privacy.</p>
+                        <p class="trm"><i class="fas fa-lock"></i> <b>We hate spam, and we respect your privacy.</b> </p>
                     </form>
                 </div>
             </div>

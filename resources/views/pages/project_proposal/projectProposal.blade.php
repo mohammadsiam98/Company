@@ -12,7 +12,7 @@
                     <div class="bread-inner">
 
                         <div class="bread-title wow fadeInUp" data-wow-delay=".5s">
-                            <h2>Project Proposal</h2>
+                            <h2>We value your words</h2>
                         </div>
                     </div>
                 </div>
@@ -41,8 +41,8 @@
                 </div>
                 <div class="form-block">
                     <form action="{{route('ProjectProposalDetails.store')}}" id="contactForm" data-toggle="validator" class="shake">
-
                         <div class="form-group">
+
                             <input type="text" id="name" name="name" placeholder="Enter name" required data-error="Please fill Out" style="font-family: 'Hind Siliguri', sans-serif; font-size:28px; font-weight:bold;">
                             <div class="help-block with-errors"></div>
                         </div>
@@ -67,7 +67,7 @@
                         <button type="submit" id="form-submit" class="btn lnk btn-main bg-btn">Submit</button>
                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                         <div class="clearfix"></div>
-                        <p class="trm"><i class="fas fa-lock"></i>We hate spam, and we respect your privacy.</p>
+                        <p class="trm"><i class="fas fa-lock"></i> <b>We hate spam, and we respect your privacy.</b> </p>
                     </form>
                 </div>
             </div>

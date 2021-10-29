@@ -251,7 +251,7 @@
 <section class="why-choos-lg pad-tb deep-dark">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-sm-12 col-md-12">
                 <div class="common-heading text-l">
                     <h2><span class="text-second text-bold">Why Choose Us</span></h2>
                     <h4 class="mb20">Our Company<span class="text-second text-bold"> Salahuddinit </span> Among The Leading Web & App Development Companies</h4>
@@ -280,7 +280,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-sm-12">
                 <div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="single-image bg-shape-dez wow fadeIn" data-wow-duration="2s"><img src="{{asset('assets/images/company.png')}}" alt="image" class="img-fluid"></div>
                 <p class="text-center mt30">Lorem Ipsum is simply dummy text of the printing and typesetting industry..</p>
                 <div class="cta-card mt60 text-center">

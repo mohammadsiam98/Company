@@ -9,6 +9,7 @@ use App\Models\SectorClients;
 use App\Models\SectorTechnologiesWeWillUse;
 use App\Models\SectorTechnologiesDetails;
 use App\Models\Pricing;
+use App\Models\ServicesCategory;
 use App\Models\SectorCreativeWorks;
 use DB;
 class SectorsController extends Controller
@@ -16,7 +17,9 @@ class SectorsController extends Controller
     //This Function is dynamic
     public function sectors($id)
     {
-        $categoryId = $id;
+        $categoryName = $id;
+        $category = ServicesCategory::where('category_name',$categoryName)->first();
+        $categoryId = $category->id;
         $serviceOverview = ServiceOverviewDetails::where('category_id',$categoryId)->first();
         $SectorServices  = SectorServices::where('category_id',$categoryId)->get();
         $SectorClients   = SectorClients::where('category_id',$categoryId)->first();

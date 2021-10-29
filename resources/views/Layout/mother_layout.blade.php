@@ -46,7 +46,7 @@
                             <a href="{{route('aboutUs')}}" class="menu-links">About Us</a>
                         </li>
                         <li class="sbmenu">
-                            <a href="{{route('ourApproaches',1)}}" class="menu-links">Our Approaches</a>
+                            <a href="{{route('ourApproaches')}}" class="menu-links">Our Approaches</a>
                         </li>
                         <li class="sbmenu rpdropdown">
                             <a href="#" class="menu-links">Sectors</a>
@@ -55,18 +55,18 @@
                                     <div class="sub-menu-center-block">
                                         <div class="sub-menu-column smfull">
                                             <ul>
-                                                <li><a href="{{route('sectors',1)}}">Web Development</a></li>
-                                                <li><a href="{{route('sectors',13)}}">Web Design</a></li>
-                                                <li><a href="{{route('sectors',3)}}">Graphics Design</a> </li>
-                                                <li><a href="{{route('sectors',4)}}">App Development</a> </li>
-                                                <li><a href="{{route('sectors',5)}}">Video Editing</a> </li>
-                                                <li><a href="{{route('sectors',6)}}">Search Engine Optimization</a> </li>
-                                                <li><a href="{{route('sectors',7)}}">Social Media Marketing</a> </li>
-                                                <li><a href="{{route('sectors',8)}}">Content Writing</a> </li>
-                                                <li><a href="{{route('sectors',9)}}">Software Development</a> </li>
-                                                <li><a href="{{route('sectors',10)}}">Animation</a> </li>
-                                                <li><a href="{{route('sectors',11)}}">Photography</a> </li>
-                                                <li><a href="{{route('sectors',12)}}">Cinematography</a> </li>
+                                                <li><a href="{{route('sectors','Website-Development')}}">Web Development</a></li>
+                                                <li><a href="{{route('sectors','Web-Design')}}">Web Design</a></li>
+                                                <li><a href="{{route('sectors','Graphics-Design')}}">Graphics Design</a> </li>
+                                                <li><a href="{{route('sectors','App-Development')}}">App Development</a> </li>
+                                                <li><a href="{{route('sectors','Video-Editing')}}">Video Editing</a> </li>
+                                                <li><a href="{{route('sectors','Search-Engine-Opimization')}}">Search Engine Optimization</a> </li>
+                                                <li><a href="{{route('sectors','Social-Media- Marketing')}}">Social Media Marketing</a> </li>
+                                                <li><a href="{{route('sectors','Content-Writing')}}">Content Writing</a> </li>
+                                                <li><a href="{{route('sectors','Software-Development')}}">Software Development</a> </li>
+                                                <li><a href="{{route('sectors','Animation')}}">Animation</a> </li>
+                                                <li><a href="{{route('sectors','Photography')}}">Photography</a> </li>
+                                                <li><a href="{{route('sectors','Cinematography')}}">Cinematography</a> </li>
 
                                             </ul>
                                         </div>
@@ -103,7 +103,7 @@
                         <a href="{{route('aboutUs')}}" style="font-size: 18px;">About Us</a>
                     </li>
                     <li>
-                        <a href="{{route('ourApproaches',1)}}" style="font-size: 18px;">Our Approaches</a>
+                        <a href="{{route('ourApproaches')}}" style="font-size: 18px;">Our Approaches</a>
                     </li>
 
 

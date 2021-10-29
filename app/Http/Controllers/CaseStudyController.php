@@ -18,7 +18,10 @@ class CaseStudyController extends Controller
 
     public function allCaseStudy($id)
     {
-        $singleCaseStudy = CaseStudy::find($id);
+        $singleCaseStudyName = $id; //Name Fetch
+        $caseStudy = CaseStudy::where('thumbnail_case_study_title',$singleCaseStudyName)->first(); //Name Fetch
+        $singleCaseStudyId = $caseStudy->id; //Id fetch
+        $singleCaseStudy = CaseStudy::find($singleCaseStudyId);
         // dd($singleCaseStudy);
         return view('pages.caseStudy.caseStudySingle',compact('singleCaseStudy'));
     }
