@@ -86,8 +86,6 @@
 </section>
 <!--End Hero-->
 
-
-
 <!--Start About-->
 <section class="about-sec-rpb pad-tb">
     <div class="container">
@@ -430,7 +428,7 @@
         <div class="-cta-btn mt70">
             <div class="free-cta-title v-center wow fadeInUp" data-wow-delay="1s">
                 <p>We <span>Promise.</span> We <span>Deliver.</span></p>
-                <a href="#" class="btn-main bg-btn2 lnk">Let's Work Together<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+                <a href="{{route('contact')}}" class="btn-main bg-btn2 lnk">Let's Work Together<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
             </div>
         </div>
     </div>

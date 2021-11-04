@@ -11,4 +11,8 @@ class HomepageController extends Controller
     {
         return view('pages.homepage.index');
     }
+    public function starterPage()
+    {
+        return view('pages.starterPage');
+    }
 }

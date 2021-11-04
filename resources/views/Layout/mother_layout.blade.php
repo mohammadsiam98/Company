@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <title>Digital Marketing Company</title>
-    <meta name="description" content="Creative Agency, Marketing Agency Template">
-    <meta name="keywords" content="Creative Agency, Marketing Agency">
-    <meta name="author" content="rajesh-doot">
+    <meta name="description" content="here we will add company description">
+    <meta name="keywords" content="Creative Agency, Marketing Agency, Web Development Company, website developer in bangladesh, website development company in bangladesh, website development company, website developer dhaka, website developer near me, best website development company in bangladesh, top 10 web development company in bangladesh, web development company list in bangladesh">
+    <meta name="author" content="servicearea">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#2e2a8f">
@@ -43,30 +43,45 @@
                     <ul class="nav-list">
 
                         <li class="sbmenu">
-                            <a href="{{route('aboutUs')}}" class="menu-links">About Us</a>
+                            <a href="{{route('aboutUs')}}" class="menu-links">
+                                <img src="{{asset('assets/images/about.png')}}" alt=""> About Us</a>
                         </li>
                         <li class="sbmenu">
-                            <a href="{{route('ourApproaches')}}" class="menu-links">Our Approaches</a>
+                            <a href="{{route('ourApproaches')}}" class="menu-links">
+                                <img src="{{asset('assets/images/objective.png')}}" alt=""> Our Approaches</a>
                         </li>
                         <li class="sbmenu rpdropdown">
-                            <a href="#" class="menu-links">Sectors</a>
+                            <a href="#" class="menu-links">
+                                <img src="{{asset('assets/images/menu.png')}}" alt="" style="margin-right:10px;"> Sectors</a>
                             <div class="nx-dropdown menu-dorpdown">
                                 <div class="sub-menu-section">
                                     <div class="sub-menu-center-block">
                                         <div class="sub-menu-column smfull">
                                             <ul>
-                                                <li><a href="{{route('sectors','Website-Development')}}">Web Development</a></li>
-                                                <li><a href="{{route('sectors','Web-Design')}}">Web Design</a></li>
-                                                <li><a href="{{route('sectors','Graphics-Design')}}">Graphics Design</a> </li>
-                                                <li><a href="{{route('sectors','App-Development')}}">App Development</a> </li>
-                                                <li><a href="{{route('sectors','Video-Editing')}}">Video Editing</a> </li>
-                                                <li><a href="{{route('sectors','Search-Engine-Opimization')}}">Search Engine Optimization</a> </li>
-                                                <li><a href="{{route('sectors','Social-Media- Marketing')}}">Social Media Marketing</a> </li>
-                                                <li><a href="{{route('sectors','Content-Writing')}}">Content Writing</a> </li>
-                                                <li><a href="{{route('sectors','Software-Development')}}">Software Development</a> </li>
-                                                <li><a href="{{route('sectors','Animation')}}">Animation</a> </li>
-                                                <li><a href="{{route('sectors','Photography')}}">Photography</a> </li>
-                                                <li><a href="{{route('sectors','Cinematography')}}">Cinematography</a> </li>
+                                                <li><a href="{{route('sectors','Website-Development')}}">
+                                                        <img src="{{asset('assets/images/development.png')}}" alt="" style="margin-right:10px;"> Web Development</a></li>
+                                                <li><a href="{{route('sectors','Web-Design')}}">
+                                                        <img src="{{asset('assets/images/web-design.png')}}" alt="" style="margin-right:10px;"> Web Design</a></li>
+                                                <li><a href="{{route('sectors','Graphics-Design')}}">
+                                                        <img src="{{asset('assets/images/graphic-design.png')}}" alt="" style="margin-right:10px;"> Graphics Design</a> </li>
+                                                <li><a href="{{route('sectors','App-Development')}}">
+                                                        <img src="{{asset('assets/images/mobile-app.png')}}" alt="" style="margin-right:13px;">App Development</a> </li>
+                                                <li><a href="{{route('sectors','Video-Editing')}}">
+                                                        <img src="{{asset('assets/images/edit-video.png')}}" alt="" style="margin-right:13px;">Video Editing</a> </li>
+                                                <li><a href="{{route('sectors','Search-Engine-Opimization')}}">
+                                                        <img src="{{asset('assets/images/SEO.png')}}" alt="" style="margin-right:13px;">Search Engine Optimization</a></li>
+                                                <li><a href="{{route('sectors','Social-Media- Marketing')}}">
+                                                        <img src="{{asset('assets/images/bullhorn.png')}}" alt="" style="margin-right:13px;">Social Media Marketing</a> </li>
+                                                <li><a href="{{route('sectors','Content-Writing')}}">
+                                                        <img src="{{asset('assets/images/creative-writing.png')}}" alt="" style="margin-right:10px;"> Content Writing</a> </li>
+                                                <li><a href="{{route('sectors','Software-Development')}}">
+                                                        <img src="{{asset('assets/images/digital.png')}}" alt="" style="margin-right:10px;"> Software Development</a> </li>
+                                                <li><a href="{{route('sectors','Animation')}}">
+                                                        <img src="{{asset('assets/images/animate.png')}}" alt="" style="margin-right:13px;"> Animation</a> </li>
+                                                <li><a href="{{route('sectors','Photography')}}">
+                                                        <img src="{{asset('assets/images/photography.png')}}" alt="" style="margin-right:13px;"> Photography</a> </li>
+                                                <li><a href="{{route('sectors','Cinematography')}}">
+                                                        <img src="{{asset('assets/images/camera.png')}}" alt="" style="margin-right:13px;"> Cinematography</a> </li>
 
                                             </ul>
                                         </div>
@@ -75,18 +90,21 @@
                             </div>
                         </li>
 
-                        {{-- <li class="sbmenu rpdropdown">
-                            <a href="{{route('notunNam')}}" class="menu-links">Services</a>
-                        </li> --}}
                         <li>
                             <a href="#" class="menu-links right-bddr">&nbsp;</a>
-                            <!--menu right border-->
-                        <li><a href="{{route('project-proposal')}}" class="btn-br bg-btn3 btshad-b2 lnk">Project Proposal<span class="circle"></span></a> </li>
+                        </li>
+                        <!--menu right border-->
+                        <li><a href="{{route('project-proposal')}}" class="btn-br bg-btn3 btshad-b2 lnk">
+                                <img src="{{asset('assets/images/projectProposal.png')}}" alt=""> Project Proposal<span class="circle"></span></a> </li>
 
                         <li>
                             <a href="#" class="menu-links right-bddr">&nbsp;</a>
-                            <!--menu right border-->
-                        <li><a href="{{route('contact')}}" class="btn-br bg-btn3 btshad-b2 lnk">Contact Us<span class="circle"></span></a>
+                        </li>
+
+
+                        <!--menu right border-->
+                        <li><a href="{{route('contact')}}" class="btn-br bg-btn3 btshad-b2 lnk">
+                                <img src="{{asset('assets/images/contacts.png')}}" alt=""> Contact Us<span class="circle"></span></a>
                         </li>
                     </ul>
                 </div>
@@ -100,14 +118,39 @@
             <nav id="main-nav">
                 <ul class="first-nav">
                     <li>
-                        <a href="{{route('aboutUs')}}" style="font-size: 18px;">About Us</a>
+                        <a href="{{route('ourApproaches')}}">
+                            <img src="{{asset('assets/images/about.png')}}" alt="" style="margin-right:10px;"> About us</a>
                     </li>
+
                     <li>
-                        <a href="{{route('ourApproaches')}}" style="font-size: 18px;">Our Approaches</a>
+                        <a href="{{route('ourApproaches')}}">
+                            <img src="{{asset('assets/images/objective.png')}}" alt="" style="margin-right:10px;"> Our Approaches</a>
                     </li>
 
-
-
+                    <li><a href="{{route('sectors','Website-Development')}}">
+                            <img src="{{asset('assets/images/development.png')}}" alt="" style="margin-right:10px;"> Web Development</a></li>
+                    <li><a href="{{route('sectors','Web-Design')}}">
+                            <img src="{{asset('assets/images/web-design.png')}}" alt="" style="margin-right:10px;"> Web Design</a></li>
+                    <li><a href="{{route('sectors','Graphics-Design')}}">
+                            <img src="{{asset('assets/images/graphic-design.png')}}" alt="" style="margin-right:10px;"> Graphics Design</a> </li>
+                    <li><a href="{{route('sectors','App-Development')}}">
+                            <img src="{{asset('assets/images/mobile-app.png')}}" alt="" style="margin-right:13px;">App Development</a> </li>
+                    <li><a href="{{route('sectors','Video-Editing')}}">
+                            <img src="{{asset('assets/images/edit-video.png')}}" alt="" style="margin-right:13px;">Video Editing</a> </li>
+                    <li><a href="{{route('sectors','Search-Engine-Opimization')}}">
+                            <img src="{{asset('assets/images/SEO.png')}}" alt="" style="margin-right:13px;">Search Engine Optimization</a></li>
+                    <li><a href="{{route('sectors','Social-Media- Marketing')}}">
+                            <img src="{{asset('assets/images/bullhorn.png')}}" alt="" style="margin-right:13px;">Social Media Marketing</a> </li>
+                    <li><a href="{{route('sectors','Content-Writing')}}">
+                            <img src="{{asset('assets/images/creative-writing.png')}}" alt="" style="margin-right:10px;"> Content Writing</a> </li>
+                    <li><a href="{{route('sectors','Software-Development')}}">
+                            <img src="{{asset('assets/images/digital.png')}}" alt="" style="margin-right:10px;"> Software Development</a> </li>
+                    <li><a href="{{route('sectors','Animation')}}">
+                            <img src="{{asset('assets/images/animate.png')}}" alt="" style="margin-right:13px;"> Animation</a> </li>
+                    <li><a href="{{route('sectors','Photography')}}">
+                            <img src="{{asset('assets/images/photography.png')}}" alt="" style="margin-right:13px;"> Photography</a> </li>
+                    <li><a href="{{route('sectors','Cinematography')}}">
+                            <img src="{{asset('assets/images/camera.png')}}" alt="" style="margin-right:13px;"> Cinematography</a> </li>
                 </ul>
                 <ul class="bottom-nav">
                     <li class="prb">
@@ -136,26 +179,6 @@
 
     <!--Start Footer-->
     <footer>
-        <div class="footer-row1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="email-subs">
-                            <h3>Get New Insights Weekly</h3>
-                            <p>News letter dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Enter your email</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 v-center">
-                        <div class="email-subs-form">
-                            <form>
-                                <input type="email" placeholder="Email Your Address" name="emails">
-                                <button type="submit" name="submit" class="lnk btn-main bg-btn">Subscribe <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="footer-row2">
             <div class="container">
                 <div class="row justify-content-between">
@@ -169,45 +192,35 @@
                         <ul class="footer-address-list ftr-details">
                             <li>
                                 <span><i class="fas fa-envelope"></i></span>
-                                <p>Email <span> <a href="https://separateweb.com/cdn-cgi/l/email-protection#5f363139301f3d2a2c36313a2c2c313e323a713c3032"><span class="__cf_email__" data-cfemail="620b0c040d220017110b0c0711110c030f074c010d0f">[email&#160;protected]</span></a></span></p>
+                                <p>Email <span> <a href="https://separateweb.com/cdn-cgi/l/email-protection#5f363139301f3d2a2c36313a2c2c313e323a713c3032"><span class="__cf_email__" data-cfemail="620b0c040d220017110b0c0711110c030f074c010d0f"> <b>office@servicearea.xyz</b> </span></a></span></p>
                             </li>
                             <li>
                                 <span><i class="fas fa-phone-alt"></i></span>
-                                <p>Phone <span> <a href="tel:+10000000000">+1 0000 000 000</a></span></p>
+                                <p>Phone <span> <a href="tel:+10000000000"><b>01886453849</b></a></span></p>
                             </li>
                             <li>
                                 <span><i class="fas fa-map-marker-alt"></i></span>
-                                <p>Address <span> 123 Business Centre London SW1A 1AA</span></p>
+                                <p>Address <span> <b>202/3/ka, Dhanmondi 19 no: Modhubazar, Dhaka - 1209</b> </span></p>
                             </li>
                         </ul>
                     </div>
                     <div class="col-lg-2 col-sm-6">
                         <h5>Other Links</h5>
                         <ul class="footer-address-list link-hover">
-                            <li><a href="{{route('aim')}}">Mission Vission</a></li>
-                            <li><a href="{{route('caseStudy')}}">Case Study</a></li>
+                            <li><a href="{{route('aim')}}"> <b>Mission Vission</b></a></li>
+                            <li><a href="{{route('caseStudy')}}"> <b>Case Study</b></a></li>
 
-                            <li><a href="{{route('reviews')}}">Client Reviews</a></li>
-                            <li><a href="{{route('team')}}">Our Team</a></li>
+                            <li><a href="{{route('reviews')}}"> <b>Client Reviews</b> </a></li>
+                            <li><a href="{{route('team')}}"> <b>Our Team</b> </a></li>
 
                         </ul>
                     </div>
                     <div class="col-lg-4 col-sm-6 footer-blog-">
-                        <h5>Latest Blogs</h5>
-                        <div class="single-blog-">
-                            <div class="post-thumb"><a href="#"><img src="images/blog/blog-small.jpg" alt="blog"></a></div>
-                            <div class="content">
-                                <p class="post-meta"><span class="post-date"><i class="far fa-clock"></i>April 15, 2020</span></p>
-                                <h4 class="title"><a href="blog-sngle.html">We Provide you Best &amp; Creative Consulting Service</a></h4>
-                            </div>
-                        </div>
-                        <div class="single-blog-">
-                            <div class="post-thumb"><a href="#"><img src="images/blog/blog-small.jpg" alt="blog"></a></div>
-                            <div class="content">
-                                <p class="post-meta"><span class="post-date"><i class="far fa-clock"></i>April 15, 2020</span></p>
-                                <h4 class="title"><a href="blog-sngle.html">We Provide you Best &amp; Creative Consulting Service</a></h4>
-                            </div>
-                        </div>
+                        <h5>Our Blog Website</h5>
+                        <ul class="footer-address-list link-hover">
+                            <li><a href="{{route('aim')}}"> <b>blog.servicearea.xyz</b></a></li>
+                        </ul>
+
                     </div>
                 </div>
             </div>
@@ -230,7 +243,7 @@
                                 <a href="javascript:void(0)" target="blank"><i class="fab fa-behance"></i></a>
                             </div>
                             <div class="footer-">
-                                <p>Copyright &copy; 2020 Niwax. All rights reserved. Template By <a href="https://themeforest.net/user/rajesh-doot/portfolio" target="blank">Rajesh Doot</a></p>
+                                <p>&copy; <b>Servicearea 2021.</b> All rights reserved.</p>
                             </div>
                         </div>
                     </div>

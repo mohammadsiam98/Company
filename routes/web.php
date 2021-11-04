@@ -17,7 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'App\Http\Controllers\HomepageController@homepage')->name('homepage');
 //Homepage Route
 
-
 //about-us Route
 Route::get('/about-us', 'App\Http\Controllers\AboutUsController@aboutUs')->name('aboutUs');
 //about-us Route

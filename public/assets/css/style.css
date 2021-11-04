@@ -556,7 +556,7 @@ div.custom-nav>ul>li.sbmenu>a:after {
 }
 
 .custom-nav .menu-dorpdown {
-    width: 240px;
+    width: 310px;
     margin: 0 auto
 }
 
@@ -2110,14 +2110,14 @@ footer .row {
 
 #scrollUp {
     bottom: 20px;
-    right: 20px;
-    width: 30px;
-    height: 50px;
+    width: 40px;
+    height: 70px;
+    left: 20px;
     -webkit-border-radius: 100px;
     border-radius: 100px;
     color: #fff;
     opacity: .4;
-    background: url(../images/icons/up-arrow.svg) center center no-repeat #00baff;
+    background: url(../images/icons/up-arrow.svg) center center no-repeat #ff4501;
     background-size: 15px
 }
 
@@ -2822,8 +2822,8 @@ footer.ftshap:before {
 }
 
 .image-block1 img {
-    -webkit-box-shadow: -20px 20px 35px #dcdcdc, 20px -40px 35px #fff;
-    box-shadow: -20px 20px 35px #dcdcdc, 20px -40px 35px #fff;
+    /* -webkit-box-shadow: -20px 20px 35px #dcdcdc, 20px -40px 35px #fff;
+    box-shadow: -20px 20px 35px #dcdcdc, 20px -40px 35px #fff; */
     -webkit-border-radius: 8px;
     border-radius: 8px;
     width: 100%
@@ -6454,7 +6454,8 @@ html .pb140 {
     background: #fff6f3;
     background: -moz-linear-gradient(top, #fff6f3 0, #fffefb 100%);
     background: -webkit-linear-gradient(top, #fff6f3 0, #fffefb 100%);
-    background: linear-gradient(to bottom, #fff6f3 0, #fffefb 100%)
+    background: linear-gradient(to bottom, #fff6f3 0, #f1f1f1 100%);
+}
 }
 
 .bg-gradient6 {

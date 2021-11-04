@@ -10,12 +10,6 @@
             <div class="row">
                 <div class="col-lg-12 v-center">
                     <div class="bread-inner">
-                        <div class="bread-menu wow fadeInUp" data-wow-delay=".2s">
-                            <ul>
-                                <li><a href="index-2.html">Home</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
                         <div class="bread-title wow fadeInUp" data-wow-delay=".5s">
                             <h2>Contact</h2>
                         </div>
