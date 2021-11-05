@@ -8,8 +8,8 @@
             <div class="col-lg-5">
                 <div class="hero-heading-sec2">
                     <h1 class="wow fadeIn" data-wow-delay="0.2s">Digital Creative Agency</h1>
-                    <p class="wow fadeIn" data-wow-delay="0.4s">Niwax is one of the most creative and experienced mobile app development companies in India.</p>
-                    <a href="case-study.html" class="btn-main bg-btn lnk wow fadeIn" data-wow-delay="0.8s">View Case Studies <i class="fas fa-chevron-right fa-ani"></i><span class="circle"></span></a>
+                    <p class="wow fadeIn" data-wow-delay="0.4s">Servicearea is one of the most creative and experienced company in Bangladesh.</p>
+                    <a href="{{route('caseStudy')}}" class="btn-main bg-btn lnk wow fadeIn" data-wow-delay="0.8s">View Case Studies <i class="fas fa-chevron-right fa-ani"></i><span class="circle"></span></a>
                     <div class="awards-block-tt  wow fadeIn" data-wow-delay="1s"><img src="{{asset('assets/images/hero/awards-logo.png')}}" alt="awards-logo" class="img-fluid" /></div>
                 </div>
             </div>
@@ -21,9 +21,9 @@
                                 <a href="#">
                                     <div class="service-card-hh">
                                         <div class="image-sr-mm">
-                                            <img alt="custom-sport" src="{{asset('assets/images/service/vr.png')}}">
+                                            <img alt="custom-sport" src="{{asset('assets/images/service/service-img-1.png')}}">
                                         </div>
-                                        <div class="title-serv-c"><span>VR</span> Solution</div>
+                                        <div class="title-serv-c"><span>Website</span>Design</div>
                                     </div>
                                 </a>
                             </div>
@@ -33,7 +33,7 @@
                                         <div class="image-sr-mm">
                                             <img alt="custom-sport" src="{{asset('assets/images/service/app-develop.png')}}">
                                         </div>
-                                        <div class="title-serv-c"><span>Custom</span> App Solution</div>
+                                        <div class="title-serv-c"><span>Mobile Application</span>Development</div>
                                     </div>
                                 </a>
                             </div>
@@ -41,9 +41,9 @@
                                 <a href="#">
                                     <div class="service-card-hh">
                                         <div class="image-sr-mm">
-                                            <img alt="custom-sport" src="{{asset('assets/images/service/startup.png')}}">
+                                            <img alt="custom-sport" src="{{asset('assets/images/service/service-img-2.png')}}">
                                         </div>
-                                        <div class="title-serv-c"><span>Startup</span> Solution</div>
+                                        <div class="title-serv-c"><span>Webite</span>Development</div>
                                     </div>
                                 </a>
                             </div>
@@ -51,9 +51,9 @@
                                 <a href="#">
                                     <div class="service-card-hh">
                                         <div class="image-sr-mm">
-                                            <img alt="custom-sport" src="{{asset('assets/images/service/car-rental.png')}}">
+                                            <img alt="custom-sport" src="{{asset('assets/images/service/vr.png')}}">
                                         </div>
-                                        <div class="title-serv-c"><span>Car</span> Rental Solution</div>
+                                        <div class="title-serv-c"><span>Graphics</span>Design</div>
                                     </div>
                                 </a>
                             </div>
@@ -61,9 +61,9 @@
                                 <a href="#">
                                     <div class="service-card-hh">
                                         <div class="image-sr-mm">
-                                            <img alt="custom-sport" src="{{asset('assets/images/service/marketing.png')}}">
+                                            <img alt="custom-sport" src="{{asset('assets/images/service/smo.png')}}">
                                         </div>
-                                        <div class="title-serv-c"><span>Marketing</span> Solution</div>
+                                        <div class="title-serv-c"><span>Social Media</span>Marketing</div>
                                     </div>
                                 </a>
                             </div>
@@ -73,7 +73,67 @@
                                         <div class="image-sr-mm">
                                             <img alt="custom-sport" src="{{asset('assets/images/service/ewallet.png')}}">
                                         </div>
-                                        <div class="title-serv-c"><span>e-Wallet</span> Solution</div>
+                                        <div class="title-serv-c"><span>Video</span>Editing</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="service-slide card-bg-f" data-tilt data-tilt-max="5" data-tilt-speed="1000">
+                                <a href="#">
+                                    <div class="service-card-hh">
+                                        <div class="image-sr-mm">
+                                            <img alt="custom-sport" src="{{asset('assets/images/service/ewallet.png')}}">
+                                        </div>
+                                        <div class="title-serv-c"><span>Content</span>Writing</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="service-slide card-bg-f" data-tilt data-tilt-max="5" data-tilt-speed="1000">
+                                <a href="#">
+                                    <div class="service-card-hh">
+                                        <div class="image-sr-mm">
+                                            <img alt="custom-sport" src="{{asset('assets/images/service/ewallet.png')}}">
+                                        </div>
+                                        <div class="title-serv-c"><span>Software</span>Development</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="service-slide card-bg-f" data-tilt data-tilt-max="5" data-tilt-speed="1000">
+                                <a href="#">
+                                    <div class="service-card-hh">
+                                        <div class="image-sr-mm">
+                                            <img alt="custom-sport" src="{{asset('assets/images/service/seo.png')}}">
+                                        </div>
+                                        <div class="title-serv-c"><span>Search Engine</span>Optimization</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="service-slide card-bg-f" data-tilt data-tilt-max="5" data-tilt-speed="1000">
+                                <a href="#">
+                                    <div class="service-card-hh">
+                                        <div class="image-sr-mm">
+                                            <img alt="custom-sport" src="{{asset('assets/images/service/ewallet.png')}}">
+                                        </div>
+                                        <div class="title-serv-c"><span>Animation</span>Video</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="service-slide card-bg-f" data-tilt data-tilt-max="5" data-tilt-speed="1000">
+                                <a href="#">
+                                    <div class="service-card-hh">
+                                        <div class="image-sr-mm">
+                                            <img alt="custom-sport" src="{{asset('assets/images/service/ewallet.png')}}">
+                                        </div>
+                                        <div class="title-serv-c"><span>Photography</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="service-slide card-bg-f" data-tilt data-tilt-max="5" data-tilt-speed="1000">
+                                <a href="#">
+                                    <div class="service-card-hh">
+                                        <div class="image-sr-mm">
+                                            <img alt="custom-sport" src="{{asset('assets/images/service/ewallet.png')}}">
+                                        </div>
+                                        <div class="title-serv-c"><span>Cinematography</div>
                                     </div>
                                 </a>
                             </div>
@@ -182,8 +242,8 @@
         </div>
         <div class="-cta-btn mt70">
             <div class="free-cta-title v-center zoomInDown wow" data-wow-delay="1.4s">
-                <p>Hire a <span>Dedicated Developer</span></p>
-                <a href="#" class="btn-main bg-btn2 lnk">Hire Now<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+                <p>For more information <span>Contact with us</span></p>
+                <a href="{{route('contact')}}" class="btn-main bg-btn2 lnk">Contact us<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
             </div>
         </div>
     </div>
