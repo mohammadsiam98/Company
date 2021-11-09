@@ -661,7 +661,6 @@
                                     <tr>
                                         <th>Key</th>
                                         <th>Case Study Name</th>
-
                                         <th>Image</th>
                                         <th>Action</th>
                                     </tr>
@@ -670,7 +669,7 @@
                                     @foreach ($stackImagesCaseStudySingleProject as $key =>$stack)
                                     <tr>
                                         <td>{{$key +1 }}</td>
-                                        <td>{{$stack->get_technology_name->thumbnail_case_study_title}}</td>
+                                        <td style="font-size: 24px;"> <b>{{$stack->get_technology_name->thumbnail_case_study_title}}</b> </td>
 
                                         <td> <img style="height: 70px; width:auto;" src="{{url($stack->image)}}" alt="image"></td>
                                         <td>

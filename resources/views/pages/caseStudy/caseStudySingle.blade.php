@@ -36,11 +36,12 @@
                     <p>{!!$singleCaseStudy->About_the_project_details!!}</p>
 
                 </div>
+                @foreach ($singleCaseStudyStackImages as $StackImagesAboutProject)
                 <div class="project-platform mt60 pl25">
-                    <div class="project-platform-used -shadow"><a href="#"><img src="{{asset('assets/images/icons/android.svg')}}" alt="android"></a></div>
-                    <div class="project-platform-used -shadow"><a href="#"><img src="{{asset('assets/images/icons/apple.svg')}}" alt="apple"></a></div>
-                    <div class="project-platform-used -shadow"><a href="#"><img src="{{asset('assets/images/icons/windows.svg')}}" alt="windows"></a></div>
+                    <div class="project-platform-used -shadow"><a href="#"><img src="{{url($StackImagesAboutProject->image)}}" alt="image"></a></div>
                 </div>
+                @endforeach
+
             </div>
         </div>
     </div>
@@ -139,10 +140,11 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="project-screens owl-carousel">
-                    <div class="screen-splits"> <img src="{{asset('assets/images/case-study/restro-app-1.jpg')}}" alt="case study" class="img-fluid" /></div>
-                    <div class="screen-splits"> <img src="{{asset('assets/images/case-study/restro-app-2.jpg')}}" alt="case study" class="img-fluid" /></div>
-                    <div class="screen-splits"> <img src="{{asset('assets/images/case-study/restro-app-3.jpg')}}" alt="case study" class="img-fluid" /></div>
-                    <div class="screen-splits"> <img src="{{asset('assets/images/case-study/restro-app-4.jpg')}}" alt="case study" class="img-fluid" /></div>
+                    @foreach ($singleCaseStudySliderImages as $Slider)
+                    <div class="screen-splits">
+                        <img src="{{url($Slider->image)}}" alt="case study" class="img-fluid" />
+                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

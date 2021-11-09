@@ -683,7 +683,7 @@
 
                                         {{------------------------- Category Which is Already Selected --------------------------}}
                                         <div class="form-group row mb-4">
-                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-12 col-form-label">Category</label>
+                                            <label for="hEmail" class="col-xl-2 col-sm-3 col-sm-12 col-form-label">Case Study Name</label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
                                                 <div class="statbox widget box box-shadow">
                                                     <div class="widget-content widget-content-area">

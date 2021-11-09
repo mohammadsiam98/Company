@@ -18,12 +18,17 @@ class CaseStudyController extends Controller
 
     public function allCaseStudy($id)
     {
+
         $singleCaseStudyName = $id; //Name Fetch
         $caseStudy = CaseStudy::where('thumbnail_case_study_title',$singleCaseStudyName)->first(); //Name Fetch
         $singleCaseStudyId = $caseStudy->id; //Id fetch
         $singleCaseStudy = CaseStudy::find($singleCaseStudyId);
+        $singleCaseStudyStackImages = DB::table('about_the_project_images')->join('case_studies','about_the_project_images.caseStudy_id','case_studies.id')->where('case_studies.id',$singleCaseStudyId)->get();
+        $singleCaseStudySliderImages = DB::table('case_study_app_images_sliders')->join('case_studies','case_study_app_images_sliders.caseStudy_id','case_studies.id')->where('case_studies.id',$singleCaseStudyId)->get();
+
+        // dd($singleCaseStudySliderImages);
         // dd($singleCaseStudy);
-        return view('pages.caseStudy.caseStudySingle',compact('singleCaseStudy'));
+        return view('pages.caseStudy.caseStudySingle',compact('singleCaseStudy','singleCaseStudyStackImages','singleCaseStudySliderImages'));
     }
 
    
