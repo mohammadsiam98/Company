@@ -1,6 +1,9 @@
 @extends('Layout.mother_layout')
 @section('content')
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&display=swap');
 
+</style>
 
 <!--Breadcrumb Area-->
 <section class="breadcrumb-area banner-5">
@@ -25,7 +28,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <div class="image-block upset">
+                <div class="image-block upset hover-scale wow fadeInLeft">
                     <img src="{{url($singleCaseStudy->About_the_project_image)}}" alt="case study" class="img-fluid no-shadow" />
                 </div>
             </div>
@@ -37,7 +40,7 @@
 
                 </div>
                 @foreach ($singleCaseStudyStackImages as $StackImagesAboutProject)
-                <div class="project-platform mt60 pl25">
+                <div class="project-platform mt60 pl25 hover-scale wow fadeInUp">
                     <div class="project-platform-used -shadow"><a href="#"><img src="{{url($StackImagesAboutProject->image)}}" alt="image"></a></div>
                 </div>
                 @endforeach
@@ -62,9 +65,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <h4 class="mt20 mb10">App Features</h4>
-                <ul class="list-style-">
+                <ul class="list-style- mt30 wow fadeInUp">
                     <li>{!!$singleCaseStudy->app_features!!}</li>
-
                 </ul>
             </div>
 
@@ -79,7 +81,7 @@
             <div class="col-lg-6 col-sm-12">
                 <h2 class="mt20 mb20">Challenges</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <ul class="list-style- mt30">
+                <ul class="list-style- mt30 wow fadeInUp">
                     <li>{!!$singleCaseStudy->challenges!!}</li>
                 </ul>
             </div>
@@ -99,8 +101,10 @@
         <div class="row">
             <div class="col-lg-12 block-1 v-center">
                 <div class="common-heading inner-heading text-l pr25">
-                    <span>Solutions</span>
-                    <h2>How We Work</h2>
+                    <div class="common-heading text-l">
+                        <h1 class="mt0 mb0 text-radius text-light text-animation bg-b" style="text-align: center">How we work</h1>
+                        <p class="mb60 mt10" style="text-align: center">We will catch you as early as we receive the message</p>
+                    </div>
                     <h4>{{$singleCaseStudy->solution_title}}</h4>
                     <p>{!!$singleCaseStudy->solution_details!!}</p>
                 </div>
@@ -138,6 +142,12 @@
 <div class="case-study pad-tb">
     <div class="container">
         <div class="row">
+            <div class="col-lg-12">
+                <div class="common-heading text-l">
+                    <h1 class="mt0 mb0 text-radius text-light text-animation bg-b" style="text-align: center">Project Screenshots</h1>
+                    <p class="mb60 mt10" style="text-align: center">We will catch you as early as we receive the message</p>
+                </div>
+            </div>
             <div class="col-lg-12">
                 <div class="project-screens owl-carousel">
                     @foreach ($singleCaseStudySliderImages as $Slider)
@@ -204,8 +214,12 @@
             <div class="col-lg-8">
                 <div class="common-heading ptag">
                     <span>Reviews</span>
-                    <h2>Client Testimonials</h2>
-                    <p class="mb30">Check our customers success stories.</p>
+
+                    <div class="common-heading text-l">
+                        <h1 class="mt0 mb0 text-radius text-light text-animation bg-b" style="text-align: center">Client Testimonials</h1>
+                        <p class="mb60 mt10" style="text-align: center">We will catch you as early as we receive the message</p>
+                    </div>
+
                 </div>
             </div>
         </div>
