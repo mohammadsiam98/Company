@@ -32,11 +32,9 @@ Route::get('/about-us', 'App\Http\Controllers\AboutUsController@aboutUs')->name(
 Route::get('/our-approaches', 'App\Http\Controllers\OurApproachesController@ourApproaches')->name('ourApproaches');
 //Our Approaches Route
 
-
-//blog Route
-Route::get('/blog', 'App\Http\Controllers\BlogPagesController@blog')->name('blog');
-//blog Route
-
+//FAQ Route
+Route::get('/faq', 'App\Http\Controllers\OfficeController@faq')->name('faq');
+//FAQ Route
 
 //case Study Route
 Route::get('/case-study', 'App\Http\Controllers\CaseStudyController@caseStudy')->name('caseStudy');

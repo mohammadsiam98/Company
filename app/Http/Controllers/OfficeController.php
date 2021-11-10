@@ -11,4 +11,8 @@ class OfficeController extends Controller
     {
         return view('pages.officeLocation.location');
     }
+    public function faq()
+    {
+        return view('pages.FAQ.faq');
+    }
 }

@@ -3476,24 +3476,6 @@ footer.ftshap:before {
     font-weight: 700
 }
 
-.accordion .card-title:after {
-    content: "\f068";
-    font-weight: 700;
-    top: 2px;
-    background: #00baff;
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-    text-align: center;
-    border-radius: 100px;
-    color: #fff
-}
-
-.accordion .card-title.collapsed:after {
-    content: "\f067";
-    font-weight: 700
-}
-
 .card-header .btn-link:hover {
     color: #6a6a8e;
     text-decoration: none
@@ -3513,8 +3495,8 @@ footer.ftshap:before {
 }
 
 .panel .panel-collapse .collapse {
-    transition: transform .25s ease-in-out;
-    -webkit-transition: -webkit-transform .25s ease-in-out
+    transition: transform .50s ease-in-out;
+    -webkit-transition: -webkit-transform .50s ease-in-out
 }
 
 .card-1 .card-header {
@@ -5918,7 +5900,7 @@ h6 {
 li{
     font-weight: bold;
     font-family: 'Hind Siliguri', sans-serif;
-    font-size: 20px;
+    font-size: 20px;.accordion .card-title.collapsed:after
     color:#062a4d;
     line-height: 28px;
 }
