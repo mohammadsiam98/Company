@@ -27,6 +27,10 @@ Route::get('/another_route', 'App\Http\Controllers\HomepageController@starterPag
 Route::get('/about-us', 'App\Http\Controllers\AboutUsController@aboutUs')->name('aboutUs');
 //about-us Route
 
+//portfolio Route
+Route::get('/our-portfolio', 'App\Http\Controllers\PortfolioController@portfolio')->name('ourPortfolio');
+//portfolio Route
+
 
 //Our Approaches Route
 Route::get('/our-approaches', 'App\Http\Controllers\OurApproachesController@ourApproaches')->name('ourApproaches');

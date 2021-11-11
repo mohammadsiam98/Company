@@ -36,7 +36,7 @@
         <div class="container-fluid m-pad">
             <div class="menu-header">
                 <div class="dsk-logo"><a class="nav-brand" href="{{route('homepage')}}">
-                        <img src="{{asset('assets/images/white-logo.png')}}" alt="Logo" class="mega-white-logo" />
+                        <img src="{{asset('assets/images/Artboard 2.png')}}" alt="Logo" class="mega-white-logo" />
                         <img src="{{asset('assets/images/logo.png')}}" alt="Logo" class="mega-darks-logo" />
                     </a>
                 </div>
@@ -50,6 +50,10 @@
                         <li class="sbmenu">
                             <a href="{{route('ourApproaches')}}" class="menu-links">
                                 <img src="{{asset('assets/images/objective.png')}}" alt=""> Our Approaches</a>
+                        </li>
+                        <li class="sbmenu">
+                            <a href="{{route('ourPortfolio')}}" class="menu-links">
+                                <img src="{{asset('assets/images/objective.png')}}" alt=""> Our Portfolio</a>
                         </li>
                         <li class="sbmenu rpdropdown">
                             <a href="#" class="menu-links">

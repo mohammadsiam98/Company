@@ -2309,13 +2309,8 @@ footer.ftshap:before {
 }
 
 .footer-social-media-icons a {
-    color: #6a6a8e;
-    font-size: 26px;
-    border-radius: 4px;
     margin: 0 20px;
-    width: 35px;
-    height: 35px;
-    display: inline-block;
+    display: inline;
     text-align: center;
     line-height: 34px
 }
