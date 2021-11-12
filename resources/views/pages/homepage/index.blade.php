@@ -309,7 +309,7 @@
 <section class="why-choos-lg pad-tb deep-dark">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-sm-12 col-md-12">
+            <div class="col-lg-8 col-sm-12 col-md-12">
                 <div class="common-heading text-l">
                     <h2><span class="text-second text-bold">Why Choose Us</span></h2>
                     <h4 class="mb20">Our Company<span class="text-second text-bold"> Salahuddinit </span> Among The Leading Web & App Development Companies</h4>
@@ -321,26 +321,12 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet ligula nec leo elementum semper. Mauris aliquet egestas metus.</p>
                             </div>
                         </div>
-                        <div class="media mt40">
-                            <div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"><img src="{{asset('assets/images/icons/worker.svg')}}" alt="icon" class="layer"></div>
-                            <div class="media-body">
-                                <h4>A Dedicated Team of Experts</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet ligula nec leo elementum semper. Mauris aliquet egestas metus.</p>
-                            </div>
-                        </div>
-                        <div class="media mt40">
-                            <div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"> <img src="{{asset('assets/images/icons/deal.svg')}}" alt="icon" class="layer"></div>
-                            <div class="media-body">
-                                <h4>Completion of Project in Given Time</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet ligula nec leo elementum semper. Mauris aliquet egestas metus.</p>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12">
-                <div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="single-image bg-shape-dez wow fadeIn" data-wow-duration="2s"><img src="{{asset('assets/images/company.png')}}" alt="image" class="img-fluid"></div>
-                <p class="text-center mt30">Lorem Ipsum is simply dummy text of the printing and typesetting industry..</p>
+            <div class="col-lg-4 col-sm-12">
+                <div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="single-image wow fadeIn" data-wow-duration="2s"><img src="{{asset('assets/images/undraw_preferences_re_49in.svg')}}" alt="image" class="img-fluid"></div>
                 <div class="cta-card mt60 text-center">
                 </div>
             </div>
