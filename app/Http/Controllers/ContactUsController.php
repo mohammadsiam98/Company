@@ -16,12 +16,17 @@ class ContactUsController extends Controller
     {
         //
         $ContactUsDetails = ContactUs::all();
-        return view ('pages.CRUD_contactUs.list',compact('ContactUsDetails'));
+        return view ('pages.contact.list',compact('ContactUsDetails'));
     }
 
 
     public function store(Request $request)
     {
+        $request->validate([
+            'name'=>'required',
+            'email'=>'required',
+            'message'=>'required',
+        ]);
         $ContactUsDetails = new ContactUs;
         $ContactUsDetails->name = $request->name;
         $ContactUsDetails->email = $request->email;
@@ -29,7 +34,7 @@ class ContactUsController extends Controller
         $ContactUsDetails->message = $request->message;
 
         $ContactUsDetails->save();
-        return redirect()->back();
+        return redirect()->route('contact','/#contact')->with('success', 'Message has been sent successfully');
     }
 
 }

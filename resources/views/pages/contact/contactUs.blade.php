@@ -57,25 +57,53 @@
                     <p class="mb60 mt10">We will catch you as early as we receive the message</p>
                 </div>
                 <div class="form-block">
-                    <form action="{{route('contact.store')}}" id="contactForm" data-toggle="validator" class="shake">
+                    <form action="{{route('contact.store')}}" id="contactForm" data-toggle="validator" class="shake" id="contact">
+                        @csrf
+                        @if($errors->first('name'))
+                        <div class="alert alert-danger fade show" role="alert">
+                            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+                                <use xlink:href="#exclamation-triangle-fill" /></svg>
+                            <div>
+                                {{$errors->first('name')}}
+                            </div>
+                        </div>
+                        @endif
+                        @if($errors->first('email'))
+                        <div class="alert  alert-danger d-flex align-items-center" role="alert">
+                            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+                                <use xlink:href="#exclamation-triangle-fill" /></svg>
+                            <div>
+                                {{$errors->first('email')}}
+                            </div>
+                        </div>
+                        @endif
+                        @if($errors->first('message'))
+                        <div class="alert alert-danger d-flex align-items-center" role="alert">
+                            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+                                <use xlink:href="#exclamation-triangle-fill" /></svg>
+                            <div>
+                                {{$errors->first('message')}}
+                            </div>
+                        </div>
+                        @endif
                         <div class="row">
                             <div class="form-group col-sm-6">
-                                <input type="text" id="name" name="name" placeholder="Enter name" required data-error="Please fill Out" style="font-family: 'Hind Siliguri', sans-serif; font-size:28px; font-weight:bold;">
+                                <input type="text" id="name" name="name" placeholder="Enter name" style="font-family: 'Hind Siliguri', sans-serif; font-size:28px; font-weight:bold;">
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group col-sm-6">
-                                <input type="email" id="email" name="email" placeholder="Enter email" style="font-family: 'Hind Siliguri', sans-serif; font-size:28px; font-weight:bold;" required>
+                                <input type="email" id="email" name="email" placeholder="Enter email" style="font-family: 'Hind Siliguri', sans-serif; font-size:28px; font-weight:bold;">
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" id="mobile" name="number" placeholder="Enter mobile" style="font-family: 'Hind Siliguri', sans-serif; font-size:28px; font-weight:bold;" required data-error="Please fill Out">
+                            <input type="text" id="mobile" name="number" placeholder="Enter mobile" style="font-family: 'Hind Siliguri', sans-serif; font-size:28px; font-weight:bold;">
                             <div class="help-block with-errors"></div>
                         </div>
 
                         <div class="form-group">
-                            <textarea name="message" rows="5" placeholder="Enter your message" style="font-family: 'Hind Siliguri', sans-serif; font-size:28px; font-weight:bold;" required></textarea>
+                            <textarea name="message" rows="5" placeholder="Enter your message" style="font-family: 'Hind Siliguri', sans-serif; font-size:28px; font-weight:bold;"></textarea>
                             <div class="help-block with-errors"></div>
                         </div>
 
@@ -83,6 +111,9 @@
                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                         <div class="clearfix"></div>
                         <p class="trm"><i class="fas fa-lock"></i> <b>We hate spam, and we respect your privacy.</b> </p>
+                        <div id="success">
+                            @include('alert.messages')
+                        </div>
                     </form>
                 </div>
             </div>

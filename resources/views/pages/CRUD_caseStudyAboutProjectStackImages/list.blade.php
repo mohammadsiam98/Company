@@ -385,7 +385,7 @@
 
 
 
-                    {{--------------------------------- Case Study Single Project Image Slider --------------------------------------}}
+                    {{--------------------------------- Case Study Single Project Image Sliders --------------------------------------}}
                     <li class="menu">
                         <a href="#caseStudyslider" data-active="false" class="menu-toggle">
                             <div class="base-menu">
@@ -399,7 +399,42 @@
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </li>
-                    {{--------------------------------- Case Study Single Project Image Slider --------------------------------------}}
+                    {{--------------------------------- Case Study Single Project Image Sliders --------------------------------------}}
+
+
+                    {{--------------------------------- Contact Informations --------------------------------------}}
+                    <li class="menu">
+                        <a href="#contact-information" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/telephone.png')}}" alt="">
+                                </div>
+                                <span>Contact</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Contact Informations --------------------------------------}}
+
+
+
+                    {{--------------------------------- Project Proposal Informations --------------------------------------}}
+                    <li class="menu">
+                        <a href="#projectProposal-information" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/deals.png')}}" alt="">
+                                </div>
+                                <span>Proposal</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Project Proposal Informations --------------------------------------}}
 
 
                 </ul>
@@ -421,6 +456,10 @@
                 {{--------------------------------- Dashboard Homepage --------------------------------------}}
 
 
+
+
+
+
                 {{--------------------------------- AboutUs Route --------------------------------------}}
                 <div class="submenu" id="aboutus">
                     <ul class="submenu-list" data-parent-element="#aboutus">
@@ -433,6 +472,8 @@
                     </ul>
                 </div>
                 {{--------------------------------- AboutUs Route --------------------------------------}}
+
+
 
 
                 {{--------------------------------- Swot Route --------------------------------------}}
@@ -450,6 +491,7 @@
                 {{--------------------------------- Swot Route --------------------------------------}}
 
 
+
                 {{--------------------------------- Creative Works --------------------------------------}}
                 <div class="submenu" id="creativeWork">
                     <ul class="submenu-list" data-parent-element="#creativeWork">
@@ -461,7 +503,8 @@
                         </li>
                     </ul>
                 </div>
-                {{--------------------------------- Creative Works --------------------------------------}}
+
+
 
 
                 {{--------------------------------- our Clients --------------------------------------}}
@@ -478,6 +521,10 @@
                 {{--------------------------------- our Clients --------------------------------------}}
 
 
+
+
+
+
                 {{--------------------------------- Category --------------------------------------}}
                 <div class="submenu" id="ServicesCategory">
                     <ul class="submenu-list" data-parent-element="#ServicesCategory">
@@ -490,6 +537,8 @@
                     </ul>
                 </div>
                 {{--------------------------------- Category --------------------------------------}}
+
+
 
 
                 {{--------------------------------- Sector Service Overview(Dynamic) --------------------------------------}}
@@ -506,6 +555,10 @@
                 {{--------------------------------- Sector Service Overview(Dynamic) --------------------------------------}}
 
 
+
+
+
+
                 {{--------------------------------- Sector Services(Dynamic) --------------------------------------}}
                 <div class="submenu" id="SectorServices">
                     <ul class="submenu-list" data-parent-element="#SectorServices">
@@ -518,6 +571,8 @@
                     </ul>
                 </div>
                 {{--------------------------------- Sector Services(Dynamic) --------------------------------------}}
+
+
 
 
                 {{--------------------------------- Sector Stack Name(Dynamic) --------------------------------------}}
@@ -534,6 +589,7 @@
                 {{--------------------------------- Sector Stack Name(Dynamic) --------------------------------------}}
 
 
+
                 {{--------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
                 <div class="submenu" id="sector_technologies_details">
                     <ul class="submenu-list" data-parent-element="#sector_technologies_details">
@@ -548,6 +604,9 @@
                 {{--------------------------------- Sector Stack Details(Dynamic) --------------------------------------}}
 
 
+
+
+
                 {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
                 <div class="submenu" id="SectorCreativeWorks">
                     <ul class="submenu-list" data-parent-element="#SectorCreativeWorks">
@@ -560,6 +619,8 @@
                     </ul>
                 </div>
                 {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
+
+
 
 
                 {{--------------------------------- Sector Pricing(Dynamic) --------------------------------------}}
@@ -591,6 +652,7 @@
                 {{--------------------------------- Sector Our Clients (Dynamic) --------------------------------------}}
 
 
+
                 {{--------------------------------- Case Study Details --------------------------------------}}
                 <div class="submenu" id="CaseStudy">
                     <ul class="submenu-list" data-parent-element="#CaseStudy">
@@ -603,6 +665,8 @@
                     </ul>
                 </div>
                 {{--------------------------------- Case Study Details --------------------------------------}}
+
+
 
 
                 {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
@@ -619,7 +683,8 @@
                 {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
 
 
-                {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
+
+                {{--------------------------------- Case Study Single Project Sliders --------------------------------------}}
                 <div class="submenu" id="caseStudyslider">
                     <ul class="submenu-list" data-parent-element="#caseStudyslider">
                         <li>
@@ -630,7 +695,30 @@
                         </li>
                     </ul>
                 </div>
-                {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
+                {{--------------------------------- Case Study Single Project Sliders --------------------------------------}}
+
+
+                {{--------------------------------- Contact informations --------------------------------------}}
+                <div class="submenu" id="contact-information">
+                    <ul class="submenu-list" data-parent-element="#contact-information">
+                        <li>
+                            <a href="{{route('contact.list')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Show </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Contact informations --------------------------------------}}
+
+
+                {{--------------------------------- Project Proposal informations --------------------------------------}}
+                <div class="submenu" id="projectProposal-information">
+                    <ul class="submenu-list" data-parent-element="#projectProposal-information">
+                        <li>
+                            <a href="{{route('ProjectProposalDetails.list')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Show </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Project Proposal informations --------------------------------------}}
+
 
 
             </div>

@@ -48,10 +48,6 @@
                                 <img src="{{asset('assets/images/about.png')}}" alt=""> About Us</a>
                         </li>
                         <li class="sbmenu">
-                            <a href="{{route('ourApproaches')}}" class="menu-links">
-                                <img src="{{asset('assets/images/objective.png')}}" alt=""> Our Approaches</a>
-                        </li>
-                        <li class="sbmenu">
                             <a href="{{route('ourPortfolio')}}" class="menu-links">
                                 <img src="{{asset('assets/images/objective.png')}}" alt=""> Our Portfolio</a>
                         </li>
@@ -75,14 +71,10 @@
                                                         <img src="{{asset('assets/images/edit-video.png')}}" alt="" style="margin-right:13px;">Video Editing</a> </li>
                                                 <li><a href="{{route('sectors','Search-Engine-Opimization')}}">
                                                         <img src="{{asset('assets/images/SEO.png')}}" alt="" style="margin-right:13px;">Search Engine Optimization</a></li>
-                                                <li><a href="{{route('sectors','Social-Media- Marketing')}}">
+                                                <li><a href="{{route('sectors','Social-Media-Marketing')}}">
                                                         <img src="{{asset('assets/images/bullhorn.png')}}" alt="" style="margin-right:13px;">Social Media Marketing</a> </li>
                                                 <li><a href="{{route('sectors','Content-Writing')}}">
                                                         <img src="{{asset('assets/images/creative-writing.png')}}" alt="" style="margin-right:10px;"> Content Writing</a> </li>
-                                                <li><a href="{{route('sectors','Software-Development')}}">
-                                                        <img src="{{asset('assets/images/digital.png')}}" alt="" style="margin-right:10px;"> Software Development</a> </li>
-                                                <li><a href="{{route('sectors','Animation')}}">
-                                                        <img src="{{asset('assets/images/animate.png')}}" alt="" style="margin-right:13px;"> Animation</a> </li>
                                                 <li><a href="{{route('sectors','Photography')}}">
                                                         <img src="{{asset('assets/images/photography.png')}}" alt="" style="margin-right:13px;"> Photography</a> </li>
                                                 <li><a href="{{route('sectors','Cinematography')}}">
@@ -123,39 +115,35 @@
             <nav id="main-nav">
                 <ul class="first-nav">
                     <li>
-                        <a href="{{route('ourApproaches')}}">
+                        <a href="{{route('ourApproaches')}}" style="font-family: 'Poppins', sans-serif; color:white">
                             <img src="{{asset('assets/images/about.png')}}" alt="" style="margin-right:10px;"> About us</a>
                     </li>
 
                     <li>
-                        <a href="{{route('ourApproaches')}}">
+                        <a href="{{route('ourApproaches')}}" style="font-family: 'Poppins', sans-serif; color:white">
                             <img src="{{asset('assets/images/objective.png')}}" alt="" style="margin-right:10px;"> Our Approaches</a>
                     </li>
 
                     <li><a href="{{route('sectors','Website-Development')}}">
-                            <img src="{{asset('assets/images/development.png')}}" alt="" style="margin-right:10px;"> Web Development</a></li>
+                            <img src="{{asset('assets/images/development.png')}}" alt="" style="margin-right:10px; font-family: 'Poppins', sans-serif;"> Web Development</a></li>
                     <li><a href="{{route('sectors','Web-Design')}}">
-                            <img src="{{asset('assets/images/web-design.png')}}" alt="" style="margin-right:10px;"> Web Design</a></li>
+                            <img src="{{asset('assets/images/web-design.png')}}" alt="" style="margin-right:10px; font-family: 'Poppins', sans-serif;"> Web Design</a></li>
                     <li><a href="{{route('sectors','Graphics-Design')}}">
-                            <img src="{{asset('assets/images/graphic-design.png')}}" alt="" style="margin-right:10px;"> Graphics Design</a> </li>
+                            <img src="{{asset('assets/images/graphic-design.png')}}" alt="" style="margin-right:10px; font-family: 'Poppins', sans-serif;"> Graphics Design</a> </li>
                     <li><a href="{{route('sectors','App-Development')}}">
-                            <img src="{{asset('assets/images/mobile-app.png')}}" alt="" style="margin-right:13px;">App Development</a> </li>
+                            <img src="{{asset('assets/images/mobile-app.png')}}" alt="" style="margin-right:13px; font-family: 'Poppins', sans-serif;">App Development</a> </li>
                     <li><a href="{{route('sectors','Video-Editing')}}">
-                            <img src="{{asset('assets/images/edit-video.png')}}" alt="" style="margin-right:13px;">Video Editing</a> </li>
-                    <li><a href="{{route('sectors','Search-Engine-Opimization')}}">
-                            <img src="{{asset('assets/images/SEO.png')}}" alt="" style="margin-right:13px;">Search Engine Optimization</a></li>
-                    <li><a href="{{route('sectors','Social-Media- Marketing')}}">
-                            <img src="{{asset('assets/images/bullhorn.png')}}" alt="" style="margin-right:13px;">Social Media Marketing</a> </li>
+                            <img src="{{asset('assets/images/edit-video.png')}}" alt="" style="margin-right:13px; font-family: 'Poppins', sans-serif;">Video Editing</a> </li>
+                    <li><a href="{{route('sectors','Search-Engine-Optimization')}}">
+                            <img src="{{asset('assets/images/SEO.png')}}" alt="" style="margin-right:13px; font-family: 'Poppins', sans-serif;">Search Engine Optimization</a></li>
+                    <li><a href="{{route('sectors','Social_media_marketing')}}">
+                            <img src="{{asset('assets/images/bullhorn.png')}}" alt="" style="margin-right:13px; font-family: 'Poppins', sans-serif;">Social Media Marketing</a> </li>
                     <li><a href="{{route('sectors','Content-Writing')}}">
-                            <img src="{{asset('assets/images/creative-writing.png')}}" alt="" style="margin-right:10px;"> Content Writing</a> </li>
-                    <li><a href="{{route('sectors','Software-Development')}}">
-                            <img src="{{asset('assets/images/digital.png')}}" alt="" style="margin-right:10px;"> Software Development</a> </li>
-                    <li><a href="{{route('sectors','Animation')}}">
-                            <img src="{{asset('assets/images/animate.png')}}" alt="" style="margin-right:13px;"> Animation</a> </li>
+                            <img src="{{asset('assets/images/creative-writing.png')}}" alt="" style="margin-right:10px; font-family: 'Poppins', sans-serif;"> Content Writing</a> </li>
                     <li><a href="{{route('sectors','Photography')}}">
-                            <img src="{{asset('assets/images/photography.png')}}" alt="" style="margin-right:13px;"> Photography</a> </li>
+                            <img src="{{asset('assets/images/photography.png')}}" alt="" style="margin-right:13px; font-family: 'Poppins', sans-serif;"> Photography</a> </li>
                     <li><a href="{{route('sectors','Cinematography')}}">
-                            <img src="{{asset('assets/images/camera.png')}}" alt="" style="margin-right:13px;"> Cinematography</a> </li>
+                            <img src="{{asset('assets/images/camera.png')}}" alt="" style="margin-right:13px; font-family: 'Poppins', sans-serif;"> Cinematography</a> </li>
                 </ul>
                 <ul class="bottom-nav">
                     <li class="prb">
@@ -179,7 +167,6 @@
     </header>
 
     <!--End Header -->
-
     @yield('content')
 
     <!--Start Footer-->

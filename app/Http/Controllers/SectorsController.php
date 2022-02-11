@@ -32,7 +32,7 @@ class SectorsController extends Controller
        
         return view('pages.marketingSectors.serviceMarketing',compact('serviceOverview','SectorServices',
         'SectorClients','SectorClientsImage','SectorTechnologiesWeWillUse','SectorTechnologyDetails',
-         'pricingDetails','creativeWorkDetails'));
+         'pricingDetails','creativeWorkDetails','categoryId'));
     }
     
 }

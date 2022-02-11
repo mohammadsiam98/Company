@@ -25,7 +25,7 @@
         <div class="row">
             <div class="col-lg-4">
                 <div class="image-block upset bg-shape">
-                    <img src="{{asset('assets/images/goals.svg')}}" alt="image" class="img-fluid" />
+                    <img src="{{asset('assets/images/Team goals-bro.svg')}}" alt="image" class="img-fluid" />
                 </div>
             </div>
             <div class="col-lg-8 block-1">
@@ -52,7 +52,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="image-block upset bg-shape m-mt30 mb0">
-                    <img src="{{asset('assets/images/vission.svg')}}" alt="image" class="img-fluid" />
+                    <img src="{{asset('assets/images/Personal goals-bro.svg')}}" alt="image" class="img-fluid" />
                 </div>
             </div>
         </div>

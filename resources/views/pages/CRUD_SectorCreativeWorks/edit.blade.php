@@ -273,9 +273,6 @@
 
 
 
-
-
-
                     {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
                     <li class="menu">
                         <a href="#SectorCreativeWorks" data-active="true" class="menu-toggle">
@@ -291,8 +288,6 @@
                         </svg>
                     </li>
                     {{--------------------------------- Sector Creative Works(Dynamic) --------------------------------------}}
-
-
 
 
 
@@ -316,7 +311,6 @@
 
 
 
-
                     {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
                     <li class="menu">
                         <a href="#SectorOurclients" data-active="false" class="menu-toggle">
@@ -332,6 +326,8 @@
                         </svg>
                     </li>
                     {{--------------------------------- Sector Our Clients(Dynamic) --------------------------------------}}
+
+
 
 
                     {{--------------------------------- Case Study Details --------------------------------------}}
@@ -387,6 +383,39 @@
                     </li>
                     {{--------------------------------- Case Study Single Project Image Slider --------------------------------------}}
 
+                    {{--------------------------------- Contact Informations --------------------------------------}}
+                    <li class="menu">
+                        <a href="#contact-information" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/telephone.png')}}" alt="">
+                                </div>
+                                <span>Contact</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Contact Informations --------------------------------------}}
+
+
+
+                    {{--------------------------------- Project Proposal Informations --------------------------------------}}
+                    <li class="menu">
+                        <a href="#projectProposal-information" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/deals.png')}}" alt="">
+                                </div>
+                                <span>Proposal</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Project Proposal Informations --------------------------------------}}
 
                 </ul>
             </nav>
@@ -605,7 +634,7 @@
                 {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
 
 
-                {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
+                {{--------------------------------- Case Study Single Project Sliders --------------------------------------}}
                 <div class="submenu" id="caseStudyslider">
                     <ul class="submenu-list" data-parent-element="#caseStudyslider">
                         <li>
@@ -616,7 +645,29 @@
                         </li>
                     </ul>
                 </div>
-                {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
+                {{--------------------------------- Case Study Single Project Sliders --------------------------------------}}
+
+
+                {{--------------------------------- Contact informations --------------------------------------}}
+                <div class="submenu" id="contact-information">
+                    <ul class="submenu-list" data-parent-element="#contact-information">
+                        <li>
+                            <a href="{{route('contact.list')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Show </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Contact informations --------------------------------------}}
+
+
+                {{--------------------------------- Project Proposal informations --------------------------------------}}
+                <div class="submenu" id="projectProposal-information">
+                    <ul class="submenu-list" data-parent-element="#projectProposal-information">
+                        <li>
+                            <a href="{{route('ProjectProposalDetails.list')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Show </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Project Proposal informations --------------------------------------}}
 
 
             </div>
@@ -687,7 +738,7 @@
                                                     <div class="custom-file-container" data-upload-id="myFirstImage">
                                                         <label>Upload (Single File) <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
                                                         <label class="custom-file-container__custom-file">
-                                                            <input type="file" name="image" value="10485760" />
+                                                            <input type="file" name="image" value="" />
                                                             <span class="custom-file-container__custom-file__custom-file-control"></span>
                                                         </label>
                                                         <div class="custom-file-container__image-preview"></div>

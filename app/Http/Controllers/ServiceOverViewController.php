@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 use App\Models\ServicesCategory;
 use App\Models\ServiceOverviewDetails;
-
+use DB;
 class ServiceOverViewController extends Controller
 {
    
@@ -25,18 +25,36 @@ class ServiceOverViewController extends Controller
 
     public function store(Request $request)
     {
-        //
-        $ServiceOverviewDetails = new ServiceOverviewDetails;
-        $ServiceOverviewDetails->page_heading = $request->page_heading;
-        $ServiceOverviewDetails->service_overview_title = $request->service_overview_title;
-        $ServiceOverviewDetails->service_overview_details = $request->service_overview_details;
-        $ServiceOverviewDetails->category_id=$request->category_id;
+        // Validation
+        $request->validate([
+            'page_heading'=>'required',
+            'service_overview_title'=>'required',
+            'service_overview_details'=>'required',
+            'category_id'=>'required',
+            'image'=>'required'
+        ]);
 
-        $image  = $request->file('image');
-        Storage::putFile('public/img/',$image);
-        $ServiceOverviewDetails->image ="storage/img/".$image->hashName();
-        $ServiceOverviewDetails->save();
-        return redirect()->route('ServiceOverviewDetails.list')->with('success','Created Successfully');
+        $if_a_serviceOverview_is_already_written = DB::table('service_overview_details')->where('category_id',$request->category_id)->first();
+        if (empty($if_a_serviceOverview_is_already_written))
+        {
+            $ServiceOverviewDetails = new ServiceOverviewDetails;
+            $ServiceOverviewDetails->page_heading = $request->page_heading;
+            $ServiceOverviewDetails->service_overview_title = $request->service_overview_title;
+            $ServiceOverviewDetails->service_overview_details = $request->service_overview_details;
+            $ServiceOverviewDetails->category_id=$request->category_id;
+            
+    
+            $image  = $request->file('image');
+            Storage::putFile('public/img/',$image);
+            $ServiceOverviewDetails->image ="storage/img/".$image->hashName();
+            $ServiceOverviewDetails->save();
+            return redirect()->route('ServiceOverviewDetails.list')->with('success','Created Successfully');
+        }
+        else{
+            return 'In this category there is already data inserted.';
+        }
+
+       
     }
 
     public function edit($id)

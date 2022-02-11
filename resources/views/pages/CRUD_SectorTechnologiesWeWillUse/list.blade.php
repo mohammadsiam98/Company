@@ -376,6 +376,40 @@
                     </li>
                     {{--------------------------------- Case Study Single Project Image Slider --------------------------------------}}
 
+                    {{--------------------------------- Contact Informations --------------------------------------}}
+                    <li class="menu">
+                        <a href="#contact-information" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/telephone.png')}}" alt="">
+                                </div>
+                                <span>Contact</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Contact Informations --------------------------------------}}
+
+
+
+                    {{--------------------------------- Project Proposal Informations --------------------------------------}}
+                    <li class="menu">
+                        <a href="#projectProposal-information" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/deals.png')}}" alt="">
+                                </div>
+                                <span>Proposal</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Project Proposal Informations --------------------------------------}}
+
 
                 </ul>
             </nav>
@@ -594,7 +628,7 @@
                 {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
 
 
-                {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
+                {{--------------------------------- Case Study Single Project Sliders --------------------------------------}}
                 <div class="submenu" id="caseStudyslider">
                     <ul class="submenu-list" data-parent-element="#caseStudyslider">
                         <li>
@@ -605,7 +639,30 @@
                         </li>
                     </ul>
                 </div>
-                {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
+                {{--------------------------------- Case Study Single Project Sliders --------------------------------------}}
+
+
+                {{--------------------------------- Contact informations --------------------------------------}}
+                <div class="submenu" id="contact-information">
+                    <ul class="submenu-list" data-parent-element="#contact-information">
+                        <li>
+                            <a href="{{route('contact.list')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Show </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Contact informations --------------------------------------}}
+
+
+                {{--------------------------------- Project Proposal informations --------------------------------------}}
+                <div class="submenu" id="projectProposal-information">
+                    <ul class="submenu-list" data-parent-element="#projectProposal-information">
+                        <li>
+                            <a href="{{route('ProjectProposalDetails.list')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Show </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Project Proposal informations --------------------------------------}}
+
 
 
             </div>
@@ -633,7 +690,7 @@
                                 <thead style="border-bottom: none;">
                                     <tr>
                                         <th>Key</th>
-                                        <th>Category</th>
+                                        {{-- <th>Category</th> --}}
                                         <th>Technology Main Title</th>
                                         <th>Technology Main Title Short Details</th>
                                         <th>Action</th>
@@ -643,7 +700,7 @@
                                     @foreach ($SectorTechnologiesWeWillUse as $key =>$SectorTechnology)
                                     <tr>
                                         <td>{{$key +1 }}</td>
-                                        <td>{{$SectorTechnology->get_category->category_name}}</td>
+                                        {{-- <td>{{$SectorTechnology->get_category->category_name}}</td> --}}
                                         <td>{{$SectorTechnology->technology_main_title}}</td>
                                         <td>{{$SectorTechnology->technology_main_title_short_details}}</td>
                                         <td>

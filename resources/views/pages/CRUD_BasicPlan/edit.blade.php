@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>CORK Admin Template - Forms Layouts</title>
+    <title>Dynamic Category Pricing</title>
     <link rel="icon" type="image/x-icon" href="{{asset('dashboardAssets/assets/img/favicon.ico')}}" />
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
@@ -37,42 +37,8 @@
                                 <img src="{{asset('dashboard_assets/assets/img/90x90.jpg')}}" class="img-fluid mr-2" alt="avatar">
                                 <div class="media-body">
                                     <h5>Alan Green</h5>
-                                    <p>Project Leader</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="dropdown-item">
-                            <a href="user_profile.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
-                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="12" cy="7" r="4"></circle>
-                                </svg> <span> Profile</span>
-                            </a>
-                        </div>
-                        <div class="dropdown-item">
-                            <a href="apps_mailbox.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-inbox">
-                                    <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
-                                    <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
-                                </svg> <span> Inbox</span>
-                            </a>
-                        </div>
-                        <div class="dropdown-item">
-                            <a href="auth_lockscreen.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
-                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                                </svg> <span>Lock Screen</span>
-                            </a>
-                        </div>
-                        <div class="dropdown-item">
-                            <a href="auth_login.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out">
-                                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-                                    <polyline points="16 17 21 12 16 7"></polyline>
-                                    <line x1="21" y1="12" x2="9" y2="12"></line>
-                                </svg> <span>Log Out</span>
-                            </a>
                         </div>
                     </div>
                 </li>
@@ -412,6 +378,41 @@
                     {{--------------------------------- Case Study Single Project Image Slider --------------------------------------}}
 
 
+                    {{--------------------------------- Contact Informations --------------------------------------}}
+                    <li class="menu">
+                        <a href="#contact-information" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/telephone.png')}}" alt="">
+                                </div>
+                                <span>Contact</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Contact Informations --------------------------------------}}
+
+
+
+                    {{--------------------------------- Project Proposal Informations --------------------------------------}}
+                    <li class="menu">
+                        <a href="#projectProposal-information" data-active="false" class="menu-toggle">
+                            <div class="base-menu">
+                                <div class="base-icons">
+                                    <img src="{{asset('dashboardAssets/assets/img/deals.png')}}" alt="">
+                                </div>
+                                <span>Proposal</span>
+                            </div>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </li>
+                    {{--------------------------------- Project Proposal Informations --------------------------------------}}
+
+
                 </ul>
             </nav>
             {{--------------------------------- Navbar -----------------------------------}}
@@ -659,7 +660,7 @@
 
 
 
-                {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
+                {{--------------------------------- Case Study Single Project Sliders --------------------------------------}}
                 <div class="submenu" id="caseStudyslider">
                     <ul class="submenu-list" data-parent-element="#caseStudyslider">
                         <li>
@@ -670,8 +671,29 @@
                         </li>
                     </ul>
                 </div>
-                {{--------------------------------- Case Study Single Project Stacks --------------------------------------}}
+                {{--------------------------------- Case Study Single Project Sliders --------------------------------------}}
 
+
+                {{--------------------------------- Contact informations --------------------------------------}}
+                <div class="submenu" id="contact-information">
+                    <ul class="submenu-list" data-parent-element="#contact-information">
+                        <li>
+                            <a href="{{route('contact.list')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Show </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Contact informations --------------------------------------}}
+
+
+                {{--------------------------------- Project Proposal informations --------------------------------------}}
+                <div class="submenu" id="projectProposal-information">
+                    <ul class="submenu-list" data-parent-element="#projectProposal-information">
+                        <li>
+                            <a href="{{route('ProjectProposalDetails.list')}}"><img src="{{asset('dashboardAssets/assets/img/pen.png')}}" alt=""> Show </a>
+                        </li>
+                    </ul>
+                </div>
+                {{--------------------------------- Project Proposal informations --------------------------------------}}
 
 
 
@@ -681,8 +703,6 @@
 
         </div>
         <!--  END SIDEBAR  -->
-
-
 
         <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">

@@ -42,7 +42,22 @@ class CaseStudyController extends Controller
 
     public function store(Request $request)
     {
-        //
+        // Validation
+        $request->validate([
+            'thumbnail_case_study_title'=>'required',
+            'About_the_project_title'=>'required',
+            'About_the_project_details'=>'required',
+            'app_features'=>'required',
+            'challenges'=>'required',
+            'solution_title'=>'required',
+            'client_name'=>'required',
+            'client_designation'=>'required',
+            'client_testimonials'=>'required',
+            'category_id'=>'required',
+            'image'=>'required',
+            'image1'=>'required'
+        ]);
+
         $CaseStudyDetails = new CaseStudy;
         $CaseStudyDetails->thumbnail_case_study_title = $request->thumbnail_case_study_title;
         $CaseStudyDetails->About_the_project_title = $request->About_the_project_title;

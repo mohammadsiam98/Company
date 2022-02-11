@@ -136,9 +136,19 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'name' => [
+            'required' => 'Please enter your name',
         ],
+        'email' => [
+            'required' => 'Please enter your email',
+        ],
+        'refSite' => [
+            'required' => 'Please enter at least one refference site',
+        ],
+        'message' => [
+            'required' => 'Description field can not be null. Write your details message here',
+        ],
+        
     ],
 
     /*

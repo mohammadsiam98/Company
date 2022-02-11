@@ -1,6 +1,7 @@
 @extends('Layout.mother_layout')
 @section('content')
 
+@if(!@empty($serviceOverview->page_heading))
 <!--Breadcrumb Area-->
 <section class="breadcrumb-areav2" data-background="{{asset('assets/images/banner/6.jpg')}}">
     <div class="container">
@@ -13,7 +14,9 @@
         </div>
     </div>
 </section>
+@endif
 
+@if(!@empty($serviceOverview->image))
 <!--Start About-->
 <section class="service pad-tb">
     <div class="container">
@@ -34,7 +37,10 @@
     </div>
 </section>
 <!--End About-->
+@endif
 
+
+@if(!@empty($SectorServices))
 <!--Start Service-->
 <section class="service-block bg-gradient6 pad-tb">
     <div class="container">
@@ -73,8 +79,9 @@
     </div>
 </section>
 <!--End Service-->
+@endif
 
-
+{{-- @if(!@empty($SectorClients))
 <!--Start Process-->
 <section class="service-block pad-tb light-dark">
     <div class="container">
@@ -83,30 +90,31 @@
                 <div class="common-heading ptag">
                     <span>Process</span>
                     <h1 class="text-radius text-light text-animation bg-b">{{$SectorClients->clients_header}}</h1>
-                    <p>{{$SectorClients->clients_header_description}}.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="clients-logos text-center col-12">
-                    <div class="weworkfor pt20 pb20">
-                        <div class="container">
-                            @foreach($SectorClientsImage as $clients)
-                            <div class="logo-weworkfor owl-carousel">
-                                <div class="items"><img src="{{url($clients->image)}}" alt="niwax html template" class="img100w"></div>
-                            </div>
-                            @endforeach
-                        </div>
+<p>{{$SectorClients->clients_header_description}}.</p>
+</div>
+</div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="clients-logos text-center col-12">
+            <div class="weworkfor pt20 pb20">
+                <div class="container">
+                    @foreach($SectorClientsImage as $clients)
+                    <div class="logo-weworkfor owl-carousel">
+                        <div class="items"><img src="{{url($clients->image)}}" alt="niwax html template" class="img100w"></div>
                     </div>
+                    @endforeach
                 </div>
             </div>
         </div>
     </div>
+</div>
+</div>
 </section>
 <!--End Process-->
+@endif --}}
 
-
+@if(!@empty($SectorTechnologiesWeWillUse))
 <!--Start Why Choose-->
 <section class="service-block pad-tb bg-gradient7">
     <div class="container">
@@ -121,9 +129,9 @@
         </div>
         <div class="row justify-content-center">
             @foreach($SectorTechnologyDetails as $SectorTechnology)
-            <div class="col-lg-4 col-sm-6 mt30  wow fadeIn" data-wow-delay=".2s">
+            <div class="col-lg-6 col-sm-6 mt30  wow fadeIn" data-wow-delay=".2s">
                 <div class="s-block wide-sblock">
-                    <div class="s-card-icon"><img src="{{url($SectorTechnology->image)}}" alt="service" class="img-fluid"></div>
+                    <div class="s-card-icon-large"><img src="{{url($SectorTechnology->image)}}" alt="service" class="img-fluid"></div>
                     <div class="s-block-content">
                         <h4>{{ $SectorTechnology->technology_name}}</h4>
                         <p>{{ $SectorTechnology->technology_short_details}}</p>
@@ -138,6 +146,7 @@
     </div>
 </section>
 <!--End Why Choose-->
+@endif
 
 
 <!--Start Pricing-->
@@ -158,7 +167,7 @@
                 <div class="pricing-table mt60">
 
                     <div class="inner-table">
-                        <img src="{{asset('assets/images/icons/plan-1.svg')}}" alt="Personal" />
+                        <img src="{{asset('assets/images/icons/money-bag.png')}}" alt="Personal" />
                         <span class="title">{{$price->planName}}</span>
                         <p class="title-sub">{{$price->small_description}}</p>
                         <h2><sup>$</sup>{{$price->basic_plan_price}}</h2>
@@ -179,7 +188,7 @@
 </section>
 <!--End Pricing-->
 
-
+@if($categoryId==1 || $categoryId==2 )
 <!--Start Portfolio-->
 <section class="portfolio-section pad-tb">
     <div class="container">
@@ -212,5 +221,8 @@
     </div>
 </section>
 <!--End Portfolio-->
+@endif
+
+
 
 @endsection

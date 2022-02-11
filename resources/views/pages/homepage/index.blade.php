@@ -1,139 +1,123 @@
 @extends('Layout.mother_layout')
 @section('content')
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+</style>
 <!--Start Hero-->
 <section class="hero-card-web bg-gradient12 shape-bg3">
     <div class="hero-main-rp container-fluid">
         <div class="row">
-            <div class="col-lg-5">
+            <div class="col-lg-6">
                 <div class="hero-heading-sec2">
                     <h1 class="wow fadeIn" data-wow-delay="0.2s">Digital Creative Agency</h1>
-                    <p class="wow fadeIn" data-wow-delay="0.4s">Servicearea is one of the most creative and experienced company in Bangladesh.</p>
+                    <p class="wow fadeIn" data-wow-delay="0.4s" style="font-family: 'Poppins', sans-serif; color:white">Servicearea, your one-stop solution to all things Digital Marketing, Website Development and Designing, and Web-based Applications.</p>
                     <a href="{{route('caseStudy')}}" class="btn-main bg-btn lnk wow fadeIn" data-wow-delay="0.8s">View Case Studies <i class="fas fa-chevron-right fa-ani"></i><span class="circle"></span></a>
-                    <div class="awards-block-tt  wow fadeIn" data-wow-delay="1s"><img src="{{asset('assets/images/hero/awards-logo.png')}}" alt="awards-logo" class="img-fluid" /></div>
                 </div>
             </div>
-            <div class="col-lg-7">
+            <div class="col-lg-6">
                 <div class="hero-right-scmm">
                     <div class="hero-service-cards wow fadeInRight" data-wow-duration="2s">
                         <div class="owl-carousel service-card-prb">
                             <div class="service-slide card-bg-a" data-tilt data-tilt-max="5" data-tilt-speed="1000">
-                                <a href="#">
+                                <a href="{{route('sectors','Web-Design')}}">
                                     <div class="service-card-hh">
                                         <div class="image-sr-mm">
-                                            <img alt="custom-sport" src="{{asset('assets/images/service/service-img-1.png')}}">
+                                            <img alt="custom-sport" src="{{asset('assets/images/Website Creator-bro.svg')}}">
                                         </div>
-                                        <div class="title-serv-c"><span>Website</span>Design</div>
+                                        <div class="title-serv-c" style="font-family: 'Poppins', sans-serif; color:white">Website Design</div>
                                     </div>
                                 </a>
                             </div>
                             <div class="service-slide card-bg-b" data-tilt data-tilt-max="5" data-tilt-speed="1000">
-                                <a href="#">
+                                <a href="{{route('sectors','App-Development')}}">
                                     <div class="service-card-hh">
                                         <div class="image-sr-mm">
-                                            <img alt="custom-sport" src="{{asset('assets/images/service/app-develop.png')}}">
+                                            <img alt="custom-sport" src="{{asset('assets/images/App development-bro.svg')}}">
                                         </div>
-                                        <div class="title-serv-c"><span>Mobile Application</span>Development</div>
+                                        <div class="title-serv-c" style="font-family: 'Poppins', sans-serif; color:white">Mobile Application</div>
                                     </div>
                                 </a>
                             </div>
                             <div class="service-slide card-bg-c" data-tilt data-tilt-max="5" data-tilt-speed="1000">
-                                <a href="#">
+                                <a href="{{route('sectors','Website-Development')}}">
                                     <div class="service-card-hh">
                                         <div class="image-sr-mm">
-                                            <img alt="custom-sport" src="{{asset('assets/images/service/service-img-2.png')}}">
+                                            <img alt="custom-sport" src="{{asset('assets/images/Open source-bro.svg')}}">
                                         </div>
-                                        <div class="title-serv-c"><span>Webite</span>Development</div>
+                                        <div class="title-serv-c" style="font-family: 'Poppins', sans-serif; color:white">Webite Development</div>
                                     </div>
                                 </a>
                             </div>
                             <div class="service-slide card-bg-d" data-tilt data-tilt-max="5" data-tilt-speed="1000">
-                                <a href="#">
+                                <a href="{{route('sectors','Graphics-Design')}}">
                                     <div class="service-card-hh">
                                         <div class="image-sr-mm">
-                                            <img alt="custom-sport" src="{{asset('assets/images/service/vr.png')}}">
+                                            <img alt="custom-sport" src="{{asset('assets/images/Designer-cuate.svg')}}">
                                         </div>
-                                        <div class="title-serv-c"><span>Graphics</span>Design</div>
+                                        <div class="title-serv-c" style="font-family: 'Poppins', sans-serif; color:white">Graphics Design</div>
                                     </div>
                                 </a>
                             </div>
                             <div class="service-slide card-bg-e" data-tilt data-tilt-max="5" data-tilt-speed="1000">
-                                <a href="#">
+                                <a href="{{route('sectors','Social_media_marketing')}}">
                                     <div class="service-card-hh">
                                         <div class="image-sr-mm">
-                                            <img alt="custom-sport" src="{{asset('assets/images/service/smo.png')}}">
+                                            <img alt="custom-sport" src="{{asset('assets/images/Mobile Marketing-bro.svg')}}">
                                         </div>
-                                        <div class="title-serv-c"><span>Social Media</span>Marketing</div>
+                                        <div class="title-serv-c" style="font-family: 'Poppins', sans-serif; color:white"><span>Digital Marketing</div>
                                     </div>
                                 </a>
                             </div>
                             <div class="service-slide card-bg-f" data-tilt data-tilt-max="5" data-tilt-speed="1000">
-                                <a href="#">
+                                <a href="{{route('sectors','Video-Editing')}}">
                                     <div class="service-card-hh">
                                         <div class="image-sr-mm">
-                                            <img alt="custom-sport" src="{{asset('assets/images/service/ewallet.png')}}">
+                                            <img alt="custom-sport" src="{{asset('assets/images/Video files-bro.svg')}}">
                                         </div>
-                                        <div class="title-serv-c"><span>Video</span>Editing</div>
+                                        <div class="title-serv-c" style="font-family: 'Poppins', sans-serif; color:white">Video Editing</div>
                                     </div>
                                 </a>
                             </div>
-                            <div class="service-slide card-bg-f" data-tilt data-tilt-max="5" data-tilt-speed="1000">
-                                <a href="#">
+                            <div class="service-slide card-bg-b" data-tilt data-tilt-max="5" data-tilt-speed="1000">
+                                <a href="{{route('sectors','Content-Writing')}}">
                                     <div class="service-card-hh">
                                         <div class="image-sr-mm">
-                                            <img alt="custom-sport" src="{{asset('assets/images/service/ewallet.png')}}">
+                                            <img alt="custom-sport" src="{{asset('assets/images/Novelist writing-bro.svg')}}">
                                         </div>
-                                        <div class="title-serv-c"><span>Content</span>Writing</div>
+                                        <div class="title-serv-c" style="font-family: 'Poppins', sans-serif; color:white">Content Writing</div>
                                     </div>
                                 </a>
                             </div>
-                            <div class="service-slide card-bg-f" data-tilt data-tilt-max="5" data-tilt-speed="1000">
-                                <a href="#">
+
+                            <div class="service-slide card-bg-a" data-tilt data-tilt-max="5" data-tilt-speed="1000">
+                                <a href="{{route('sectors','Search-Engine-Optimization')}}">
                                     <div class="service-card-hh">
                                         <div class="image-sr-mm">
-                                            <img alt="custom-sport" src="{{asset('assets/images/service/ewallet.png')}}">
+                                            <img alt="custom-sport" src="{{asset('assets/images/Search engines-bro.svg')}}">
                                         </div>
-                                        <div class="title-serv-c"><span>Software</span>Development</div>
+                                        <div class="title-serv-c" style="font-family: 'Poppins', sans-serif; color:white"><span>Search Engine Optimization</div>
                                     </div>
                                 </a>
                             </div>
-                            <div class="service-slide card-bg-f" data-tilt data-tilt-max="5" data-tilt-speed="1000">
-                                <a href="#">
+
+                            <div class="service-slide card-bg-c" data-tilt data-tilt-max="5" data-tilt-speed="1000">
+                                <a href="{{route('sectors','Photography')}}">
                                     <div class="service-card-hh">
                                         <div class="image-sr-mm">
-                                            <img alt="custom-sport" src="{{asset('assets/images/service/seo.png')}}">
+                                            <img alt="custom-sport" src="{{asset('assets/images/Studio photographer-cuate.svg')}}">
                                         </div>
-                                        <div class="title-serv-c"><span>Search Engine</span>Optimization</div>
+                                        <div class="title-serv-c" style="font-family: 'Poppins', sans-serif; color:white"><span>Photography</div>
                                     </div>
                                 </a>
                             </div>
-                            <div class="service-slide card-bg-f" data-tilt data-tilt-max="5" data-tilt-speed="1000">
-                                <a href="#">
+                            <div class="service-slide card-bg-e" data-tilt data-tilt-max="5" data-tilt-speed="1000">
+                                <a href="{{route('sectors','Cinematography')}}">
                                     <div class="service-card-hh">
                                         <div class="image-sr-mm">
-                                            <img alt="custom-sport" src="{{asset('assets/images/service/ewallet.png')}}">
+                                            <img alt="custom-sport" src="{{asset('assets/images/Recording a movie-cuate.svg')}}">
                                         </div>
-                                        <div class="title-serv-c"><span>Animation</span>Video</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="service-slide card-bg-f" data-tilt data-tilt-max="5" data-tilt-speed="1000">
-                                <a href="#">
-                                    <div class="service-card-hh">
-                                        <div class="image-sr-mm">
-                                            <img alt="custom-sport" src="{{asset('assets/images/service/ewallet.png')}}">
-                                        </div>
-                                        <div class="title-serv-c"><span>Photography</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="service-slide card-bg-f" data-tilt data-tilt-max="5" data-tilt-speed="1000">
-                                <a href="#">
-                                    <div class="service-card-hh">
-                                        <div class="image-sr-mm">
-                                            <img alt="custom-sport" src="{{asset('assets/images/service/ewallet.png')}}">
-                                        </div>
-                                        <div class="title-serv-c"><span>Cinematography</div>
+                                        <div class="title-serv-c" style="font-family: 'Poppins', sans-serif; color:white"><span>Cinematography</div>
                                     </div>
                                 </a>
                             </div>
@@ -153,9 +137,8 @@
             <div class="col-lg-10">
                 <div class="common-heading">
                     <span>We Are Creative Agency</span>
-                    <h1 class="mb30"><span class="text-second">Top-rated</span> Web And Mobile App Development Company</h1>
-                    <p>Lorem Ipsum is <span class="text-radius text-light text-animation bg-b">simply dummy</span> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book. <span class="text-bold">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. <span class="text-bold">Lorem Ipsum </span> is simply dummy text of the printing and typesetting industry.
+                    <h1 class="mb30" style="font-family: 'Poppins', sans-serif;"><span class="text-second" style="font-family: 'Poppins', sans-serif;">Top-rated</span> Web And Mobile App Development Company</h1>
+                    <p style="font-family: 'Poppins', sans-serif;">Digital Marketing practices allows your business to gain a boost in its sales exponentially by making it more visible and easily accessible to more customers. It is more cost-effective and efficient than traditional methods of marketing, helps build a brand name, generates better revenue and connects well with social media. In the same line, Web Development and Web Designing helps to garner more attention to your businesses on online platforms and help business firms retain the consistency of your services.
                     </p>
                 </div>
             </div>
@@ -163,8 +146,6 @@
     </div>
 </section>
 <!--End About-->
-
-
 <!--Start Service-->
 <section class="service-section-prb pad-tb">
     <div class="container">
@@ -250,7 +231,6 @@
 </section>
 <!--End Service-->
 
-
 <!--Start statistics-->
 <div class="statistics-section bg-gradient6 pad-tb tilt3d">
     <div class="container">
@@ -303,38 +283,6 @@
     </div>
 </div>
 <!--End statistics-->
-
-
-<!--why choose-->
-<section class="why-choos-lg pad-tb deep-dark">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-sm-12 col-md-12">
-                <div class="common-heading text-l">
-                    <h2><span class="text-second text-bold">Why Choose Us</span></h2>
-                    <h4 class="mb20">Our Company<span class="text-second text-bold"> Salahuddinit </span> Among The Leading Web & App Development Companies</h4>
-                    <div class="itm-media-object mt40 tilt-3d">
-                        <div class="media">
-                            <div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"><img src="{{asset('assets/images/icons/computers.svg')}}" alt="icon" class="layer"></div>
-                            <div class="media-body">
-                                <h4>Streamlined Project Management</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet ligula nec leo elementum semper. Mauris aliquet egestas metus.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-12">
-                <div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="single-image wow fadeIn" data-wow-duration="2s"><img src="{{asset('assets/images/undraw_preferences_re_49in.svg')}}" alt="image" class="img-fluid"></div>
-                <div class="cta-card mt60 text-center">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--End why choose-->
-
 
 <!--Start Portfolio-->
 <section class="portfolio-section pad-tb">
@@ -437,43 +385,10 @@
 <!--Start Badges-->
 <section class="badges-section bg-gradient5  pad-tb">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="common-heading w-tdxt">
-                    <span>WE MAKE RELATIONSHIPS</span>
-                    <h2>Ranked as #1 Top Web & App Development Companies</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-6 wow fadeIn" data-wow-delay=".2s">
-                <div class="badges-content">
-                    <img src="{{asset('assets/images/about/badges-a.png')}}" alt="budges" class="img-fluid">
-                    <p>ABC DEF Industry Leader</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-6 wow fadeIn" data-wow-delay=".4s">
-                <div class="badges-content">
-                    <img src="{{asset('assets/images/about/badges-b.png')}}" alt="budges" class="img-fluid">
-                    <p>Best eCommerce Development Company</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-6 wow fadeIn" data-wow-delay=".6s">
-                <div class="badges-content">
-                    <img src="{{asset('assets/images/about/badges-c.png')}}" alt="budges" class="img-fluid">
-                    <p>ABC DEF High Performer Winner</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-6 wow fadeIn" data-wow-delay=".8s">
-                <div class="badges-content">
-                    <img src="{{asset('assets/images/about/badges-d.png')}}" alt="budges" class="img-fluid">
-                    <p>Top App Developer 2019-20</p>
-                </div>
-            </div>
-        </div>
-        <div class="-cta-btn mt70">
+
+        <div class="-cta-btn mt35">
             <div class="free-cta-title v-center wow fadeInUp" data-wow-delay="1s">
-                <p>We <span>Promise.</span> We <span>Deliver.</span></p>
+                <p style="font-family: 'Poppins', sans-serif;">We <span>Promise.</span> We <span>Deliver.</span></p>
                 <a href="{{route('contact')}}" class="btn-main bg-btn2 lnk">Let's Work Together<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
             </div>
         </div>
@@ -488,9 +403,9 @@
         <div class="row">
             <div class="col-lg-4 v-center">
                 <div class="common-heading text-l">
-                    <span>Industries we work for</span>
-                    <h2>our Working Sectors</h2>
-                    <p>Successfully delivered digital products Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <span style="font-family: 'Poppins', sans-serif;">Industries we work for</span>
+                    <h2 style="font-family: 'Poppins', sans-serif;">our Working Sectors</h2>
+                    <p style="font-family: 'Poppins', sans-serif;">Successfully delivered digital products Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
             </div>
             <div class="col-lg-8">
@@ -582,7 +497,7 @@
             <div class="col-lg-8">
                 <div class="common-heading">
                     <span>Let's work together</span>
-                    <h2>We Love to Listen to Your Requirements</h2>
+                    <h2 style="font-family: 'Poppins', sans-serif;">We Love to Listen to Your Requirements</h2>
                     <a href="javascript:void(0)" class="btn-outline">Let's Discuss About Your Project<i class="fas fa-chevron-right fa-icon"></i></a>
 
                 </div>

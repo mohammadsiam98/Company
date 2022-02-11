@@ -214,11 +214,13 @@ Route::prefix('admin')->group(function(){
         
         //contact Route
         Route::get('/contact', 'App\Http\Controllers\ContactUsController@store')->name('contact.store');
+        Route::get('/contact/list', 'App\Http\Controllers\ContactUsController@list')->name('contact.list');
         //contact Route
 
-         //contact Route
+         //project proposal Route
          Route::get('/projectProposal', 'App\Http\Controllers\ProjectProposalController@store')->name('ProjectProposalDetails.store');
-         //contact Route
+         Route::get('/projectProposal/list', 'App\Http\Controllers\ProjectProposalController@list')->name('ProjectProposalDetails.list');
+         //project proposal Route
 
 
         

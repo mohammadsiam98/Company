@@ -25,7 +25,7 @@
         <div class="row">
             <div class="col-lg-6 v-center">
                 <div class="about-image">
-                    <img src="{{asset('assets/images/aboutUs.svg')}}" alt="about us" class="img-fluid" />
+                    <img src="{{asset('assets/images/About us page-cuate.svg')}}" alt="about us" class="img-fluid" />
                 </div>
             </div>
             <div class="col-lg-6">
@@ -48,7 +48,7 @@
             <div class="col-lg-10">
                 <div class="common-heading">
                     <span>We Are Creative Agency</span>
-                    <h1 class="mb30">Why Choose <span class="text-radius text-light text-animation bg-b">Salahuddin IT</span></h1>
+                    <h1 class="mb30">Why Choose <span class="text-radius text-light text-animation bg-b">Servicearea</span></h1>
                     <p>{{$aboutDetails->whyChooseUsDetails}}</p>
                 </div>
             </div>
